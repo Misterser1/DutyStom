@@ -1,0 +1,191 @@
+/* CategoryBar Styles - Вариант 3: Градиентные боксы */
+
+.category-bar {
+  background: var(--color-card-bg);
+  height: auto;
+  min-height: 130px;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 90;
+  padding: 15px 0;
+}
+
+.category-bar-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.category-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 50%, #0d4a3a 100%);
+  border-radius: 10px;
+  min-height: 110px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.category-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.category-item:hover {
+  background: linear-gradient(135deg, #156b54 0%, #1a7a5e 100%);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(26, 107, 82, 0.5);
+}
+
+.category-item.active {
+  background: linear-gradient(135deg, #e63946 0%, #c5303c 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 4px rgba(230, 57, 70, 0.3);
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-bottom: 8px;
+}
+
+.category-icon svg {
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+.category-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.icon-placeholder {
+  font-size: 50px;
+}
+
+.category-name {
+  font-size: 1.05rem;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .category-bar-content {
+    gap: 10px;
+  }
+
+  .category-item {
+    padding: 12px;
+    min-height: 100px;
+  }
+
+  .category-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .category-icon svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon-placeholder {
+    font-size: 42px;
+  }
+
+  .category-name {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-bar {
+    padding: 12px 0;
+    min-height: 110px;
+  }
+
+  .category-bar-content {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .category-item {
+    padding: 10px;
+    min-height: 90px;
+    min-width: 120px;
+  }
+
+  .category-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .category-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .icon-placeholder {
+    font-size: 38px;
+  }
+
+  .category-name {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-item {
+    padding: 8px;
+    min-width: 100px;
+    min-height: 80px;
+  }
+
+  .category-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .category-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-placeholder {
+    font-size: 36px;
+  }
+
+  .category-name {
+    font-size: 0.82rem;
+  }
+}

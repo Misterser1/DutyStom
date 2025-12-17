@@ -1,0 +1,58 @@
+/* ProductGrid Styles - Вертикальный список для row-карточек */
+
+.product-grid-wrapper {
+  margin-bottom: 40px;
+}
+
+.grid-title {
+  font-size: 1.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.empty-state h2 {
+  color: var(--color-text-light);
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    gap: 12px;
+  }
+
+  .grid-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    gap: 10px;
+  }
+
+  .grid-title {
+    font-size: 1.3rem;
+  }
+}

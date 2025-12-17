@@ -1,0 +1,844 @@
+/* Product Font Demo Page */
+
+.product-font-demo-page {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.product-font-demo-page h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Секции вариантов */
+.variant-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.variant-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.variant-section.selected {
+  border-color: #e63946;
+  background: rgba(230, 57, 70, 0.1);
+}
+
+.variant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.variant-header h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.selected-badge {
+  background: #e63946;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Базовые стили карточки */
+.demo-card {
+  display: grid;
+  grid-template-columns: 100px 120px 120px 1fr 220px 120px 200px;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.demo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Колонка: Код */
+.demo-col-meta {
+  gap: 4px;
+}
+
+/* Колонка: Бренд */
+.demo-col-brand {
+  text-align: center;
+  gap: 4px;
+}
+
+/* Колонка: Изображение */
+.demo-col-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-image-placeholder {
+  width: 100px;
+  height: 70px;
+  color: #bbb;
+  background: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-image-placeholder svg {
+  width: 60px;
+  height: 60px;
+}
+
+/* Колонка: Название */
+.demo-col-name {
+  gap: 4px;
+  min-width: 0;
+}
+
+/* Колонка: Характеристики */
+.demo-col-specs {
+  gap: 4px;
+}
+
+.demo-spec-row {
+  display: flex;
+  gap: 6px;
+}
+
+/* Колонка: Цена */
+.demo-col-price {
+  text-align: center;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Колонка: Действия */
+.demo-col-actions {
+  gap: 8px;
+  align-items: flex-end;
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+}
+
+.demo-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.demo-qty-btn {
+  width: 32px;
+  height: 32px;
+  background: #f5f5f5;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.demo-qty-value {
+  width: 40px;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  line-height: 32px;
+}
+
+.demo-bookmark-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.demo-bookmark-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.demo-availability {
+  text-align: right;
+}
+
+.demo-stock {
+  display: block;
+}
+
+.demo-stock.in-stock {
+  color: #28a745;
+}
+
+.demo-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.demo-add-btn:hover {
+  background: linear-gradient(135deg, #e63946 0%, #c62936 100%);
+}
+
+.demo-add-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.demo-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.demo-detail-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.demo-detail-link:hover {
+  text-decoration: underline;
+}
+
+.demo-quick-buy {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e63946;
+  cursor: pointer;
+  text-align: right;
+}
+
+.demo-quick-buy:hover {
+  text-decoration: underline;
+}
+
+/* Кнопки действий */
+.demo-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.apply-btn {
+  padding: 14px 40px;
+  background: linear-gradient(135deg, #e63946 0%, #c62936 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  padding: 14px 40px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  border-color: white;
+}
+
+/* ========================================
+   ВАРИАНТ 1: Крупный читаемый
+   ======================================== */
+.font-large .demo-code {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.font-large .demo-article-small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.font-large .demo-brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0066cc;
+  text-transform: uppercase;
+}
+
+.font-large .demo-brand-country {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.font-large .demo-article-inline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.font-large .demo-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.font-large .demo-spec-key {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.font-large .demo-spec-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.font-large .demo-price-label {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.font-large .demo-old-price {
+  font-size: 0.95rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.font-large .demo-current-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e63946;
+}
+
+.font-large .demo-bookmark-btn {
+  font-size: 0.9rem;
+}
+
+.font-large .demo-stock,
+.font-large .demo-delivery {
+  font-size: 0.85rem;
+}
+
+.font-large .demo-add-btn {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-large .demo-detail-link,
+.font-large .demo-quick-buy {
+  font-size: 0.85rem;
+}
+
+.font-large .demo-qty-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========================================
+   ВАРИАНТ 2: Средний сбалансированный
+   ======================================== */
+.font-medium .demo-code {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.font-medium .demo-article-small {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.font-medium .demo-brand-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0066cc;
+  letter-spacing: 0.5px;
+}
+
+.font-medium .demo-brand-country {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.font-medium .demo-article-inline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.font-medium .demo-name {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.font-medium .demo-spec-key {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.font-medium .demo-spec-value {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.font-medium .demo-price-label {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.font-medium .demo-old-price {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.font-medium .demo-current-price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.font-medium .demo-bookmark-btn {
+  font-size: 0.82rem;
+}
+
+.font-medium .demo-stock,
+.font-medium .demo-delivery {
+  font-size: 0.8rem;
+}
+
+.font-medium .demo-add-btn {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.font-medium .demo-detail-link,
+.font-medium .demo-quick-buy {
+  font-size: 0.8rem;
+}
+
+.font-medium .demo-qty-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* ========================================
+   ВАРИАНТ 3: Жирный акцентный
+   ======================================== */
+.font-bold .demo-code {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.font-bold .demo-article-small {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.font-bold .demo-brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0055aa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.font-bold .demo-brand-country {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.font-bold .demo-article-inline {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.font-bold .demo-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.font-bold .demo-spec-key {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.font-bold .demo-spec-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.font-bold .demo-price-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.font-bold .demo-old-price {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.font-bold .demo-current-price {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #d62839;
+}
+
+.font-bold .demo-bookmark-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.font-bold .demo-stock,
+.font-bold .demo-delivery {
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.font-bold .demo-add-btn {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.font-bold .demo-detail-link,
+.font-bold .demo-quick-buy {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.font-bold .demo-qty-value {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ========================================
+   ВАРИАНТ 4: Элегантный с засечками
+   ======================================== */
+.font-serif {
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.font-serif .demo-code {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif .demo-article-small {
+  font-size: 0.85rem;
+  color: #666;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif .demo-brand-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0066cc;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+.font-serif .demo-brand-country {
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+}
+
+.font-serif .demo-article-inline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif .demo-name {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+.font-serif .demo-spec-key {
+  font-size: 0.88rem;
+  color: #555;
+}
+
+.font-serif .demo-spec-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.font-serif .demo-price-label {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+}
+
+.font-serif .demo-old-price {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.font-serif .demo-current-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c41e3a;
+  font-family: 'Georgia', serif;
+}
+
+.font-serif .demo-bookmark-btn {
+  font-size: 0.85rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif .demo-stock,
+.font-serif .demo-delivery {
+  font-size: 0.82rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif .demo-add-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif .demo-detail-link,
+.font-serif .demo-quick-buy {
+  font-size: 0.85rem;
+}
+
+.font-serif .demo-qty-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========================================
+   ВАРИАНТ 5: Современный контрастный
+   ======================================== */
+.font-modern {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-modern .demo-code {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.font-modern .demo-article-small {
+  font-size: 0.75rem;
+  color: #aaa;
+  letter-spacing: 0.3px;
+}
+
+.font-modern .demo-brand-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a73e8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.font-modern .demo-brand-country {
+  font-size: 0.75rem;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.font-modern .demo-article-inline {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.font-modern .demo-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.font-modern .demo-spec-key {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.font-modern .demo-spec-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.font-modern .demo-price-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.font-modern .demo-old-price {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+.font-modern .demo-current-price {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #e63946;
+  letter-spacing: -1px;
+}
+
+.font-modern .demo-bookmark-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.font-modern .demo-stock,
+.font-modern .demo-delivery {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.font-modern .demo-add-btn {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.font-modern .demo-detail-link,
+.font-modern .demo-quick-buy {
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.font-modern .demo-qty-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .demo-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .demo-col {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .demo-col-meta,
+  .demo-col-brand {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .demo-col-name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .demo-col-specs {
+    flex-wrap: wrap;
+  }
+
+  .demo-col-price {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .demo-col-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-left: none;
+    border-top: 1px solid #eee;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+}

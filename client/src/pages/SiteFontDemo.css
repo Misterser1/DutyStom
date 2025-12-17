@@ -1,0 +1,1118 @@
+/* Site Font Demo Page */
+
+.site-font-demo-page {
+  padding: 30px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.site-font-demo-page h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Секции вариантов */
+.variant-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.variant-section:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.variant-section.selected {
+  border-color: #e63946;
+  background: rgba(230, 57, 70, 0.08);
+}
+
+.variant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.variant-info h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 0 5px 0;
+}
+
+.variant-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.selected-badge {
+  background: #e63946;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Превью сайта */
+.site-preview {
+  background: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Мини Header */
+.preview-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+}
+
+.preview-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.preview-search {
+  flex: 1;
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.preview-search-type {
+  padding: 10px 15px;
+  background: #f0f0f0;
+  border-right: 1px solid #ddd;
+}
+
+.preview-search input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+}
+
+.preview-actions {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.preview-contact,
+.preview-social {
+  white-space: nowrap;
+}
+
+/* Мини CategoryBar */
+.preview-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+}
+
+.preview-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s;
+  min-width: 120px;
+}
+
+.preview-category.active {
+  background: #e63946;
+}
+
+.preview-cat-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-cat-icon svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.preview-cat-name {
+  color: white;
+  text-align: center;
+}
+
+/* Заголовок секции */
+.preview-section-title {
+  padding: 25px 20px 15px;
+  margin: 0;
+  color: #333;
+  border-bottom: 3px solid #e63946;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Карточка товара */
+.preview-product-card {
+  display: grid;
+  grid-template-columns: 100px 120px 120px 1fr 220px 120px 200px;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.preview-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Колонка: Код */
+.preview-col-meta {
+  gap: 4px;
+}
+
+/* Колонка: Бренд */
+.preview-col-brand {
+  text-align: center;
+  gap: 4px;
+}
+
+.preview-brand-name {
+  color: #0066cc;
+  text-transform: uppercase;
+}
+
+.preview-brand-country {
+  color: #777;
+}
+
+/* Колонка: Изображение */
+.preview-col-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-image-placeholder {
+  width: 100px;
+  height: 70px;
+  color: #bbb;
+  background: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-image-placeholder svg {
+  width: 60px;
+  height: 60px;
+}
+
+/* Колонка: Название */
+.preview-col-name {
+  gap: 4px;
+  min-width: 0;
+}
+
+.preview-article-inline {
+  color: #333;
+}
+
+.preview-name {
+  color: #444;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Колонка: Характеристики */
+.preview-col-specs {
+  gap: 4px;
+}
+
+.preview-spec-row {
+  display: flex;
+  gap: 6px;
+}
+
+.preview-spec-key {
+  color: #666;
+}
+
+.preview-spec-value {
+  color: #222;
+}
+
+/* Колонка: Цена */
+.preview-col-price {
+  text-align: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.preview-price-label {
+  color: #888;
+  text-transform: uppercase;
+}
+
+.preview-old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.preview-current-price {
+  color: #e63946;
+}
+
+/* Колонка: Действия */
+.preview-col-actions {
+  gap: 8px;
+  align-items: flex-end;
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+}
+
+.preview-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.preview-qty-btn {
+  width: 32px;
+  height: 32px;
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+}
+
+.preview-qty-value {
+  width: 40px;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  line-height: 32px;
+}
+
+.preview-bookmark-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.preview-bookmark-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.preview-availability {
+  text-align: right;
+}
+
+.preview-stock {
+  display: block;
+  color: #28a745;
+}
+
+.preview-delivery {
+  color: #888;
+}
+
+.preview-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.preview-add-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.preview-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.preview-detail-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.preview-quick-buy {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e63946;
+  cursor: pointer;
+  text-align: right;
+}
+
+/* Кнопки действий */
+.demo-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+}
+
+.apply-btn {
+  padding: 16px 50px;
+  background: linear-gradient(135deg, #e63946 0%, #c62936 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  padding: 16px 50px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  border-color: white;
+}
+
+/* ========================================
+   ВАРИАНТ 1: Крупный системный (Segoe UI)
+   ======================================== */
+.font-segoe {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.font-segoe .preview-logo {
+  font-size: 1.6rem;
+}
+
+.font-segoe .preview-search-type {
+  font-size: 1rem;
+}
+
+.font-segoe .preview-search input {
+  font-size: 1rem;
+}
+
+.font-segoe .preview-contact,
+.font-segoe .preview-social {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-segoe .preview-cat-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.font-segoe .preview-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.font-segoe .preview-code {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.font-segoe .preview-article-small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.font-segoe .preview-brand-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.font-segoe .preview-brand-country {
+  font-size: 0.9rem;
+}
+
+.font-segoe .preview-article-inline {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.font-segoe .preview-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.font-segoe .preview-spec-key {
+  font-size: 0.95rem;
+}
+
+.font-segoe .preview-spec-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.font-segoe .preview-price-label {
+  font-size: 0.85rem;
+}
+
+.font-segoe .preview-old-price {
+  font-size: 1rem;
+}
+
+.font-segoe .preview-current-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.font-segoe .preview-qty-btn {
+  font-size: 1.2rem;
+}
+
+.font-segoe .preview-qty-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.font-segoe .preview-bookmark-btn {
+  font-size: 0.95rem;
+}
+
+.font-segoe .preview-stock,
+.font-segoe .preview-delivery {
+  font-size: 0.9rem;
+}
+
+.font-segoe .preview-add-btn {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.font-segoe .preview-detail-link,
+.font-segoe .preview-quick-buy {
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   ВАРИАНТ 2: Современный Inter
+   ======================================== */
+.font-inter {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-inter .preview-logo {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.font-inter .preview-search-type {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.font-inter .preview-search input {
+  font-size: 0.95rem;
+}
+
+.font-inter .preview-contact,
+.font-inter .preview-social {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.font-inter .preview-cat-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.font-inter .preview-section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.font-inter .preview-code {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.font-inter .preview-article-small {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.font-inter .preview-brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.font-inter .preview-brand-country {
+  font-size: 0.85rem;
+}
+
+.font-inter .preview-article-inline {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.font-inter .preview-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.font-inter .preview-spec-key {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.font-inter .preview-spec-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.font-inter .preview-price-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.font-inter .preview-old-price {
+  font-size: 0.95rem;
+}
+
+.font-inter .preview-current-price {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.font-inter .preview-qty-btn {
+  font-size: 1.1rem;
+}
+
+.font-inter .preview-qty-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-inter .preview-bookmark-btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.font-inter .preview-stock,
+.font-inter .preview-delivery {
+  font-size: 0.85rem;
+}
+
+.font-inter .preview-add-btn {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-inter .preview-detail-link,
+.font-inter .preview-quick-buy {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ========================================
+   ВАРИАНТ 3: Классический Roboto
+   ======================================== */
+.font-roboto {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.font-roboto .preview-logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-search-type {
+  font-size: 0.95rem;
+}
+
+.font-roboto .preview-search input {
+  font-size: 0.95rem;
+}
+
+.font-roboto .preview-contact,
+.font-roboto .preview-social {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-cat-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-section-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-code {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.font-roboto .preview-article-small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.font-roboto .preview-brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.font-roboto .preview-brand-country {
+  font-size: 0.85rem;
+}
+
+.font-roboto .preview-article-inline {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.font-roboto .preview-name {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.font-roboto .preview-spec-key {
+  font-size: 0.9rem;
+}
+
+.font-roboto .preview-spec-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-price-label {
+  font-size: 0.8rem;
+}
+
+.font-roboto .preview-old-price {
+  font-size: 0.95rem;
+}
+
+.font-roboto .preview-current-price {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.font-roboto .preview-qty-btn {
+  font-size: 1.1rem;
+}
+
+.font-roboto .preview-qty-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-bookmark-btn {
+  font-size: 0.9rem;
+}
+
+.font-roboto .preview-stock,
+.font-roboto .preview-delivery {
+  font-size: 0.85rem;
+}
+
+.font-roboto .preview-add-btn {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.font-roboto .preview-detail-link,
+.font-roboto .preview-quick-buy {
+  font-size: 0.85rem;
+}
+
+/* ========================================
+   ВАРИАНТ 4: Элегантный Open Sans
+   ======================================== */
+.font-opensans {
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+.font-opensans .preview-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.font-opensans .preview-search-type {
+  font-size: 1rem;
+}
+
+.font-opensans .preview-search input {
+  font-size: 1rem;
+}
+
+.font-opensans .preview-contact,
+.font-opensans .preview-social {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-opensans .preview-cat-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.font-opensans .preview-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.font-opensans .preview-code {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.font-opensans .preview-article-small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.font-opensans .preview-brand-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.font-opensans .preview-brand-country {
+  font-size: 0.9rem;
+}
+
+.font-opensans .preview-article-inline {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.font-opensans .preview-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.font-opensans .preview-spec-key {
+  font-size: 0.95rem;
+}
+
+.font-opensans .preview-spec-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.font-opensans .preview-price-label {
+  font-size: 0.85rem;
+}
+
+.font-opensans .preview-old-price {
+  font-size: 1rem;
+}
+
+.font-opensans .preview-current-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.font-opensans .preview-qty-btn {
+  font-size: 1.2rem;
+}
+
+.font-opensans .preview-qty-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.font-opensans .preview-bookmark-btn {
+  font-size: 0.95rem;
+}
+
+.font-opensans .preview-stock,
+.font-opensans .preview-delivery {
+  font-size: 0.9rem;
+}
+
+.font-opensans .preview-add-btn {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.font-opensans .preview-detail-link,
+.font-opensans .preview-quick-buy {
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   ВАРИАНТ 5: Премиум Montserrat
+   ======================================== */
+.font-montserrat {
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+.font-montserrat .preview-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.font-montserrat .preview-search-type {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.font-montserrat .preview-search input {
+  font-size: 0.95rem;
+}
+
+.font-montserrat .preview-contact,
+.font-montserrat .preview-social {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.font-montserrat .preview-cat-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.font-montserrat .preview-section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.font-montserrat .preview-code {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+  letter-spacing: 0.3px;
+}
+
+.font-montserrat .preview-article-small {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.font-montserrat .preview-brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.font-montserrat .preview-brand-country {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.font-montserrat .preview-article-inline {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.font-montserrat .preview-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.font-montserrat .preview-spec-key {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.font-montserrat .preview-spec-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.font-montserrat .preview-price-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.font-montserrat .preview-old-price {
+  font-size: 0.95rem;
+}
+
+.font-montserrat .preview-current-price {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.font-montserrat .preview-qty-btn {
+  font-size: 1.1rem;
+}
+
+.font-montserrat .preview-qty-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-montserrat .preview-bookmark-btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.font-montserrat .preview-stock,
+.font-montserrat .preview-delivery {
+  font-size: 0.85rem;
+}
+
+.font-montserrat .preview-add-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.font-montserrat .preview-detail-link,
+.font-montserrat .preview-quick-buy {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 1400px) {
+  .preview-product-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .preview-col {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .preview-col-meta,
+  .preview-col-brand {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .preview-col-name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .preview-col-specs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .preview-col-price {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .preview-col-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-left: none;
+    border-top: 1px solid #eee;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  .preview-categories {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .preview-category {
+    min-width: 100px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-font-demo-page {
+    padding: 20px;
+  }
+
+  .variant-section {
+    padding: 15px;
+  }
+
+  .preview-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .preview-search {
+    order: 3;
+    width: 100%;
+  }
+
+  .preview-actions {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+}

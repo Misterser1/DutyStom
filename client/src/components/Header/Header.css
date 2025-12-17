@@ -1,0 +1,491 @@
+/* Header Styles - Новый дизайн */
+
+.header {
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+/* Новый Логотип (Logo2) */
+.logo-new {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.logo-new:hover {
+  transform: scale(1.05);
+}
+
+.logo-new-image {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Поисковая форма */
+.search-form {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  padding: 1px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.search-form:focus-within {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.search-input-main {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  outline: none;
+}
+
+.search-input-main::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-btn-main {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(230, 57, 70, 0.9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.search-btn-main:hover {
+  background: #e63946;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.5);
+}
+
+.search-btn-main svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Иконки действий */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.action-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.action-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.action-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Цветовые акценты для иконок */
+.phone-action {
+  border-color: rgba(139, 195, 74, 0.4);
+}
+
+.phone-action:hover {
+  background: rgba(139, 195, 74, 0.2);
+  border-color: rgba(139, 195, 74, 0.6);
+}
+
+.email-action {
+  border-color: rgba(33, 150, 243, 0.4);
+}
+
+.email-action:hover {
+  background: rgba(33, 150, 243, 0.2);
+  border-color: rgba(33, 150, 243, 0.6);
+}
+
+.cart-action {
+  border-color: rgba(230, 57, 70, 0.4);
+}
+
+.cart-action:hover {
+  background: rgba(230, 57, 70, 0.2);
+  border-color: rgba(230, 57, 70, 0.6);
+}
+
+.cart-badge-new {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background: #e63946;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Старые стили для совместимости */
+.logo {
+  display: none;
+}
+
+.phone-link,
+.cart-link {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .header-content {
+    padding: 8px 20px;
+    gap: 15px;
+  }
+
+  .logo-new-image {
+    height: 45px;
+  }
+
+  .search-input-main {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .search-input-main::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    padding: 8px 15px;
+  }
+
+  .logo-new {
+    order: 1;
+  }
+
+  .logo-new-image {
+    height: 38px;
+  }
+
+  .search-form {
+    order: 3;
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+  }
+
+  .header-actions {
+    order: 2;
+    gap: 8px;
+  }
+
+  .action-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .action-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input-main::placeholder {
+    content: "Поиск...";
+  }
+
+  .action-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .action-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Contact Us Label - Вариант 2 */
+.contact-label-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.contact-us-text {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.contact-divider {
+  width: 2px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+}
+
+/* Social Networks Dropdown - Вариант 1 */
+.social-section-header {
+  position: relative;
+  flex-shrink: 0;
+  padding-right: 15px;
+}
+
+.social-btn-header {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.social-btn-header:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-social-header {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-link-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.social-link-header:last-child {
+  border-bottom: none;
+}
+
+.social-link-header:hover {
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  color: white;
+}
+
+.social-icon-header {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.social-name-header {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Search Dropdown - Вариант 1 */
+.search-dropdown-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.dropdown-toggle {
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdown-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+  animation: dropdownSlideIn 0.3s ease;
+}
+
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  color: #333;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  color: white;
+  font-weight: 600;
+}
+
+/* Responsive для dropdown и contact label */
+@media (max-width: 768px) {
+  .dropdown-toggle {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .dropdown-menu {
+    min-width: 180px;
+  }
+
+  .dropdown-item {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .contact-us-text {
+    font-size: 11px;
+  }
+
+  .contact-divider {
+    height: 30px;
+  }
+
+  .social-btn-header {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+
+  .dropdown-social-header {
+    min-width: 180px;
+  }
+
+  .social-link-header {
+    padding: 12px 16px;
+  }
+
+  .social-name-header {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-label-section {
+    display: none;
+  }
+
+  .social-section-header {
+    display: none;
+  }
+}

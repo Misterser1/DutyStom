@@ -1,0 +1,572 @@
+.social-demo-page {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.demo-header {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.demo-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.demo-header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Variant Cards */
+.variants-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.social-variant-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.social-variant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.social-variant-card.selected {
+  border: 4px solid #e63946;
+  box-shadow: 0 15px 50px rgba(230, 57, 70, 0.4);
+}
+
+.variant-info h3 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.variant-info p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Preview Header */
+.preview-header-section {
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  border-radius: 16px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  min-height: 90px;
+}
+
+.preview-logo img {
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.preview-search {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  padding: 5px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.preview-search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  padding: 8px 15px;
+  outline: none;
+}
+
+.preview-search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.preview-search button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(230, 57, 70, 0.9);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.preview-actions-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.preview-actions-icons button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+/* Toggle Button */
+.toggle-social-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.toggle-social-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Вариант 1: Compact Horizontal */
+.social-compact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.social-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.social-icons-row {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon.vk {
+  background: linear-gradient(135deg, #4a76a8, #5a8fc2);
+}
+
+.social-icon.telegram {
+  background: linear-gradient(135deg, #0088cc, #00aaff);
+}
+
+.social-icon.whatsapp {
+  background: linear-gradient(135deg, #25d366, #1faa55);
+}
+
+.social-icon.instagram {
+  background: linear-gradient(135deg, #e4405f, #f77737, #fcaf45);
+}
+
+/* Вариант 2: Floating Side */
+.social-floating {
+  position: relative;
+  right: 0;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 200px;
+  margin-left: auto;
+  animation: slideInRight 0.4s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.floating-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.floating-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.floating-item:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.floating-item .icon {
+  font-size: 1.5rem;
+}
+
+.floating-item.vk-bg {
+  background: linear-gradient(135deg, #4a76a8, #5a8fc2);
+}
+
+.floating-item.telegram-bg {
+  background: linear-gradient(135deg, #0088cc, #00aaff);
+}
+
+.floating-item.whatsapp-bg {
+  background: linear-gradient(135deg, #25d366, #1faa55);
+}
+
+.floating-item.instagram-bg {
+  background: linear-gradient(135deg, #e4405f, #f77737);
+}
+
+/* Вариант 3: Dropdown Full */
+.social-dropdown {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+}
+
+.social-dropdown h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.dropdown-subtitle {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.social-card-item {
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-card-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.social-card-item .card-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.social-card-item .card-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.social-card-item.vk-card {
+  background: linear-gradient(135deg, #4a76a8, #5a8fc2);
+}
+
+.social-card-item.telegram-card {
+  background: linear-gradient(135deg, #0088cc, #00aaff);
+}
+
+.social-card-item.whatsapp-card {
+  background: linear-gradient(135deg, #25d366, #1faa55);
+}
+
+.social-card-item.instagram-card {
+  background: linear-gradient(135deg, #e4405f, #f77737);
+}
+
+/* Вариант 4: Minimal Circles */
+.social-minimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+}
+
+.minimal-text {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.minimal-circles {
+  display: flex;
+  gap: 15px;
+}
+
+.circle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.circle-icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.circle-icon.vk-circle {
+  background: rgba(74, 118, 168, 0.9);
+}
+
+.circle-icon.tg-circle {
+  background: rgba(0, 136, 204, 0.9);
+}
+
+.circle-icon.wa-circle {
+  background: rgba(37, 211, 102, 0.9);
+}
+
+.circle-icon.ig-circle {
+  background: linear-gradient(135deg, rgba(228, 64, 95, 0.9), rgba(247, 119, 55, 0.9));
+}
+
+/* Вариант 5: Social Cards */
+.social-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.social-big-card {
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.social-big-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.big-card-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.big-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.big-card-desc {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.social-big-card.vk-gradient {
+  background: linear-gradient(135deg, #4a76a8 0%, #5a8fc2 100%);
+}
+
+.social-big-card.telegram-gradient {
+  background: linear-gradient(135deg, #0088cc 0%, #00aaff 100%);
+}
+
+.social-big-card.whatsapp-gradient {
+  background: linear-gradient(135deg, #25d366 0%, #1faa55 100%);
+}
+
+.social-big-card.instagram-gradient {
+  background: linear-gradient(135deg, #e4405f 0%, #f77737 50%, #fcaf45 100%);
+}
+
+/* Selected Indicator */
+.selected-indicator {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Action Section */
+.action-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.apply-btn,
+.reset-btn {
+  padding: 18px 45px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.apply-btn {
+  background: linear-gradient(135deg, #e63946 0%, #c91d29 100%);
+  color: white;
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+}
+
+.apply-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(230, 57, 70, 0.6);
+}
+
+.reset-btn {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+}
+
+.reset-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(108, 117, 125, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .preview-header-section {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .preview-search {
+    width: 100%;
+    max-width: none;
+  }
+
+  .social-grid,
+  .social-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .action-section {
+    flex-direction: column;
+  }
+
+  .apply-btn,
+  .reset-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-grid,
+  .social-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons-row {
+    flex-wrap: wrap;
+  }
+}
