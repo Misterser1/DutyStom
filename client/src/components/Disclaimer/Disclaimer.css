@@ -1,7 +1,7 @@
 /* Disclaimer - Юридический текст (Вариант 2: Градиентная полоса) */
 
 .disclaimer {
-  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
   padding: 15px 20px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .disclaimer-title {
-  color: #ffd700;
+  color: #d4c4b0;
   font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 6px;
@@ -24,7 +24,7 @@
 }
 
 .disclaimer-contact {
-  color: #ffd700;
+  color: #d4c4b0;
   font-weight: 600;
 }
 

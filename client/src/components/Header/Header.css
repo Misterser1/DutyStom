@@ -1,20 +1,20 @@
 /* Header Styles - Новый дизайн */
 
 .header {
-  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
   height: auto;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(61, 155, 155, 0.3);
   transition: all 0.3s ease;
 }
 
 /* Эффект при прокрутке - полупрозрачный */
 .header-scrolled {
-  background: linear-gradient(135deg, rgba(13, 74, 58, 0.9) 0%, rgba(26, 107, 82, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(61, 155, 155, 0.95) 0%, rgba(45, 122, 122, 0.95) 100%);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px rgba(61, 155, 155, 0.4);
 }
 
 .header-content {
@@ -351,7 +351,7 @@
 }
 
 .social-link-header:hover {
-  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
   color: white;
 }
 
@@ -447,12 +447,12 @@
 }
 
 .dropdown-item:hover {
-  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
   color: white;
 }
 
 .dropdown-item:hover::before {
-  background: #2a9d8f;
+  background: #d4c4b0;
 }
 
 /* Responsive для dropdown и contact label */
@@ -557,11 +557,11 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #0d4a3a;
+  background: #3d9b9b;
   color: white;
   padding: 15px 25px;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px rgba(61, 155, 155, 0.4);
   animation: slideInNotification 0.3s ease;
   z-index: 10000;
 }
