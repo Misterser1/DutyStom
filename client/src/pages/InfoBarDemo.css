@@ -1,0 +1,400 @@
+/* InfoBarDemo Styles */
+
+.info-bar-demo-page {
+  padding: 30px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.info-bar-demo-page h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.variant-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.variant-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.variant-section.selected {
+  border-color: var(--color-accent);
+  background: rgba(230, 57, 70, 0.1);
+}
+
+.variant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.variant-info h2 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.variant-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.selected-badge {
+  background: var(--color-accent);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.info-bar-preview {
+  background: var(--color-card-bg);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* ==================== Вариант 1: Минималистичные вкладки ==================== */
+.info-bar-v1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-item-v1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.info-item-v1:hover {
+  transform: translateY(-2px);
+}
+
+.arrow-v1 {
+  color: #e63946;
+  font-size: 0.75rem;
+}
+
+.label-v1 {
+  color: #e63946;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.value-v1 {
+  color: #0d4a3a;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ==================== Вариант 2: Карточки с иконками ==================== */
+.info-bar-v2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.info-card-v2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid #0d4a3a;
+}
+
+.info-card-v2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.info-card-v2.promo { border-left-color: #e63946; }
+.info-card-v2.discount { border-left-color: #f4a261; }
+.info-card-v2.brands { border-left-color: #2a9d8f; }
+.info-card-v2.customers { border-left-color: #264653; }
+.info-card-v2.education { border-left-color: #9b59b6; }
+
+.icon-v2 {
+  font-size: 1.5rem;
+}
+
+.content-v2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-v2 {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.value-v2 {
+  color: #0d4a3a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* ==================== Вариант 3: Градиентная полоса ==================== */
+.info-bar-v3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  padding: 15px 25px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.info-segment-v3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label-v3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.value-v3 {
+  color: #ffd700;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.divider-v3 {
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+/* ==================== Вариант 4: Кнопки-теги ==================== */
+.info-bar-v4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.info-tag-v4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.info-tag-v4:hover {
+  transform: scale(1.05);
+}
+
+.info-tag-v4.promo {
+  border-color: #e63946;
+  color: #e63946;
+}
+.info-tag-v4.promo:hover {
+  background: #e63946;
+  color: white;
+}
+
+.info-tag-v4.discount {
+  border-color: #f4a261;
+  color: #f4a261;
+}
+.info-tag-v4.discount:hover {
+  background: #f4a261;
+  color: white;
+}
+
+.info-tag-v4.brands {
+  border-color: #2a9d8f;
+  color: #2a9d8f;
+}
+.info-tag-v4.brands:hover {
+  background: #2a9d8f;
+  color: white;
+}
+
+.info-tag-v4.customers {
+  border-color: #264653;
+  color: #264653;
+}
+.info-tag-v4.customers:hover {
+  background: #264653;
+  color: white;
+}
+
+.info-tag-v4.education {
+  border-color: #9b59b6;
+  color: #9b59b6;
+}
+.info-tag-v4.education:hover {
+  background: #9b59b6;
+  color: white;
+}
+
+.label-v4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.value-v4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ==================== Вариант 5: Компактные бейджи ==================== */
+.info-bar-v5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.info-badge-v5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.info-badge-v5:hover {
+  opacity: 0.8;
+}
+
+.dot-v5 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e63946;
+}
+
+.info-badge-v5.promo .dot-v5 { background: #e63946; }
+.info-badge-v5.discount .dot-v5 { background: #f4a261; }
+.info-badge-v5.brands .dot-v5 { background: #2a9d8f; }
+.info-badge-v5.customers .dot-v5 { background: #264653; }
+.info-badge-v5.education .dot-v5 { background: #9b59b6; }
+
+.label-v5 {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.value-v5 {
+  color: #0d4a3a;
+  font-size: 1rem;
+  font-weight: 700;
+  background: rgba(13, 74, 58, 0.1);
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* ==================== Demo Actions ==================== */
+.demo-actions {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.apply-btn {
+  background: var(--color-accent);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: var(--color-accent-dark);
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  background: transparent;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  border-color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-bar-v1,
+  .info-bar-v2,
+  .info-bar-v4 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .info-bar-v3 {
+    flex-direction: column;
+  }
+
+  .divider-v3 {
+    display: none;
+  }
+
+  .info-bar-v5 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

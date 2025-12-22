@@ -1,0 +1,576 @@
+/* ProductCardStyleDemo - Компактные карточки */
+
+.card-style-demo-page {
+  padding: 30px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.card-style-demo-page h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.variant-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.variant-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.variant-section.selected {
+  border-color: var(--color-accent);
+  background: rgba(230, 57, 70, 0.1);
+}
+
+.variant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.variant-info h2 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.variant-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.selected-badge {
+  background: var(--color-accent);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-preview {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* ==================== Общие элементы ==================== */
+.img-placeholder-sm {
+  width: 50px;
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.img-placeholder-sm svg {
+  width: 30px;
+  height: 30px;
+}
+
+.img-placeholder-xs {
+  width: 40px;
+  height: 32px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.img-placeholder-xs svg {
+  width: 24px;
+  height: 24px;
+}
+
+.qty-mini {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.qty-mini button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.qty-mini button:hover {
+  background: #e0e0e0;
+}
+
+.qty-mini span {
+  width: 28px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cart-btn-mini {
+  background: #0d4a3a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.cart-btn-mini:hover {
+  background: #156b54;
+}
+
+/* ==================== Вариант 1: Ультра-компакт ==================== */
+.compact-v1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.compact-v1-brand {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0d4a3a;
+  min-width: 60px;
+}
+
+.compact-v1-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.compact-v1-name .art {
+  font-size: 0.75rem;
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+.compact-v1-name .title {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.compact-v1-price .current {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e63946;
+  white-space: nowrap;
+}
+
+.compact-v1-stock {
+  font-size: 0.8rem;
+  color: #28a745;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compact-v1-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-link-mini {
+  font-size: 0.8rem;
+  color: #2a9d8f;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.detail-link-mini:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Вариант 2: С градиентом ==================== */
+.compact-v2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 10px 15px 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.compact-v2 .gradient-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #0d4a3a 0%, #2a9d8f 50%, #e63946 100%);
+}
+
+.compact-v2-info {
+  flex: 1;
+}
+
+.compact-v2-info .info-top {
+  display: flex;
+  gap: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+.compact-v2-info .brand {
+  font-weight: 700;
+  color: #0d4a3a;
+}
+
+.compact-v2-info .code {
+  color: #888;
+}
+
+.compact-v2-info .info-name {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.compact-v2-info .stock-badge {
+  font-size: 0.75rem;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.compact-v2-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e63946;
+  white-space: nowrap;
+}
+
+.compact-v2-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ==================== Вариант 3: Разделители ==================== */
+.compact-v3 {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+.v3-divider {
+  width: 1px;
+  height: 30px;
+  background: #e0e0e0;
+  margin: 0 12px;
+}
+
+.compact-v3-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 70px;
+}
+
+.compact-v3-meta .brand {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0d4a3a;
+}
+
+.compact-v3-meta .code {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.compact-v3-name {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.compact-v3-stock {
+  font-size: 0.8rem;
+  color: #28a745;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compact-v3-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e63946;
+  white-space: nowrap;
+  min-width: 90px;
+  text-align: right;
+}
+
+.compact-v3-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ==================== Вариант 4: Инлайн ==================== */
+.compact-v4 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-left: 3px solid #0d4a3a;
+}
+
+.compact-v4-brand {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0d4a3a;
+}
+
+.compact-v4-article {
+  font-size: 0.75rem;
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+.compact-v4-name {
+  flex: 1;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compact-v4-stock {
+  font-size: 0.75rem;
+  color: #28a745;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compact-v4-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e63946;
+  white-space: nowrap;
+}
+
+.compact-v4-qty {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.compact-v4-qty button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.compact-v4-qty span {
+  width: 24px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.compact-v4-cart {
+  background: #0d4a3a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.compact-v4-cart:hover {
+  background: #156b54;
+}
+
+.compact-v4-detail {
+  font-size: 0.75rem;
+  color: #2a9d8f;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.compact-v4-detail:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Вариант 5: Двухрядная ==================== */
+.compact-v5 {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.compact-v5-row1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.compact-v5-brand {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0d4a3a;
+  min-width: 60px;
+}
+
+.compact-v5-article {
+  font-size: 0.8rem;
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+.compact-v5-name {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.compact-v5-stock {
+  font-size: 0.8rem;
+  color: #28a745;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compact-v5-row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background: #fafafa;
+}
+
+.compact-v5-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.compact-v5-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==================== Demo Actions ==================== */
+.demo-actions {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.apply-btn {
+  background: var(--color-accent);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: var(--color-accent-dark);
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  background: transparent;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  border-color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .compact-v1,
+  .compact-v2,
+  .compact-v3,
+  .compact-v4 {
+    flex-wrap: wrap;
+  }
+
+  .v3-divider {
+    display: none;
+  }
+
+  .compact-v4-name {
+    width: 100%;
+    order: 10;
+    margin-top: 8px;
+  }
+}

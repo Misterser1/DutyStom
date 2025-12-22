@@ -1,0 +1,520 @@
+/* Design Style Demo - 5 вариантов улучшения дизайна */
+
+.design-demo {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #f0f0f0;
+}
+
+.design-demo h1 {
+  color: #0d4a3a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.demo-description {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.demo-section {
+  margin-bottom: 60px;
+}
+
+.demo-section h2 {
+  color: #0d4a3a;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.demo-section > p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* ===== Вариант 1: Neumorphism ===== */
+.neumorphism-container {
+  background: #e0e0e0;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.neumorphism-card {
+  background: #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    8px 8px 16px #bebebe,
+    -8px -8px 16px #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.neumorphism-card:hover {
+  box-shadow:
+    12px 12px 24px #bebebe,
+    -12px -12px 24px #ffffff;
+}
+
+.neumorphism-card .product-image {
+  width: 80px;
+  height: 80px;
+  background: #e0e0e0;
+  border-radius: 15px;
+  box-shadow:
+    inset 4px 4px 8px #bebebe,
+    inset -4px -4px 8px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.neumorphism-card .product-info {
+  flex: 1;
+}
+
+.neumorphism-card .product-brand {
+  color: #0d4a3a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.neumorphism-card .product-name {
+  color: #333;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.neumorphism-card .product-price {
+  color: #e63946;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.neumorphism-btn {
+  background: #e0e0e0;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow:
+    4px 4px 8px #bebebe,
+    -4px -4px 8px #ffffff;
+  color: #0d4a3a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.neumorphism-btn:hover {
+  box-shadow:
+    inset 4px 4px 8px #bebebe,
+    inset -4px -4px 8px #ffffff;
+}
+
+/* ===== Вариант 2: Glassmorphism ===== */
+.glass-container {
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 50%, #2a9d8f 100%);
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card .product-image {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.glass-card .product-brand {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.glass-card .product-name {
+  color: white;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.glass-card .product-price {
+  color: #ffd700;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.glass-btn {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+/* ===== Вариант 3: Deep Shadows + Rounded ===== */
+.rounded-container {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.rounded-card {
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 20px 60px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.rounded-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.12),
+    0 30px 80px rgba(0, 0, 0, 0.08);
+}
+
+.rounded-card .product-image {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.rounded-card .product-brand {
+  color: #0d4a3a;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(13, 74, 58, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.rounded-card .product-name {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.rounded-card .product-price {
+  color: #e63946;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.rounded-btn {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(13, 74, 58, 0.3);
+}
+
+.rounded-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(13, 74, 58, 0.4);
+}
+
+/* ===== Вариант 4: Gradient Cards ===== */
+.gradient-container {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 50%, #2a9d8f 100%);
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.gradient-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.gradient-card:hover::before {
+  left: 100%;
+}
+
+.gradient-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(13, 74, 58, 0.4);
+}
+
+.gradient-card .product-image {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.gradient-card .product-brand {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gradient-card .product-name {
+  color: white;
+  font-size: 1.1rem;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.gradient-card .product-price {
+  color: #ffd700;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.gradient-btn {
+  background: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: #0d4a3a;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  background: #ffd700;
+  transform: scale(1.05);
+}
+
+/* ===== Вариант 5: Elevated Cards ===== */
+.elevated-container {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.elevated-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.elevated-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.12),
+    0 10px 10px rgba(0, 0, 0, 0.08);
+  border-color: transparent;
+}
+
+.elevated-card .product-image {
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.elevated-card:hover .product-image {
+  background: #0d4a3a;
+  color: white;
+}
+
+.elevated-card .product-brand {
+  color: #0d4a3a;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.elevated-card .product-code {
+  color: #888;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.elevated-card .product-name {
+  color: #333;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.elevated-card .product-price {
+  color: #e63946;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.elevated-card .stock-badge {
+  color: #4caf50;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.elevated-btn {
+  background: #0d4a3a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.elevated-btn:hover {
+  background: #156b54;
+  box-shadow: 0 4px 12px rgba(13, 74, 58, 0.3);
+}
+
+/* Общие стили для продуктов */
+.product-info {
+  flex: 1;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.qty-btn:hover {
+  background: #e0e0e0;
+}
+
+.qty-input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .neumorphism-card,
+  .glass-card,
+  .rounded-card,
+  .gradient-card,
+  .elevated-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-actions {
+    align-items: center;
+    width: 100%;
+  }
+}

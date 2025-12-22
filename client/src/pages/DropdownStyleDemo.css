@@ -1,0 +1,664 @@
+/* DropdownStyleDemo Styles */
+
+.dropdown-style-demo-page {
+  padding: 30px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.dropdown-style-demo-page h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.variant-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.variant-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.variant-section.selected {
+  border-color: var(--color-accent);
+  background: rgba(230, 57, 70, 0.1);
+}
+
+.variant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.variant-info h2 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.variant-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.selected-badge {
+  background: var(--color-accent);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.dropdown-preview {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 280px;
+}
+
+.preview-row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.preview-row.dark-bg {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 8px;
+  padding: 30px;
+  margin: -30px;
+}
+
+/* ==================== Вариант 1: Мягкие тени с иконками ==================== */
+.dropdown-demo-v1 {
+  position: relative;
+}
+
+.trigger-v1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.trigger-v1:hover {
+  border-color: #0d4a3a;
+  box-shadow: 0 2px 8px rgba(13, 74, 58, 0.15);
+}
+
+.trigger-v1.active {
+  border-color: #0d4a3a;
+  box-shadow: 0 4px 12px rgba(13, 74, 58, 0.2);
+}
+
+.trigger-v1.education {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  color: white;
+  border: none;
+}
+
+.trigger-v1.education:hover {
+  box-shadow: 0 4px 15px rgba(13, 74, 58, 0.4);
+}
+
+.trigger-v1 .edu-icon {
+  font-size: 1.1rem;
+}
+
+.trigger-v1 svg {
+  transition: transform 0.2s;
+}
+
+.trigger-v1.active svg {
+  transform: rotate(180deg);
+}
+
+.menu-v1 {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 100;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-item-v1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.menu-item-v1:hover {
+  background: linear-gradient(90deg, rgba(13, 74, 58, 0.08) 0%, rgba(13, 74, 58, 0.02) 100%);
+  color: #0d4a3a;
+}
+
+.menu-item-v1 .icon-v1 {
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+}
+
+/* ==================== Вариант 2: Градиентный акцент ==================== */
+.dropdown-demo-v2 {
+  position: relative;
+}
+
+.trigger-v2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.trigger-v2:hover,
+.trigger-v2.active {
+  border-color: #0d4a3a;
+}
+
+.trigger-v2.education {
+  background: #0d4a3a;
+  color: white;
+  border-color: #0d4a3a;
+}
+
+.trigger-v2 .edu-icon {
+  font-size: 1.1rem;
+}
+
+.trigger-v2 svg {
+  transition: transform 0.2s;
+}
+
+.trigger-v2.active svg {
+  transform: rotate(180deg);
+}
+
+.menu-v2 {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 220px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  z-index: 100;
+  animation: slideDown 0.2s ease;
+}
+
+.menu-item-v2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  color: #333;
+  position: relative;
+}
+
+.menu-item-v2 .accent-bar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 60%;
+  background: linear-gradient(180deg, #0d4a3a 0%, #2a9d8f 50%, #e63946 100%);
+  border-radius: 0 3px 3px 0;
+  transition: width 0.2s ease;
+}
+
+.menu-item-v2:hover {
+  background: #f8f9fa;
+  padding-left: 24px;
+}
+
+.menu-item-v2:hover .accent-bar {
+  width: 4px;
+}
+
+.menu-item-v2 .item-icon {
+  font-size: 1.1rem;
+}
+
+.menu-item-v2:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ==================== Вариант 3: Карточки с разделителями ==================== */
+.dropdown-demo-v3 {
+  position: relative;
+}
+
+.trigger-v3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.trigger-v3:hover,
+.trigger-v3.active {
+  background: #f5f5f5;
+}
+
+.trigger-v3.education {
+  background: #0d4a3a;
+  color: white;
+  border-color: #0d4a3a;
+}
+
+.trigger-v3 .edu-icon {
+  font-size: 1.1rem;
+}
+
+.trigger-v3 svg {
+  transition: transform 0.2s;
+}
+
+.trigger-v3.active svg {
+  transform: rotate(180deg);
+}
+
+.menu-v3 {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  min-width: 200px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  animation: slideDown 0.15s ease;
+}
+
+.menu-item-v3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.menu-item-v3:hover {
+  background: #f8f9fa;
+  color: #0d4a3a;
+}
+
+.menu-item-v3:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-item-v3 .check-icon {
+  opacity: 0;
+  color: #0d4a3a;
+  transition: opacity 0.15s;
+}
+
+.menu-item-v3:hover .check-icon {
+  opacity: 0.5;
+}
+
+.menu-item-v3 .arrow-icon {
+  color: #999;
+  transition: all 0.15s;
+}
+
+.menu-item-v3:hover .arrow-icon {
+  color: #0d4a3a;
+  transform: translateX(3px);
+}
+
+/* ==================== Вариант 4: Округлые пункты ==================== */
+.dropdown-demo-v4 {
+  position: relative;
+}
+
+.trigger-v4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid #0d4a3a;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0d4a3a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.trigger-v4:hover {
+  background: #0d4a3a;
+  color: white;
+}
+
+.trigger-v4.active {
+  background: #0d4a3a;
+  color: white;
+}
+
+.trigger-v4.education {
+  background: linear-gradient(135deg, #0d4a3a 0%, #2a9d8f 100%);
+  color: white;
+  border: none;
+}
+
+.trigger-v4.education:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(13, 74, 58, 0.3);
+}
+
+.trigger-v4 .edu-icon {
+  font-size: 1.1rem;
+}
+
+.trigger-v4 svg {
+  transition: transform 0.2s;
+}
+
+.trigger-v4.active svg {
+  transform: rotate(180deg);
+}
+
+.menu-v4 {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  z-index: 100;
+  animation: scaleIn 0.2s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.menu-item-v4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin: 4px 0;
+  border-radius: 20px;
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+  width: 100%;
+  font-family: inherit;
+}
+
+.menu-item-v4:hover {
+  background: linear-gradient(135deg, #0d4a3a 0%, #2a9d8f 100%);
+  color: white;
+  transform: scale(1.02);
+}
+
+.menu-item-v4 .item-icon {
+  font-size: 1rem;
+}
+
+/* ==================== Вариант 5: Glass-эффект ==================== */
+.dropdown-demo-v5 {
+  position: relative;
+}
+
+.trigger-v5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.trigger-v5:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(42, 157, 143, 0.5);
+  box-shadow: 0 0 20px rgba(42, 157, 143, 0.2);
+}
+
+.trigger-v5.active {
+  background: rgba(42, 157, 143, 0.2);
+  border-color: rgba(42, 157, 143, 0.6);
+  box-shadow: 0 0 25px rgba(42, 157, 143, 0.3);
+}
+
+.trigger-v5.education {
+  background: linear-gradient(135deg, rgba(13, 74, 58, 0.8) 0%, rgba(42, 157, 143, 0.8) 100%);
+  border-color: rgba(42, 157, 143, 0.5);
+}
+
+.trigger-v5 .edu-icon {
+  font-size: 1.1rem;
+}
+
+.trigger-v5 svg {
+  transition: transform 0.2s;
+}
+
+.trigger-v5.active svg {
+  transform: rotate(180deg);
+}
+
+.menu-v5 {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 220px;
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(42, 157, 143, 0.3);
+  border-radius: 12px;
+  padding: 8px;
+  z-index: 100;
+  animation: glowIn 0.3s ease;
+}
+
+@keyframes glowIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    box-shadow: 0 0 0 rgba(42, 157, 143, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(42, 157, 143, 0.1);
+  }
+}
+
+.menu-item-v5 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-item-v5:hover {
+  background: rgba(42, 157, 143, 0.2);
+  color: white;
+}
+
+.menu-item-v5:hover .glow-dot {
+  background: #2a9d8f;
+  box-shadow: 0 0 10px #2a9d8f, 0 0 20px rgba(42, 157, 143, 0.5);
+}
+
+.menu-item-v5 .glow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.menu-item-v5 .item-icon {
+  font-size: 1.1rem;
+}
+
+/* ==================== Demo Actions ==================== */
+.demo-actions {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.apply-btn {
+  background: var(--color-accent);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: var(--color-accent-dark);
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  background: transparent;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  border-color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .preview-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-preview {
+    padding: 20px;
+  }
+
+  .preview-row.dark-bg {
+    margin: -20px;
+    padding: 20px;
+  }
+}

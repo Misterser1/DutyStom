@@ -1,0 +1,234 @@
+/* Disclaimer Demo - Юридический текст под категориями */
+
+.disclaimer-demo {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.disclaimer-demo h1 {
+  color: #0d4a3a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.demo-description {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.demo-section {
+  margin-bottom: 50px;
+}
+
+.demo-section h2 {
+  color: #0d4a3a;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.demo-section > p {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Имитация категорий */
+.mock-categories-bar {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-radius: 12px 12px 0 0;
+}
+
+.mock-cat {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 50%, #2a9d8f 100%);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ===== Вариант 1: Компактный серый ===== */
+.disclaimer-v1 {
+  background: #f5f5f5;
+  padding: 12px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.disclaimer-v1 .disclaimer-title {
+  color: #0d4a3a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.disclaimer-v1 .disclaimer-text {
+  color: #666;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.disclaimer-v1 .disclaimer-contact {
+  color: #0d4a3a;
+  font-weight: 600;
+}
+
+/* ===== Вариант 2: Градиентная полоса ===== */
+.disclaimer-v2 {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  padding: 15px 20px;
+}
+
+.disclaimer-v2 .disclaimer-title {
+  color: #ffd700;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.disclaimer-v2 .disclaimer-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.disclaimer-v2 .disclaimer-contact {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* ===== Вариант 3: Светлый с рамкой ===== */
+.disclaimer-v3 {
+  background: white;
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 0 0 12px 12px;
+  margin-top: -1px;
+}
+
+.disclaimer-v3 .disclaimer-title {
+  color: #0d4a3a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.disclaimer-v3 .disclaimer-icon {
+  color: #2a9d8f;
+}
+
+.disclaimer-v3 .disclaimer-text {
+  color: #555;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.disclaimer-v3 .disclaimer-contact {
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* ===== Вариант 4: Минималистичный ===== */
+.disclaimer-v4 {
+  background: #fafafa;
+  padding: 10px 20px;
+  border-left: 4px solid #0d4a3a;
+}
+
+.disclaimer-v4 .disclaimer-text {
+  color: #777;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.disclaimer-v4 .disclaimer-contact {
+  color: #0d4a3a;
+  font-weight: 600;
+}
+
+/* ===== Вариант 5: Сворачиваемый ===== */
+.disclaimer-v5 {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.disclaimer-v5-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.disclaimer-v5-header:hover {
+  background: #f0f0f0;
+}
+
+.disclaimer-v5-title {
+  color: #0d4a3a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.disclaimer-v5-toggle {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.disclaimer-v5-content {
+  padding: 0 20px 15px;
+}
+
+.disclaimer-v5 .disclaimer-text {
+  color: #666;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.disclaimer-v5 .disclaimer-contact {
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* Имитация карточек товаров */
+.mock-products {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 0 0 12px 12px;
+}
+
+.mock-product-card {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 50%, #2a9d8f 100%);
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.mock-product-name {
+  font-weight: 600;
+}
+
+.mock-product-price {
+  color: #ffd700;
+  font-weight: 700;
+  font-size: 1.1rem;
+}

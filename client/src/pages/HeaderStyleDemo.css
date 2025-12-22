@@ -1,0 +1,524 @@
+/* Header Style Demo - 5 вариантов верхней части сайта */
+
+.header-style-demo {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+}
+
+.header-style-demo h1 {
+  color: #0d4a3a;
+  margin: 0;
+  padding: 30px 20px 10px;
+  text-align: center;
+}
+
+.demo-description {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.demo-section-header {
+  margin-bottom: 50px;
+}
+
+.demo-section-header h2 {
+  color: #0d4a3a;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 20px;
+  background: white;
+  text-align: center;
+}
+
+.demo-section-header > p {
+  color: #888;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px 15px;
+  background: white;
+}
+
+/* ===== Общие элементы для всех вариантов ===== */
+.mock-header {
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mock-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mock-search {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 25px;
+  gap: 10px;
+}
+
+.mock-search-text {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.mock-contacts {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mock-contact-badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mock-social-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.mock-cart {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.mock-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.mock-category {
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 140px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mock-category-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.mock-category-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.mock-infobar {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.mock-education {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ===== Вариант 1: Glassmorphism ===== */
+.v1-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  padding-bottom: 20px;
+}
+
+.v1-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.v1-logo {
+  color: white;
+}
+
+.v1-search {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.v1-search-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.v1-contact {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.v1-social {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.v1-cart {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.v1-categories {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.v1-category {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.v1-category:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.v1-infobar {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* ===== Вариант 2: Минималистичный белый ===== */
+.v2-container {
+  background: #fafafa;
+}
+
+.v2-header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.v2-logo {
+  color: #0d4a3a;
+}
+
+.v2-search {
+  background: #f5f5f5;
+  border: 2px solid #e0e0e0;
+  color: #333;
+}
+
+.v2-search:focus-within {
+  border-color: #0d4a3a;
+}
+
+.v2-search-text {
+  color: #888;
+}
+
+.v2-contact {
+  background: transparent;
+  border: 2px solid #0d4a3a;
+  color: #0d4a3a;
+}
+
+.v2-social {
+  background: #0d4a3a;
+  color: white;
+}
+
+.v2-cart {
+  background: #f5f5f5;
+  color: #0d4a3a;
+  border: 2px solid #e0e0e0;
+}
+
+.v2-categories {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.v2-category {
+  background: white;
+  border: 2px solid #e0e0e0;
+  color: #333;
+}
+
+.v2-category:hover {
+  border-color: #0d4a3a;
+  color: #0d4a3a;
+  box-shadow: 0 5px 20px rgba(13, 74, 58, 0.1);
+}
+
+.v2-category-icon {
+  color: #0d4a3a;
+}
+
+.v2-infobar {
+  background: #0d4a3a;
+  color: white;
+}
+
+/* ===== Вариант 3: Объединённый градиент ===== */
+.v3-container {
+  background: linear-gradient(180deg, #0d4a3a 0%, #156b54 40%, #1a7a5e 60%, #e8e8e8 100%);
+}
+
+.v3-header {
+  background: transparent;
+}
+
+.v3-logo {
+  color: white;
+}
+
+.v3-search {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.v3-search-text {
+  color: #666;
+}
+
+.v3-contact {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.v3-social {
+  background: white;
+  color: #0d4a3a;
+}
+
+.v3-cart {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.v3-categories {
+  background: transparent;
+  padding-top: 10px;
+}
+
+.v3-category {
+  background: white;
+  color: #0d4a3a;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.v3-category:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.v3-infobar {
+  background: transparent;
+  color: white;
+  padding-top: 5px;
+}
+
+/* ===== Вариант 4: Тёмная тема ===== */
+.v4-container {
+  background: #1a1a2e;
+}
+
+.v4-header {
+  background: #16213e;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.v4-logo {
+  color: #4ade80;
+}
+
+.v4-search {
+  background: #1a1a2e;
+  border: 1px solid #3a3a5a;
+  color: white;
+}
+
+.v4-search-text {
+  color: #888;
+}
+
+.v4-contact {
+  background: transparent;
+  border: 1px solid #4ade80;
+  color: #4ade80;
+}
+
+.v4-social {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  color: #1a1a2e;
+}
+
+.v4-cart {
+  background: #2a2a4a;
+  color: #4ade80;
+}
+
+.v4-categories {
+  background: #1a1a2e;
+}
+
+.v4-category {
+  background: linear-gradient(135deg, #2a2a4a 0%, #3a3a5a 100%);
+  color: white;
+  border: 1px solid #4a4a6a;
+}
+
+.v4-category:hover {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  color: #1a1a2e;
+  border-color: #4ade80;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+}
+
+.v4-infobar {
+  background: #16213e;
+  border-top: 1px solid #2a2a4a;
+  color: #ffd700;
+}
+
+/* ===== Вариант 5: Современный с яркими акцентами ===== */
+.v5-container {
+  background: #f8f9fa;
+}
+
+.v5-header {
+  background: white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.v5-logo {
+  color: #0d4a3a;
+}
+
+.v5-search {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  color: white;
+}
+
+.v5-search-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.v5-contact {
+  background: #f0fdf4;
+  border: none;
+  color: #0d4a3a;
+}
+
+.v5-social {
+  background: linear-gradient(135deg, #e63946 0%, #c62936 100%);
+  color: white;
+}
+
+.v5-cart {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  color: white;
+}
+
+.v5-categories {
+  background: white;
+  padding: 25px 20px;
+}
+
+.v5-category {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 50%, #2a9d8f 100%);
+  color: white;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.v5-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.v5-category:hover::before {
+  left: 100%;
+}
+
+.v5-category:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 15px 40px rgba(13, 74, 58, 0.4);
+}
+
+.v5-infobar {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 100%);
+  color: white;
+}
+
+.v5-education-icon {
+  color: #ffd700;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .mock-header {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+  }
+
+  .mock-search {
+    order: 10;
+    max-width: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mock-contacts {
+    display: none;
+  }
+
+  .mock-categories {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .mock-category {
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+
+  .mock-category-icon {
+    font-size: 1.5rem;
+  }
+
+  .mock-category-name {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,295 @@
+.contact-header-demo {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.contact-header-demo h1 {
+  color: #0d4a3a;
+  margin-bottom: 10px;
+}
+
+.demo-description {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.demo-section {
+  margin-bottom: 50px;
+}
+
+.demo-section h2 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.demo-section > p {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Header mock */
+.header-mock {
+  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
+  border-radius: 12px;
+  padding: 15px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-mock-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.logo-placeholder {
+  color: #4ade80;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.search-placeholder {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 400px;
+}
+
+.social-placeholder {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.cart-placeholder {
+  font-size: 1.5rem;
+}
+
+/* Вариант 1: Inline текст */
+.contacts-v1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item-v1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.contact-item-v1:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-item-v1 .contact-text {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.copy-btn-mini {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  transition: color 0.2s;
+}
+
+.copy-btn-mini:hover {
+  color: white;
+}
+
+.contact-divider-v1 {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Вариант 2: С иконками слева */
+.contacts-v2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item-v2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.contact-item-v2:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-icon-v2 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-text-v2 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.copy-btn-v2 {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  transition: color 0.2s;
+}
+
+.copy-btn-v2:hover {
+  color: #4ade80;
+}
+
+/* Вариант 3: Вертикальный компактный */
+.contacts-v3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-item-v3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.contact-item-v3:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-text-v3 {
+  color: white;
+  font-size: 0.85rem;
+}
+
+.copy-icon-v3 {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.contact-item-v3:hover .copy-icon-v3 {
+  opacity: 1;
+}
+
+/* Вариант 4: Badges */
+.contacts-v4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-badge-v4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.contact-badge-v4:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.copy-icon-v4 {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.contact-badge-v4:hover .copy-icon-v4 {
+  opacity: 1;
+}
+
+/* Вариант 5: Минималистичный */
+.contacts-v5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item-v5 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.contact-item-v5:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.copy-hint-v5 {
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.contact-item-v5:hover .copy-hint-v5 {
+  opacity: 1;
+}
+
+.dot-v5 {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Уведомление о копировании */
+.copy-notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0d4a3a;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

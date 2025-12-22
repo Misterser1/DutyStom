@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
 import './Header.css'
@@ -20,12 +20,34 @@ const socialNetworks = [
   { id: 'instagram', name: 'Instagram', icon: '📷', url: 'https://instagram.com/dutystom' }
 ]
 
+const phone = '+7 930-950-88-87'
+const email = 'info@dutystom.ru'
+
 function Header() {
   const { itemCount } = useCart()
   const [searchQuery, setSearchQuery] = useState('')
   const [searchType, setSearchType] = useState('Везде')
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [socialDropdownOpen, setSocialDropdownOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [copiedText, setCopiedText] = useState('')
+
+  // Отслеживание скролла для эффекта прозрачности
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Копирование в буфер обмена
+  const copyToClipboard = (text, e) => {
+    e.preventDefault()
+    navigator.clipboard.writeText(text)
+    setCopiedText(text)
+    setTimeout(() => setCopiedText(''), 2000)
+  }
 
   const handleSearch = (e) => {
     e.preventDefault()
@@ -41,7 +63,7 @@ function Header() {
   }
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="header-content">
         {/* Логотип слева */}
         <Link to="/" className="logo-new">
@@ -87,11 +109,28 @@ function Header() {
           </button>
         </form>
 
-        {/* Иконки справа с текстом "Связаться с нами" */}
+        {/* Контакты и действия справа */}
         <div className="header-actions">
-          <div className="contact-label-section">
-            <span className="contact-us-text">Связаться с нами</span>
-            <div className="contact-divider"></div>
+          {/* Контакты в виде бейджей (десктоп) */}
+          <div className="contact-badges-desktop">
+            <a href={`tel:${phone.replace(/\s/g, '')}`} className="contact-badge" onClick={(e) => copyToClipboard(phone, e)}>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>{phone}</span>
+              <svg className="copy-icon" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+              </svg>
+            </a>
+            <a href={`mailto:${email}`} className="contact-badge" onClick={(e) => copyToClipboard(email, e)}>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>{email}</span>
+              <svg className="copy-icon" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+              </svg>
+            </a>
           </div>
 
           {/* Мы в соцсетях dropdown */}
@@ -120,13 +159,14 @@ function Header() {
             )}
           </div>
 
-          <a href="tel:+79309508887" className="action-icon phone-action" title="Позвонить">
+          {/* Иконки контактов (только мобильная версия) */}
+          <a href={`tel:${phone.replace(/\s/g, '')}`} className="action-icon phone-action mobile-only" title="Позвонить">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
             </svg>
           </a>
 
-          <a href="mailto:info@dutystom.ru" className="action-icon email-action" title="Написать">
+          <a href={`mailto:${email}`} className="action-icon email-action mobile-only" title="Написать">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
@@ -140,6 +180,13 @@ function Header() {
           </Link>
         </div>
       </div>
+
+      {/* Уведомление о копировании */}
+      {copiedText && (
+        <div className="copy-notification">
+          Скопировано: {copiedText}
+        </div>
+      )}
     </header>
   )
 }

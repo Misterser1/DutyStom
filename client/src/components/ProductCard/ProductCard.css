@@ -1,272 +1,237 @@
-/* ProductCard - Вариант 2: Inter с увеличенными шрифтами */
+/* ProductCard - Вариант 4: Градиентные карточки */
 
-.product-card-row {
-  display: grid;
-  grid-template-columns: 100px 120px 120px 1fr 220px 120px 200px;
-  gap: 20px;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 18px 20px;
-  transition: box-shadow 0.2s, border-color 0.2s;
-  min-height: 100px;
+.product-card-compact {
+  background: linear-gradient(135deg, #0d4a3a 0%, #156b54 50%, #2a9d8f 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(13, 74, 58, 0.25);
 }
 
-.product-card-row:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-color: #0d4a3a;
+/* Эффект блика при наведении */
+.product-card-compact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transition: left 0.6s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* Общие стили колонок */
-.card-col {
+.product-card-compact:hover::before {
+  left: 100%;
+}
+
+.product-card-compact:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow:
+    0 15px 40px rgba(13, 74, 58, 0.4),
+    0 0 30px rgba(42, 157, 143, 0.3);
+}
+
+/* Верхний ряд */
+.card-row-top {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 2;
 }
 
-/* Колонка 1: Код и артикул */
-.card-col-meta {
-  gap: 5px;
-}
-
-.card-code {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #444;
-}
-
-.card-article {
-  font-size: 0.85rem;
-  color: #777;
-}
-
-/* Колонка 2: Бренд */
-.card-col-brand {
-  text-align: center;
-  gap: 5px;
-}
-
-.brand-name {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0066cc;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.brand-country {
-  font-size: 0.85rem;
-  color: #777;
-}
-
-/* Колонка 3: Изображение */
-.card-col-image {
+.card-image-link {
+  flex-shrink: 0;
+  width: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 75px;
-  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
-.card-col-image img {
+.card-image-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-image-link img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  filter: brightness(1.1);
 }
 
 .card-image-placeholder {
   width: 60px;
-  height: 60px;
-  color: #ccc;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .card-image-placeholder svg {
-  width: 100%;
-  height: 100%;
+  width: 30px;
+  height: 30px;
 }
 
-/* Колонка 4: Название */
-.card-col-name {
-  min-width: 0;
-  gap: 5px;
+.card-brand {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 70px;
+}
+
+.card-article {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffd700;
+  min-width: 80px;
 }
 
 .card-name-link {
+  flex: 1;
   text-decoration: none;
-  color: inherit;
-}
-
-.card-name-link:hover .card-name {
-  color: #0066cc;
-}
-
-.card-article-inline {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
+  min-width: 0;
 }
 
 .card-name {
   font-size: 1rem;
   font-weight: 500;
-  color: #444;
-  line-height: 1.4;
-  margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  color: white;
+  display: block;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   transition: color 0.2s;
 }
 
-/* Колонка 5: Характеристики */
-.card-col-specs {
-  gap: 3px;
+.card-name-link:hover .card-name {
+  color: #ffd700;
 }
 
-.spec-row {
-  display: flex;
-  gap: 6px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.spec-key {
-  color: #666;
-  white-space: nowrap;
-  font-weight: 400;
-}
-
-.spec-value {
-  color: #222;
-  font-weight: 600;
-}
-
-/* Колонка 6: Цена */
-.card-col-price {
-  text-align: center;
-  align-items: center;
-  gap: 3px;
-}
-
-.price-label {
+.card-stock {
   font-size: 0.8rem;
-  font-weight: 500;
-  color: #999;
-  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 12px;
 }
 
-.card-old-price {
-  font-size: 0.95rem;
-  color: #aaa;
+.card-stock.in-stock {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.15);
+}
+
+.card-stock.out-stock {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.15);
+}
+
+/* Нижний ряд */
+.card-row-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+}
+
+.card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.card-price .old-price {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: line-through;
 }
 
-.card-current-price {
-  font-size: 1.45rem;
+.card-price .current-price {
+  font-size: 1.3rem;
   font-weight: 700;
-  color: #e63946;
-  white-space: nowrap;
+  color: #ffd700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Колонка 7: Действия */
-.card-col-actions {
-  gap: 8px;
-  align-items: flex-end;
-  border-left: 1px solid #eee;
-  padding-left: 15px;
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* Количество */
 .card-quantity {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .qty-btn {
-  width: 30px;
-  height: 30px;
-  background: #f8f8f8;
+  width: 32px;
+  height: 32px;
+  background: transparent;
   border: none;
   font-size: 1.1rem;
-  color: #666;
+  color: white;
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .qty-btn:hover:not(:disabled) {
-  background: #eee;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .qty-btn:disabled {
-  color: #ccc;
+  color: rgba(255, 255, 255, 0.3);
   cursor: not-allowed;
 }
 
-.qty-value {
-  width: 35px;
+.qty-input {
+  width: 45px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  background: white;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  line-height: 30px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  height: 32px;
+  padding: 0;
+  font-family: inherit;
+  color: white;
+  -moz-appearance: textfield;
 }
 
-/* Кнопка закладки */
-.bookmark-btn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background: none;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 6px 10px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  cursor: pointer;
-  transition: all 0.2s;
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.bookmark-btn:hover {
-  border-color: #e63946;
-  color: #e63946;
-}
-
-.bookmark-btn svg {
-  width: 14px;
-  height: 14px;
-}
-
-/* Наличие */
-.card-availability {
-  font-size: 0.85rem;
-  text-align: right;
-}
-
-.card-stock {
-  display: block;
-  font-weight: 500;
-}
-
-.card-stock.in-stock {
-  color: #28a745;
-}
-
-.card-stock.out-stock {
-  color: #dc3545;
-}
-
-.card-delivery {
-  color: #888;
+.qty-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Кнопка в корзину */
@@ -274,21 +239,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  width: 100%;
-  padding: 10px 14px;
-  background: linear-gradient(135deg, #0d4a3a 0%, #1a6b52 100%);
-  color: white;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  color: #0d4a3a;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 600;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .card-add-btn:hover {
-  background: linear-gradient(135deg, #e63946 0%, #c62936 100%);
+  background: #ffd700;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .card-add-btn svg {
@@ -297,137 +264,72 @@
   flex-shrink: 0;
 }
 
-/* Ссылки */
-.card-links {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  text-align: right;
-}
-
+/* Ссылка на детали */
 .detail-link {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #0066cc;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
 }
 
 .detail-link:hover {
-  text-decoration: underline;
-}
-
-.quick-buy-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #e63946;
-  cursor: pointer;
-  text-align: right;
-}
-
-.quick-buy-btn:hover {
+  color: #ffd700;
   text-decoration: underline;
 }
 
 /* ===== Адаптивность ===== */
 
-@media (max-width: 1200px) {
-  .product-card-row {
-    grid-template-columns: 90px 100px 100px 1fr 180px 100px 170px;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .card-col-image {
-    width: 90px;
-    height: 65px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .product-card-row {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 15px;
-  }
-
-  .card-col {
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .card-col-meta {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .card-col-brand {
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .card-col-image {
-    width: 100px;
-    height: 70px;
-  }
-
-  .card-col-name {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .card-col-specs {
+@media (max-width: 900px) {
+  .card-row-top {
     flex-wrap: wrap;
     gap: 10px;
   }
 
-  .spec-row {
-    background: #f5f5f5;
-    padding: 3px 8px;
-    border-radius: 4px;
+  .card-name-link {
+    width: 100%;
+    order: 10;
   }
 
-  .card-col-price {
-    flex-direction: row;
-    gap: 12px;
-    justify-content: flex-start;
-  }
-
-  .card-col-actions {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    border-left: none;
-    border-top: 1px solid #eee;
-    padding-left: 0;
-    padding-top: 12px;
-  }
-
-  .card-links {
-    flex-direction: row;
-    gap: 20px;
+  .card-name {
+    white-space: normal;
   }
 }
 
 @media (max-width: 600px) {
-  .product-card-row {
-    padding: 12px;
+  .product-card-compact {
+    border-radius: 12px;
   }
 
-  .card-col-actions {
-    gap: 10px;
+  .card-row-top {
+    padding: 12px 14px;
+  }
+
+  .card-row-bottom {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 14px;
+    align-items: flex-start;
+  }
+
+  .card-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .card-brand {
+    font-size: 0.8rem;
+    min-width: auto;
+  }
+
+  .card-article {
+    font-size: 0.75rem;
+    min-width: auto;
   }
 
   .card-add-btn {
-    flex: 1;
-    min-width: 120px;
-  }
-
-  .card-current-price {
-    font-size: 1.3rem;
+    padding: 8px 14px;
+    font-size: 0.85rem;
   }
 }
