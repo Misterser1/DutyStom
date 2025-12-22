@@ -28,6 +28,9 @@ import DesignStyleDemo from './pages/DesignStyleDemo'
 import HeaderStyleDemo from './pages/HeaderStyleDemo'
 import DisclaimerDemo from './pages/DisclaimerDemo'
 import ColorSchemeDemo from './pages/ColorSchemeDemo'
+import HeaderButtonsDemo from './pages/HeaderButtonsDemo'
+import CategoryIconsDemo from './pages/CategoryIconsDemo'
+import CategoryDropdownDemo from './pages/CategoryDropdownDemo'
 import AdminPage from './pages/Admin/AdminPage'
 import './styles/App.css'
 
@@ -74,6 +77,9 @@ function App() {
           <Route path="/header-demo" element={<HeaderStyleDemo />} />
           <Route path="/disclaimer-demo" element={<DisclaimerDemo />} />
           <Route path="/color-demo" element={<ColorSchemeDemo />} />
+          <Route path="/header-buttons-demo" element={<HeaderButtonsDemo />} />
+          <Route path="/category-icons-demo" element={<CategoryIconsDemo />} />
+          <Route path="/category-dropdown-demo" element={<CategoryDropdownDemo />} />
         </Routes>
       </main>
       <footer className="footer">

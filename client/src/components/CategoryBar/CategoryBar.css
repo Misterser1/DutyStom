@@ -1,11 +1,13 @@
 /* CategoryBar Styles - Вариант 3: Градиентные боксы */
 
 .category-bar {
-  background: var(--color-card-bg);
+  background: var(--color-beige-light);
   height: auto;
   min-height: 130px;
   box-shadow: var(--shadow-md);
   padding: 15px 0;
+  border-top: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
 }
 
 .category-bar-content {
@@ -89,9 +91,9 @@
 }
 
 .category-name {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 1;
   text-align: center;
@@ -123,7 +125,7 @@
   }
 
   .category-name {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -159,7 +161,7 @@
   }
 
   .category-name {
-    font-size: 0.88rem;
+    font-size: 0.98rem;
   }
 }
 
@@ -185,6 +187,6 @@
   }
 
   .category-name {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
   }
 }

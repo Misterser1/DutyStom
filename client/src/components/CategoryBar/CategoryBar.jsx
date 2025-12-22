@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { categoryIcons } from '../CategoryIcons/CategoryIcons'
 import './CategoryBar.css'
-
-// Изображения категорий
-const categoryImages = {
-  implants: '/images/categories/implants.png',
-  components: '/images/categories/components.png',
-  bone: '/images/categories/bone-materials.png',
-  membrane: '/images/categories/membranes.png',
-  supplies: '/images/categories/consumables.png'
-}
 
 // Моковые данные для работы без бэкенда
 const mockCategories = [
@@ -40,7 +32,7 @@ function CategoryBar() {
       <div className="category-bar-content">
         {categories.map(category => {
           const isActive = location.pathname === `/category/${category.slug}`
-          const imageSrc = categoryImages[category.slug]
+          const IconComponent = categoryIcons[category.slug]
           return (
             <Link
               key={category.id}
@@ -48,8 +40,8 @@ function CategoryBar() {
               className={`category-item ${isActive ? 'active' : ''}`}
             >
               <span className="category-icon">
-                {imageSrc ? (
-                  <img src={imageSrc} alt={category.name} className="category-image" />
+                {IconComponent ? (
+                  <IconComponent />
                 ) : (
                   <span className="icon-placeholder">📦</span>
                 )}

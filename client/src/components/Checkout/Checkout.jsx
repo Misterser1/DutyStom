@@ -10,11 +10,10 @@ function Checkout() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: '',
-    address: '',
-    comment: ''
+    email: ''
   })
   const [errors, setErrors] = useState({})
+  const [submitted, setSubmitted] = useState(false)
 
   const formatPrice = (price) => {
     return new Intl.NumberFormat('ru-RU').format(price) + ' ₽'
@@ -33,14 +32,9 @@ function Checkout() {
       newErrors.phone = 'Неверный формат телефона'
     }
 
-    if (!formData.email.trim()) {
-      newErrors.email = 'Введите email'
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    // Email необязательный, но если заполнен - проверяем формат
+    if (formData.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Неверный формат email'
-    }
-
-    if (!formData.address.trim()) {
-      newErrors.address = 'Введите адрес доставки'
     }
 
     setErrors(newErrors)
@@ -64,10 +58,17 @@ function Checkout() {
 
     try {
       const orderData = {
-        customer: formData,
-        items: items,
+        customerName: formData.name,
+        phone: formData.phone,
+        email: formData.email || '',
+        items: items.map(item => ({
+          name: item.name,
+          qty: item.quantity,
+          price: item.price
+        })),
         total: total,
-        created_at: new Date().toISOString()
+        status: 'new',
+        createdAt: new Date().toISOString()
       }
 
       const response = await fetch('/api/orders', {
@@ -78,35 +79,54 @@ function Checkout() {
 
       if (response.ok) {
         clearCart()
-        alert('Заказ успешно оформлен! Мы свяжемся с вами в ближайшее время.')
-        navigate('/')
+        setSubmitted(true)
       } else {
         throw new Error('Ошибка при оформлении заказа')
       }
     } catch (error) {
       console.error('Order error:', error)
-      // Для демо - просто очищаем корзину
+      // Для демо - просто показываем успех
       clearCart()
-      alert('Заказ успешно оформлен! Мы свяжемся с вами в ближайшее время.')
-      navigate('/')
+      setSubmitted(true)
     } finally {
       setIsSubmitting(false)
     }
   }
 
-  if (items.length === 0) {
+  if (items.length === 0 && !submitted) {
     navigate('/cart')
     return null
+  }
+
+  // Успешное оформление
+  if (submitted) {
+    return (
+      <div className="checkout-success">
+        <div className="success-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+          </svg>
+        </div>
+        <h2>Заявка отправлена!</h2>
+        <p>Спасибо за заказ! Мы свяжемся с вами в ближайшее время.</p>
+        <button onClick={() => navigate('/')} className="btn-home">
+          Вернуться на главную
+        </button>
+      </div>
+    )
   }
 
   return (
     <div className="checkout">
       <div className="checkout-form-wrapper">
         <h2>Оформление заказа</h2>
+        <p className="checkout-subtitle">Заполните контактные данные</p>
 
         <form onSubmit={handleSubmit} className="checkout-form">
           <div className={`form-group ${errors.name ? 'error' : ''}`}>
-            <label htmlFor="name">Имя *</label>
+            <label htmlFor="name">
+              Имя <span className="required">*</span>
+            </label>
             <input
               type="text"
               id="name"
@@ -119,7 +139,9 @@ function Checkout() {
           </div>
 
           <div className={`form-group ${errors.phone ? 'error' : ''}`}>
-            <label htmlFor="phone">Телефон *</label>
+            <label htmlFor="phone">
+              Телефон <span className="required">*</span>
+            </label>
             <input
               type="tel"
               id="phone"
@@ -132,7 +154,9 @@ function Checkout() {
           </div>
 
           <div className={`form-group ${errors.email ? 'error' : ''}`}>
-            <label htmlFor="email">Email *</label>
+            <label htmlFor="email">
+              Email <span className="optional">(по желанию)</span>
+            </label>
             <input
               type="email"
               id="email"
@@ -144,33 +168,20 @@ function Checkout() {
             {errors.email && <span className="error-text">{errors.email}</span>}
           </div>
 
-          <div className={`form-group ${errors.address ? 'error' : ''}`}>
-            <label htmlFor="address">Адрес доставки *</label>
-            <textarea
-              id="address"
-              name="address"
-              value={formData.address}
-              onChange={handleChange}
-              placeholder="Город, улица, дом, квартира"
-              rows="3"
-            />
-            {errors.address && <span className="error-text">{errors.address}</span>}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="comment">Комментарий к заказу</label>
-            <textarea
-              id="comment"
-              name="comment"
-              value={formData.comment}
-              onChange={handleChange}
-              placeholder="Дополнительная информация"
-              rows="3"
-            />
-          </div>
-
           <button type="submit" className="btn-submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Оформление...' : 'Подтвердить заказ'}
+            {isSubmitting ? (
+              <>
+                <span className="spinner"></span>
+                Отправка...
+              </>
+            ) : (
+              <>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+                Отправить заявку
+              </>
+            )}
           </button>
         </form>
       </div>
@@ -181,7 +192,7 @@ function Checkout() {
           {items.map(item => (
             <div key={item.id} className="summary-item">
               <span className="summary-item-name">
-                {item.name} x {item.quantity}
+                {item.name} <span className="qty">x {item.quantity}</span>
               </span>
               <span className="summary-item-price">
                 {formatPrice(item.price * item.quantity)}
