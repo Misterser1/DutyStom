@@ -269,36 +269,86 @@
 
 /* ===== Адаптивность ===== */
 
-@media (max-width: 1100px) {
+/* Планшет ландшафт - сжатый горизонтальный */
+@media (max-width: 1024px) {
   .compact-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 110px 80px 1fr 190px !important;
+  }
+
+  .cc-left {
+    padding: 0.5rem 0.6rem !important;
+  }
+
+  .cc-code {
+    font-size: 0.68rem;
+  }
+
+  .cc-brand {
+    font-size: 0.8rem;
+  }
+
+  .cc-image {
+    padding: 0.4rem;
+  }
+
+  .cc-image img {
+    max-height: 65px;
+  }
+
+  .cc-info {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .cc-name {
+    font-size: 0.9rem;
+  }
+
+  .cc-right {
+    padding: 0.5rem 0.6rem !important;
+  }
+
+  .cc-price {
+    font-size: 1.1rem;
+  }
+
+  .cc-cart-btn {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Планшет портрет / Мобильный ландшафт - вертикальная карточка */
+@media (max-width: 768px) {
+  .compact-card {
+    grid-template-columns: 1fr !important;
   }
 
   .compact-card .cc-left {
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
     gap: 1rem;
-    border-right: none;
-    border-bottom: 1px solid rgba(212, 196, 176, 0.3);
-    padding: 0.75rem;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(212, 196, 176, 0.3) !important;
+    padding: 0.6rem 0.75rem !important;
   }
 
   .compact-card .cc-image {
     border-right: none;
-    max-height: 150px;
-    padding: 1rem;
+    max-height: 140px;
+    padding: 0.75rem;
   }
 
   .compact-card .cc-image img {
-    max-height: 120px;
+    max-height: 110px;
   }
 
   .compact-card .cc-info {
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 0.75rem;
   }
 
   .compact-card .cc-name {
     white-space: normal;
+    font-size: 0.95rem;
   }
 
   .compact-card .cc-desc {
@@ -306,20 +356,24 @@
   }
 
   .compact-card .cc-right {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-left: none;
-    border-top: 1px solid rgba(61, 155, 155, 0.15);
-    padding: 0.75rem;
-    gap: 0.75rem;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-left: none !important;
+    border-top: 1px solid rgba(61, 155, 155, 0.15) !important;
+    padding: 0.6rem 0.75rem !important;
+    gap: 0.6rem !important;
   }
 
   .cc-right-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: 0.2rem;
+  }
+
+  .cc-price {
+    font-size: 1.1rem;
   }
 
   .cc-actions {
@@ -330,13 +384,58 @@
   .cc-detail-link {
     width: 100%;
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
   }
 }
 
-@media (max-width: 600px) {
+/* Мобильный портрет */
+@media (max-width: 480px) {
   .compact-card .cc-left {
     flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem !important;
+  }
+
+  .cc-code {
+    font-size: 0.65rem;
+  }
+
+  .cc-brand {
+    font-size: 0.75rem;
+  }
+
+  .compact-card .cc-image {
+    max-height: 120px;
+    padding: 0.5rem;
+  }
+
+  .compact-card .cc-image img {
+    max-height: 90px;
+  }
+
+  .compact-card .cc-info {
+    padding: 0.5rem;
+  }
+
+  .cc-name {
+    font-size: 0.9rem;
+  }
+
+  .cc-desc {
+    font-size: 0.75rem;
+  }
+
+  .compact-card .cc-right {
+    padding: 0.5rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .cc-price {
+    font-size: 1rem;
+  }
+
+  .cc-stock {
+    font-size: 0.68rem;
   }
 
   .cc-actions {
@@ -344,7 +443,24 @@
     justify-content: space-between;
   }
 
+  .cc-qty button {
+    width: 26px;
+    height: 26px;
+    font-size: 0.9rem;
+  }
+
+  .cc-qty span {
+    min-width: 24px;
+    font-size: 0.75rem;
+  }
+
   .cc-cart-btn {
     flex: 1;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .cc-detail-link {
+    font-size: 0.68rem;
   }
 }

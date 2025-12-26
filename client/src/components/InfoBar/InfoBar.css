@@ -152,3 +152,27 @@
     border-radius: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .info-bar {
+    padding: 6px 0;
+  }
+
+  .education-btn {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  .dropdown-menu {
+    min-width: 180px;
+    padding: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dropdown-item {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    margin: 3px 0;
+  }
+}

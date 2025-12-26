@@ -539,14 +539,22 @@
   .filters-sidebar {
     width: 200px;
   }
+
+  .category-page {
+    padding: 1.25rem 1.5rem;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .category-page {
+    padding: 1rem;
+  }
+
   .category-content {
     flex-direction: column;
   }
 
-  /* Мобильные фильтры */
+  /* Мобильные фильтры - drawer */
   .filters-sidebar {
     position: fixed;
     top: 0;
@@ -577,12 +585,6 @@
 
   .filters-overlay {
     display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .category-page {
-    padding: 1rem;
   }
 
   .category-title {

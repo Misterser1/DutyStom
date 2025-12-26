@@ -272,14 +272,42 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .checkout {
+    gap: 25px;
+  }
+
+  .checkout-form-wrapper {
+    padding: 28px;
+  }
+
+  .checkout-summary {
+    top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
   .checkout {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .checkout-form-wrapper {
+    padding: 22px;
+  }
+
+  .checkout-form-wrapper h2 {
+    font-size: 1.5rem;
   }
 
   .checkout-summary {
     position: static;
     order: -1;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
   }
 }
 
