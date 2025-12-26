@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
 import './ProductCard.css'
 
-function ProductCard({ product }) {
+// Курс конвертации
+const USD_RATE = 100
+
+function ProductCard({ product, showUSD = false }) {
   const { addItem } = useCart()
   const [quantity, setQuantity] = useState(1)
 
   const handleAddToCart = (e) => {
     e.preventDefault()
     e.stopPropagation()
-    for (let i = 0; i < quantity; i++) {
-      addItem(product)
-    }
+    addItem(product, quantity)
   }
 
   const handleQuantityChange = (e, delta) => {
@@ -26,13 +27,20 @@ function ProductCard({ product }) {
     setQuantity(Math.max(1, value))
   }
 
-  const formatPrice = (price) => {
+  // Форматирование цены в USD (с запятой для тысяч)
+  const formatUSD = (price) => {
+    const usd = Math.round(price / USD_RATE)
+    return new Intl.NumberFormat('en-US').format(usd)
+  }
+
+  // Форматирование цены в рублях
+  const formatRUB = (price) => {
     return new Intl.NumberFormat('ru-RU').format(price)
   }
 
   // Данные товара
-  const article = product.article || product.name?.split(' ')[0] || 'ART-' + product.id
-  const inStock = product.inStock !== undefined ? product.inStock : true
+  const inStock = product.in_stock !== undefined ? product.in_stock === 1 : true
+  const priceUSD = product.priceUSD || Math.round(product.price / USD_RATE)
 
   return (
     <div className="product-card-compact">
@@ -50,26 +58,25 @@ function ProductCard({ product }) {
           )}
         </Link>
 
-        <div className="card-brand">{product.brand || 'Бренд'}</div>
-
-        <div className="card-article">{article}</div>
+        {product.brand && (
+          <div className="card-brand">{product.brand}</div>
+        )}
 
         <Link to={`/product/${product.id}`} className="card-name-link">
           <span className="card-name">{product.name}</span>
         </Link>
 
         <div className={`card-stock ${inStock ? 'in-stock' : 'out-stock'}`}>
-          {inStock ? 'В наличии' : 'Нет в наличии'}
+          <span className="stock-dot"></span>
+          {inStock ? 'В наличии' : 'Под заказ'}
         </div>
       </div>
 
       {/* Нижний ряд: цена и действия */}
       <div className="card-row-bottom">
         <div className="card-price">
-          {product.oldPrice && (
-            <span className="old-price">${formatPrice(product.oldPrice)}</span>
-          )}
-          <span className="current-price">${formatPrice(product.price)}</span>
+          <span className="current-price">${formatUSD(product.price)}</span>
+          <span className="price-hint">/ шт.</span>
         </div>
 
         <div className="card-actions">

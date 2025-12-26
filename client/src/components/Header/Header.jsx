@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
 import Logo from '../Logo/Logo'
@@ -33,6 +33,10 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [copiedText, setCopiedText] = useState('')
 
+  // Refs для отслеживания кликов вне элементов
+  const searchDropdownRef = useRef(null)
+  const socialDropdownRef = useRef(null)
+
   // Отслеживание скролла для эффекта прозрачности
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +44,33 @@ function Header() {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Закрытие дропдаунов при клике вне или Escape
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchDropdownRef.current && !searchDropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false)
+      }
+      if (socialDropdownRef.current && !socialDropdownRef.current.contains(event.target)) {
+        setSocialDropdownOpen(false)
+      }
+    }
+
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        setDropdownOpen(false)
+        setSocialDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleEscape)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleEscape)
+    }
   }, [])
 
   // Копирование в буфер обмена
@@ -73,7 +104,7 @@ function Header() {
 
         {/* Поисковая строка по центру с dropdown */}
         <form className="search-form" onSubmit={handleSearch}>
-          <div className="search-dropdown-wrapper">
+          <div className="search-dropdown-wrapper" ref={searchDropdownRef}>
             <button
               type="button"
               className="dropdown-toggle"
@@ -135,7 +166,7 @@ function Header() {
           </div>
 
           {/* Мы в соцсетях dropdown */}
-          <div className="social-section-header">
+          <div className="social-section-header" ref={socialDropdownRef}>
             <button
               className="social-btn-header"
               onClick={() => setSocialDropdownOpen(!socialDropdownOpen)}
