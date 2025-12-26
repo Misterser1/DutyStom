@@ -27,6 +27,8 @@
   "author": "DUTYSTOM",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "sql.js": "^1.13.0",
+    "sqlite3": "^5.1.7"
   }
 }

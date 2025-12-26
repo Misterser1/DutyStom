@@ -3,6 +3,7 @@ import { useAdmin } from '../../context/AdminContext'
 import ContactsEditor from './ContactsEditor'
 import ProductsEditor from './ProductsEditor'
 import OrdersEditor from './OrdersEditor'
+import ImportPage from './ImportPage'
 import './AdminPage.css'
 
 function AdminPage() {
@@ -133,12 +134,22 @@ function AdminPage() {
           </svg>
           Заявки
         </button>
+        <button
+          className={`tab-btn ${activeTab === 'import' ? 'active' : ''}`}
+          onClick={() => setActiveTab('import')}
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/>
+          </svg>
+          Импорт
+        </button>
       </div>
 
         <div className="admin-content">
           {activeTab === 'products' && <ProductsEditor />}
           {activeTab === 'contacts' && <ContactsEditor />}
           {activeTab === 'orders' && <OrdersEditor />}
+          {activeTab === 'import' && <ImportPage />}
         </div>
       </div>
     </div>

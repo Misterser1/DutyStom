@@ -39,35 +39,85 @@
   gap: 12px;
 }
 
-.footer-logo img {
-  height: 50px;
-  width: auto;
-}
-
-.footer-logo span {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
+.footer-logo-text {
+  color: #e63946;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .footer-contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 15px;
 }
 
-.footer-contacts p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.1rem;
+/* Кнопки-овалы контактов (как в InfoBar) */
+.footer-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid #d4c4b0;
+  border-radius: 50px;
+  padding: 14px 24px;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.footer-contact-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact-btn svg {
+  flex-shrink: 0;
+  color: #d4c4b0;
+}
+
+.footer-contact-btn span {
+  white-space: nowrap;
+}
+
+/* Кнопка копирования */
+.footer-contact-btn .copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s;
+  color: #d4c4b0;
+}
+
+.footer-contact-btn .copy-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.footer-contact-btn .copy-btn svg {
+  color: inherit;
 }
 
 .footer-copyright {
   margin-top: 15px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
@@ -76,7 +126,7 @@
 
 /* Page Title */
 .page-title {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   color: var(--color-primary-dark);
   margin-bottom: 30px;
   text-align: center;
@@ -137,11 +187,17 @@
     font-size: 1.8rem;
   }
 
-  .footer-contacts p {
-    font-size: 1rem;
+  .footer-contact-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
   }
 
   .footer-copyright {
     font-size: 0.9rem;
+  }
+
+  .footer-logo-text {
+    font-size: 28px;
+    letter-spacing: 2px;
   }
 }

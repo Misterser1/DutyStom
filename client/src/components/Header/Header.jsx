@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
+import Logo from '../Logo/Logo'
 import './Header.css'
 
 const searchOptions = [
@@ -67,7 +68,7 @@ function Header() {
       <div className="header-content">
         {/* Логотип слева */}
         <Link to="/" className="logo-new">
-          <img src="/images/logo2-dutystom.png" alt="DUTYSTOM" className="logo-new-image" />
+          <Logo size="medium" />
         </Link>
 
         {/* Поисковая строка по центру с dropdown */}

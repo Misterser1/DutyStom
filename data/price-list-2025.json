@@ -1,0 +1,2179 @@
+{
+  "metadata": {
+    "version": "2025",
+    "date": "2025-12-24",
+    "exchangeRate": 80,
+    "description": "DUTYSTOM Price List 2025 - Fixed USD rate 80 RUB/USD",
+    "totalProducts": 152
+  },
+  "categories": [
+    {
+      "slug": "implants",
+      "name": "Имплантаты",
+      "products": [
+        {
+          "name": "AnyOne Regular Thread",
+          "brand": "MEGAGEN",
+          "country": "Ю.Корея",
+          "article": "AN-RT",
+          "priceRUB": {
+            "retail": 13500,
+            "tier200k": 7000,
+            "tier500k": 6000,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "size": "ALL SIZE",
+            "thread": "Regular"
+          }
+        },
+        {
+          "name": "AnyOne Deep Thread",
+          "brand": "MEGAGEN",
+          "country": "Ю.Корея",
+          "article": "AN-DT",
+          "priceRUB": {
+            "retail": 13500,
+            "tier200k": 7000,
+            "tier500k": 6000,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "size": "ALL SIZE",
+            "thread": "Deep"
+          }
+        },
+        {
+          "name": "AnyOne Special Short",
+          "brand": "MEGAGEN",
+          "country": "Ю.Корея",
+          "article": "AN-SS",
+          "priceRUB": {
+            "retail": 6600,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "Short",
+            "thread": "Regular"
+          }
+        },
+        {
+          "name": "SimpleDent",
+          "brand": "MEGAGEN",
+          "country": "Ю.Корея",
+          "article": "SD-01",
+          "priceRUB": {
+            "retail": 12350,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Regular"
+          }
+        },
+        {
+          "name": "INNO Submerged CWM Regular",
+          "brand": "INNO",
+          "country": "Ю.Корея",
+          "article": "INNO-REG",
+          "priceRUB": {
+            "retail": 6600,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "CWM Inno Submerged",
+            "thread": "Regular"
+          }
+        },
+        {
+          "name": "INNO Submerged CWM Deep",
+          "brand": "INNO",
+          "country": "Ю.Корея",
+          "article": "INNO-DEEP",
+          "priceRUB": {
+            "retail": 6600,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "CWM Inno Submerged Short",
+            "thread": "Deep"
+          }
+        },
+        {
+          "name": "Anthogyr Axiom FAB",
+          "brand": "Anthogyr",
+          "country": "Франция",
+          "article": "ANTHOGYR-FAB",
+          "priceRUB": {
+            "retail": 12350,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "FAB"
+          }
+        },
+        {
+          "name": "DIO IMPLANT UF",
+          "brand": "DIO",
+          "country": "Ю.Корея",
+          "article": "DIO-UF",
+          "priceRUB": {
+            "retail": 5950,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2500
+          },
+          "specs": {
+            "type": "UF"
+          }
+        },
+        {
+          "name": "DIO IMPLANT Short",
+          "brand": "DIO",
+          "country": "Ю.Корея",
+          "article": "DIO-SHORT",
+          "priceRUB": {
+            "retail": 5950,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2500
+          },
+          "specs": {
+            "type": "Short"
+          }
+        },
+        {
+          "name": "DIO IMPLANT Internal",
+          "brand": "DIO",
+          "country": "Ю.Корея",
+          "article": "DIO-INT",
+          "priceRUB": {
+            "retail": 5950,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2500
+          },
+          "specs": {
+            "type": "Internal"
+          }
+        },
+        {
+          "name": "DIO IMPLANT Post Type",
+          "brand": "DIO",
+          "country": "Ю.Корея",
+          "article": "DIO-POST",
+          "priceRUB": {
+            "retail": 5950,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2500
+          },
+          "specs": {
+            "type": "Post Type",
+            "abutment": "Преформ Oneбоды"
+          }
+        },
+        {
+          "name": "DIO IMPLANT Ball Type",
+          "brand": "DIO",
+          "country": "Ю.Корея",
+          "article": "DIO-BALL",
+          "priceRUB": {
+            "retail": 5950,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2500
+          },
+          "specs": {
+            "type": "Ball Type",
+            "abutment": "Преформ Oneбоды"
+          }
+        },
+        {
+          "name": "DIO IMPLANT FTN External",
+          "brand": "DIO",
+          "country": "Ю.Корея",
+          "article": "DIO-FTN",
+          "priceRUB": {
+            "retail": 5950,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2500
+          },
+          "specs": {
+            "type": "FTN External"
+          }
+        },
+        {
+          "name": "VALI SNUCone AF-1",
+          "brand": "VALI",
+          "country": "Ю.Корея",
+          "article": "VALI-AF1",
+          "priceRUB": {
+            "retail": 5300,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "AF-1"
+          }
+        },
+        {
+          "name": "Neobiotech IS-II Active",
+          "brand": "Neobiotech",
+          "country": "Ю.Корея",
+          "article": "NEOBIO-ACTIVE",
+          "priceRUB": {
+            "retail": 5990,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "IS-II Active"
+          }
+        },
+        {
+          "name": "Neobiotech IS-II Short",
+          "brand": "Neobiotech",
+          "country": "Ю.Корея",
+          "article": "NEOBIO-SHORT",
+          "priceRUB": {
+            "retail": 6500,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "IS-II Short"
+          }
+        },
+        {
+          "name": "DENTIS AXEL Regular",
+          "brand": "DENTIS",
+          "country": "Ю.Корея",
+          "article": "DENTIS-AXEL-REG",
+          "priceRUB": {
+            "retail": 9000,
+            "tier200k": 3800,
+            "tier500k": 3300,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "AXEL",
+            "thread": "Regular"
+          }
+        },
+        {
+          "name": "DENTIS AXEL Xirond",
+          "brand": "DENTIS",
+          "country": "Ю.Корея",
+          "article": "DENTIS-AXEL-XIR",
+          "priceRUB": {
+            "retail": 9000,
+            "tier200k": 3800,
+            "tier500k": 3300,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "AXEL Xirond"
+          }
+        },
+        {
+          "name": "DENTIS SQ Connect",
+          "brand": "DENTIS",
+          "country": "Ю.Корея",
+          "article": "DENTIS-SQ",
+          "priceRUB": {
+            "retail": 7000,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "SQ Connect"
+          }
+        },
+        {
+          "name": "DENTIS SQ Short",
+          "brand": "DENTIS",
+          "country": "Ю.Корея",
+          "article": "DENTIS-SQ-SHORT",
+          "priceRUB": {
+            "retail": 7000,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "SQ Short"
+          }
+        },
+        {
+          "name": "DENTIS OneQ",
+          "brand": "DENTIS",
+          "country": "Ю.Корея",
+          "article": "DENTIS-ONEQ",
+          "priceRUB": {
+            "retail": 7000,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "OneQ"
+          }
+        },
+        {
+          "name": "OSSTEM TS III BA",
+          "brand": "OSSTEM",
+          "country": "Ю.Корея",
+          "article": "OSSTEM-BA",
+          "priceRUB": {
+            "retail": 9000,
+            "tier200k": 5000,
+            "tier500k": 4500,
+            "tier1500k": 5500
+          },
+          "specs": {
+            "type": "TS III BA",
+            "surface": "BA"
+          }
+        },
+        {
+          "name": "OSSTEM TS III SOI",
+          "brand": "OSSTEM",
+          "country": "Ю.Корея",
+          "article": "OSSTEM-SOI",
+          "priceRUB": {
+            "retail": 7920,
+            "tier200k": 5000,
+            "tier500k": 5000,
+            "tier1500k": 5500
+          },
+          "specs": {
+            "type": "TS III SOI"
+          }
+        },
+        {
+          "name": "OSSTEM TS III CA",
+          "brand": "OSSTEM",
+          "country": "Ю.Корея",
+          "article": "OSSTEM-CA",
+          "priceRUB": {
+            "retail": 7200,
+            "tier200k": 5000,
+            "tier500k": 4500,
+            "tier1500k": 5500
+          },
+          "specs": {
+            "type": "TS III CA",
+            "surface": "CA"
+          }
+        },
+        {
+          "name": "OSSTEM TS III SA",
+          "brand": "OSSTEM",
+          "country": "Ю.Корея",
+          "article": "OSSTEM-SA",
+          "priceRUB": {
+            "retail": 5990,
+            "tier200k": 4100,
+            "tier500k": 3800,
+            "tier1500k": 4300
+          },
+          "specs": {
+            "type": "TS III SA",
+            "surface": "SA"
+          }
+        },
+        {
+          "name": "Straumann Bone Level BLT",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-BLT",
+          "priceRUB": {
+            "retail": 18400,
+            "tier200k": 15000,
+            "tier500k": 12500,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Bone Level BLT"
+          }
+        },
+        {
+          "name": "Straumann Bone Level RN",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-RN",
+          "priceRUB": {
+            "retail": 18400,
+            "tier200k": 15000,
+            "tier500k": 12500,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Bone Level RN"
+          }
+        },
+        {
+          "name": "Straumann Tissue Level Standard",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-TL-STD",
+          "priceRUB": {
+            "retail": 18400,
+            "tier200k": 15000,
+            "tier500k": 12500,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Tissue Level Standard"
+          }
+        },
+        {
+          "name": "Straumann Tissue Level Standard Plus",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-TL-PLUS",
+          "priceRUB": {
+            "retail": 18400,
+            "tier200k": 15000,
+            "tier500k": 12500,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Tissue Level Standard Plus"
+          }
+        },
+        {
+          "name": "ASTRA TECH Implant System EV",
+          "brand": "ASTRA TECH",
+          "country": "Швеция",
+          "article": "ASTRA-EV",
+          "priceRUB": {
+            "retail": 19900,
+            "tier200k": 15000,
+            "tier500k": 12500,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "EV"
+          }
+        },
+        {
+          "name": "ASTRA TECH Implant System TX Profile",
+          "brand": "ASTRA TECH",
+          "country": "Швеция",
+          "article": "ASTRA-TX",
+          "priceRUB": {
+            "retail": 23100,
+            "tier200k": 15000,
+            "tier500k": 12500,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "TX Profile"
+          }
+        },
+        {
+          "name": "SIC ace",
+          "brand": "SIC",
+          "country": "Швейцария",
+          "article": "SIC-ACE",
+          "priceRUB": {
+            "retail": 10600,
+            "tier200k": 8500,
+            "tier500k": 7000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "SICace"
+          }
+        },
+        {
+          "name": "SIC max",
+          "brand": "SIC",
+          "country": "Швейцария",
+          "article": "SIC-MAX",
+          "priceRUB": {
+            "retail": 11500,
+            "tier200k": 8500,
+            "tier500k": 7000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "SICmax"
+          }
+        },
+        {
+          "name": "SIC tapered",
+          "brand": "SIC",
+          "country": "Швейцария",
+          "article": "SIC-TAP",
+          "priceRUB": {
+            "retail": 11500,
+            "tier200k": 8500,
+            "tier500k": 7000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "SICtapered"
+          }
+        },
+        {
+          "name": "Anthogyr Axiom 2.3",
+          "brand": "Anthogyr",
+          "country": "Франция",
+          "article": "ANTH-23",
+          "priceRUB": {
+            "retail": 10690,
+            "tier200k": 8500,
+            "tier500k": 7000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Axiom 2.3"
+          }
+        },
+        {
+          "name": "Anthogyr Axiom 4.4",
+          "brand": "Anthogyr",
+          "country": "Франция",
+          "article": "ANTH-44",
+          "priceRUB": {
+            "retail": 9690,
+            "tier200k": 8500,
+            "tier500k": 7000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Axiom 4.4"
+          }
+        },
+        {
+          "name": "Anthogyr Axiom REG",
+          "brand": "Anthogyr",
+          "country": "Франция",
+          "article": "ANTH-REG",
+          "priceRUB": {
+            "retail": 9690,
+            "tier200k": 8500,
+            "tier500k": 7000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Axiom REG"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "components",
+      "name": "Компоненты",
+      "products": [
+        {
+          "name": "Irrigation Tube for NSK, SAESHIN",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "IRR-TUBE",
+          "priceRUB": {
+            "retail": 600,
+            "tier200k": 350,
+            "tier500k": 300,
+            "tier1500k": 250
+          },
+          "specs": {
+            "type": "Irrigation"
+          }
+        },
+        {
+          "name": "GEO Titanium Base",
+          "brand": "GEO",
+          "country": "Ю.Корея",
+          "article": "GEO-TB",
+          "priceRUB": {
+            "retail": 750,
+            "tier200k": 450,
+            "tier500k": 400,
+            "tier1500k": 350
+          },
+          "specs": {
+            "type": "Titanium Base"
+          }
+        },
+        {
+          "name": "GEO Titanium Abutment Anode Base",
+          "brand": "GEO",
+          "country": "Ю.Корея",
+          "article": "GEO-AB",
+          "priceRUB": {
+            "retail": 950,
+            "tier200k": 650,
+            "tier500k": 600,
+            "tier1500k": 550
+          },
+          "specs": {
+            "type": "Abutment"
+          }
+        },
+        {
+          "name": "Abutment Cemented",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "ABUT-CEM",
+          "priceRUB": {
+            "retail": 800,
+            "tier200k": 500,
+            "tier500k": 450,
+            "tier1500k": 400
+          },
+          "specs": {
+            "type": "Cemented"
+          }
+        },
+        {
+          "name": "Healing Cap",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "HEAL-CAP",
+          "priceRUB": {
+            "retail": 600,
+            "tier200k": 350,
+            "tier500k": 300,
+            "tier1500k": 250
+          },
+          "specs": {
+            "type": "Healing"
+          }
+        },
+        {
+          "name": "Analog",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "ANALOG",
+          "priceRUB": {
+            "retail": 800,
+            "tier200k": 500,
+            "tier500k": 450,
+            "tier1500k": 400
+          },
+          "specs": {
+            "type": "Analog"
+          }
+        },
+        {
+          "name": "Transfer",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "TRANSFER",
+          "priceRUB": {
+            "retail": 850,
+            "tier200k": 550,
+            "tier500k": 500,
+            "tier1500k": 450
+          },
+          "specs": {
+            "type": "Transfer"
+          }
+        },
+        {
+          "name": "Screw",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "SCREW",
+          "priceRUB": {
+            "retail": 350,
+            "tier200k": 250,
+            "tier500k": 200,
+            "tier1500k": 150
+          },
+          "specs": {
+            "type": "Screw"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Direct Set",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-DS",
+          "priceRUB": {
+            "retail": 5200,
+            "tier200k": 2000,
+            "tier500k": 1800,
+            "tier1500k": 1600
+          },
+          "specs": {
+            "type": "MultiUnit Direct Set"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Direct",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-D",
+          "priceRUB": {
+            "retail": 3620,
+            "tier200k": 1700,
+            "tier500k": 1500,
+            "tier1500k": 1300
+          },
+          "specs": {
+            "type": "MultiUnit Direct"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Angled Set",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-AS",
+          "priceRUB": {
+            "retail": 8000,
+            "tier200k": 3000,
+            "tier500k": 2800,
+            "tier1500k": 2600
+          },
+          "specs": {
+            "type": "MultiUnit Angled Set"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Angled",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-A",
+          "priceRUB": {
+            "retail": 6400,
+            "tier200k": 2700,
+            "tier500k": 2500,
+            "tier1500k": 2300
+          },
+          "specs": {
+            "type": "MultiUnit Angled"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Basis",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-B",
+          "priceRUB": {
+            "retail": 1650,
+            "tier200k": 1100,
+            "tier500k": 900,
+            "tier1500k": 700
+          },
+          "specs": {
+            "type": "MultiUnit Basis"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Titanium Cylinder",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-CYL",
+          "priceRUB": {
+            "retail": 1650,
+            "tier200k": 1200,
+            "tier500k": 1000,
+            "tier1500k": 800
+          },
+          "specs": {
+            "type": "MultiUnit Cylinder"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Cap",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-CAP",
+          "priceRUB": {
+            "retail": 1650,
+            "tier200k": 1400,
+            "tier500k": 1200,
+            "tier1500k": 1000
+          },
+          "specs": {
+            "type": "MultiUnit Cap"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Direct Screwdriver",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-SD",
+          "priceRUB": {
+            "retail": 6000,
+            "tier200k": 4000,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "MultiUnit Screwdriver"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Transfer",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-TR",
+          "priceRUB": {
+            "retail": 2500,
+            "tier200k": 1700,
+            "tier500k": 1500,
+            "tier1500k": 1300
+          },
+          "specs": {
+            "type": "MultiUnit Transfer"
+          }
+        },
+        {
+          "name": "D-TYPE MultiUnit Analogue",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-AN",
+          "priceRUB": {
+            "retail": 1850,
+            "tier200k": 1400,
+            "tier500k": 1200,
+            "tier1500k": 1000
+          },
+          "specs": {
+            "type": "MultiUnit Analogue"
+          }
+        },
+        {
+          "name": "D-TYPE Screw",
+          "brand": "D-TYPE",
+          "country": "Израиль",
+          "article": "DTYPE-SCR",
+          "priceRUB": {
+            "retail": 450,
+            "tier200k": 350,
+            "tier500k": 300,
+            "tier1500k": 250
+          },
+          "specs": {
+            "type": "Screw"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bone",
+      "name": "Костные материалы",
+      "products": [
+        {
+          "name": "Bio-Bone Max 1.2cc",
+          "brand": "Bio-Bone",
+          "country": "Франция",
+          "article": "BB-MAX-1.2",
+          "priceRUB": {
+            "retail": 12500,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "volume": "1.2cc",
+            "type": "Allograft"
+          }
+        },
+        {
+          "name": "Cerabone Titan-S 1cc",
+          "brand": "Straumann",
+          "country": "Германия",
+          "article": "CERA-1CC",
+          "priceRUB": {
+            "retail": 14000,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "volume": "1cc",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Cerabone Titan-S 2ml",
+          "brand": "Straumann",
+          "country": "Германия",
+          "article": "CERA-2CC",
+          "priceRUB": {
+            "retail": 13500,
+            "tier200k": 9000,
+            "tier500k": 8000,
+            "tier1500k": 7000
+          },
+          "specs": {
+            "volume": "2ml",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Cerabone Titan-S 5ml",
+          "brand": "Straumann",
+          "country": "Германия",
+          "article": "CERA-5CC",
+          "priceRUB": {
+            "retail": 24000,
+            "tier200k": 13000,
+            "tier500k": 12000,
+            "tier1500k": 11000
+          },
+          "specs": {
+            "volume": "5ml",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "InterOss 0.5cc",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "INT-0.5",
+          "priceRUB": {
+            "retail": 6500,
+            "tier200k": 5000,
+            "tier500k": 4500,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "0.5cc",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "InterOss 1cc",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "INT-1CC",
+          "priceRUB": {
+            "retail": 9500,
+            "tier200k": 7000,
+            "tier500k": 6000,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "volume": "1cc",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "InterOss 1g",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "INT-1G",
+          "priceRUB": {
+            "retail": 15700,
+            "tier200k": 10500,
+            "tier500k": 9500,
+            "tier1500k": 8500
+          },
+          "specs": {
+            "volume": "1g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "InterOss 2g",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "INT-2G",
+          "priceRUB": {
+            "retail": 26000,
+            "tier200k": 14000,
+            "tier500k": 13000,
+            "tier1500k": 12000
+          },
+          "specs": {
+            "volume": "2g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "BONE Titan B 0.5cc",
+          "brand": "TITAN",
+          "country": "Ю.Корея",
+          "article": "TITAN-0.5",
+          "priceRUB": {
+            "retail": 7700,
+            "tier200k": 5000,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "0.5cc",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "BONE Titan B 1cc",
+          "brand": "TITAN",
+          "country": "Ю.Корея",
+          "article": "TITAN-1CC",
+          "priceRUB": {
+            "retail": 8500,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "1cc",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "BONE Titan B 1.6g",
+          "brand": "TITAN",
+          "country": "Ю.Корея",
+          "article": "TITAN-1.6G",
+          "priceRUB": {
+            "retail": 14000,
+            "tier200k": 8500,
+            "tier500k": 7500,
+            "tier1500k": 6500
+          },
+          "specs": {
+            "volume": "1.6g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "BONE Titan B 2g",
+          "brand": "TITAN",
+          "country": "Ю.Корея",
+          "article": "TITAN-2G",
+          "priceRUB": {
+            "retail": 23000,
+            "tier200k": 13000,
+            "tier500k": 11500,
+            "tier1500k": 10000
+          },
+          "specs": {
+            "volume": "2g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "BONE Collagen 1cc",
+          "brand": "BONE",
+          "country": "Ю.Корея",
+          "article": "COLL-1CC",
+          "priceRUB": {
+            "retail": 4900,
+            "tier200k": 3900,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "volume": "1cc",
+            "type": "Collagen"
+          }
+        },
+        {
+          "name": "BONE Collagen 3cc",
+          "brand": "BONE",
+          "country": "Ю.Корея",
+          "article": "COLL-3CC",
+          "priceRUB": {
+            "retail": 8900,
+            "tier200k": 6900,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "volume": "3cc",
+            "type": "Collagen"
+          }
+        },
+        {
+          "name": "BONE Mineral 1cc",
+          "brand": "BONE",
+          "country": "Ю.Корея",
+          "article": "MIN-1CC",
+          "priceRUB": {
+            "retail": 4900,
+            "tier200k": 3900,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "volume": "1cc",
+            "type": "Mineral"
+          }
+        },
+        {
+          "name": "BONE Mineral 3cc",
+          "brand": "BONE",
+          "country": "Ю.Корея",
+          "article": "MIN-3CC",
+          "priceRUB": {
+            "retail": 8900,
+            "tier200k": 6900,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "volume": "3cc",
+            "type": "Mineral"
+          }
+        },
+        {
+          "name": "Creos Xenogain 0.25g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-0.25",
+          "priceRUB": {
+            "retail": 7200,
+            "tier200k": 5000,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "0.25g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Creos Xenogain 0.5g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-0.5",
+          "priceRUB": {
+            "retail": 9700,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "0.5g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Creos Xenogain 1g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-1G",
+          "priceRUB": {
+            "retail": 17890,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "volume": "1g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Creos Xenogain 2g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-2G",
+          "priceRUB": {
+            "retail": 29900,
+            "tier200k": 13500,
+            "tier500k": 12000,
+            "tier1500k": 10500
+          },
+          "specs": {
+            "volume": "2g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Straumann Xenograft 0.25g",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XG-0.25",
+          "priceRUB": {
+            "retail": 7200,
+            "tier200k": 5000,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "0.25g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Straumann Xenograft 0.5g",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XG-0.5",
+          "priceRUB": {
+            "retail": 9700,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "0.5g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Straumann Xenograft 1g",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XG-1G",
+          "priceRUB": {
+            "retail": 17890,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "volume": "1g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Straumann Xenograft 2g",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XG-2G",
+          "priceRUB": {
+            "retail": 29900,
+            "tier200k": 13500,
+            "tier500k": 12000,
+            "tier1500k": 10500
+          },
+          "specs": {
+            "volume": "2g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix 0.25g",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-0.25",
+          "priceRUB": {
+            "retail": 7200,
+            "tier200k": 5000,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "0.25g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix 0.5g",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-0.5",
+          "priceRUB": {
+            "retail": 9700,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "0.5g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix 1g",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-1G",
+          "priceRUB": {
+            "retail": 17890,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "volume": "1g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix 2g",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-2G",
+          "priceRUB": {
+            "retail": 29900,
+            "tier200k": 13500,
+            "tier500k": 12000,
+            "tier1500k": 10500
+          },
+          "specs": {
+            "volume": "2g",
+            "type": "Xenograft"
+          }
+        },
+        {
+          "name": "Creos Xenogain Collagen Block 0.05g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-CB-0.05",
+          "priceRUB": {
+            "retail": 5990,
+            "tier200k": 4500,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "0.05g",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "Creos Xenogain Collagen Block 0.10g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-CB-0.10",
+          "priceRUB": {
+            "retail": 9600,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "0.10g",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "Creos Xenogain Collagen Block 0.25g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-CB-0.25",
+          "priceRUB": {
+            "retail": 19760,
+            "tier200k": 7500,
+            "tier500k": 6500,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "volume": "0.25g",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "Creos Xenogain Collagen Block 0.5g",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "CREOS-CB-0.5",
+          "priceRUB": {
+            "retail": 22260,
+            "tier200k": 9500,
+            "tier500k": 8500,
+            "tier1500k": 7000
+          },
+          "specs": {
+            "volume": "0.5g",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "Straumann Xenoflex 50mg",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XF-50",
+          "priceRUB": {
+            "retail": 5990,
+            "tier200k": 4500,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "50mg",
+            "type": "Xenoflex"
+          }
+        },
+        {
+          "name": "Straumann Xenoflex 100mg",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XF-100",
+          "priceRUB": {
+            "retail": 9600,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "100mg",
+            "type": "Xenoflex"
+          }
+        },
+        {
+          "name": "Straumann Xenoflex 250mg",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XF-250",
+          "priceRUB": {
+            "retail": 19760,
+            "tier200k": 7500,
+            "tier500k": 6500,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "volume": "250mg",
+            "type": "Xenoflex"
+          }
+        },
+        {
+          "name": "Straumann Xenoflex 500mg",
+          "brand": "Straumann",
+          "country": "Швейцария",
+          "article": "STR-XF-500",
+          "priceRUB": {
+            "retail": 22260,
+            "tier200k": 9500,
+            "tier500k": 8500,
+            "tier1500k": 7000
+          },
+          "specs": {
+            "volume": "500mg",
+            "type": "Xenoflex"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix Collagen Block 50mg",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-CB-50",
+          "priceRUB": {
+            "retail": 5990,
+            "tier200k": 4500,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "50mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix Collagen Block 100mg",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-CB-100",
+          "priceRUB": {
+            "retail": 9600,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "100mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix Collagen Block 250mg",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-CB-250",
+          "priceRUB": {
+            "retail": 19760,
+            "tier200k": 7500,
+            "tier500k": 6500,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "volume": "250mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "OCS-B Xenomatrix Collagen Block 500mg",
+          "brand": "OCS",
+          "country": "Ю.Корея",
+          "article": "OCS-CB-500",
+          "priceRUB": {
+            "retail": 22260,
+            "tier200k": 9500,
+            "tier500k": 8500,
+            "tier1500k": 7000
+          },
+          "specs": {
+            "volume": "500mg",
+            "type": "Collagen Block"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "membrane",
+      "name": "Мембраны",
+      "products": [
+        {
+          "name": "Mytom Membrane",
+          "brand": "Mytom",
+          "country": "Ю.Корея",
+          "article": "MYTOM-MEM",
+          "priceRUB": {
+            "retail": 10000,
+            "tier200k": 5500,
+            "tier500k": 4500,
+            "tier1500k": 3500
+          },
+          "specs": {
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "MEMBRANE PTFE Titanium Reinforced PM2025A",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "PTFE-PM2025A",
+          "priceRUB": {
+            "retail": 8000,
+            "tier200k": 6000,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "PTFE",
+            "size": "PM2025A"
+          }
+        },
+        {
+          "name": "MEMBRANE PTFE Titanium Reinforced PM2530A",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "PTFE-PM2530A",
+          "priceRUB": {
+            "retail": 8500,
+            "tier200k": 6500,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "PTFE",
+            "size": "PM2530A"
+          }
+        },
+        {
+          "name": "MEMBRANE PTFE Titanium Reinforced PM3040A",
+          "brand": "Nobel Biocare",
+          "country": "США",
+          "article": "PTFE-PM3040A",
+          "priceRUB": {
+            "retail": 9000,
+            "tier200k": 7000,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "PTFE",
+            "size": "PM3040A"
+          }
+        },
+        {
+          "name": "Titan Gide Membrane 4",
+          "brand": "TITAN",
+          "country": "Ю.Корея",
+          "article": "TITAN-GIDE-4",
+          "priceRUB": {
+            "retail": 6000,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "4",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Titan Gide Membrane 6",
+          "brand": "TITAN",
+          "country": "Ю.Корея",
+          "article": "TITAN-GIDE-6",
+          "priceRUB": {
+            "retail": 9500,
+            "tier200k": 5500,
+            "tier500k": 5000,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "6",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Titan M Membrane",
+          "brand": "TITAN",
+          "country": "Швейцария",
+          "article": "TITAN-M",
+          "priceRUB": {
+            "retail": 4000,
+            "tier200k": 2500,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Jason Membrane 4",
+          "brand": "Straumann",
+          "country": "Германия",
+          "article": "JASON-4",
+          "priceRUB": {
+            "retail": 10000,
+            "tier200k": 5500,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "size": "4",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Jason Membrane 6",
+          "brand": "Straumann",
+          "country": "Германия",
+          "article": "JASON-6",
+          "priceRUB": {
+            "retail": 12500,
+            "tier200k": 6500,
+            "tier500k": 6000,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "size": "6",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Jason Membrane 8",
+          "brand": "Straumann",
+          "country": "Германия",
+          "article": "JASON-8",
+          "priceRUB": {
+            "retail": 19000,
+            "tier200k": 9000,
+            "tier500k": 8000,
+            "tier1500k": 6500
+          },
+          "specs": {
+            "size": "8",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "InterCollagen Guide 13",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICG-13",
+          "priceRUB": {
+            "retail": 11000,
+            "tier200k": 4000,
+            "tier500k": 3500,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "size": "13",
+            "type": "Collagen"
+          }
+        },
+        {
+          "name": "InterCollagen Guide 15",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICG-15",
+          "priceRUB": {
+            "retail": 12500,
+            "tier200k": 6500,
+            "tier500k": 6000,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "size": "15",
+            "type": "Collagen"
+          }
+        },
+        {
+          "name": "InterCollagen Guide 19",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICG-19",
+          "priceRUB": {
+            "retail": 19000,
+            "tier200k": 9000,
+            "tier500k": 8000,
+            "tier1500k": 6500
+          },
+          "specs": {
+            "size": "19",
+            "type": "Collagen"
+          }
+        },
+        {
+          "name": "InterOss Collagen Block 50mg",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICB-50",
+          "priceRUB": {
+            "retail": 5990,
+            "tier200k": 4500,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "volume": "50mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "InterOss Collagen Block 100mg",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICB-100",
+          "priceRUB": {
+            "retail": 9600,
+            "tier200k": 6000,
+            "tier500k": 5000,
+            "tier1500k": 4000
+          },
+          "specs": {
+            "volume": "100mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "InterOss Collagen Block 260mg",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICB-260",
+          "priceRUB": {
+            "retail": 19760,
+            "tier200k": 7500,
+            "tier500k": 6500,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "volume": "260mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "InterOss Collagen Block 600mg",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICB-600",
+          "priceRUB": {
+            "retail": 22260,
+            "tier200k": 9500,
+            "tier500k": 8500,
+            "tier1500k": 7000
+          },
+          "specs": {
+            "volume": "600mg",
+            "type": "Collagen Block"
+          }
+        },
+        {
+          "name": "Geistler Membrane 4",
+          "brand": "Geistler",
+          "country": "Австрия",
+          "article": "GEIST-4",
+          "priceRUB": {
+            "retail": 5400,
+            "tier200k": 4400,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "4",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Geistler Membrane 6",
+          "brand": "Geistler",
+          "country": "Австрия",
+          "article": "GEIST-6",
+          "priceRUB": {
+            "retail": 6800,
+            "tier200k": 5400,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "6",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Geistler Membrane 8",
+          "brand": "Geistler",
+          "country": "Австрия",
+          "article": "GEIST-8",
+          "priceRUB": {
+            "retail": 7700,
+            "tier200k": 6100,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "8",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Barrier Membrane 6",
+          "brand": "Barrier",
+          "country": "Китай",
+          "article": "BAR-6",
+          "priceRUB": {
+            "retail": 5400,
+            "tier200k": 4400,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "6",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Barrier Membrane 8",
+          "brand": "Barrier",
+          "country": "Китай",
+          "article": "BAR-8",
+          "priceRUB": {
+            "retail": 6800,
+            "tier200k": 5400,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "8",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "Barrier Membrane 10",
+          "brand": "Barrier",
+          "country": "Китай",
+          "article": "BAR-10",
+          "priceRUB": {
+            "retail": 7700,
+            "tier200k": 6100,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "10",
+            "type": "Resorbable"
+          }
+        },
+        {
+          "name": "InterOss Collagen Plug 150mg",
+          "brand": "InterOss",
+          "country": "США",
+          "article": "ICP-150",
+          "priceRUB": {
+            "retail": 11000,
+            "tier200k": 7000,
+            "tier500k": 6000,
+            "tier1500k": 5000
+          },
+          "specs": {
+            "volume": "150mg",
+            "type": "Collagen Plug"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "supplies",
+      "name": "Расходники",
+      "products": [
+        {
+          "name": "DAFLON Polyamide Monofilament 3/0",
+          "brand": "BRAUN",
+          "country": "Германия",
+          "article": "DAFLON-3/0",
+          "priceRUB": {
+            "retail": 10000,
+            "tier200k": 6500,
+            "tier500k": 5500,
+            "tier1500k": 4500
+          },
+          "specs": {
+            "size": "3/0",
+            "type": "Suture"
+          }
+        },
+        {
+          "name": "DAFLON Polyamide Monofilament 4/0",
+          "brand": "BRAUN",
+          "country": "Германия",
+          "article": "DAFLON-4/0",
+          "priceRUB": {
+            "retail": 12000,
+            "tier200k": 7500,
+            "tier500k": 6500,
+            "tier1500k": 5500
+          },
+          "specs": {
+            "size": "4/0",
+            "type": "Suture"
+          }
+        },
+        {
+          "name": "DAFLON Polyamide Monofilament 5/0",
+          "brand": "BRAUN",
+          "country": "Германия",
+          "article": "DAFLON-5/0",
+          "priceRUB": {
+            "retail": 13000,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "size": "5/0",
+            "type": "Suture"
+          }
+        },
+        {
+          "name": "DAFLON Polyamide Monofilament 6/0",
+          "brand": "BRAUN",
+          "country": "Германия",
+          "article": "DAFLON-6/0",
+          "priceRUB": {
+            "retail": 13000,
+            "tier200k": 8000,
+            "tier500k": 7000,
+            "tier1500k": 6000
+          },
+          "specs": {
+            "size": "6/0",
+            "type": "Suture"
+          }
+        },
+        {
+          "name": "Kit for Installing Unstressed Pins KAVO",
+          "brand": "KAVO",
+          "country": "Германия",
+          "article": "KAVO-PIN-KIT",
+          "priceRUB": {
+            "retail": 49000,
+            "tier200k": 40000,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Pin Kit"
+          }
+        },
+        {
+          "name": "Pins Unstressed",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "PINS-UNSTR",
+          "priceRUB": {
+            "retail": 600,
+            "tier200k": 350,
+            "tier500k": 300,
+            "tier1500k": 250
+          },
+          "specs": {
+            "type": "Pins"
+          }
+        },
+        {
+          "name": "Screws",
+          "brand": "Generic",
+          "country": "Ю.Корея",
+          "article": "SCREWS",
+          "priceRUB": {
+            "retail": 1200,
+            "tier200k": 600,
+            "tier500k": 500,
+            "tier1500k": 400
+          },
+          "specs": {
+            "type": "Screws"
+          }
+        },
+        {
+          "name": "Kit Screw for GBR Set of 3",
+          "brand": "Generic",
+          "country": "Ю.Корея",
+          "article": "GBR-KIT-3",
+          "priceRUB": {
+            "retail": 37000,
+            "tier200k": 28000,
+            "tier500k": 23000,
+            "tier1500k": null
+          },
+          "specs": {
+            "quantity": "Set of 3",
+            "type": "GBR Kit"
+          }
+        },
+        {
+          "name": "Kit Screw for GBR Set of 10",
+          "brand": "Generic",
+          "country": "Ю.Корея",
+          "article": "GBR-KIT-10",
+          "priceRUB": {
+            "retail": 97000,
+            "tier200k": null,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "quantity": "Set of 10",
+            "type": "GBR Kit"
+          }
+        },
+        {
+          "name": "Pins Holder Box Set",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "PIN-HOLDER",
+          "priceRUB": {
+            "retail": 12000,
+            "tier200k": 8000,
+            "tier500k": 6000,
+            "tier1500k": null
+          },
+          "specs": {
+            "type": "Holder Box"
+          }
+        },
+        {
+          "name": "Pins 3.75mm",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "PIN-3.75",
+          "priceRUB": {
+            "retail": 500,
+            "tier200k": 300,
+            "tier500k": 250,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "3.75mm",
+            "type": "Pins"
+          }
+        },
+        {
+          "name": "Pins 5mm",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "PIN-5",
+          "priceRUB": {
+            "retail": 500,
+            "tier200k": 300,
+            "tier500k": 250,
+            "tier1500k": null
+          },
+          "specs": {
+            "size": "5mm",
+            "type": "Pins"
+          }
+        },
+        {
+          "name": "Pin Holder 10 units",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "PIN-H-10",
+          "priceRUB": {
+            "retail": 5000,
+            "tier200k": 3500,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "quantity": "10 units",
+            "type": "Holder"
+          }
+        },
+        {
+          "name": "Pin Box 10 units",
+          "brand": "Generic",
+          "country": "Китай",
+          "article": "PIN-B-10",
+          "priceRUB": {
+            "retail": 3500,
+            "tier200k": 2500,
+            "tier500k": null,
+            "tier1500k": null
+          },
+          "specs": {
+            "quantity": "10 units",
+            "type": "Box"
+          }
+        },
+        {
+          "name": "GC FUJI 1 Cement",
+          "brand": "GC",
+          "country": "Япония",
+          "article": "GC-FUJI-1",
+          "priceRUB": {
+            "retail": 6000,
+            "tier200k": 4500,
+            "tier500k": 4000,
+            "tier1500k": 3000
+          },
+          "specs": {
+            "type": "Cement"
+          }
+        },
+        {
+          "name": "Single Bond Universal Adhesive",
+          "brand": "3M",
+          "country": "США",
+          "article": "3M-SBU",
+          "priceRUB": {
+            "retail": 5500,
+            "tier200k": 3500,
+            "tier500k": 3000,
+            "tier1500k": 2000
+          },
+          "specs": {
+            "type": "Adhesive"
+          }
+        },
+        {
+          "name": "ADPER Single Bond 2 Adhesive",
+          "brand": "3M",
+          "country": "США",
+          "article": "3M-ASB2",
+          "priceRUB": {
+            "retail": 4500,
+            "tier200k": 3000,
+            "tier500k": 2500,
+            "tier1500k": 1500
+          },
+          "specs": {
+            "type": "Adhesive"
+          }
+        }
+      ]
+    }
+  ]
+}

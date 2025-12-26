@@ -3,86 +3,72 @@ import { Link, useLocation } from 'react-router-dom'
 import { categoryIcons } from '../CategoryIcons/CategoryIcons'
 import './CategoryBar.css'
 
-// Данные категорий с подкатегориями
-const mockCategories = [
-  {
-    id: 1,
-    name: 'Имплантаты',
-    slug: 'implants',
-    subcategories: [
-      { name: 'DIO', items: ['UF II', 'SM', 'Extra Wide'] },
-      { name: 'DENTIUM', items: ['SuperLine', 'Implantium'] },
-      { name: 'OSSTEM', items: ['TS III', 'MS'] },
-      { name: 'MEGAGEN' },
-      { name: 'STRAUMANN' }
-    ]
-  },
-  {
-    id: 2,
-    name: 'Компоненты',
-    slug: 'components',
-    subcategories: [
-      { name: 'Абатменты', items: ['Прямые', 'Угловые', 'Multi-unit'] },
-      { name: 'Формирователи десны' },
-      { name: 'Винты', items: ['Фиксирующие', 'Заглушки'] },
-      { name: 'Слепочные трансферы' }
-    ]
-  },
-  {
-    id: 3,
-    name: 'Костные материалы',
-    slug: 'bone',
-    subcategories: [
-      { name: 'Гранулы', items: ['0.25-1мм', '1-2мм', '2-4мм'] },
-      { name: 'Блоки' },
-      { name: 'STRAUMANN', items: ['Cerabone', 'XenoGraft'] }
-    ]
-  },
-  {
-    id: 4,
-    name: 'Мембраны',
-    slug: 'membrane',
-    subcategories: [
-      { name: 'Коллагеновые', items: ['15x20', '20x30', '30x40'] },
-      { name: 'PTFE' },
-      { name: 'Титановые' }
-    ]
-  },
-  {
-    id: 5,
-    name: 'Расходники',
-    slug: 'supplies',
-    subcategories: [
-      { name: 'Инструменты', items: ['Боры', 'Фрезы'] },
-      { name: 'Шовный материал' },
-      { name: 'Антисептики' }
-    ]
-  }
-]
-
 function CategoryBar() {
   const location = useLocation()
-  const [categories, setCategories] = useState(mockCategories)
+  const [categories, setCategories] = useState([])
+  const [subcategoriesMap, setSubcategoriesMap] = useState({})
+  const [brandsMap, setBrandsMap] = useState({})
   const [activeDropdown, setActiveDropdown] = useState(null)
 
   useEffect(() => {
+    // Загружаем основные категории
     fetch('/api/categories')
       .then(res => res.json())
       .then(data => {
         if (data && data.length > 0) {
-          // Merge API data with subcategories from mock
-          const mergedCategories = data.map(apiCat => {
-            const mockCat = mockCategories.find(m => m.slug === apiCat.slug)
-            return {
-              ...apiCat,
-              subcategories: mockCat?.subcategories || []
-            }
-          })
-          setCategories(mergedCategories)
+          setCategories(data)
         }
       })
       .catch(err => console.error('Error fetching categories:', err))
   }, [])
+
+  // Загружаем подкатегории и бренды для категории при наведении
+  const handleMouseEnter = async (category) => {
+    setActiveDropdown(category.id)
+
+    // Если уже загружали данные для этой категории, не загружаем снова
+    if (subcategoriesMap[category.slug] && brandsMap[category.slug]) {
+      return
+    }
+
+    try {
+      // Загружаем подкатегории и товары параллельно
+      const [subcategoriesRes, productsRes] = await Promise.all([
+        fetch(`/api/categories/${category.slug}/subcategories`),
+        fetch(`/api/products?category=${category.slug}`)
+      ])
+
+      if (subcategoriesRes.ok) {
+        const subcategories = await subcategoriesRes.json()
+        setSubcategoriesMap(prev => ({
+          ...prev,
+          [category.slug]: subcategories
+        }))
+      }
+
+      // Извлекаем уникальные бренды из товаров
+      if (productsRes.ok) {
+        const products = await productsRes.json()
+        const brandCounts = {}
+        products.forEach(p => {
+          if (p.brand) {
+            brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1
+          }
+        })
+        const brands = Object.entries(brandCounts)
+          .map(([name, count]) => ({ name, count }))
+          .sort((a, b) => b.count - a.count) // Сортируем по количеству товаров
+          .slice(0, 8) // Берём топ-8 брендов
+
+        setBrandsMap(prev => ({
+          ...prev,
+          [category.slug]: brands
+        }))
+      }
+    } catch (err) {
+      console.error('Error fetching category data:', err)
+    }
+  }
 
   return (
     <nav className="category-bar">
@@ -90,14 +76,16 @@ function CategoryBar() {
         {categories.map(category => {
           const isActive = location.pathname === `/category/${category.slug}`
           const IconComponent = categoryIcons[category.slug]
-          const hasDropdown = category.subcategories && category.subcategories.length > 0
+          const subcategories = subcategoriesMap[category.slug] || []
+          const brands = brandsMap[category.slug] || []
+          const hasDropdown = subcategories.length > 0 || brands.length > 0
           const isDropdownOpen = activeDropdown === category.id
 
           return (
             <div
               key={category.id}
               className={`category-item-wrapper ${isDropdownOpen ? 'dropdown-open' : ''}`}
-              onMouseEnter={() => hasDropdown && setActiveDropdown(category.id)}
+              onMouseEnter={() => handleMouseEnter(category)}
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <Link
@@ -114,31 +102,49 @@ function CategoryBar() {
                 <span className="category-name">{category.name}</span>
               </Link>
 
-              {/* Мега-меню dropdown */}
+              {/* Dropdown с подкатегориями и брендами */}
               {hasDropdown && isDropdownOpen && (
                 <div className="mega-dropdown">
                   <div className="mega-dropdown-content">
-                    {category.subcategories.map((sub, idx) => (
-                      <div key={idx} className="mega-dropdown-column">
-                        <Link
-                          to={`/category/${category.slug}?sub=${encodeURIComponent(sub.name)}`}
-                          className="mega-dropdown-title"
-                        >
-                          {sub.name}
-                        </Link>
-                        {sub.items && (
-                          <ul className="mega-dropdown-list">
-                            {sub.items.map((item, i) => (
-                              <li key={i}>
-                                <Link to={`/category/${category.slug}?sub=${encodeURIComponent(sub.name)}&item=${encodeURIComponent(item)}`}>
-                                  {item}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
+                    {/* Секция подкатегорий */}
+                    {subcategories.length > 0 && (
+                      <div className="dropdown-section">
+                        <div className="section-title">Subcategories</div>
+                        <div className="section-items">
+                          {subcategories.map(sub => (
+                            <Link
+                              key={sub.id}
+                              to={`/category/${category.slug}`}
+                              className="dropdown-item"
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              {sub.name}
+                              <span className="item-count">({sub.product_count})</span>
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    ))}
+                    )}
+
+                    {/* Секция брендов */}
+                    {brands.length > 0 && (
+                      <div className="dropdown-section">
+                        <div className="section-title">Popular Brands</div>
+                        <div className="section-items brands-grid">
+                          {brands.map(brand => (
+                            <Link
+                              key={brand.name}
+                              to={`/category/${category.slug}`}
+                              className="dropdown-item brand-item"
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              {brand.name}
+                              <span className="item-count">({brand.count})</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}

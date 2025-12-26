@@ -67,9 +67,9 @@ function ProductCard({ product }) {
       <div className="card-row-bottom">
         <div className="card-price">
           {product.oldPrice && (
-            <span className="old-price">{formatPrice(product.oldPrice)} ₽</span>
+            <span className="old-price">${formatPrice(product.oldPrice)}</span>
           )}
-          <span className="current-price">{formatPrice(product.price)} ₽</span>
+          <span className="current-price">${formatPrice(product.price)}</span>
         </div>
 
         <div className="card-actions">

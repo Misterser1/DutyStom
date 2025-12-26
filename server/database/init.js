@@ -11,7 +11,7 @@ let db = null
 let SQL = null
 
 // Сохранение базы данных в файл
-function saveDb() {
+export function saveDb() {
   if (db) {
     const data = db.export()
     const buffer = Buffer.from(data)
@@ -91,6 +91,64 @@ export async function initDatabase() {
     )
   `)
 
+  // Миграция: добавляем новые колонки если их нет
+  try {
+    const tableInfo = db.exec("PRAGMA table_info(products)")
+    const columns = tableInfo[0]?.values.map(row => row[1]) || []
+
+    if (!columns.includes('code')) {
+      db.run('ALTER TABLE products ADD COLUMN code TEXT')
+      console.log('Added column: code')
+    }
+    if (!columns.includes('article')) {
+      db.run('ALTER TABLE products ADD COLUMN article TEXT')
+      console.log('Added column: article')
+    }
+    if (!columns.includes('price_usd')) {
+      db.run('ALTER TABLE products ADD COLUMN price_usd REAL')
+      console.log('Added column: price_usd')
+    }
+    if (!columns.includes('price_tier_200k')) {
+      db.run('ALTER TABLE products ADD COLUMN price_tier_200k REAL')
+      console.log('Added column: price_tier_200k')
+    }
+    if (!columns.includes('price_tier_500k')) {
+      db.run('ALTER TABLE products ADD COLUMN price_tier_500k REAL')
+      console.log('Added column: price_tier_500k')
+    }
+    if (!columns.includes('price_tier_1500k')) {
+      db.run('ALTER TABLE products ADD COLUMN price_tier_1500k REAL')
+      console.log('Added column: price_tier_1500k')
+    }
+    if (!columns.includes('country')) {
+      db.run('ALTER TABLE products ADD COLUMN country TEXT')
+      console.log('Added column: country')
+    }
+    if (!columns.includes('specs')) {
+      db.run('ALTER TABLE products ADD COLUMN specs TEXT')
+      console.log('Added column: specs')
+    }
+    if (!columns.includes('updated_at')) {
+      db.run('ALTER TABLE products ADD COLUMN updated_at DATETIME')
+      console.log('Added column: updated_at')
+    }
+  } catch (error) {
+    console.error('Migration error:', error)
+  }
+
+  // Миграция: добавляем parent_id в categories для иерархии
+  try {
+    const catTableInfo = db.exec("PRAGMA table_info(categories)")
+    const catColumns = catTableInfo[0]?.values.map(row => row[1]) || []
+
+    if (!catColumns.includes('parent_id')) {
+      db.run('ALTER TABLE categories ADD COLUMN parent_id INTEGER REFERENCES categories(id)')
+      console.log('Added column: parent_id to categories')
+    }
+  } catch (error) {
+    console.error('Categories migration error:', error)
+  }
+
   db.run(`
     CREATE TABLE IF NOT EXISTS orders (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -105,6 +163,36 @@ export async function initDatabase() {
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `)
+
+  db.run(`
+    CREATE TABLE IF NOT EXISTS import_history (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      filename TEXT NOT NULL,
+      total_products INTEGER,
+      successful_imports INTEGER,
+      failed_imports INTEGER,
+      imported_by TEXT DEFAULT 'admin',
+      import_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+      notes TEXT
+    )
+  `)
+
+  db.run(`
+    CREATE TABLE IF NOT EXISTS settings (
+      key TEXT PRIMARY KEY,
+      value TEXT NOT NULL,
+      updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `)
+
+  // Инициализируем настройки
+  const settingsCount = dbGet('SELECT COUNT(*) as count FROM settings')
+  if (!settingsCount || settingsCount.count === 0) {
+    db.run("INSERT OR IGNORE INTO settings (key, value) VALUES ('exchange_rate_usd_rub', '80')")
+    db.run("INSERT OR IGNORE INTO settings (key, value) VALUES ('company_name', 'DUTYSTOM')")
+    db.run("INSERT OR IGNORE INTO settings (key, value) VALUES ('company_phone', '+7 930-950-88-87')")
+    console.log('Settings initialized')
+  }
 
   // Проверяем есть ли категории
   const categoriesCount = dbGet('SELECT COUNT(*) as count FROM categories')

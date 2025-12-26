@@ -1,0 +1,5984 @@
+{
+  "categories": [
+    "Имплантаты > DIO",
+    "Имплантаты > DENTIUM",
+    "Имплантаты > MEGAGEN",
+    "Имплантаты > INNO",
+    "Имплантаты > SNUCONE",
+    "Имплантаты > NEOBITECH",
+    "Имплантаты > DENTIS",
+    "Прочее > DENTIUM / OSSTEM",
+    "Имплантаты > OSSTEM TS-III",
+    "Имплантаты > OSSTEM TS-IV / STRAUMANN Botiss",
+    "Прочее > NEOBITECH / STRAUMANN",
+    "Имплантаты > STRAUMANN",
+    "Имплантаты > ANTHOGYR",
+    "Имплантаты > ASTRATECH",
+    "Имплантаты > SIC",
+    "Протетика > Заглушки",
+    "Инструменты > Отвёртки",
+    "Протетика > Титановые основания GEO",
+    "Протетика > Протетика реплика",
+    "Протетика > Мультиюниты реплика",
+    "Протетика > Мультиюниты X GATE",
+    "Протетика > DIO NOT DIGITAL Мультиюниты",
+    "Протетика > DIO DIGITAL Мультиюниты",
+    "Протетика > DIO ORIGINAL Протетика",
+    "Протетика > DIO Ball Abutment",
+    "Хирургические наборы > DIO Surgical Kit",
+    "Инструменты > Костные экспандеры",
+    "Инструменты > Остеотомы",
+    "Инструменты > Синус-лифтинг",
+    "Инструменты > Прочие инструменты",
+    "Инструменты > Свёрла и профилеры",
+    "Хирургические наборы > MEGAGEN Surgical Kit",
+    "Протетика > MEGAGEN BLUEDIAMOND Протетика",
+    "Костные материалы > I-Bone Max",
+    "Костные материалы > TITAN B",
+    "Костные материалы > STRAUMANN Botiss Cerabone",
+    "Костные материалы > STRAUMANN XenoGraft",
+    "Костные материалы > NOBEL CreoS Xenogain",
+    "Костные материалы > NIBEC OCS-B",
+    "Костные материалы > SIGMAGRAFT InterOss",
+    "Костные материалы > VERI-OSS",
+    "Костные материалы > BioOst",
+    "Костные материалы > STRAUMANN XenoFlex",
+    "Мембраны > TITAN GIDE",
+    "Мембраны > TITAN M",
+    "Мембраны > STRAUMANN Botiss Jason",
+    "Мембраны > SIGMAGRAFT InterCollagen",
+    "Мембраны > BioPLATE Contur",
+    "Мембраны > BioPLATE Barrier",
+    "Мембраны > MYDERM",
+    "Мембраны > PTFE с титановым каркасом",
+    "Пины и GBR > Пины и винты GBR",
+    "Прочее > STRAUMANN XenoGraft",
+    "Инструменты > Инструменты для костной пластики",
+    "Расходники > Ирригационные системы",
+    "Расходники > Шовный материал",
+    "Расходники > Цементы и адгезивы",
+    "Инструменты > Трепаны и триммеры",
+    "Инструменты > Иглодержатели",
+    "Инструменты > Ножницы",
+    "Инструменты > PRF",
+    "Прочее > NOBEL / Инструменты",
+    "Инструменты > Кюреты",
+    "Инструменты > Периотомы",
+    "Инструменты > Элеваторы"
+  ],
+  "products": [
+    {
+      "row": 3,
+      "nameEn": "DIO UF II HSA",
+      "nameRu": "DIO UF II HSA",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DIO",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3000,
+        "qty_1000": 2500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 4,
+      "nameEn": "DIO SHORT HSA",
+      "nameRu": "DIO SHORT HSA",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DIO",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3000,
+        "qty_1000": 2500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 5,
+      "nameEn": "DIO UF III HSA",
+      "nameRu": "DIO UF III HSA",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DIO",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3000,
+        "qty_1000": 2500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 6,
+      "nameEn": "DIO INTERNAL",
+      "nameRu": "DIO INTERNAL",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DIO",
+      "color": "00B0F0",
+      "prices": {
+        "qty_100": 3500,
+        "qty_500": 3000,
+        "qty_1000": 2500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 7,
+      "nameEn": "DIO PROTEM MINI POST TYPE",
+      "nameRu": "DIO PROTEM MINI POST TYPE",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DIO",
+      "color": "00B0F0",
+      "prices": {
+        "qty_100": 3500,
+        "qty_500": 3000,
+        "qty_1000": 2500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 8,
+      "nameEn": "DIO PROTEM MINI BALL TYPE",
+      "nameRu": "DIO PROTEM MINI BALL TYPE",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DIO",
+      "color": "00B0F0",
+      "prices": {
+        "qty_100": 3500,
+        "qty_500": 3000,
+        "qty_1000": 2500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 9,
+      "nameEn": "DENTIUM SUPERLINE II FXS ****",
+      "nameRu": "DENTIUM SUPERLINE II FXS ****",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DENTIUM",
+      "color": "93CDDD",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 10,
+      "nameEn": "SIMPLELINE II",
+      "nameRu": "SIMPLELINE II",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DENTIUM",
+      "color": "93CDDD",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 11,
+      "nameEn": "MEGAGEN BLUEDIAMOND REGULAR THREAD",
+      "nameRu": "MEGAGEN BLUEDIAMOND REGULAR THREAD",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 7500,
+        "qty_30": 7000,
+        "qty_50": 6500,
+        "qty_200": 6000,
+        "qty_1000": 5000
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 12,
+      "nameEn": "MEGAGEN BLUEDIAMOND DEEP THREAD",
+      "nameRu": "MEGAGEN BLUEDIAMOND DEEP THREAD",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 7500,
+        "qty_30": 7000,
+        "qty_50": 6500,
+        "qty_200": 6000,
+        "qty_1000": 5000
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 13,
+      "nameEn": "MEGAGEN ANYONE INTERNAL REGULAR THREAD",
+      "nameRu": "MEGAGEN ANYONE INTERNAL REGULAR THREAD",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 14,
+      "nameEn": "MEGAGEN ANYONE INTERNAL DEEP THREAD",
+      "nameRu": "MEGAGEN ANYONE INTERNAL DEEP THREAD",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 15,
+      "nameEn": "MEGAGEN ANYONE SPECIAL SHORT",
+      "nameRu": "MEGAGEN ANYONE SPECIAL SHORT",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 16,
+      "nameEn": "MEGAGEN ANYONE ONESTAGE REGULAR THREAD",
+      "nameRu": "MEGAGEN ANYONE ONESTAGE REGULAR THREAD",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 17,
+      "nameEn": "MEGAGEN ANYONE ONESTAGE DEEP THREAD",
+      "nameRu": "MEGAGEN ANYONE ONESTAGE DEEP THREAD",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "MEGAGEN",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 18,
+      "nameEn": "INNO SUBMERGED",
+      "nameRu": "INNO SUBMERGED",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "INNO",
+      "color": "F2DCDB",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 19,
+      "nameEn": "INNO SUBMERGED SHORT",
+      "nameRu": "INNO SUBMERGED SHORT",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "INNO",
+      "color": "F2DCDB",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 20,
+      "nameEn": "INNO SUBMERGED NARROW",
+      "nameRu": "INNO SUBMERGED NARROW",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "INNO",
+      "color": "F2DCDB",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 21,
+      "nameEn": "SNUCONE AF+I",
+      "nameRu": "SNUCONE AF+I",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "SNUCONE",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 22,
+      "nameEn": "SNUCONE AF+II",
+      "nameRu": "SNUCONE AF+II",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "SNUCONE",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 23,
+      "nameEn": "NEOBITECH IS-II",
+      "nameRu": "NEOBITECH IS-II",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "NEOBITECH",
+      "color": "D99694",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 24,
+      "nameEn": "NEOBITECH IS-II SHORT 4 sizes",
+      "nameRu": "NEOBITECH IS-II SHORT 4 sizes",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "NEOBITECH",
+      "color": "D99694",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 25,
+      "nameEn": "NEOBITECH IS-III",
+      "nameRu": "NEOBITECH IS-III",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "NEOBITECH",
+      "color": "D99694",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 26,
+      "nameEn": "DENTIS SQ",
+      "nameRu": "DENTIS SQ",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DENTIS",
+      "color": "D7E4BD",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 27,
+      "nameEn": "DENTIS SQ SHORT 3 sizes",
+      "nameRu": "DENTIS SQ SHORT 3 sizes",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DENTIS",
+      "color": "D7E4BD",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 28,
+      "nameEn": "DENTIS ONEQ-SL",
+      "nameRu": "DENTIS ONEQ-SL",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "DENTIS",
+      "color": "D7E4BD",
+      "prices": {
+        "qty_10": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500,
+        "qty_500": 3250,
+        "qty_1000": 3000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 29,
+      "nameEn": "OSSTEM TS-III",
+      "nameRu": "OSSTEM TS-III",
+      "productType": "",
+      "material": "",
+      "country": "",
+      "category": "Прочее",
+      "subcategory": "DENTIUM / OSSTEM",
+      "color": "93CDDD",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 30,
+      "nameEn": "BA Pre-mount/No-mount",
+      "nameRu": "BA с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-III",
+      "color": "E6E0EC",
+      "prices": {
+        "qty_40": 5500,
+        "qty_100": 5000,
+        "qty_500": 4500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 31,
+      "nameEn": "SOI Pre-mount/No-mount",
+      "nameRu": "SOI с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-III",
+      "color": "E6E0EC",
+      "prices": {
+        "qty_40": 5500,
+        "qty_100": 5000,
+        "qty_500": 4500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 32,
+      "nameEn": "CA Pre-mount/No-mount",
+      "nameRu": "CA с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-III",
+      "color": "E6E0EC",
+      "prices": {
+        "qty_40": 5500,
+        "qty_100": 5000,
+        "qty_500": 4500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 33,
+      "nameEn": "SA Pre-mount/No-mount",
+      "nameRu": "SA с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-III",
+      "color": "E6E0EC",
+      "prices": {
+        "qty_40": 4500,
+        "qty_100": 4300,
+        "qty_500": 4000
+      },
+      "basePrice": 4300
+    },
+    {
+      "row": 34,
+      "nameEn": "OSSTEM TS-IV",
+      "nameRu": "OSSTEM TS-IV",
+      "productType": "",
+      "material": "",
+      "country": "",
+      "category": "Прочее",
+      "subcategory": "DENTIUM / OSSTEM",
+      "color": "93CDDD",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 35,
+      "nameEn": "BA Pre-mount/No-mount",
+      "nameRu": "BA с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-IV / STRAUMANN Botiss",
+      "color": "C3D69B",
+      "prices": {
+        "qty_40": 5500,
+        "qty_100": 5000,
+        "qty_500": 4500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 36,
+      "nameEn": "CA Pre-mount/No-mount",
+      "nameRu": "CA с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-IV / STRAUMANN Botiss",
+      "color": "C3D69B",
+      "prices": {
+        "qty_40": 5500,
+        "qty_100": 5000,
+        "qty_500": 4500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 37,
+      "nameEn": "SA Pre-mount/No-mount",
+      "nameRu": "SA с адаптером/без адаптера",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Имплантаты",
+      "subcategory": "OSSTEM TS-IV / STRAUMANN Botiss",
+      "color": "C3D69B",
+      "prices": {
+        "qty_40": 4500,
+        "qty_100": 4300,
+        "qty_500": 4000
+      },
+      "basePrice": 4300
+    },
+    {
+      "row": 38,
+      "nameEn": "STRAUMANN BL Bone Level TITAN SLA",
+      "nameRu": "STRAUMANN BL Bone Level TITAN SLA",
+      "productType": "",
+      "material": "",
+      "country": "",
+      "category": "Прочее",
+      "subcategory": "NEOBITECH / STRAUMANN",
+      "color": "D99694",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 39,
+      "nameEn": "STRAUMANN BL Bone Level",
+      "nameRu": "STRAUMANN BL Bone Level",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "STRAUMANN",
+      "color": "FFC000",
+      "prices": {
+        "qty_100": 12500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 40,
+      "nameEn": "STRAUMANN BLT Bone Level Tapered",
+      "nameRu": "STRAUMANN BLT Bone Level Tapered",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "STRAUMANN",
+      "color": "FFC000",
+      "prices": {
+        "qty_100": 12500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 41,
+      "nameEn": "STRAUMANN TL Tissue Level TITAN SLA",
+      "nameRu": "STRAUMANN TL Tissue Level TITAN SLA",
+      "productType": "",
+      "material": "",
+      "country": "",
+      "category": "Прочее",
+      "subcategory": "NEOBITECH / STRAUMANN",
+      "color": "D99694",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 42,
+      "nameEn": "STRAUMANN Standard",
+      "nameRu": "STRAUMANN Standard",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "STRAUMANN",
+      "color": "FFC000",
+      "prices": {
+        "qty_100": 12500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 43,
+      "nameEn": "STRAUMANN Standard Plus",
+      "nameRu": "STRAUMANN Standard Plus",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "STRAUMANN",
+      "color": "FFC000",
+      "prices": {
+        "qty_100": 12500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 44,
+      "nameEn": "ANTHOGYR Axiom X3",
+      "nameRu": "ANTHOGYR Axiom X3",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "France",
+      "category": "Имплантаты",
+      "subcategory": "ANTHOGYR",
+      "color": "B3A2C7",
+      "prices": {
+        "qty_100": 8000
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 45,
+      "nameEn": "ANTHOGYR Axiom PX",
+      "nameRu": "ANTHOGYR Axiom PX",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "France",
+      "category": "Имплантаты",
+      "subcategory": "ANTHOGYR",
+      "color": "B3A2C7",
+      "prices": {
+        "qty_100": 7500
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 46,
+      "nameEn": "ANTHOGYR Axiom REG",
+      "nameRu": "ANTHOGYR Axiom REG",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "France",
+      "category": "Имплантаты",
+      "subcategory": "ANTHOGYR",
+      "color": "B3A2C7",
+      "prices": {
+        "qty_100": 7500
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 47,
+      "nameEn": "ASTRATECH TX",
+      "nameRu": "ASTRATECH TX",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Sweden",
+      "category": "Имплантаты",
+      "subcategory": "ASTRATECH",
+      "color": "D7E4BD",
+      "prices": {
+        "qty_100": 12500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 48,
+      "nameEn": "ASTRATECH TX PROFILE",
+      "nameRu": "ASTRATECH TX PROFILE",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Sweden",
+      "category": "Имплантаты",
+      "subcategory": "ASTRATECH",
+      "color": "D7E4BD",
+      "prices": {
+        "qty_100": 12500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 49,
+      "nameEn": "SICace",
+      "nameRu": "SICace",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "SIC",
+      "color": "FF0066",
+      "prices": {
+        "qty_100": 7500
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 50,
+      "nameEn": "SICmax",
+      "nameRu": "SICmax",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "SIC",
+      "color": "FF0066",
+      "prices": {
+        "qty_100": 7500
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 51,
+      "nameEn": "SICtapered",
+      "nameRu": "SICtapered",
+      "productType": "Implant",
+      "material": "Titan",
+      "country": "Switzerland",
+      "category": "Имплантаты",
+      "subcategory": "SIC",
+      "color": "FF0066",
+      "prices": {
+        "qty_100": 7500
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 52,
+      "nameEn": "DIO ORIGINAL Cover Screw\r\nCover Screw DIO Regular Height 0mm\r\nSuitable for all Korean HEX 2.5 systems\r\nScrewdriver 1.2",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ЗАГЛУШКА\r\nЗаглушка DIO Regular 0мм\r\nПодходит на все корейские системы с шестигранником 2.5\r\nДля установки нужна отвёртка 1.2",
+      "productType": "DIO ORIGINAL Cover Screw",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "Заглушки",
+      "color": "00B0F0",
+      "prices": {
+        "single": 300,
+        "qty_100": 250,
+        "qty_1000": 150
+      },
+      "basePrice": 300
+    },
+    {
+      "row": 53,
+      "nameEn": "DIO ORIGINAL Cover Screw\r\nCover Screw DIO Regular Height 1; 2; 3mm\r\nSuitable for all Korean HEX 2.5 systems\r\nScrewdriver 1.2",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ЗАГЛУШКА\r\nЗаглушка DIO Regular высокая 1; 2; 3мм\r\nПодходит на все корейские системы с шестигранником 2.5\r\nДля установки нужна отвёртка 1.2",
+      "productType": "DIO ORIGINAL Cover Screw",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "Заглушки",
+      "color": "00B0F0",
+      "prices": {
+        "single": 600,
+        "qty_100": 450,
+        "qty_1000": 350
+      },
+      "basePrice": 600
+    },
+    {
+      "row": 54,
+      "nameEn": "DIO ORIGINAL Cover Screw\r\nCover Screw DIO Narrow (3.0; 3.3) Height 0mm\r\nScrewdriver 1.2",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ЗАГЛУШКА\r\nЗаглушка DIO Narrow 0мм\r\nДля установки нужна отвёртка 1.2",
+      "productType": "DIO ORIGINAL Cover Screw",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "Заглушки",
+      "color": "00B0F0",
+      "prices": {
+        "single": 300,
+        "qty_100": 250,
+        "qty_1000": 150
+      },
+      "basePrice": 300
+    },
+    {
+      "row": 55,
+      "nameEn": "DIO ORIGINAL Cover Screw\r\nCover Screw DIO Narrow (3.0; 3.3) Height 1; 2; 3mm\r\nScrewdriver 1.2",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ЗАГЛУШКА\r\nЗаглушка DIO Narrow высокая 1; 2; 3мм\r\nДля установки нужна отвёртка 1.2",
+      "productType": "DIO ORIGINAL Cover Screw",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "Заглушки",
+      "color": "00B0F0",
+      "prices": {
+        "single": 600,
+        "qty_100": 450,
+        "qty_1000": 350
+      },
+      "basePrice": 600
+    },
+    {
+      "row": 56,
+      "nameEn": "STRAUMANN RC replica Cover Screw\r\nHeight 0 or 0.5mm",
+      "nameRu": "STRAUMANN RC РЕПЛИКА ЗАГЛУШКА 0мм или 0.5мм",
+      "productType": "STRAUMANN RC replica Cover Screw",
+      "material": "Titan",
+      "country": "Russia",
+      "category": "Протетика",
+      "subcategory": "Заглушки",
+      "color": "FFC000",
+      "prices": {
+        "qty_10": 400,
+        "qty_100": 250
+      },
+      "basePrice": 400
+    },
+    {
+      "row": 57,
+      "nameEn": "Screwdriver 1.2 replica for Torque wrench for round screwdrivers",
+      "nameRu": "Отвёртка реплика 1.2 для динамометрический ключа  круглым соединением (Струнный ключ)",
+      "productType": "Screwdriver 1.2 replica",
+      "material": "",
+      "country": "China",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "92D050",
+      "prices": {
+        "single": 1500,
+        "qty_5": 1000
+      },
+      "basePrice": 1500
+    },
+    {
+      "row": 58,
+      "nameEn": "Screwdriver all systems replica for Torque wrench for round screwdrivers",
+      "nameRu": "Отвёртка реплика на любую систему (кроме 1.2) для динамометрический ключа  круглым соединением (Струнный ключ)",
+      "productType": "Screwdriver all systems replica",
+      "material": "",
+      "country": "China",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "92D050",
+      "prices": {
+        "single": 2000
+      },
+      "basePrice": 2000
+    },
+    {
+      "row": 59,
+      "nameEn": "Titanium bases GEO Korean systems",
+      "nameRu": "Титановые основания аналог GEO на Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "Russia",
+      "category": "Протетика",
+      "subcategory": "Титановые основания GEO",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_100": 450,
+        "qty_200": 400,
+        "qty_500": 350,
+        "qty_1000": 300
+      },
+      "basePrice": 450
+    },
+    {
+      "row": 60,
+      "nameEn": "Titanium bases GEO other systems",
+      "nameRu": "Титановые основания аналог GEO на другие системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "Russia",
+      "category": "Протетика",
+      "subcategory": "Титановые основания GEO",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_100": 550,
+        "qty_200": 500,
+        "qty_500": 450,
+        "qty_1000": 400
+      },
+      "basePrice": 550
+    },
+    {
+      "row": 61,
+      "nameEn": "Titanium bases GEO annoded gold Korean systems",
+      "nameRu": "Титановые основания аналог GEO\r\nаннодированные золотые на Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "Russia",
+      "category": "Протетика",
+      "subcategory": "Титановые основания GEO",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_100": 650,
+        "qty_200": 600,
+        "qty_500": 550,
+        "qty_1000": 500
+      },
+      "basePrice": 650
+    },
+    {
+      "row": 62,
+      "nameEn": "Titanium bases GEO annoded gold other systems",
+      "nameRu": "Титановые основания аналог GEO\r\nаннодированные золотые на другие системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "Russia",
+      "category": "Протетика",
+      "subcategory": "Титановые основания GEO",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_100": 750,
+        "qty_200": 700,
+        "qty_500": 600,
+        "qty_1000": 550
+      },
+      "basePrice": 750
+    },
+    {
+      "row": 63,
+      "nameEn": "Laboratory analog implant Korean systems",
+      "nameRu": "Аналог имплантата на Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 400,
+        "qty_50": 300,
+        "qty_100": 200
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 64,
+      "nameEn": "Transfer open spoon Korean systems",
+      "nameRu": "Трансфер на Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_10": 700,
+        "qty_30": 600,
+        "qty_50": 500,
+        "qty_100": 400
+      },
+      "basePrice": 700
+    },
+    {
+      "row": 65,
+      "nameEn": "Healing Abutment Korean systems",
+      "nameRu": "Формирователь десны на Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 400,
+        "qty_50": 350,
+        "qty_100": 250
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 66,
+      "nameEn": "Abutment is cemented straight Korean systems",
+      "nameRu": "Цементируемый прямой абатмент\r\nна Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_100": 500,
+        "qty_500": 350
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 67,
+      "nameEn": "Abutment is cemented angular Korean systems",
+      "nameRu": "Цементируемый угловой абатмент\r\nна Корейские системы",
+      "productType": "Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "B7DEE8",
+      "prices": {
+        "qty_100": 750,
+        "qty_500": 600
+      },
+      "basePrice": 750
+    },
+    {
+      "row": 68,
+      "nameEn": "Multiunit straight Korean systems",
+      "nameRu": "Мультинит прямой на Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 450,
+        "qty_50": 350,
+        "qty_100": 300
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 69,
+      "nameEn": "Multiunit angular Korean systems",
+      "nameRu": "Мультинит угловой на Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 800,
+        "qty_30": 700,
+        "qty_50": 600,
+        "qty_100": 500
+      },
+      "basePrice": 800
+    },
+    {
+      "row": 70,
+      "nameEn": "Multiunit analog implant Korean systems",
+      "nameRu": "Аналог мультиюнита на Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 400,
+        "qty_50": 350,
+        "qty_100": 250
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 71,
+      "nameEn": "Multiunit Transfer open spoon Korean systems",
+      "nameRu": "Трансфер мультиюнита открытая ложка\r\nна Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 700,
+        "qty_30": 600,
+        "qty_50": 500,
+        "qty_100": 400
+      },
+      "basePrice": 700
+    },
+    {
+      "row": 72,
+      "nameEn": "Multiunit Transfer closed spoon Korean systems",
+      "nameRu": "Трансфер мультиюнита закрытая ложка\r\nна Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 700,
+        "qty_30": 600,
+        "qty_50": 500,
+        "qty_100": 400
+      },
+      "basePrice": 700
+    },
+    {
+      "row": 73,
+      "nameEn": "Multiunit Titanium bases Korean systems",
+      "nameRu": "Титановое основание мультиюнита\r\nна Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 450,
+        "qty_50": 350,
+        "qty_100": 300
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 74,
+      "nameEn": "Multiunit Titanium bases Extended Korean systems",
+      "nameRu": "Титановое основание мультиюнита удлинённоё\r\nна Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 550,
+        "qty_30": 500,
+        "qty_50": 400,
+        "qty_100": 350
+      },
+      "basePrice": 550
+    },
+    {
+      "row": 75,
+      "nameEn": "Multiunit Titanium temporary cylinder \r\nKorean systems",
+      "nameRu": "Титановый временный цилинд мультиюнита\r\nна Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 450,
+        "qty_50": 350,
+        "qty_100": 300
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 76,
+      "nameEn": "Multiunit Healing Abutment Korean systems",
+      "nameRu": "Формирователь десны для мультиюнита \r\n(Защитный заживляющий колпачок) \r\nна Корейские системы",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "E6B9B8",
+      "prices": {
+        "qty_10": 500,
+        "qty_30": 450,
+        "qty_50": 350,
+        "qty_100": 300
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 77,
+      "nameEn": "Multiunit Screwdriver Multiunit straight",
+      "nameRu": "Отвёртка для прямого мультиюнита",
+      "productType": "Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "China",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты реплика",
+      "color": "92D050",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 78,
+      "nameEn": "X GATE Multiunit type D\r\nSET Multiunit straight + Titanium bases\r\nKorean systems",
+      "nameRu": "X GATE Multiunit type D\r\nКомплект прямой мультиюнит + титановое основание",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 2900,
+        "qty_100": 1900,
+        "qty_500": 1500
+      },
+      "basePrice": 2900
+    },
+    {
+      "row": 79,
+      "nameEn": "X GATE Multiunit type D\r\nSET Multiunit angular + Titanium bases\r\nKorean systems",
+      "nameRu": "X GATE Multiunit type D\r\nКомплект угловой мультиюнит + титановое основание",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 4000,
+        "qty_100": 2900,
+        "qty_500": 2500
+      },
+      "basePrice": 4000
+    },
+    {
+      "row": 80,
+      "nameEn": "X GATE Multiunit type D straight Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nМультинит прямой на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 1800,
+        "qty_100": 1300,
+        "qty_500": 1100
+      },
+      "basePrice": 1800
+    },
+    {
+      "row": 81,
+      "nameEn": "X GATE Multiunit type D angular Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nМультинит угловой на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 3000,
+        "qty_100": 2300,
+        "qty_500": 2100
+      },
+      "basePrice": 3000
+    },
+    {
+      "row": 82,
+      "nameEn": "X GATE Multiunit type D\r\nAnalog implant Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nАналог мультиюнита на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 1400,
+        "qty_100": 1100,
+        "qty_500": 900
+      },
+      "basePrice": 1400
+    },
+    {
+      "row": 83,
+      "nameEn": "X GATE Multiunit type D\r\nTransfer open spoon Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nТрансфер мультиюнита открытая ложка на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 1500,
+        "qty_100": 1300,
+        "qty_500": 1100
+      },
+      "basePrice": 1500
+    },
+    {
+      "row": 84,
+      "nameEn": "X GATE Multiunit type D\r\nTitanium bases Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nТитановое основание мультиюнита на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 1300,
+        "qty_100": 1000,
+        "qty_500": 700
+      },
+      "basePrice": 1300
+    },
+    {
+      "row": 85,
+      "nameEn": "X GATE Multiunit type D\r\nTitanium temporary cylinder Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nТитановый временный цилинд мультиюнита на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 1400,
+        "qty_100": 1100,
+        "qty_500": 900
+      },
+      "basePrice": 1400
+    },
+    {
+      "row": 86,
+      "nameEn": "X GATE Multiunit type D\r\nHealing Abutment Korean systems",
+      "nameRu": "X GATE Multiunit type D\r\nФормирователь десны для мультиюнита (Защитный заживляющий колпачок) на Корейские системы",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_10": 1400,
+        "qty_100": 1100,
+        "qty_500": 900
+      },
+      "basePrice": 1400
+    },
+    {
+      "row": 87,
+      "nameEn": "X GATE Multiunit type D\r\nScrew",
+      "nameRu": "X GATE Multiunit type D\r\nВинт",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "Titan",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "00B0F0",
+      "prices": {
+        "qty_100": 350,
+        "qty_500": 250
+      },
+      "basePrice": 350
+    },
+    {
+      "row": 88,
+      "nameEn": "X GATE Multiunit type D\r\nScrewdriver Multiunit straight",
+      "nameRu": "X GATE Multiunit type D\r\nОтвёртка для прямого мультиюнита",
+      "productType": "X GATE Multiunit Prosthetics replica",
+      "material": "",
+      "country": "Israel",
+      "category": "Протетика",
+      "subcategory": "Мультиюниты X GATE",
+      "color": "92D050",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 89,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit straight",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nМультиюнит прямой НЕ ЦИФРОВОЙ",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 4500,
+        "qty_100": 3900
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 90,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit angular",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nМультиюнит угловой НЕ ЦИФРОВОЙ",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 4500,
+        "qty_100": 3900
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 91,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit\r\nMultiunit Analog Ø4.8 Height 12 Narrow/Regular)\r\nRCN 40412",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nАналог мультиюнита Ø4.8 Высота 12 универсальный для Narrow и Regular",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 1000,
+        "qty_100": 700
+      },
+      "basePrice": 1000
+    },
+    {
+      "row": 92,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit\r\nMultiunit Pick-up Impression Coping Ø4.8 Height 8, Non-Hex (Narrow/Regular) + Guide Pin PCN 40310S.\r\nIPN 40508N",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nТрансфер слепочный для мультиюнита Ø4.8 Высота 8 без шестигранника, с направляющим пином универсальный для Narrow и Regular",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 2100,
+        "qty_100": 1500
+      },
+      "basePrice": 2100
+    },
+    {
+      "row": 93,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit\r\nMultiunit Healing Cap Ø1.4 Height 4.5 (Narrow/Regular).\r\nHCN 40504",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nФормирователь десны для мультиюнита\r\n(Защитный заживляющий колпачок) Ø1.4, Высота 4.5 универсальный для Narrow и Regular",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 1500,
+        "qty_100": 1100
+      },
+      "basePrice": 1500
+    },
+    {
+      "row": 94,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit\r\nMultiunit Temporary Cylinder Ø5.4, Height 11, Non-Hex For fabricating temporary prosthetics (Narrow/Regular) + Cylinder Screw SHN 1403.\r\nTCN 40511N",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nЦилиндр титановый Ø5.4, Высота 11, для мультиюнита для временных конструкций без шестигранника с винтом универсальный для Narrow и Regular",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 2600,
+        "qty_100": 1500
+      },
+      "basePrice": 2600
+    },
+    {
+      "row": 95,
+      "nameEn": "DIO NOT DIGITAL ORIGINAL Multiunit\r\nMultiunit Plastic Cylinder Ø5.0, Height 13, Non-Hex Cast in premium gold alloy after customization (Narrow/Regular) + Cylinder Screw SHN 1403.\r\nAPN 40514SN",
+      "nameRu": "DIO НЕ ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nЦилиндр из золотого сплава под литьё Ø5.0, Высота 13, для мультиюнита для постоянных конструкций с винтом без шестигранника универсальный для Narrow и Regular",
+      "productType": "DIO NOT DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO NOT DIGITAL Мультиюниты",
+      "color": "00B050",
+      "prices": {
+        "qty_10": 2050,
+        "qty_100": 1300
+      },
+      "basePrice": 2050
+    },
+    {
+      "row": 96,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit straight",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nМультиюнит прямой",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 5400,
+        "qty_100": 3900
+      },
+      "basePrice": 5400
+    },
+    {
+      "row": 97,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit angular",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nМультиюнит угловой",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 5400,
+        "qty_100": 3900
+      },
+      "basePrice": 5400
+    },
+    {
+      "row": 98,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nAnalog Ø4.8 Heigh 15mm. Provides anchor point for Digital Multiunit Abutment on working model.\r\nMLA 4815H",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nАналог цифрового мультиюнита для рабочей модели Ø4.8, высота 15мм",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 2100,
+        "qty_100": 800
+      },
+      "basePrice": 2100
+    },
+    {
+      "row": 99,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nAnalog Ø4.8 Heigh 14.7mm. Provides anchor point for Digital Multiunit Abutment on 3D printed model.\r\nMDAR 4814",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nАналог цифрового мультиюнита для 3D печатной модели, Ø4.8, высота 14.7мм",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 2600
+      },
+      "basePrice": 2600
+    },
+    {
+      "row": 100,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nDigital Pick-up Impression Coping Ø4.8 Height 11mm, Non-Hex + Guide Pin MGP 1615. Only for Digital Multiunit Abutment. Used with an open tray.\r\nMPI 4811N",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nТрансфер для цифрового мультиюнита открытая ложка Ø4.8, высота 11мм, без шестигранника с направляющим пином.",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 2800,
+        "qty_100": 1200
+      },
+      "basePrice": 2800
+    },
+    {
+      "row": 101,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nHealing Cap Ø5.0, Height 5,5mm. Only for Digital Multiunit Abutment.\r\nMHC 5005",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nФормирователь десны для мультиюнита\r\n(Защитный заживляющий колпачок) для цифрового мультиюнита Ø5.0, высота 5,5мм",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 2300,
+        "qty_100": 1200
+      },
+      "basePrice": 2300
+    },
+    {
+      "row": 102,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nH-Scanbody Ø5.0, Heigh 5,6mm + Screw MHSBSC 1603. Use for digital Impression taking. Only for Multiunit Abutment.\r\nMHSB 5005H",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nСканмаркер для цифрового мультиюнита Ø5.0, высота 5,6мм, с винтом.",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 3900,
+        "qty_100": 2700
+      },
+      "basePrice": 3900
+    },
+    {
+      "row": 103,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nScan Adapter Ø4.8 Heigh 8mm + Screw MCSC 1606. Use for digital Impression taking. Only for Multiunit Abutment.\r\nMSCAN 4808H",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nСканмаркер для цифрового мультиюнита Ø4.8 высота 8мм, с винтом.",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "PEEK",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 3900,
+        "qty_100": 2700
+      },
+      "basePrice": 3900
+    },
+    {
+      "row": 104,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nDigital Temporary Cylinder Ø5.4 Height 12mm, Non-Hex + Screw MSC 1604. Only for Digital Multiunit Abutment. Used to fabricate temporary prosthesis.\r\nMTEM 5412N",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nЦилиндр титановый временный для цифрового мультиюнита Ø5.4, высота 12мм, без шестигранника, с винтом.",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 3300,
+        "qty_100": 1400
+      },
+      "basePrice": 3300
+    },
+    {
+      "row": 105,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nCemented Cylinder Ø5.4 Height 8mm, Non-Hex + Screw MSC 1604. Only for Digital Multiunit Abutment. Used to fabricate cement-retained prosthesis.\r\nMCEM 5408N",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nЦилиндр цементируемый для цифрового мультиюнита Ø5.4, высота 8мм, без шестигранника, с винтом.",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 3700,
+        "qty_100": 1800
+      },
+      "basePrice": 3700
+    },
+    {
+      "row": 106,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit\r\nDigital Plastic Cylinder Ø5.0 Height 10mm, Non-Hex + Screw MSC 1604. Only for Digital Multiunit Abutment. Used to fabricate prosthesis with casting with non-precious metal alloys.\r\nMPLA 5010N",
+      "nameRu": "DIO ЦИФРОВЫЕ ОРИГИНАЛЬНЫЕ МУЛЬТИЮНИТЫ\r\nПластиковый цилиндр под литьё для цифрового мультиюнита Ø5.0, высота 10мм, без шестигранника, с винтом.",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "CCC1DA",
+      "prices": {
+        "qty_10": 2700,
+        "qty_100": 1400
+      },
+      "basePrice": 2700
+    },
+    {
+      "row": 107,
+      "nameEn": "DIO ORIGINAL Multiunit Driver\r\nMultiunit Screw Driver UNSKA (Narrow), UCA (Regular), MSA (Digital Regular), 12mm.\r\nHD 2012A",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ОТВЁРТКИ ДЛЯ МУЛЬТИЮНИТА\r\nКлюч (отвёртка) для мультиюнитов прямых UNSKA (Narrow), UCA (Regular), MSA (Digital Regular), 12мм.",
+      "productType": "DIO ORIGINAL Multiunit Driver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "92D050",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 108,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit Screwdriver\r\nScrew Driver Ratchet Angled Multiunit Abutment Hex 1.2. (Digital  Narrow/Regular) \r\nMHD 1215A",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ОТВЁРТКИ ДЛЯ МУЛЬТИЮНИТА\r\nОтвёртка для углового цифрового мультиюнита 1.2 ручная для динамометрического ключа, длина рабочей части 15мм. Универсальная для Narrow и Regular",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Screwdriver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "92D050",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 109,
+      "nameEn": "DIO DIGITAL ORIGINAL Multiunit Screwdriver\r\nScrew Driver Machine Angled Multiunit Abutment Hex 1.2. (Digital Narrow/Regular) \r\nMMD 1224",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ОТВЁРТКИ ДЛЯ МУЛЬТИЮНИТА\r\nОтвёртка для углового цифрового мультиюнита 1.2 машинная для наконечника, длина рабочей части 10мм. Универсальная для Narrow и Regular",
+      "productType": "DIO DIGITAL ORIGINAL Multiunit Screwdriver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO DIGITAL Мультиюниты",
+      "color": "92D050",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 110,
+      "nameEn": "DIO ORIGINAL\r\nHealing Abutment Ø4.0. Radiopaque with marking",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nФормирователь десны. Рентгеноконтрастный с маркировкой.",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 2100,
+        "qty_10": 1500,
+        "qty_50": 1300,
+        "qty_100": 1100
+      },
+      "basePrice": 2100
+    },
+    {
+      "row": 111,
+      "nameEn": "DIO ORIGINAL\r\nHealing Abutment ALL size",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nФормирователь десны любой размер",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 2100,
+        "qty_10": 1500,
+        "qty_50": 1300,
+        "qty_100": 1100
+      },
+      "basePrice": 2100
+    },
+    {
+      "row": 112,
+      "nameEn": "DIO ORIGINAL\r\nTemporary abutment + Screw SSC 2008H",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент титановый временный c винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 3400,
+        "qty_10": 2800,
+        "qty_50": 2000,
+        "qty_100": 1700
+      },
+      "basePrice": 3400
+    },
+    {
+      "row": 113,
+      "nameEn": "DIO ORIGINAL\r\nAnalog NOT DIGITAL",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАналог имплантата не цифровой",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 1700,
+        "qty_10": 1000,
+        "qty_50": 850,
+        "qty_100": 700
+      },
+      "basePrice": 1700
+    },
+    {
+      "row": 114,
+      "nameEn": "DIO ORIGINAL\r\nTransfer Impression Coping Open-tray Technique + Guide Pin",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nСлепочный трансфер открытая ложка с направляющим пином",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 2900,
+        "qty_10": 2100,
+        "qty_50": 1800,
+        "qty_100": 1500
+      },
+      "basePrice": 2900
+    },
+    {
+      "row": 115,
+      "nameEn": "DIO ORIGINAL\r\nTransfer Impression Coping Closed-tray Technique + Guide Pin",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nСлепочный трансфер закрытая ложка с направляющим пином",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 2900,
+        "qty_10": 2100,
+        "qty_50": 1800,
+        "qty_100": 1500
+      },
+      "basePrice": 2900
+    },
+    {
+      "row": 116,
+      "nameEn": "DIO DIGITAL ORIGINAL\r\nAnalog. Provides anchor point for abutment on 3D printed model",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА ЦИФРОВАЯ\r\nАналог имплантата цифровой",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 1700,
+        "qty_10": 1000,
+        "qty_50": 850,
+        "qty_100": 700
+      },
+      "basePrice": 1700
+    },
+    {
+      "row": 117,
+      "nameEn": "DIO DIGITAL ORIGINAL\r\nScan Adapter Height + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА ЦИФРОВАЯ\r\nСкан-маркер с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "PEEK",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 2900,
+        "qty_10": 2900,
+        "qty_50": 2700,
+        "qty_100": 2400
+      },
+      "basePrice": 2900
+    },
+    {
+      "row": 118,
+      "nameEn": "DIO ORIGINAL\r\nMill Abutment + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент обтачиваемый (фрезеруемый) цементируемый индивидуальный с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "qty_10": 4200,
+        "qty_50": 2300,
+        "qty_100": 2000
+      },
+      "basePrice": 4200
+    },
+    {
+      "row": 119,
+      "nameEn": "DIO ORIGINAL\r\nCemented Abutment Straight + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент прямой цементируемый с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 4200,
+        "qty_10": 3400,
+        "qty_50": 2300,
+        "qty_100": 2000
+      },
+      "basePrice": 4200
+    },
+    {
+      "row": 120,
+      "nameEn": "DIO ORIGINAL\r\nCemented Abutment Angled 15° + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент угловой цементируемый 15° с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 5100,
+        "qty_10": 3400,
+        "qty_50": 2500,
+        "qty_100": 2200
+      },
+      "basePrice": 5100
+    },
+    {
+      "row": 121,
+      "nameEn": "DIO ORIGINAL\r\nCemented Abutment Angled 25° + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент угловой цементируемый 25° с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 5100,
+        "qty_10": 3400,
+        "qty_50": 2500,
+        "qty_100": 2200
+      },
+      "basePrice": 5100
+    },
+    {
+      "row": 122,
+      "nameEn": "DIO ORIGINAL\r\nPre-Milled Bar + Screw 2ea",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nПремил заготовка индивидуального абатмента с двуми винтами",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 4500,
+        "qty_10": 3500,
+        "qty_50": 2500,
+        "qty_100": 2200
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 123,
+      "nameEn": "DIO ORIGINAL\r\nTitanium bases (Hybrid Link) + Screw. Up to implant platform connection part is made of titanium, making it easy to produce prosthesis for anterior region by cementation the post made of zirconia",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nТитановое основание с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 3500,
+        "qty_10": 3000,
+        "qty_50": 2400,
+        "qty_100": 2100
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 124,
+      "nameEn": "DIO ORIGINAL\r\nPlastic Abutment + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент пластиковый выжигаемый с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "single": 2500,
+        "qty_10": 2000,
+        "qty_50": 1800,
+        "qty_100": 1500
+      },
+      "basePrice": 2500
+    },
+    {
+      "row": 125,
+      "nameEn": "DIO ORIGINAL\r\nUCLA CCM Abutment + Screw",
+      "nameRu": "DIO ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nАбатмент приливаемый КХС Кобальт-хром-молибден с винтом",
+      "productType": "DIO ORIGINAL Prosthetics",
+      "material": "CCM",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO ORIGINAL Протетика",
+      "color": "4BACC6",
+      "prices": {
+        "qty_10": 4500
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 126,
+      "nameEn": "DIO ORIGINAL Ball Abutment",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ШАРИКОВЫЕ АБАТМЕНТЫ\r\nАбатмент шариковый",
+      "productType": "DIO ORIGINAL Ball Abutment Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO Ball Abutment",
+      "color": "C4BD97",
+      "prices": {
+        "single": 3500,
+        "qty_10": 2700,
+        "qty_50": 2000,
+        "qty_100": 1700
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 127,
+      "nameEn": "DIO ORIGINAL Ball Abutment\r\nRetainer Ball Abutment + O-Ring OR 0450B + O-Ring OR 0450O",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ШАРИКОВЫЕ АБАТМЕНТЫ\r\nРетейнер для шарикового абатмента универсальный + матрица чёрная лабораторная и оранжевая клиническая",
+      "productType": "DIO ORIGINAL Ball Abutment Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO Ball Abutment",
+      "color": "C4BD97",
+      "prices": {
+        "single": 1500,
+        "qty_10": 1200,
+        "qty_50": 900,
+        "qty_100": 700
+      },
+      "basePrice": 1500
+    },
+    {
+      "row": 128,
+      "nameEn": "DIO ORIGINAL Ball Abutment\r\nCap Ball Abutment + O-Ring OR 0450B + O-Ring OR 0450O",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ШАРИКОВЫЕ АБАТМЕНТЫ\r\nКолпачок для шарикового абатмента универсальный + матрица чёрная лабораторная и оранжевая клиническая",
+      "productType": "DIO ORIGINAL Ball Abutment Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO Ball Abutment",
+      "color": "C4BD97",
+      "prices": {
+        "single": 2500,
+        "qty_10": 1900,
+        "qty_50": 1600,
+        "qty_100": 1400
+      },
+      "basePrice": 2500
+    },
+    {
+      "row": 129,
+      "nameEn": "DIO ORIGINAL Ball Abutment\r\nO-Rring Black For dental lab use",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ШАРИКОВЫЕ АБАТМЕНТЫ\r\nМатрица (кольцо) чёрное для шарикового абатмента лаборатории универсальное",
+      "productType": "DIO ORIGINAL Ball Abutment Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO Ball Abutment",
+      "color": "C4BD97",
+      "prices": {
+        "single": 900,
+        "qty_10": 600,
+        "qty_50": 500,
+        "qty_100": 350
+      },
+      "basePrice": 900
+    },
+    {
+      "row": 130,
+      "nameEn": "DIO ORIGINAL Ball Abutment\r\nO-Rring Ø4.5 Orange For clinic use",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ШАРИКОВЫЕ АБАТМЕНТЫ\r\nМатрица (кольцо) оранжевое для шарикового абатмента клиники универсальное",
+      "productType": "DIO ORIGINAL Ball Abutment Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO Ball Abutment",
+      "color": "C4BD97",
+      "prices": {
+        "single": 900,
+        "qty_10": 600,
+        "qty_50": 500,
+        "qty_100": 350
+      },
+      "basePrice": 900
+    },
+    {
+      "row": 131,
+      "nameEn": "DIO ORIGINAL Ball Abutment Driver\r\nBall Abutment Driver",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ ОТВЁРТКИ ДЛЯ ШАРИКОВЫХ АБАТМЕНТОВ\r\nКлюч (отвёртка) для шарикового абатмента",
+      "productType": "DIO ORIGINAL Ball Abutment Driver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "DIO Ball Abutment",
+      "color": "92D050",
+      "prices": {
+        "single": 8000
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 132,
+      "nameEn": "DIO SURGICAL ORIGINAL Kit Dentsply Maillefer\r\nSurgical Kit UF 07\r\nUniversal surgical kit for all implants except for diameters (6.0; 6.5; 7.0)",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор хирургический универсальный для всех имплантатов кроме диаметров (6.0; 6.5; 7.0)",
+      "productType": "DIO SURGICAL ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "DIO Surgical Kit",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 133,
+      "nameEn": "DIO SURGICAL ORIGINAL Kit Dentsply Maillefer\r\nSurgical Wide Kit UF 09 for diameters (6.0; 6.5; 7.0)",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nХирургический набор широкая платформа для имплантатов (6.0; 6.5; 7.0)",
+      "productType": "DIO SURGICAL ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "DIO Surgical Kit",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 134,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nBone Expander Kit BEP 00",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор Экспандеров",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Костные экспандеры",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 135,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nOsteotome Kit OST 01",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор остеотомов",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Остеотомы",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 136,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nSinus Lift Kit SLK 01",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор для открытого синус-лифтинга",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Синус-лифтинг",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 137,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nSinus Master Kit SMK 01",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор универсальный для закрытого синус-лифтинга и гидравлического",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Синус-лифтинг",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 138,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nNew Dr. SOS+Kit DRS 05",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор для удаления имплантатов, извлечения сломанной протетики и винтов",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 139,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nProsthetic Kit UFP 02",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nОртопедический набор",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 140,
+      "nameEn": "DIO NAVI ORIGINAL Kit Dentsply Maillefer\r\nMaster S Kit UF 77\r\nUniversal navi kit for all implants except for diameters (6.0; 6.5; 7.0)",
+      "nameRu": "DIO NAVI ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор навигационный универсальный для всех имплантатов кроме диаметров (6.0; 6.5; 7.0)",
+      "productType": "DIO NAVI ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "DIO Surgical Kit",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 141,
+      "nameEn": "DIO NAVI ORIGINAL Kit Dentsply Maillefer\r\nWide Kit UF 11 for diameters (6.0; 6.5; 7.0)",
+      "nameRu": "DIO NAVI ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор навигационный широкая платформа для имплантатов (6.0; 6.5; 7.0)",
+      "productType": "DIO NAVI ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "DIO Surgical Kit",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 142,
+      "nameEn": "DIO NAVI ORIGINAL Kit Dentsply Maillefer\r\nFlapless Crestal Sinus Kit SMK 02",
+      "nameRu": "DIO NAVI ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор для синус-лифтинга по шаблону",
+      "productType": "DIO NAVI ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "DIO Surgical Kit",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 143,
+      "nameEn": "DIO NAVI ORIGINAL Kit Dentsply Maillefer\r\nSpecial Kit SGF 02",
+      "nameRu": "DIO NAVI ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор для фиксации шаблона на беззубой челюсти",
+      "productType": "DIO NAVI ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "DIO Surgical Kit",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 144,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nNEW DIO Sinus Drill Kit SKDS 01",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНОВЫЙ ПАТЕНТ Набор Синус Свёрла",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Синус-лифтинг",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 145,
+      "nameEn": "DIO ORIGINAL Kit Dentsply Maillefer\r\nNEW DIO Sinus Osteotome Kit SKOS 01",
+      "nameRu": "DIO ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНОВЫЙ ПАТЕНТ Набор Синус Остеотомы",
+      "productType": "DIO ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Синус-лифтинг",
+      "color": "F79646",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 146,
+      "nameEn": "DIO ORIGINAL\r\nBone Profile Drill (narrow or regular)",
+      "nameRu": "DIO ОРИГИНАЛ\r\nПрофайлер для узкой платформы или стандартной",
+      "productType": "DIO ORIGINAL Bone Profile Drill",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Свёрла и профилеры",
+      "color": "92D050",
+      "prices": {
+        "single": 7000,
+        "qty_5": 5000
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 147,
+      "nameEn": "DIO ORIGINAL\r\nFixture Driver Ratchet",
+      "nameRu": "DIO ОРИГИНАЛ\r\nИмплантовод ручной для динамометрической ключа",
+      "productType": "DIO ORIGINAL Fixture Driver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "92D050",
+      "prices": {
+        "single": 8000
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 148,
+      "nameEn": "DIO ORIGINAL\r\nFixture Driver Machine",
+      "nameRu": "DIO ОРИГИНАЛ\r\nИмплантовод машинный для наконечника",
+      "productType": "DIO ORIGINAL Fixture Driver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "92D050",
+      "prices": {
+        "single": 8000
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 149,
+      "nameEn": "DIO ORIGINAL\r\nScrew Driver Ratchet Hex 1.2",
+      "nameRu": "DIO ОРИГИНАЛ\r\nОтвёртка 1.2 ручная для динамометрической ключа",
+      "productType": "DIO ORIGINAL Screwdriver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "92D050",
+      "prices": {
+        "single": 7000
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 150,
+      "nameEn": "DIO ORIGINAL\r\nScrew Driver Machine",
+      "nameRu": "DIO ОРИГИНАЛ\r\nОтвёртка 1.2 машинная для наконечника",
+      "productType": "DIO ORIGINAL Screwdriver",
+      "material": "",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "92D050",
+      "prices": {
+        "single": 7000
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 151,
+      "nameEn": "BLUEDIAMOND MEGAGEN SURGICAL ORIGINAL Kit\r\nSurgical Kit: Full Type KARO3001",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор хирургический Full KARO3001",
+      "productType": "BLUEDIAMOND MEGAGEN SURGICAL ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "MEGAGEN Surgical Kit",
+      "color": "7FE2EF",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 152,
+      "nameEn": "BLUEDIAMOND MEGAGEN SURGICAL ORIGINAL Kit\r\nSurgical Kit: Standard Type KARO3003",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор хирургический Standard KARO3003",
+      "productType": "BLUEDIAMOND MEGAGEN SURGICAL ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "MEGAGEN Surgical Kit",
+      "color": "7FE2EF",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 153,
+      "nameEn": "BLUEDIAMOND MEGAGEN SURGICAL ORIGINAL Kit\r\nR2 GUIDE Kit NAVI",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНЫЕ НАБОРЫ\r\nНабор навигационный R2 GUIDE Kit",
+      "productType": "BLUEDIAMOND MEGAGEN SURGICAL ORIGINAL Kit",
+      "material": "",
+      "country": "South Korea",
+      "category": "Хирургические наборы",
+      "subcategory": "MEGAGEN Surgical Kit",
+      "color": "7FE2EF",
+      "prices": {},
+      "basePrice": 0
+    },
+    {
+      "row": 154,
+      "nameEn": "BLUEDIAMOND MEGAGEN ORIGINAL\r\nScan Abutment",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНАЯ ПРОТЕТИКА ЦИФРОВАЯ\r\nСкан-маркер с винтом",
+      "productType": "BLUEDIAMOND MEGAGEN ORIGINAL Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "MEGAGEN BLUEDIAMOND Протетика",
+      "color": "FFFF00",
+      "prices": {
+        "qty_10": 1900
+      },
+      "basePrice": 1900
+    },
+    {
+      "row": 155,
+      "nameEn": "BLUEDIAMOND MEGAGEN ORIGINAL\r\nAnalog",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНАЯ ПРОТЕТИКА ЦИФРОВАЯ\r\nАналог имплантата цифровой",
+      "productType": "BLUEDIAMOND MEGAGEN ORIGINAL Prosthetics",
+      "material": "",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "MEGAGEN BLUEDIAMOND Протетика",
+      "color": "FFFF00",
+      "prices": {
+        "qty_10": 900
+      },
+      "basePrice": 900
+    },
+    {
+      "row": 156,
+      "nameEn": "BLUEDIAMOND MEGAGEN ORIGINAL\r\nTitanium bases (Hybrid Link) ZrGEN Abutment",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nТитановое основание",
+      "productType": "BLUEDIAMOND MEGAGEN ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "MEGAGEN BLUEDIAMOND Протетика",
+      "color": "FFFF00",
+      "prices": {
+        "qty_10": 1900
+      },
+      "basePrice": 1900
+    },
+    {
+      "row": 157,
+      "nameEn": "BLUEDIAMOND MEGAGEN ORIGINAL\r\nHealing Abutment",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nФормирователь десны",
+      "productType": "BLUEDIAMOND MEGAGEN ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "MEGAGEN BLUEDIAMOND Протетика",
+      "color": "FFFF00",
+      "prices": {
+        "qty_10": 1500
+      },
+      "basePrice": 1500
+    },
+    {
+      "row": 158,
+      "nameEn": "BLUEDIAMOND MEGAGEN ORIGINAL\r\nTransfer Impression Coping Open-tray Technique + Guide Pin",
+      "nameRu": "BLUEDIAMOND MEGAGEN ОРИГИНАЛЬНАЯ ПРОТЕТИКА\r\nТрансфер для открытой ложки",
+      "productType": "BLUEDIAMOND MEGAGEN ORIGINAL Prosthetics",
+      "material": "Titan",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "MEGAGEN BLUEDIAMOND Протетика",
+      "color": "FFFF00",
+      "prices": {
+        "qty_10": 1700
+      },
+      "basePrice": 1700
+    },
+    {
+      "row": 159,
+      "nameEn": "I-Bone Max\r\n30% spongy/70% cortical\r\n2 Syringe 0.25-0.71mm 0.6cc*2=1.2сс\r\nART. OSP120",
+      "nameRu": "I-BONE MAX ЛУЧШИЙ АЛЛОГРАФТ В РОССИИ\r\nХИТ ПРОДАЖ \r\n30% губчатая/70% кортикальная\r\n2 шприца, 0.6cc*2=1.2сс, гранулы 0.25-0.71mm\r\nПри использовании благодаря компрессии материала в шприце становится 0.7сс",
+      "productType": "Bone",
+      "material": "Allograft",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "I-Bone Max",
+      "color": "00B050",
+      "prices": {
+        "single": 12500,
+        "qty_10": 9000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 160,
+      "nameEn": "TITAN B\r\nVial 0.25g 0.2-1.0mm/0.5cc\r\nART. TBV02025",
+      "nameRu": "TITAN B\r\nХИТ ПРОДАЖ\r\nБычий ксенографт, этим материалом мы заменили BioOss в своём ассортименте, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nTITAN B\r\nVial 0.25g 0.2-1.0mm/0.5cc\r\nART. TBV02025",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 7700,
+        "qty_5": 5000,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 7700
+    },
+    {
+      "row": 161,
+      "nameEn": "TITAN B\r\nVial 0.25g 1.0-2.0mm/0.75cc\r\nART. TBV10025",
+      "nameRu": "TITAN B\r\nVial 0.25g 1.0-2.0mm/0.75cc\r\nART. TBV10025",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 7700,
+        "qty_5": 5000,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 7700
+    },
+    {
+      "row": 162,
+      "nameEn": "TITAN B\r\nVial 0.5g 0.2-1.0mm/1.0cc\r\nART. TBV02050",
+      "nameRu": "TITAN B\r\nVial 0.5g 0.2-1.0mm/1.0cc\r\nART. TBV02050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 8500,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 8500
+    },
+    {
+      "row": 163,
+      "nameEn": "TITAN B\r\nVial 0.5g 0.5-1.2mm/1.25cc\r\nART. TBV05050",
+      "nameRu": "TITAN B\r\nVial 0.5g 0.5-1.2mm/1.25cc\r\nART. TBV05050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 8500,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 8500
+    },
+    {
+      "row": 164,
+      "nameEn": "TITAN B\r\nVial 0.5g 1.2-1.7mm/1.75cc\r\nART.  TBV12050",
+      "nameRu": "TITAN B\r\nVial 0.5g 1.2-1.7mm/1.75cc\r\nART.  TBV12050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 8500,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 8500
+    },
+    {
+      "row": 165,
+      "nameEn": "TITAN B\r\nVial 0.5g 1.0-2.0mm/1.5cc\r\nART. TBV10050",
+      "nameRu": "TITAN B\r\nVial 0.5g 1.0-2.0mm/1.5cc\r\nART. TBV10050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 8500,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 8500
+    },
+    {
+      "row": 166,
+      "nameEn": "TITAN B\r\nVial 1.0g 0.2-1.0mm/2.0cc\r\nART. TBV02100",
+      "nameRu": "TITAN B\r\nVial 1.0g 0.2-1.0mm/2.0cc\r\nART. TBV02100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 14000,
+        "qty_5": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 167,
+      "nameEn": "TITAN B\r\nVial 1.0g 0.5-1.2mm/2.5cc\r\nART. TBV05100",
+      "nameRu": "TITAN B\r\nVial 1.0g 0.5-1.2mm/2.5cc\r\nART. TBV05100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 14000,
+        "qty_5": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 168,
+      "nameEn": "TITAN B\r\nVial 1.0g 1.2-1.7mm/3.5cc\r\nART.  TBV12100",
+      "nameRu": "TITAN B\r\nVial 1.0g 1.2-1.7mm/3.5cc\r\nART.  TBV12100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 14000,
+        "qty_5": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 169,
+      "nameEn": "TITAN B\r\nVial 1.0g 1.0-2.0mm/3.0cc\r\nART. TBV10100",
+      "nameRu": "TITAN B\r\nVial 1.0g 1.0-2.0mm/3.0cc\r\nART. TBV10100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 14000,
+        "qty_5": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 170,
+      "nameEn": "TITAN B\r\nVial 2.0g 0.2-1.0mm/4.0cc\r\nART. TBV02200",
+      "nameRu": "TITAN B\r\nVial 2.0g 0.2-1.0mm/4.0cc\r\nART. TBV02200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 23000,
+        "qty_5": 14000,
+        "qty_20": 12500,
+        "qty_50": 11000,
+        "qty_100": 10000
+      },
+      "basePrice": 23000
+    },
+    {
+      "row": 171,
+      "nameEn": "TITAN B\r\nVial 2.0g 0.5-1.2mm/5.0cc\r\nART. TBV050200",
+      "nameRu": "TITAN B\r\nVial 2.0g 0.5-1.2mm/5.0cc\r\nART. TBV050200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 23000,
+        "qty_5": 14000,
+        "qty_20": 12500,
+        "qty_50": 11000,
+        "qty_100": 10000
+      },
+      "basePrice": 23000
+    },
+    {
+      "row": 172,
+      "nameEn": "TITAN B\r\nVial 2.0g 1.2-1.7mm/7.0cc\r\nART.  TBV12200",
+      "nameRu": "TITAN B\r\nVial 2.0g 1.2-1.7mm/7.0cc\r\nART.  TBV12200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 23000,
+        "qty_5": 14000,
+        "qty_20": 12500,
+        "qty_50": 11000,
+        "qty_100": 10000
+      },
+      "basePrice": 23000
+    },
+    {
+      "row": 173,
+      "nameEn": "TITAN B\r\nVial 2.0g 1.0-2.0mm/6.0cc\r\nART. TBV10200",
+      "nameRu": "TITAN B\r\nVial 2.0g 1.0-2.0mm/6.0cc\r\nART. TBV10200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 23000,
+        "qty_5": 14000,
+        "qty_20": 12500,
+        "qty_50": 11000,
+        "qty_100": 10000
+      },
+      "basePrice": 23000
+    },
+    {
+      "row": 174,
+      "nameEn": "TITAN B\r\nSyringe 0.2-1.0mm 0.25cc\r\nART. TBS02025",
+      "nameRu": "TITAN B\r\nSyringe 0.2-1.0mm 0.25cc\r\nART. TBS02025",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 7700,
+        "qty_5": 5000,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 7700
+    },
+    {
+      "row": 175,
+      "nameEn": "TITAN B\r\nSyringe 1.0-2.0mm 0.25cc\r\nART. TBS10025",
+      "nameRu": "TITAN B\r\nSyringe 1.0-2.0mm 0.25cc\r\nART. TBS10025",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 7700,
+        "qty_5": 5000,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 7700
+    },
+    {
+      "row": 176,
+      "nameEn": "TITAN B\r\nSyringe 0.2-1.0mm 0.5cc\r\nART. TBS02050",
+      "nameRu": "TITAN B\r\nSyringe 0.2-1.0mm 0.5cc\r\nART. TBS02050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 8500,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 8500
+    },
+    {
+      "row": 177,
+      "nameEn": "TITAN B\r\nSyringe 1.0-2.0mm 0.5cc\r\nART. TBS10050",
+      "nameRu": "TITAN B\r\nSyringe 1.0-2.0mm 0.5cc\r\nART. TBS10050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 8500,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 8500
+    },
+    {
+      "row": 178,
+      "nameEn": "TITAN B\r\nSyringe 0.2-1.0mm 1.0cc\r\nART. TBS02100",
+      "nameRu": "TITAN B\r\nSyringe 0.2-1.0mm 1.0cc\r\nART. TBS02100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 14000,
+        "qty_5": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 179,
+      "nameEn": "TITAN B\r\nSyringe 1.0-2.0mm 1.0cc\r\nART. TBS10100",
+      "nameRu": "TITAN B\r\nSyringe 1.0-2.0mm 1.0cc\r\nART. TBS10100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "TITAN B",
+      "color": "93CDDD",
+      "prices": {
+        "single": 14000,
+        "qty_5": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 180,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 0.5ml\r\nART. 1510",
+      "nameRu": "STRAUMANN Botiss Cerabone, бычий ксенографт, материал давно на рынке России, очень популярен в Германии, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nSTRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 0.5ml\r\nART. 1510",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "qty_20": 4500,
+        "qty_50": 4000,
+        "qty_100": 3500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 181,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 0.5ml\r\nART. 1520",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 0.5ml\r\nART. 1520",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "qty_20": 4500,
+        "qty_50": 4000,
+        "qty_100": 3500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 182,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 1.0ml\r\nART. 1511",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 1.0ml\r\nART. 1511",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "qty_20": 5500,
+        "qty_50": 5000,
+        "qty_100": 4500
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 183,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 1.0ml\r\nART. 1521",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 1.0ml\r\nART. 1521",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "qty_20": 5500,
+        "qty_50": 5000,
+        "qty_100": 4500
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 184,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 2.0ml\r\nART. 1512",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 2.0ml\r\nART. 1512",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "single": 13500,
+        "qty_5": 10000,
+        "qty_20": 9000,
+        "qty_50": 8000,
+        "qty_100": 7000
+      },
+      "basePrice": 13500
+    },
+    {
+      "row": 185,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 2.0ml\r\nART. 1522",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 2.0ml\r\nART. 1522",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "single": 13500,
+        "qty_5": 10000,
+        "qty_20": 9000,
+        "qty_50": 8000,
+        "qty_100": 7000
+      },
+      "basePrice": 13500
+    },
+    {
+      "row": 186,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 5.0ml\r\nART. 1515",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 0.2-1.0 5.0ml\r\nART. 1515",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "single": 24000,
+        "qty_5": 14000,
+        "qty_20": 13000,
+        "qty_50": 12000,
+        "qty_100": 11000
+      },
+      "basePrice": 24000
+    },
+    {
+      "row": 187,
+      "nameEn": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 5.0ml\r\nART. 1525",
+      "nameRu": "STRAUMANN Botiss Cerabone\r\nVial 1.0-2.0 5.0ml\r\nART. 1525",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Germany",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN Botiss Cerabone",
+      "color": "C3D69B",
+      "prices": {
+        "single": 24000,
+        "qty_5": 14000,
+        "qty_20": 13000,
+        "qty_50": 12000,
+        "qty_100": 11000
+      },
+      "basePrice": 24000
+    },
+    {
+      "row": 188,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 0.25 g/0.55 cc \r\nART. S1-0210-025",
+      "nameRu": "STRAUMANN XenoGraft, бычий ксенографт, этот материал изготавливает корпорация NIBEC в Корее по договору с STRAUMANN, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nSTRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 0.25 g/0.55 cc \r\nART. S1-0210-025",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 7200,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 7200
+    },
+    {
+      "row": 189,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 0.25 g/0.68 cc \r\nART. S1-1020-025",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 0.25 g/0.68 cc \r\nART. S1-1020-025",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 7200,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 7200
+    },
+    {
+      "row": 190,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 0.5 g/1.3 cc \r\nART. S1-0210-050",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 0.5 g/1.3 cc \r\nART. S1-0210-050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 9600,
+        "qty_5": 7000,
+        "qty_20": 6000,
+        "qty_50": 5000,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 191,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 0.5 g/1.55 cc \r\nART. S1-1020-050",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 0.5 g/1.55 cc \r\nART. S1-1020-050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 9600,
+        "qty_5": 7000,
+        "qty_20": 6000,
+        "qty_50": 5000,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 192,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 1.0 g/2.4 cc\r\nART. S1-0210-100",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 1.0 g/2.4 cc\r\nART. S1-0210-100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 17890,
+        "qty_5": 10000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 17890
+    },
+    {
+      "row": 193,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 1.0 g/2.9 cc \r\nART. S1-1020-100",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 1.0 g/2.9 cc \r\nART. S1-1020-100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 17890,
+        "qty_5": 10000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 17890
+    },
+    {
+      "row": 194,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 2.0 g/4.5 cc \r\nART. S1-0210-200",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 0.2–1.0 mm 2.0 g/4.5 cc \r\nART. S1-0210-200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 29900,
+        "qty_5": 16000,
+        "qty_20": 13500,
+        "qty_50": 12000,
+        "qty_100": 10500
+      },
+      "basePrice": 29900
+    },
+    {
+      "row": 195,
+      "nameEn": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 2.0 g/5.0 cc \r\nART. S1-1020-200",
+      "nameRu": "STRAUMANN XenoGraft\r\nBowl 1.0–2.0 mm 2.0 g/5.0 cc \r\nART. S1-1020-200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "single": 29900,
+        "qty_5": 16000,
+        "qty_20": 13500,
+        "qty_50": 12000,
+        "qty_100": 10500
+      },
+      "basePrice": 29900
+    },
+    {
+      "row": 196,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 0.25 g\r\nART. N1110",
+      "nameRu": "NOBEL CreoS Xenogain, бычий ксенографт, этот материал изготавливает корпорация NIBEC в Корее по договору с NOBEL, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nNOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 0.25 g\r\nART. N1110",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 7200,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 7200
+    },
+    {
+      "row": 197,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 0.25 g\r\nART. N1111",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 0.25 g\r\nART. N1111",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 7200,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 7200
+    },
+    {
+      "row": 198,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 0.5 g\r\nART. N1120",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 0.5 g\r\nART. N1120",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 9600,
+        "qty_5": 7000,
+        "qty_20": 6000,
+        "qty_50": 5000,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 199,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 0.5 g\r\nART. N1121",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 0.5 g\r\nART. N1121",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 9600,
+        "qty_5": 7000,
+        "qty_20": 6000,
+        "qty_50": 5000,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 200,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 1.0 g\r\nART. N1130",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 1.0 g\r\nART. N1130",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 17890,
+        "qty_5": 10000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 17890
+    },
+    {
+      "row": 201,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 1.0 g\r\nART. N1131",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 1.0 g\r\nART. N1131",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 17890,
+        "qty_5": 10000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 17890
+    },
+    {
+      "row": 202,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 2.0 g\r\nART. N1140",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Small (0.2–1.0 mm) 2.0 g\r\nART. N1140",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 29900,
+        "qty_5": 16000,
+        "qty_20": 13500,
+        "qty_50": 12000,
+        "qty_100": 10500
+      },
+      "basePrice": 29900
+    },
+    {
+      "row": 203,
+      "nameEn": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 2.0 g\r\nART. N1141",
+      "nameRu": "NOBEL CreoS Xenogain\r\nVial Large (1.0–2.0 mm) 2.0 g\r\nART. N1141",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 29900,
+        "qty_5": 16000,
+        "qty_20": 13500,
+        "qty_50": 12000,
+        "qty_100": 10500
+      },
+      "basePrice": 29900
+    },
+    {
+      "row": 204,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 0.25 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix, бычий ксенографт, это оригинальный товар, который известен под названиями STRAUMANN XenoGraft и NOBEL CreoS Xenogain, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nNIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 0.25 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 7200,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 7200
+    },
+    {
+      "row": 205,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 0.25 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 0.25 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 7200,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 7200
+    },
+    {
+      "row": 206,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 0.5 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 0.5 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 9600,
+        "qty_5": 7000,
+        "qty_20": 6000,
+        "qty_50": 5000,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 207,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 0.5 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 0.5 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 9600,
+        "qty_5": 7000,
+        "qty_20": 6000,
+        "qty_50": 5000,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 208,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 1.0 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 1.0 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 17890,
+        "qty_5": 10000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 17890
+    },
+    {
+      "row": 209,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 1.0 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 1.0 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 17890,
+        "qty_5": 10000,
+        "qty_20": 8000,
+        "qty_50": 7000,
+        "qty_100": 6000
+      },
+      "basePrice": 17890
+    },
+    {
+      "row": 210,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 2.0 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Small (0.2–1.0 mm) 2.0 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 29900,
+        "qty_5": 16000,
+        "qty_20": 13500,
+        "qty_50": 12000,
+        "qty_100": 10500
+      },
+      "basePrice": 29900
+    },
+    {
+      "row": 211,
+      "nameEn": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 2.0 g",
+      "nameRu": "NIBEC OCS-B Xenomatrix\r\nVial Large (1.0–2.0 mm) 2.0 g",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 29900,
+        "qty_5": 16000,
+        "qty_20": 13500,
+        "qty_50": 12000,
+        "qty_100": 10500
+      },
+      "basePrice": 29900
+    },
+    {
+      "row": 212,
+      "nameEn": "SIGMAGRAFT InterOss\r\nVial 0.25-1.0mm 1.0g/2.16cc\r\nART. IOSG100",
+      "nameRu": "SIGMAGRAFT InterOss, бычий ксенографт из США, очень популярен, в России материал представляет Nobel, что говорит о доверии к материалу, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nSIGMAGRAFT InterOss\r\nVial 0.25-1.0mm 1.0g/2.16cc\r\nART. IOSG100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "USA",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 15700,
+        "qty_5": 11500,
+        "qty_20": 10500,
+        "qty_50": 9500,
+        "qty_100": 8500
+      },
+      "basePrice": 15700
+    },
+    {
+      "row": 213,
+      "nameEn": "SIGMAGRAFT InterOss\r\nVial 1.0-2.0mm 1.0g/4.0cc\r\nART. IOLG100",
+      "nameRu": "SIGMAGRAFT InterOss\r\nVial 1.0-2.0mm 1.0g/4.0cc\r\nART. IOLG100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "USA",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 15700,
+        "qty_5": 11500,
+        "qty_20": 10500,
+        "qty_50": 9500,
+        "qty_100": 8500
+      },
+      "basePrice": 15700
+    },
+    {
+      "row": 214,
+      "nameEn": "SIGMAGRAFT InterOss\r\nVial 0.25-1.0mm 2.0g/4.32cc\r\nART. IOSG200",
+      "nameRu": "SIGMAGRAFT InterOss\r\nVial 0.25-1.0mm 2.0g/4.32cc\r\nART. IOSG200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "USA",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 26000,
+        "qty_5": 15000,
+        "qty_20": 14000,
+        "qty_50": 13000,
+        "qty_100": 12000
+      },
+      "basePrice": 26000
+    },
+    {
+      "row": 215,
+      "nameEn": "SIGMAGRAFT InterOss\r\nVial 1.0-2.0mm 2.0g/8.0cc\r\nART. IOLG200",
+      "nameRu": "SIGMAGRAFT InterOss\r\nVial 1.0-2.0mm 2.0g/8.0cc\r\nART. IOLG200",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "USA",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 26000,
+        "qty_5": 15000,
+        "qty_20": 14000,
+        "qty_50": 13000,
+        "qty_100": 12000
+      },
+      "basePrice": 26000
+    },
+    {
+      "row": 216,
+      "nameEn": "SIGMAGRAFT InterOss\r\nSyringe 1.0-2.0mm 0.50cc\r\nART. IOLGS050",
+      "nameRu": "SIGMAGRAFT InterOss\r\nSyringe 1.0-2.0mm 0.50cc\r\nART. IOLGS050",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "USA",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 6500,
+        "qty_5": 5500,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 6500
+    },
+    {
+      "row": 217,
+      "nameEn": "SIGMAGRAFT InterOss\r\nSyringe 1.0-2.0mm 1cc\r\nART. IOLGS100",
+      "nameRu": "SIGMAGRAFT InterOss\r\nSyringe 1.0-2.0mm 1cc\r\nART. IOLGS100",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "USA",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 9500,
+        "qty_5": 7000,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 9500
+    },
+    {
+      "row": 218,
+      "nameEn": "VERI-OSS Surgident\r\nSyringe S 0.2 g (0.40cc)",
+      "nameRu": "VERI-OSS Surgident, бычий ксенографт, инновационный метод изготовления материала -длительная низкотемпературная обработка 32 дня при одинаковой температуре, не имеет аналогов в мире, можно использовать в чистом виде или смешивать с аутокостью, отличный универсальный материал\r\n\r\nVERI-OSS Surgident\r\nSyringe S 0.2 g (0.40cc)",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "F2DCDB",
+      "prices": {
+        "single": 5000,
+        "qty_5": 4000,
+        "qty_20": 3500,
+        "qty_50": 3000,
+        "qty_100": 2500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 219,
+      "nameEn": "VERI-OSS Surgident\r\nSyringe L 0.2 g (0.60cc)",
+      "nameRu": "VERI-OSS Surgident\r\nSyringe L 0.2 g (0.60cc)",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "VERI-OSS",
+      "color": "F2DCDB",
+      "prices": {
+        "single": 5000,
+        "qty_5": 4000,
+        "qty_20": 3500,
+        "qty_50": 3000,
+        "qty_100": 2500
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 220,
+      "nameEn": "VERI-OSS Surgident\r\nSyringe S 0.3 g (0.60cc)",
+      "nameRu": "VERI-OSS Surgident\r\nSyringe S 0.3 g (0.60cc)",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "VERI-OSS",
+      "color": "F2DCDB",
+      "prices": {
+        "single": 6000,
+        "qty_5": 4500,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 6000
+    },
+    {
+      "row": 221,
+      "nameEn": "VERI-OSS Surgident\r\nSyringe S 0.5 g (1cc)",
+      "nameRu": "VERI-OSS Surgident\r\nSyringe S 0.5 g (1cc)",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "VERI-OSS",
+      "color": "F2DCDB",
+      "prices": {
+        "single": 7000,
+        "qty_5": 5000,
+        "qty_20": 4500,
+        "qty_50": 4000,
+        "qty_100": 3500
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 222,
+      "nameEn": "BioOst XENOGRAFT Collagen\r\nBowl 0.25–1.0 mm 1cc\r\nART. XCol-1-1",
+      "nameRu": "BioOst XENOGRAFT Collagen, бычий ксенографт с коллагеном, популярный продукт отечественного производства, материал не дешёвый он измеряется в сс и его очень мало даже в упаковке 3сс, она равна 1 грамму. Материал в ассортименте с 2016 года,  отличный материал при небольших дефектах и подсыпать в лунку после удаления, при использовании даёт усадку 20%. Рекомендовано смешивать с аутокостью 30/70\r\n\r\nBioOst XENOGRAFT Collagen\r\nBowl 0.25–1.0 mm 1cc\r\nART. XCol-1-1",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 5000,
+        "qty_10": 4500,
+        "qty_30": 4000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 223,
+      "nameEn": "BioOst XENOGRAFT Collagen\r\nBowl 1.0–2.0 mm 1cc\r\nART. XCol-2-1",
+      "nameRu": "BioOst XENOGRAFT Collagen\r\nBowl 1.0–2.0 mm 1cc\r\nART. XCol-2-1",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 5000,
+        "qty_10": 4500,
+        "qty_30": 4000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 224,
+      "nameEn": "BioOst XENOGRAFT Collagen\r\nBowl 0.25–1.0 mm 3cc\r\nART. XCol-1-3",
+      "nameRu": "BioOst XENOGRAFT Collagen\r\nBowl 0.25–1.0 mm 3cc\r\nART. XCol-1-3",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 9000,
+        "qty_10": 8000,
+        "qty_30": 7000
+      },
+      "basePrice": 9000
+    },
+    {
+      "row": 225,
+      "nameEn": "BioOst XENOGRAFT Collagen\r\nBowl 1.0–2.0 mm 3cc\r\nART. XCol-2-3",
+      "nameRu": "BioOst XENOGRAFT Collagen\r\nBowl 1.0–2.0 mm 3cc\r\nART. XCol-2-3",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 9000,
+        "qty_10": 8000,
+        "qty_30": 7000
+      },
+      "basePrice": 9000
+    },
+    {
+      "row": 226,
+      "nameEn": "BioOst XENOGRAFT Mineral\r\nBowl 0.25–1.0 mm 1cc\r\nART. XMn-1-1",
+      "nameRu": "BioOst XENOGRAFT Mineral, бычий ксенографт без коллагена, популярный продукт отечественного производства, материал не дешёвый он измеряется в сс и его очень мало даже в упаковке 3сс, она равна 1 грамму. Материал в ассортименте с 2016 года,  отличный материал для НКР практически не даёт усадки.  Рекомендовано смешивать с аутокостью 50/50\r\n\r\nBioOst XENOGRAFT Mineral\r\nBowl 0.25–1.0 mm 1cc\r\nART. XMn-1-1",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "C4BD97",
+      "prices": {
+        "single": 5000,
+        "qty_10": 4500,
+        "qty_30": 4000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 227,
+      "nameEn": "BioOst XENOGRAFT Mineral\r\nBowl 1.0–2.0 mm 1cc\r\nART. XMn-1-3",
+      "nameRu": "BioOst XENOGRAFT Mineral\r\nBowl 1.0–2.0 mm 1cc\r\nART. XMn-1-3",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "C4BD97",
+      "prices": {
+        "single": 5000,
+        "qty_10": 4500,
+        "qty_30": 4000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 228,
+      "nameEn": "BioOst XENOGRAFT Mineral\r\nBowl 0.25–1.0 mm 3cc\r\nART. XMn-2-1",
+      "nameRu": "BioOst XENOGRAFT Mineral\r\nBowl 0.25–1.0 mm 3cc\r\nART. XMn-2-1",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "C4BD97",
+      "prices": {
+        "single": 9000,
+        "qty_10": 8000,
+        "qty_30": 7000
+      },
+      "basePrice": 9000
+    },
+    {
+      "row": 229,
+      "nameEn": "BioOst XENOGRAFT Mineral\r\nBowl 1.0–2.0 mm 3cc\r\nART. XMn-2-3",
+      "nameRu": "BioOst XENOGRAFT Mineral\r\nBowl 1.0–2.0 mm 3cc\r\nART. XMn-2-3",
+      "productType": "Bone",
+      "material": "XenoGraft Bovine",
+      "country": "Russia",
+      "category": "Костные материалы",
+      "subcategory": "BioOst",
+      "color": "C4BD97",
+      "prices": {
+        "single": 9000,
+        "qty_10": 8000,
+        "qty_30": 7000
+      },
+      "basePrice": 9000
+    },
+    {
+      "row": 230,
+      "nameEn": "STRAUMANN XenoFlex\r\nBlock 6×6×3/50mg\r\nART. NI-0110-005",
+      "nameRu": "STRAUMANN XenoFlex, универсальный гибкий костный блок состоит из 90% бычьей кости и 10% свиного коллагена, этот материал изготавливает корпорация NIBEC в Корее по договору с STRAUMANN, после гидратации режется ножницами, используется как костный материал при любом клиническом случае, отличный универсальный материал\r\n\r\nSTRAUMANN XenoFlex\r\nBlock 6×6×3/50mg\r\nART. NI-0110-005",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoFlex",
+      "color": "C3D69B",
+      "prices": {
+        "single": 5990,
+        "qty_5": 4500,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 5990
+    },
+    {
+      "row": 231,
+      "nameEn": "STRAUMANN XenoFlex\r\nBlock 10 6×6×6/100mg\r\nART. NI-0110-010",
+      "nameRu": "STRAUMANN XenoFlex\r\nBlock 10 6×6×6/100mg\r\nART. NI-0110-010",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoFlex",
+      "color": "C3D69B",
+      "prices": {
+        "single": 9600,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 232,
+      "nameEn": "STRAUMANN XenoFlex\r\nBlock 7×8×9/250mg\r\nART. NI-0110-025",
+      "nameRu": "STRAUMANN XenoFlex\r\nBlock 7×8×9/250mg\r\nART. NI-0110-025",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoFlex",
+      "color": "C3D69B",
+      "prices": {
+        "single": 19760,
+        "qty_5": 7500,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 19760
+    },
+    {
+      "row": 233,
+      "nameEn": "STRAUMANN XenoFlex\r\nBlock 9×10×11/500mg\r\nART. NI-0110-050",
+      "nameRu": "STRAUMANN XenoFlex\r\nBlock 9×10×11/500mg\r\nART. NI-0110-050",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoFlex",
+      "color": "C3D69B",
+      "prices": {
+        "single": 22260,
+        "qty_5": 9500,
+        "qty_20": 8500,
+        "qty_50": 8000,
+        "qty_100": 7000
+      },
+      "basePrice": 22260
+    },
+    {
+      "row": 234,
+      "nameEn": "NOBEL CreoS Xenogain Collagen\r\nBlock 6×6×3/0.05 g\r\nART. N1320",
+      "nameRu": "NOBEL CreoS Xenogain Collagen, универсальный гибкий костный блок состоит из 90% бычьей кости и 10% свиного коллагена, этот материал изготавливает корпорация NIBEC в Корее по договору с NOBEL, после гидратации режется ножницами, используется как костный материал при любом клиническом случае, отличный универсальный материал\r\n\r\nNOBEL CreoS Xenogain Collagen\r\nBlock 6×6×3/0.05 g\r\nART. N1320",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 5990,
+        "qty_5": 4500,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 5990
+    },
+    {
+      "row": 235,
+      "nameEn": "NOBEL CreoS Xenogain Collagen\r\nBlock 6×6×6/0.1 g\r\nART. N1320",
+      "nameRu": "NOBEL CreoS Xenogain Collagen\r\nBlock 6×6×6/0.1 g\r\nART. N1320",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 9600,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 236,
+      "nameEn": "NOBEL CreoS Xenogain Collagen\r\nBlock 7×8×9/0.25 g\r\nART. N1330",
+      "nameRu": "NOBEL CreoS Xenogain Collagen\r\nBlock 7×8×9/0.25 g\r\nART. N1330",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 19760,
+        "qty_5": 7500,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 19760
+    },
+    {
+      "row": 237,
+      "nameEn": "NOBEL CreoS Xenogain Collagen\r\nBlock 9×10×11/0.5 g\r\nART. N1340",
+      "nameRu": "NOBEL CreoS Xenogain Collagen\r\nBlock 9×10×11/0.5 g\r\nART. N1340",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NOBEL CreoS Xenogain",
+      "color": "FF5050",
+      "prices": {
+        "single": 22260,
+        "qty_5": 9500,
+        "qty_20": 8500,
+        "qty_50": 8000,
+        "qty_100": 7000
+      },
+      "basePrice": 22260
+    },
+    {
+      "row": 238,
+      "nameEn": "SIGMAGRAFT InterOss Collagen\r\nBlock 6×6×3/50mg\r\nART. IOC-50",
+      "nameRu": "SIGMAGRAFT InterOss Collagen, универсальный гибкий костный блок состоит из 90% бычьей кости и 10% свиного коллагена, этот материал изготавливает корпорация NIBEC в Корее по договору с SIGMAGRAFT, после гидратации режется ножницами, используется как костный материал при любом клиническом случае, отличный универсальный материал\r\n\r\nSIGMAGRAFT InterOss Collagen\r\nBlock 6×6×3/50mg\r\nART. IOC-50",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 5990,
+        "qty_5": 4500,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 5990
+    },
+    {
+      "row": 239,
+      "nameEn": "SIGMAGRAFT InterOss Collagen\r\nBlock 10 6×6×6/100mg\r\nART. IOC-100",
+      "nameRu": "SIGMAGRAFT InterOss Collagen\r\nBlock 10 6×6×6/100mg\r\nART. IOC-100",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 9600,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 240,
+      "nameEn": "SIGMAGRAFT InterOss Collagen\r\nBlock 7×8×9/250mg\r\nART. IOC-250",
+      "nameRu": "SIGMAGRAFT InterOss Collagen\r\nBlock 7×8×9/250mg\r\nART. IOC-250",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 19760,
+        "qty_5": 7500,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 19760
+    },
+    {
+      "row": 241,
+      "nameEn": "SIGMAGRAFT InterOss Collagen\r\nBlock 0 9×10×11/500mg\r\nART. IOC-500",
+      "nameRu": "SIGMAGRAFT InterOss Collagen\r\nBlock 0 9×10×11/500mg\r\nART. IOC-500",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 22260,
+        "qty_5": 9500,
+        "qty_20": 8500,
+        "qty_50": 8000,
+        "qty_100": 7000
+      },
+      "basePrice": 22260
+    },
+    {
+      "row": 242,
+      "nameEn": "SIGMAGRAFT InterOss Collagen\r\nPlug 6 x 10 mm 150mg\r\nART. IOC-P150",
+      "nameRu": "SIGMAGRAFT InterOss CollagenSIGMAGRAFT InterOss Collagen, универсальный гибкий конус состоит из 90% бычьей кости и 10% свиного коллагена, этот материал изготавливает корпорация NIBEC в Корее по договору с SIGMAGRAFT, после гидратации режется ножницами, используется как костный материал при любом клиническом случае, отличный универсальный материал\r\n\r\nSIGMAGRAFT InterOss Collagen\r\nPlug 6 x 10 mm 150mg\r\nART. IOC-P150",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "C6D9F1",
+      "prices": {
+        "qty_20": 6500,
+        "qty_40": 6000,
+        "qty_60": 5500,
+        "qty_100": 5000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 243,
+      "nameEn": "SIGMAGRAFT InterOss Collagen\r\nPlug 8 x 10 mm 250mg \r\nART. IOC-P250",
+      "nameRu": "SIGMAGRAFT InterOss Collagen\r\nPlug 8 x 10 mm 250mg \r\nART. IOC-P250",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "SIGMAGRAFT InterOss",
+      "color": "C6D9F1",
+      "prices": {
+        "qty_20": 8000,
+        "qty_40": 7500,
+        "qty_60": 7000,
+        "qty_100": 6500
+      },
+      "basePrice": 6500
+    },
+    {
+      "row": 244,
+      "nameEn": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 6×6×3/50mg\r\nART. CB-0110-005",
+      "nameRu": "NIBEC OCS-B Xenomatrix Collagen, универсальный гибкий костный блок состоит из 90% бычьей кости и 10% свиного коллагена, это оригинальный товар, который известен под названиями STRAUMANN XenoFlex, NOBEL CreoS Xenogain Collagen, SIGMAGRAFT InterOss Collagen, после гидратации режется ножницами, используется как костный материал при любом клиническом случае, отличный универсальный материал\r\n\r\nNIBEC OCS-B Xenomatrix Collagen\r\nBlock 6×6×3/50mg\r\nART. CB-0110-005",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "STRAUMANN XenoFlex",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 5990,
+        "qty_5": 4500,
+        "qty_20": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 5990
+    },
+    {
+      "row": 245,
+      "nameEn": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 10 6×6×6/100mg\r\nART. CB-0110-010",
+      "nameRu": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 10 6×6×6/100mg\r\nART. CB-0110-010",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 9600,
+        "qty_5": 6000,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 9600
+    },
+    {
+      "row": 246,
+      "nameEn": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 7×8×9/250mg\r\nART. CB-0110-025",
+      "nameRu": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 7×8×9/250mg\r\nART. CB-0110-025",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 19760,
+        "qty_5": 7500,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 19760
+    },
+    {
+      "row": 247,
+      "nameEn": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 9×10×11/500mg\r\nART. CB-0110-050",
+      "nameRu": "NIBEC OCS-B Xenomatrix Collagen\r\nBlock 9×10×11/500mg\r\nART. CB-0110-050",
+      "productType": "Bone",
+      "material": "XenoGraft 90% Bovine + 10% Pork",
+      "country": "South Korea",
+      "category": "Костные материалы",
+      "subcategory": "NIBEC OCS-B",
+      "color": "8EB4E3",
+      "prices": {
+        "single": 22260,
+        "qty_5": 9500,
+        "qty_20": 8500,
+        "qty_50": 8000,
+        "qty_100": 7000
+      },
+      "basePrice": 22260
+    },
+    {
+      "row": 248,
+      "nameEn": "TITAN GIDE\r\nBovine 15x20mm\r\nART. TB-1520",
+      "nameRu": "TITAN GIDE мембрана бычья универсальная\r\n\r\n TITAN GIDE\r\nBovine 15x20mm\r\nART. TB-1520",
+      "productType": "Membrane",
+      "material": "Bovine",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "TITAN GIDE",
+      "color": "00B0F0",
+      "prices": {
+        "single": 6000,
+        "qty_5": 4500,
+        "qty_20": 3900,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 6000
+    },
+    {
+      "row": 249,
+      "nameEn": "TITAN GIDE\r\nBovine 20x30mm\r\nART. TB-2030",
+      "nameRu": "TITAN GIDE\r\nBovine 20x30mm\r\nART. TB-2030",
+      "productType": "Membrane",
+      "material": "Bovine",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "TITAN GIDE",
+      "color": "00B0F0",
+      "prices": {
+        "single": 9500,
+        "qty_5": 6900,
+        "qty_20": 6300,
+        "qty_50": 5500,
+        "qty_100": 5000
+      },
+      "basePrice": 9500
+    },
+    {
+      "row": 250,
+      "nameEn": "TITAN M\r\nSynthetic 15x20mm",
+      "nameRu": "TITAN M мембрана синтетическая плотная для НКР\r\n\r\nTITAN M\r\nSynthetic 15x20mm",
+      "productType": "Membrane",
+      "material": "Synthetic",
+      "country": "Switzerland",
+      "category": "Мембраны",
+      "subcategory": "TITAN M",
+      "color": "FF5050",
+      "prices": {
+        "single": 4500,
+        "qty_5": 3000,
+        "qty_10": 2500
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 251,
+      "nameEn": "STRAUMANN Botiss Jason\r\nPork 15x20mm\r\nART. 681520",
+      "nameRu": "STRAUMANN Botiss Jason мембрана свиная универсальная\r\n\r\nSTRAUMANN Botiss Jason\r\nPork 15x20mm\r\nART. 681520",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "Germany",
+      "category": "Мембраны",
+      "subcategory": "STRAUMANN Botiss Jason",
+      "color": "C3D69B",
+      "prices": {
+        "single": 10000,
+        "qty_5": 7500,
+        "qty_20": 5500,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 10000
+    },
+    {
+      "row": 252,
+      "nameEn": "STRAUMANN Botiss Jason\r\nPork 20x30mm\r\nART. 682030",
+      "nameRu": "STRAUMANN Botiss Jason\r\nPork 20x30mm\r\nART. 682030",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "Germany",
+      "category": "Мембраны",
+      "subcategory": "STRAUMANN Botiss Jason",
+      "color": "C3D69B",
+      "prices": {
+        "single": 12500,
+        "qty_5": 8500,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 253,
+      "nameEn": "STRAUMANN Botiss Jason\r\nPork 30x40mm\r\nART. 683040",
+      "nameRu": "STRAUMANN Botiss Jason\r\nPork 30x40mm\r\nART. 683040",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "Germany",
+      "category": "Мембраны",
+      "subcategory": "STRAUMANN Botiss Jason",
+      "color": "C3D69B",
+      "prices": {
+        "single": 19000,
+        "qty_5": 10000,
+        "qty_20": 8500,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 19000
+    },
+    {
+      "row": 254,
+      "nameEn": "SIGMAGRAFT InterCollagen Guide\r\nPork 15x20mm\r\nART. ICG1520",
+      "nameRu": "SIGMAGRAFT InterCollagen Guide мембрана свиная универсальная\r\n\r\nSIGMAGRAFT InterCollagen Guide\r\nPork 15x20mm\r\nART. ICG1520",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "USA",
+      "category": "Мембраны",
+      "subcategory": "SIGMAGRAFT InterCollagen",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 11000,
+        "qty_5": 7500,
+        "qty_20": 5500,
+        "qty_50": 4000,
+        "qty_100": 3000
+      },
+      "basePrice": 11000
+    },
+    {
+      "row": 255,
+      "nameEn": "SIGMAGRAFT InterCollagen Guide\r\nPork 20x30mm\r\nART. ICG2030",
+      "nameRu": "SIGMAGRAFT InterCollagen Guide\r\nPork 20x30mm\r\nART. ICG2030",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "USA",
+      "category": "Мембраны",
+      "subcategory": "SIGMAGRAFT InterCollagen",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 12500,
+        "qty_5": 8500,
+        "qty_20": 6500,
+        "qty_50": 6000,
+        "qty_100": 5000
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 256,
+      "nameEn": "SIGMAGRAFT InterCollagen Guide\r\nPork 30x40mm\r\nART. ICG3040",
+      "nameRu": "SIGMAGRAFT InterCollagen Guide\r\nPork 30x40mm\r\nART. ICG3040",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "USA",
+      "category": "Мембраны",
+      "subcategory": "SIGMAGRAFT InterCollagen",
+      "color": "C6D9F1",
+      "prices": {
+        "single": 19000,
+        "qty_5": 10000,
+        "qty_20": 8500,
+        "qty_50": 7500,
+        "qty_100": 6500
+      },
+      "basePrice": 19000
+    },
+    {
+      "row": 257,
+      "nameEn": "BioPLATE Contur\r\nPork 15x20mm",
+      "nameRu": "BioPLATE Contur мембрана свиная универсальная\r\n\r\nBioPLATE Contur\r\nPork 15x20mm",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "Russia",
+      "category": "Мембраны",
+      "subcategory": "BioPLATE Contur",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 5500,
+        "qty_10": 5000,
+        "qty_30": 4500
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 258,
+      "nameEn": "BioPLATE Contur\r\nPork 25x25mm",
+      "nameRu": "BioPLATE Contur\r\nPork 25x25mm",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "Russia",
+      "category": "Мембраны",
+      "subcategory": "BioPLATE Contur",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 7000,
+        "qty_10": 6000,
+        "qty_30": 5500
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 259,
+      "nameEn": "BioPLATE Contur\r\nPork 30x40mm",
+      "nameRu": "BioPLATE Contur\r\nPork 30x40mm",
+      "productType": "Membrane",
+      "material": "Pork",
+      "country": "Russia",
+      "category": "Мембраны",
+      "subcategory": "BioPLATE Contur",
+      "color": "DDD9C3",
+      "prices": {
+        "single": 8000,
+        "qty_10": 7000,
+        "qty_30": 6100
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 260,
+      "nameEn": "BioPLATE Barrier\r\nBovine 15x20mm",
+      "nameRu": "BioPLATE Barrier мембрана бычья плотная для НКР\r\n\r\nBioPLATE Barrier\r\nBovine 15x20mm",
+      "productType": "Membrane",
+      "material": "Bovine",
+      "country": "Russia",
+      "category": "Мембраны",
+      "subcategory": "BioPLATE Barrier",
+      "color": "C4BD97",
+      "prices": {
+        "single": 5500,
+        "qty_10": 5000,
+        "qty_30": 4500
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 261,
+      "nameEn": "BioPLATE Barrier\r\nBovine 25x25mm",
+      "nameRu": "BioPLATE Barrier\r\nBovine 25x25mm",
+      "productType": "Membrane",
+      "material": "Bovine",
+      "country": "Russia",
+      "category": "Мембраны",
+      "subcategory": "BioPLATE Barrier",
+      "color": "C4BD97",
+      "prices": {
+        "single": 7000,
+        "qty_10": 6000,
+        "qty_30": 5500
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 262,
+      "nameEn": "BioPLATE Barrier\r\nBovine 30x40mm",
+      "nameRu": "BioPLATE Barrier\r\nBovine 30x40mm",
+      "productType": "Membrane",
+      "material": "Bovine",
+      "country": "Russia",
+      "category": "Мембраны",
+      "subcategory": "BioPLATE Barrier",
+      "color": "C4BD97",
+      "prices": {
+        "single": 8000,
+        "qty_10": 7000,
+        "qty_30": 6100
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 263,
+      "nameEn": "MYDERM\r\nAllogeneic 10x20mm (0.4-0.8mm)",
+      "nameRu": "MYDERM мембрана аллогенная уникальная для мягких тканей\r\n\r\nMYDERM\r\nAllogeneic 10x20mm (0.4-0.8mm)",
+      "productType": "Membrane",
+      "material": "Allogeneic",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "MYDERM",
+      "color": "D99694",
+      "prices": {
+        "single": 6500,
+        "qty_5": 5000,
+        "qty_20": 4500,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 6500
+    },
+    {
+      "row": 264,
+      "nameEn": "MYDERM\r\nAllogeneic 10x20mm (0.8-1.2mm)",
+      "nameRu": "MYDERM\r\nAllogeneic 10x20mm (0.8-1.2mm)",
+      "productType": "Membrane",
+      "material": "Allogeneic",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "MYDERM",
+      "color": "D99694",
+      "prices": {
+        "single": 6500,
+        "qty_5": 5000,
+        "qty_20": 4500,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 6500
+    },
+    {
+      "row": 265,
+      "nameEn": "MYDERM\r\nAllogeneic 15x20mm (0.4-0.8mm)",
+      "nameRu": "MYDERM\r\nAllogeneic 15x20mm (0.4-0.8mm)",
+      "productType": "Membrane",
+      "material": "Allogeneic",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "MYDERM",
+      "color": "D99694",
+      "prices": {
+        "single": 7000,
+        "qty_5": 5500,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 266,
+      "nameEn": "MYDERM\r\nAllogeneic 15x20mm (0.8-1.2mm)",
+      "nameRu": "MYDERM\r\nAllogeneic 15x20mm (0.8-1.2mm)",
+      "productType": "Membrane",
+      "material": "Allogeneic",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "MYDERM",
+      "color": "D99694",
+      "prices": {
+        "single": 7000,
+        "qty_5": 5500,
+        "qty_20": 5000,
+        "qty_50": 4000,
+        "qty_100": 3500
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 267,
+      "nameEn": "MYDERM\r\nAllogeneic 15x25mm (0.4-0.8mm)",
+      "nameRu": "MYDERM\r\nAllogeneic 15x25mm (0.4-0.8mm)",
+      "productType": "Membrane",
+      "material": "Allogeneic",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "MYDERM",
+      "color": "D99694",
+      "prices": {
+        "single": 8000,
+        "qty_5": 6500,
+        "qty_20": 6000,
+        "qty_50": 5500,
+        "qty_100": 4500
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 268,
+      "nameEn": "MYDERM\r\nAllogeneic 15x25mm (0.8-1.2mm)",
+      "nameRu": "MYDERM\r\nAllogeneic 15x25mm (0.8-1.2mm)",
+      "productType": "Membrane",
+      "material": "Allogeneic",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "MYDERM",
+      "color": "D99694",
+      "prices": {
+        "single": 8000,
+        "qty_5": 6500,
+        "qty_20": 6000,
+        "qty_50": 5500,
+        "qty_100": 4500
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 269,
+      "nameEn": "PTFE Membrane with titanium frame\r\n20х25mm\r\nART. PM2025A",
+      "nameRu": "PTFE мембрана с титановым каркасом\r\n\r\nPTFE Membrane with titanium frame\r\n20х25mm\r\nART. PM2025A",
+      "productType": "Membrane",
+      "material": "PTFE with titanium frame",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "PTFE с титановым каркасом",
+      "color": "CCC1DA",
+      "prices": {
+        "single": 7000,
+        "qty_5": 5500,
+        "qty_20": 5000,
+        "qty_50": 4500,
+        "qty_100": 4000
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 270,
+      "nameEn": "PTFE Membrane with titanium frame\r\n25х30mm\r\nART. PM2530A",
+      "nameRu": "PTFE Membrane with titanium frame\r\n25х30mm\r\nART. PM2530A",
+      "productType": "Membrane",
+      "material": "PTFE with titanium frame",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "PTFE с титановым каркасом",
+      "color": "CCC1DA",
+      "prices": {
+        "single": 7500,
+        "qty_5": 6000,
+        "qty_20": 5300,
+        "qty_50": 4800,
+        "qty_100": 4300
+      },
+      "basePrice": 7500
+    },
+    {
+      "row": 271,
+      "nameEn": "PTFE Membrane with titanium frame\r\n30х40mm\r\nART. PM3040A",
+      "nameRu": "PTFE Membrane with titanium frame\r\n30х40mm\r\nART. PM3040A",
+      "productType": "Membrane",
+      "material": "PTFE with titanium frame",
+      "country": "South Korea",
+      "category": "Мембраны",
+      "subcategory": "PTFE с титановым каркасом",
+      "color": "CCC1DA",
+      "prices": {
+        "single": 8000,
+        "qty_5": 6500,
+        "qty_20": 5500,
+        "qty_50": 5000,
+        "qty_100": 4500
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 272,
+      "nameEn": "Pins unstressed\r\nLength 2.0mm or 2.7mm",
+      "nameRu": "Безударные пины\r\nДлина на выбор 2.0мм или 2.7мм",
+      "productType": "GBR Pins",
+      "material": "Pins unstressed",
+      "country": "Russia",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_25": 500,
+        "qty_100": 400,
+        "qty_500": 350,
+        "qty_1000": 300,
+        "qty_5000": 250
+      },
+      "basePrice": 400
+    },
+    {
+      "row": 273,
+      "nameEn": "FULL KIT Pins unstressed\r\nTip KaVO S53\r\nPin holder\r\nPin 25 pc",
+      "nameRu": "НАБОР ДЛЯ УСТАНОВКИ БЕЗУДАРНЫХ ПИНОВ\r\nНаконечник KaVO S53\r\nПинодержатель\r\n25 безударных пинов",
+      "productType": "GBR Pins",
+      "material": "Pins unstressed",
+      "country": "",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 45000
+      },
+      "basePrice": 45000
+    },
+    {
+      "row": 274,
+      "nameEn": "Pins unstressed the pin holder",
+      "nameRu": "Пинодержатель для безударных пинов",
+      "productType": "GBR Pins",
+      "material": "Pins unstressed",
+      "country": "Russia",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 3500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 275,
+      "nameEn": "Pins unstressed Tip KaVO S53 for installing pins",
+      "nameRu": "Наконечник KaVO S53 для безударных пинов",
+      "productType": "GBR Pins",
+      "material": "Pins unstressed",
+      "country": "Germany",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 35000
+      },
+      "basePrice": 35000
+    },
+    {
+      "row": 276,
+      "nameEn": "Pins for the hammer Length 3.75mm or 5mm",
+      "nameRu": "Пины ударные 3.75мм или 5мм",
+      "productType": "GBR Pins",
+      "material": "Pins for the hammer",
+      "country": "China",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "qty_10": 500,
+        "qty_50": 400,
+        "qty_100": 300
+      },
+      "basePrice": 500
+    },
+    {
+      "row": 277,
+      "nameEn": "Pins for the hammer FULL KIT (pin holder universal + 10 pins + сassette)",
+      "nameRu": "НАБОР ДЛЯ УСТАНОВКИ УДАРНЫХ ПИНОВ\r\nУниверсальный пинодержатель прямой и угловой\r\n10 ударных пинов\r\nКассета на 15 пинов",
+      "productType": "GBR Pins",
+      "material": "Pins for the hammer",
+      "country": "China",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 10000
+      },
+      "basePrice": 10000
+    },
+    {
+      "row": 278,
+      "nameEn": "Pins for the hammer The pin holder universal (straight and angular)",
+      "nameRu": "Универсальный пинодержатель прямой и угловой",
+      "productType": "GBR Pins",
+      "material": "Pins for the hammer",
+      "country": "China",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 5000
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 279,
+      "nameEn": "Pins Cassette 15 pins",
+      "nameRu": "Кассета для 15 пинов",
+      "productType": "GBR Pins",
+      "material": "Pins Cassette",
+      "country": "Pakistan",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 3000
+      },
+      "basePrice": 3000
+    },
+    {
+      "row": 280,
+      "nameEn": "Pins Hammer",
+      "nameRu": "Молоток для установки ударных пинов",
+      "productType": "GBR Pins",
+      "material": "Pins Hammer",
+      "country": "Pakistan",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FCD5B5",
+      "prices": {
+        "single": 3000
+      },
+      "basePrice": 3000
+    },
+    {
+      "row": 281,
+      "nameEn": "FULL KIT GBR\r\nCassette with 62 screws and 20 pins\r\nManual screwdriver for screws\r\nHand manual screwdriver attachment for screws\r\nMachine screwdriver for screws \r\nPilot drill\r\nScrews 27 pc",
+      "nameRu": "НАБОР ДЛЯ КОСТНОЙ ПЛАСТИКИ\r\nКассета на 62 винта и 20 пинов\r\nРучная отвёртка\r\nНасадка для ручной отвёртки\r\nМашинная отвёртка\r\nПилотное сверло\r\n27 винтов",
+      "productType": "GBR Screw",
+      "material": "Screw",
+      "country": "South Korea",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "9BBB59",
+      "prices": {
+        "single": 29000
+      },
+      "basePrice": 29000
+    },
+    {
+      "row": 282,
+      "nameEn": "Screw\r\nDiameter Ø 1.4 Length 3, 4, 6, 8mm or \r\nDiameter Ø 1.6 Length 3, 4, 6, 8, 10mm",
+      "nameRu": "Винты\r\nØ 1.4 Длина 3, 4, 6, 8мм\r\nØ 1.6 Длина 3, 4, 6, 8, 10мм",
+      "productType": "GBR Screw",
+      "material": "Screw",
+      "country": "South Korea",
+      "category": "Прочее",
+      "subcategory": "STRAUMANN XenoGraft",
+      "color": "9BBB59",
+      "prices": {
+        "qty_10": 1000,
+        "qty_20": 800,
+        "qty_50": 600,
+        "qty_200": 450,
+        "qty_500": 400
+      },
+      "basePrice": 1000
+    },
+    {
+      "row": 283,
+      "nameEn": "TITAN S\r\nBone Scraper disposable",
+      "nameRu": "TITAN S\r\nКостный скребок одноразовый",
+      "productType": "Bone collector",
+      "material": "Scraper disposable",
+      "country": "Switzerland",
+      "category": "Инструменты",
+      "subcategory": "Инструменты для костной пластики",
+      "color": "B3A2C7",
+      "prices": {
+        "single": 3500,
+        "qty_5": 2500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 284,
+      "nameEn": "KIT BONE COLLECTOR\r\nDiameter Ø 3.4, 4.0, 4.2, 5.2",
+      "nameRu": "Набор из 4 фрез для забора аутокости\r\nДиаметр фрез Ø 3.4, 4.0, 4.2, 5.2\r\nФрезы со стоппером, можно использовать для установки имплантатов",
+      "productType": "Bone collector",
+      "material": "Harvester",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Инструменты для костной пластики",
+      "color": "C4BD97",
+      "prices": {
+        "single": 8000
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 285,
+      "nameEn": "AUTO-MAX Megagen ALL SIZE",
+      "nameRu": "AUTO-MAX Megagen\r\nФреза для забора аутокости любой размер",
+      "productType": "Bone collector",
+      "material": "Harvester",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "00B0F0",
+      "prices": {
+        "single": 7000,
+        "qty_5": 6000,
+        "qty_10": 5000,
+        "qty_20": 4500,
+        "qty_50": 4000
+      },
+      "basePrice": 7000
+    },
+    {
+      "row": 286,
+      "nameEn": "KIT AUTO-MAX Megagen 4 pc \r\nDiameter Ø 3.5, 5.0, 6.0, 7.0",
+      "nameRu": "AUTO-MAX Megagen\r\nНабор из 4 фрез для забора аутокости\r\nØ 3.5, 5.0, 6.0, 7.0",
+      "productType": "Bone collector",
+      "material": "Harvester",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "00B0F0",
+      "prices": {
+        "single": 20000,
+        "qty_2": 18500,
+        "qty_4": 17000,
+        "qty_8": 15500,
+        "qty_20": 14000
+      },
+      "basePrice": 20000
+    },
+    {
+      "row": 287,
+      "nameEn": "Milling cutter for bone block fence ALL SIZE",
+      "nameRu": "Фреза для забора костного блока любой размер",
+      "productType": "Bone collector",
+      "material": "Harvester",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "D99694",
+      "prices": {
+        "single": 12500,
+        "qty_5": 10000,
+        "qty_10": 9000,
+        "qty_20": 8000,
+        "qty_50": 7500
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 288,
+      "nameEn": "KIT Milling cutter for bone block fence 3 pc\r\nDiameter Ø 8.0, 9.0, 10.0",
+      "nameRu": "Набор из 3 фрез для забора костного блока\r\nØ 8.0, 9.0, 10.0",
+      "productType": "Bone collector",
+      "material": "Harvester",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "D99694",
+      "prices": {
+        "single": 35000,
+        "qty_2": 24000,
+        "qty_4": 23000,
+        "qty_8": 22000,
+        "qty_20": 21000
+      },
+      "basePrice": 35000
+    },
+    {
+      "row": 289,
+      "nameEn": "Irrigation systems (tubes)",
+      "nameRu": "Ирригационные системы (трубки) для физиодиспенсера, отличное качество. Трубки в ассортименте компании более 5 лет, мы протестировали товары всех производителей трубок в Китае и выбрали для вас лучшие",
+      "productType": "Irrigation systems",
+      "material": "Irrigation systems",
+      "country": "China",
+      "category": "Расходники",
+      "subcategory": "Ирригационные системы",
+      "color": "B7DEE8",
+      "prices": {
+        "single": 600,
+        "qty_50": 500,
+        "qty_100": 400,
+        "qty_500": 300,
+        "qty_1000": 250
+      },
+      "basePrice": 600
+    },
+    {
+      "row": 290,
+      "nameEn": "B. BRAUN Dafilon Suture material\r\n4.0 45cm DS16 ART. C0932132",
+      "nameRu": "B. BRAUN Dafilon 36 ниток, 45см, игла 16мм. 4.0\r\nШовный материал\r\nПолиамид монофиламентный\r\nНе резорбируемый\r\nОбратно/режущая 3/8",
+      "productType": "Suture material",
+      "material": "Polyamide",
+      "country": "Germany",
+      "category": "Расходники",
+      "subcategory": "Шовный материал",
+      "color": "00B050",
+      "prices": {
+        "single": 10000,
+        "qty_5": 6500,
+        "qty_10": 6000,
+        "qty_50": 5000,
+        "qty_100": 4500
+      },
+      "basePrice": 10000
+    },
+    {
+      "row": 291,
+      "nameEn": "B. BRAUN Dafilon Suture material\r\n5.0 45cm DS16 ART. C0932124",
+      "nameRu": "B. BRAUN Dafilon 36 ниток, 45см, игла 16мм. 5.0\r\nШовный материал\r\nПолиамид монофиламентный\r\nНе резорбируемый\r\nОбратно/режущая 3/8",
+      "productType": "Suture material",
+      "material": "Polyamide",
+      "country": "Germany",
+      "category": "Расходники",
+      "subcategory": "Шовный материал",
+      "color": "00B050",
+      "prices": {
+        "single": 12000,
+        "qty_5": 7500,
+        "qty_10": 7000,
+        "qty_50": 6000,
+        "qty_100": 5500
+      },
+      "basePrice": 12000
+    },
+    {
+      "row": 292,
+      "nameEn": "B. BRAUN Dafilon Suture material\r\n6.0 45cm DS12 ART. C0932060",
+      "nameRu": "B. BRAUN Dafilon 36 ниток, 45см, игла 12мм. 6.0\r\nШовный материал\r\nПолиамид монофиламентный\r\nНе резорбируемый\r\nОбратно/режущая 3/8",
+      "productType": "Suture material",
+      "material": "Polyamide",
+      "country": "Germany",
+      "category": "Расходники",
+      "subcategory": "Шовный материал",
+      "color": "00B050",
+      "prices": {
+        "single": 13000,
+        "qty_5": 8000,
+        "qty_10": 7500,
+        "qty_50": 6500,
+        "qty_100": 6000
+      },
+      "basePrice": 13000
+    },
+    {
+      "row": 293,
+      "nameEn": "B. BRAUN Dafilon Suture material\r\n6.0 45cm DS16 ART. C0932116",
+      "nameRu": "B. BRAUN Dafilon 36 ниток, 45см, игла 16мм. 6.0\r\nШовный материал\r\nПолиамид монофиламентный\r\nНе резорбируемый\r\nОбратно/режущая 3/8",
+      "productType": "Suture material",
+      "material": "Polyamide",
+      "country": "Germany",
+      "category": "Расходники",
+      "subcategory": "Шовный материал",
+      "color": "00B050",
+      "prices": {
+        "single": 13000,
+        "qty_5": 8000,
+        "qty_10": 7500,
+        "qty_50": 6500,
+        "qty_100": 6000
+      },
+      "basePrice": 13000
+    },
+    {
+      "row": 294,
+      "nameEn": "GC Fuji I 35g Powder + 20ml Liquid",
+      "nameRu": "GC Fuji I Фуджи 1\r\nУпаковка: 35 г порошка, 25 г (20 мл) жидкости, ложечка для порошка, блок для замешивания № 20. \r\nСтеклоиономерный цемент химического отверждения для постоянного цементирования коронок и мостов. Совместим с пульпой и мягкими тканями, риск послеоперационной гиперчувствительности минимален. Прекрасная адгезия, надежное краевое прилегание. Пролонгированное рабочее время, оптимальная консистенция замешанного материала, простота в работе. Маленький размер частиц. Удобная припасовка конструкции. Быстрое отверждение. Выраженная рентгеноконтрастность. Пролонгированное фторовыделение.",
+      "productType": "Cement",
+      "material": "Cement",
+      "country": "Japan",
+      "category": "Расходники",
+      "subcategory": "Цементы и адгезивы",
+      "color": "F2DCDB",
+      "prices": {
+        "single": 5500,
+        "qty_3": 4500,
+        "qty_10": 4000,
+        "qty_50": 3500,
+        "qty_100": 3000
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 295,
+      "nameEn": "3M Single Bond Universal - 5ml",
+      "nameRu": "3M Single Bond Universal - 5мл.\r\nУниверсальный стоматологический адгезив, который может применяться для всех техник, включая тотальное протравливание, самопротравливание и селективное травление. \r\nИдеально подходит как для прямых, так и непрямых реставраций и может использоваться на всех поверхностях без отдельного праймера. Созданный для упрощения процедуры бондинга, Single Bond Universal — один адгезив для любой практики, демонстрирующий выдающуюся силу и скорость.",
+      "productType": "Bond",
+      "material": "Bond",
+      "country": "USA",
+      "category": "Расходники",
+      "subcategory": "Цементы и адгезивы",
+      "color": "CCC1DA",
+      "prices": {
+        "single": 4000,
+        "qty_3": 3500,
+        "qty_10": 3000,
+        "qty_50": 2500,
+        "qty_100": 2000
+      },
+      "basePrice": 4000
+    },
+    {
+      "row": 296,
+      "nameEn": "3M Adper Single Bond 2 - 6ml",
+      "nameRu": "3M Adper Single Bond 2 -  6ml\r\nПредставляет собой нанонаполненную адгезивную систему,  с двухэтапной техникой нанесения (влажный бондинг).\r\n\r\nАдгезивная система 5-го поколения для использования в технике полного (тотального) протравливания с гарантированной консистенцией в каждой капле за счет наночастиц наполнителя, которые не группируются вместе и не оседают на дне флакона.",
+      "productType": "Bond",
+      "material": "Bond",
+      "country": "USA",
+      "category": "Расходники",
+      "subcategory": "Цементы и адгезивы",
+      "color": "93CDDD",
+      "prices": {
+        "single": 3500,
+        "qty_3": 3000,
+        "qty_10": 2500,
+        "qty_50": 2000,
+        "qty_100": 1500
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 297,
+      "nameEn": "KIT\r\n4pc universal bone profilers all systems\r\n2 pc bone trimmers\r\nSterilization cassette",
+      "nameRu": "Набор\r\n4 универсальных профайлера для всех систем\r\n2 костных триммера\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Bone profilers",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Трепаны и триммеры",
+      "color": "FF5050",
+      "prices": {
+        "single": 20000,
+        "qty_2": 18000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 20000
+    },
+    {
+      "row": 298,
+      "nameEn": "KIT\r\nBone profilers with keys and guides for Korean hexagon 2.5 and 2.1 systems\r\nSterilization cassette",
+      "nameRu": "Набор\r\nПрофайлеры разного диаметра с ключами и направляющими для корейских систем с шестигранником 2.5 и 2.1\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Bone profilers",
+      "country": "South Korea",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "FF5050",
+      "prices": {
+        "single": 24000,
+        "qty_2": 22000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 24000
+    },
+    {
+      "row": 299,
+      "nameEn": "KIT (analog Versah Densah)\r\nDrills for osteodensification, regular and short\r\n2pc separation discs\r\n1pc Lindeman drill\r\n1 Bone collector Harvester\r\n4pc trepans elongated\r\n2pc trimmer\r\nSterilization cassette",
+      "nameRu": "Набор (аналог Versah Densah)\r\nСвёрла для остеоденсификации обычные и короткие\r\n2 сепарационных диска\r\n1 фреза Линдемана\r\n1 фреза для забора аутокости\r\n4 трепана удлинённых\r\n2 мукотома с центровкой\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Osseodensification",
+      "country": "Pakistan",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 15000,
+        "qty_10": 13500
+      },
+      "basePrice": 15000
+    },
+    {
+      "row": 300,
+      "nameEn": "KIT (analog Versah Densah)\r\nDrills for osteodensification, only regular\r\n2pc Lateral Approach Drills\r\n3pc Crestal Approach Drills\r\n2pc separation discs\r\n1pc Lindeman drill\r\n1 Bone collector Harvester\r\n4pc trepans elongated\r\n2pc trimmer\r\nSterilization cassette",
+      "nameRu": "Набор (аналог Versah Densah)\r\nСвёрла для остеоденсификации обычные\r\n2 алмазные фрезы для открытого синус лифтинга\r\n3 алмазные фрезы для закрытого синус лифтинга\r\n2 сепарационных диска\r\n1 фреза Линдемана\r\n1 фреза для забора аутокости\r\n4 трепана удлинённых\r\n2 мукотома с центровкой\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Osseodensification",
+      "country": "Pakistan",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 15000,
+        "qty_10": 13500
+      },
+      "basePrice": 15000
+    },
+    {
+      "row": 301,
+      "nameEn": "Needle holder LUX Castroviejo is straight 18cm\r\nArticle P18LUX",
+      "nameRu": "Иглодержатель LUX Castroviejo прямой 18 см\r\nАртикул P18LUX",
+      "productType": "TOOLS",
+      "material": "Needle holder",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Иглодержатели",
+      "color": "FF5050",
+      "prices": {
+        "single": 5500,
+        "qty_2": 4500,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 302,
+      "nameEn": "Needle holder LUX Castroviejo is curved 18cm\r\nArticle Y18LUX",
+      "nameRu": "Иглодержатель LUX Castroviejo угловой 18 см\r\nАртикул Y18LUX",
+      "productType": "TOOLS",
+      "material": "Needle holder",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Иглодержатели",
+      "color": "FF5050",
+      "prices": {
+        "single": 5500,
+        "qty_2": 4500,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 303,
+      "nameEn": "Needle holder 16cm\r\nArticle 103-131",
+      "nameRu": "Артикул 103-131 Иглодержатель 16см",
+      "productType": "TOOLS",
+      "material": "Needle holder",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Иглодержатели",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 304,
+      "nameEn": "Needle holder 14cm\r\nArticle 103-134",
+      "nameRu": "Артикул 103-134 Иглодержатель 14см",
+      "productType": "TOOLS",
+      "material": "Needle holder",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Иглодержатели",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 305,
+      "nameEn": "Needle holder 16cm\r\nArticle 75-113",
+      "nameRu": "Артикул 75-113 Иглодержатель 16см",
+      "productType": "TOOLS",
+      "material": "Needle holder",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Иглодержатели",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 306,
+      "nameEn": "Needle holder 11cm\r\nArticle 75-114",
+      "nameRu": "Артикул 75-114 Иглодержатель 14см",
+      "productType": "TOOLS",
+      "material": "Needle holder",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Иглодержатели",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 307,
+      "nameEn": "Scissors 11.5cm\r\nArticle 103-122",
+      "nameRu": "Ножницы 11.5см\r\nАртикул 103-122",
+      "productType": "TOOLS",
+      "material": "Scissors",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Ножницы",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 308,
+      "nameEn": "Scissors 11cm\r\nArticle 678-2",
+      "nameRu": "Ножницы 11см\r\nАртикул 678-2",
+      "productType": "TOOLS",
+      "material": "Scissors",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Ножницы",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 309,
+      "nameEn": "Scissors 11cm\r\nArticle 678-3",
+      "nameRu": "Ножницы 11.5см\r\nАртикул 678-3",
+      "productType": "TOOLS",
+      "material": "Scissors",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Ножницы",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 900,
+        "qty_30": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 310,
+      "nameEn": "Suture tweezers",
+      "nameRu": "Пинцет для шовного материала",
+      "productType": "TOOLS",
+      "material": "Tweezers",
+      "country": "Pakistan",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FF5050",
+      "prices": {
+        "single": 1000
+      },
+      "basePrice": 1000
+    },
+    {
+      "row": 311,
+      "nameEn": "Curved tweezers with a clip for fixing",
+      "nameRu": "Пинцет изогнутый с зажимом для фиксации",
+      "productType": "TOOLS",
+      "material": "Tweezers",
+      "country": "Pakistan",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FF5050",
+      "prices": {
+        "single": 1000
+      },
+      "basePrice": 1000
+    },
+    {
+      "row": 312,
+      "nameEn": "Straight tweezers with a clip for fixing",
+      "nameRu": "Пинцет прямой с зажимом для фиксации",
+      "productType": "TOOLS",
+      "material": "Tweezers",
+      "country": "Pakistan",
+      "category": "Пины и GBR",
+      "subcategory": "Пины и винты GBR",
+      "color": "FF5050",
+      "prices": {
+        "single": 1000
+      },
+      "basePrice": 1000
+    },
+    {
+      "row": 313,
+      "nameEn": "Hammer",
+      "nameRu": "Молоток",
+      "productType": "TOOLS",
+      "material": "Hammer",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "FF5050",
+      "prices": {
+        "single": 3000,
+        "qty_2": 2500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 3000
+    },
+    {
+      "row": 314,
+      "nameEn": "KIT\r\n6pc Bone chisel\r\n1pc Hammer",
+      "nameRu": "Набор\r\n6 долото\r\nМолоток",
+      "productType": "TOOLS",
+      "material": "Bone chisel",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Прочие инструменты",
+      "color": "FF5050",
+      "prices": {
+        "single": 10000,
+        "qty_2": 8000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 10000
+    },
+    {
+      "row": 315,
+      "nameEn": "KIT\r\n5pc curved concave osteotomes",
+      "nameRu": "Набор\r\n5 изогнутых вогнутых остеотомов",
+      "productType": "TOOLS",
+      "material": "Osteotomes",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Остеотомы",
+      "color": "FF5050",
+      "prices": {
+        "single": 9000,
+        "qty_2": 7000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 9000
+    },
+    {
+      "row": 316,
+      "nameEn": "KIT PRF\r\n1pc PRF BOX\r\n1pc Stand for test tubes\r\n1pc Tray\r\n1pc Bowl",
+      "nameRu": "Набор для PRF\r\nPRF BOX\r\nПодставка под пробирки\r\nЛоток\r\nЧашка",
+      "productType": "TOOLS",
+      "material": "PRF",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "PRF",
+      "color": "FF5050",
+      "prices": {
+        "single": 4000,
+        "qty_2": 3500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 4000
+    },
+    {
+      "row": 317,
+      "nameEn": "All on 4/All on 6\r\nImplantation template Paulo Malo",
+      "nameRu": "Шаблон Paulo Malo для All on 4/All on 6",
+      "productType": "TOOLS",
+      "material": "All on 4/All on 6 additional tools",
+      "country": "Pakistan",
+      "category": "Прочее",
+      "subcategory": "NOBEL / Инструменты",
+      "color": "FF5050",
+      "prices": {
+        "single": 5000,
+        "qty_2": 3500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 318,
+      "nameEn": "Bone Mill BIG",
+      "nameRu": "Костная мельница большая",
+      "productType": "TOOLS",
+      "material": "Bone Mill",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Инструменты для костной пластики",
+      "color": "FF5050",
+      "prices": {
+        "single": 8000,
+        "qty_2": 6000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 319,
+      "nameEn": "Bone Mill Crusher",
+      "nameRu": "Костная ступка дробилка",
+      "productType": "TOOLS",
+      "material": "Bone Mill",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Инструменты для костной пластики",
+      "color": "FF5050",
+      "prices": {
+        "single": 2000
+      },
+      "basePrice": 2000
+    },
+    {
+      "row": 320,
+      "nameEn": "KIT\r\n4pc Sinus lifting curettes",
+      "nameRu": "Набор\r\n4 кюреты для Синус лифтинга",
+      "productType": "TOOLS",
+      "material": "Sinus lifting",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Синус-лифтинг",
+      "color": "FF5050",
+      "prices": {
+        "single": 6000,
+        "qty_2": 5000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 6000
+    },
+    {
+      "row": 321,
+      "nameEn": "KIT\r\n Sinus lifting kit (Dask analog)\r\nSterilization cassette",
+      "nameRu": "Набор\r\nСинус лифтинг (Аналог Dask)\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Sinus lifting",
+      "country": "Pakistan",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 16000,
+        "qty_2": 14000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 16000
+    },
+    {
+      "row": 322,
+      "nameEn": "LUX Lateral Approach analog DASK Drill\r\nØ 6 or Ø 8",
+      "nameRu": "LUX алмазная фреза (шар-сфера) для открытого синус лифтинга малый шар Ø 6 или большой шар Ø 8",
+      "productType": "TOOLS",
+      "material": "Lateral Approach Drill",
+      "country": "South Korea",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 5000,
+        "qty_2": 4000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 323,
+      "nameEn": "KIT\r\nCheap Lateral Approach and Crestal\r\nApproach analog DASK Drill",
+      "nameRu": "Набор\r\n6 алмазных фрез эконом для открытого и закрытого синус лифтинга",
+      "productType": "TOOLS",
+      "material": "Lateral Approach and Crestal\r\nApproach",
+      "country": "Pakistan",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 4000,
+        "qty_2": 3500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 4000
+    },
+    {
+      "row": 324,
+      "nameEn": "KIT\r\n14pc trimmer and trepans\r\nSterilization cassette",
+      "nameRu": "Набор\r\n5 трепанов\r\n5 мукатомов\r\n2 мукотома с центровкой\r\n2 сепарационных диска\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Trimmer, trepans, separation discs",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Трепаны и триммеры",
+      "color": "FF5050",
+      "prices": {
+        "single": 12000,
+        "qty_2": 10000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 12000
+    },
+    {
+      "row": 325,
+      "nameEn": "KIT\r\n4pc trepans\r\n2pc separation discs\r\nSterilization cassette",
+      "nameRu": "Набор\r\n4 трепана\r\n2 сепарационных диска\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Trepans, separation discs",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Трепаны и триммеры",
+      "color": "FF5050",
+      "prices": {
+        "single": 6000,
+        "qty_2": 5000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 6000
+    },
+    {
+      "row": 326,
+      "nameEn": "KIT\r\n4pc trimmer",
+      "nameRu": "Набор\r\n4 мукотома",
+      "productType": "TOOLS",
+      "material": "Trimmer",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Трепаны и триммеры",
+      "color": "FF5050",
+      "prices": {
+        "single": 2000,
+        "qty_2": 1500
+      },
+      "basePrice": 2000
+    },
+    {
+      "row": 327,
+      "nameEn": "KIT\r\n5pc curettes for tunnel techniques",
+      "nameRu": "Набор\r\n5 кюрет для тунельной техники",
+      "productType": "TOOLS",
+      "material": "Tunnel techniques",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Кюреты",
+      "color": "FF5050",
+      "prices": {
+        "single": 5500,
+        "qty_2": 4500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 328,
+      "nameEn": "KIT\r\n8pc flexible periotomes\r\nSterilization cassette",
+      "nameRu": "Набор\r\n8 гибких периотомов\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Periotomes",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Периотомы",
+      "color": "FF5050",
+      "prices": {
+        "single": 12500,
+        "qty_2": 10000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 12500
+    },
+    {
+      "row": 329,
+      "nameEn": "KIT\r\n2pc flexible periotomes\r\n1pc root extraction screw",
+      "nameRu": "Набор\r\n2 гибких периотома\r\n1 экстрактор",
+      "productType": "TOOLS",
+      "material": "Periotomes",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Периотомы",
+      "color": "FF5050",
+      "prices": {
+        "single": 4500,
+        "qty_2": 3500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 330,
+      "nameEn": "KIT\r\n7pc mini elevators\r\nSterilization cassette",
+      "nameRu": "Набор\r\n7 миниэлеваторов\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Elevators",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Элеваторы",
+      "color": "FF5050",
+      "prices": {
+        "single": 11000,
+        "qty_2": 9000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 11000
+    },
+    {
+      "row": 331,
+      "nameEn": "KIT\r\n7pc Gracie curettes",
+      "nameRu": "Набор\r\n7 Кюрет Грейси",
+      "productType": "TOOLS",
+      "material": "Gracie",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Кюреты",
+      "color": "FF5050",
+      "prices": {
+        "single": 4500,
+        "qty_2": 3500,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 4500
+    },
+    {
+      "row": 332,
+      "nameEn": "Root Extraction Screw",
+      "nameRu": "Экстрактор для удаления корней зубов",
+      "productType": "TOOLS",
+      "material": "Root Extraction Screw",
+      "country": "Pakistan",
+      "category": "Прочее",
+      "subcategory": "NOBEL / Инструменты",
+      "color": "FF5050",
+      "prices": {
+        "single": 1200,
+        "qty_2": 1000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 1200
+    },
+    {
+      "row": 333,
+      "nameEn": "KIT\r\nBone Expander\r\nRatchet wrench\r\n2pc separation discs\r\nSterilization cassette",
+      "nameRu": "Набор\r\nЭкспандеры\r\nХраповый ключ\r\n2 сепарационных диска\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Expander",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Костные экспандеры",
+      "color": "FF5050",
+      "prices": {
+        "single": 14000,
+        "qty_2": 12000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 14000
+    },
+    {
+      "row": 334,
+      "nameEn": "Torque wrench (collapsible) for square screwdrivers",
+      "nameRu": "Динамометрический ключ для отвёрток с квадратным соединением ( Сламывающийся)",
+      "productType": "TOOLS",
+      "material": "Torque wrench",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "FF5050",
+      "prices": {
+        "single": 4000,
+        "qty_2": 3000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 4000
+    },
+    {
+      "row": 335,
+      "nameEn": "Torque wrench for round screwdrivers",
+      "nameRu": "Динамометрический ключ для отвёрток с круглым соединением (Струнный)",
+      "productType": "TOOLS",
+      "material": "Torque wrench",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "FF5050",
+      "prices": {
+        "single": 5000,
+        "qty_2": 4000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 5000
+    },
+    {
+      "row": 336,
+      "nameEn": "KIT\r\n16pc universal screwdrivers for all systems\r\nTorque wrench for round screwdrivers\r\nSterilization cassette",
+      "nameRu": "Набор\r\n16 универсальных отвёрток для всех систем\r\nДинамометрический ключ для отвёрток с круглым соединением (Струнный)\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Screwdrivers",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "FF5050",
+      "prices": {
+        "single": 8000,
+        "qty_2": 7000,
+        "qty_10": null,
+        "qty_100": null
+      },
+      "basePrice": 8000
+    },
+    {
+      "row": 337,
+      "nameEn": "KIT\r\n8pc universal dental screwdrivers for all systems for a dental technician\r\nSterilization cassette",
+      "nameRu": "Набор\r\n8 универсальных зуботехнических отвёрток для всех систем\r\nКассета для стерилизации",
+      "productType": "TOOLS",
+      "material": "Screwdrivers",
+      "country": "Pakistan",
+      "category": "Инструменты",
+      "subcategory": "Отвёртки",
+      "color": "FF5050",
+      "prices": {
+        "single": 5500
+      },
+      "basePrice": 5500
+    },
+    {
+      "row": 338,
+      "nameEn": "KIT\r\n5pc Composite restorative instruments silicone handle (analog LM) with cassette",
+      "nameRu": "Набор из 5 терапевтических гладилок с силиконовой ручкой (Аналог LM) в кассете",
+      "productType": "TOOLS",
+      "material": "Composite restorative instruments",
+      "country": "Pakistan",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 3500,
+        "qty_5": 3000
+      },
+      "basePrice": 3500
+    },
+    {
+      "row": 339,
+      "nameEn": "KIT\r\n10pc Composite restorative instruments silicone handle (analog LM) with cassette",
+      "nameRu": "Набор из 10 терапевтических гладилок с силиконовой ручкой (Аналог LM) в кассете",
+      "productType": "TOOLS",
+      "material": "Composite restorative instruments",
+      "country": "Pakistan",
+      "category": "Протетика",
+      "subcategory": "Протетика реплика",
+      "color": "FF5050",
+      "prices": {
+        "single": 6500,
+        "qty_5": 5500
+      },
+      "basePrice": 6500
+    }
+  ],
+  "summary": {
+    "totalCategories": 65,
+    "totalProducts": 337,
+    "categoryCounts": {
+      "Имплантаты > DIO": 6,
+      "Имплантаты > DENTIUM": 2,
+      "Имплантаты > MEGAGEN": 7,
+      "Имплантаты > INNO": 3,
+      "Имплантаты > SNUCONE": 2,
+      "Имплантаты > NEOBITECH": 3,
+      "Имплантаты > DENTIS": 3,
+      "Прочее > DENTIUM / OSSTEM": 2,
+      "Имплантаты > OSSTEM TS-III": 4,
+      "Имплантаты > OSSTEM TS-IV / STRAUMANN Botiss": 3,
+      "Прочее > NEOBITECH / STRAUMANN": 2,
+      "Имплантаты > STRAUMANN": 4,
+      "Имплантаты > ANTHOGYR": 3,
+      "Имплантаты > ASTRATECH": 2,
+      "Имплантаты > SIC": 3,
+      "Протетика > Заглушки": 5,
+      "Инструменты > Отвёртки": 10,
+      "Протетика > Титановые основания GEO": 4,
+      "Протетика > Протетика реплика": 13,
+      "Протетика > Мультиюниты реплика": 10,
+      "Протетика > Мультиюниты X GATE": 11,
+      "Протетика > DIO NOT DIGITAL Мультиюниты": 7,
+      "Протетика > DIO DIGITAL Мультиюниты": 14,
+      "Протетика > DIO ORIGINAL Протетика": 16,
+      "Протетика > DIO Ball Abutment": 6,
+      "Хирургические наборы > DIO Surgical Kit": 6,
+      "Инструменты > Костные экспандеры": 2,
+      "Инструменты > Остеотомы": 2,
+      "Инструменты > Синус-лифтинг": 5,
+      "Инструменты > Прочие инструменты": 9,
+      "Инструменты > Свёрла и профилеры": 1,
+      "Хирургические наборы > MEGAGEN Surgical Kit": 3,
+      "Протетика > MEGAGEN BLUEDIAMOND Протетика": 5,
+      "Костные материалы > I-Bone Max": 1,
+      "Костные материалы > TITAN B": 20,
+      "Костные материалы > STRAUMANN Botiss Cerabone": 8,
+      "Костные материалы > STRAUMANN XenoGraft": 9,
+      "Костные материалы > NOBEL CreoS Xenogain": 13,
+      "Костные материалы > NIBEC OCS-B": 12,
+      "Костные материалы > SIGMAGRAFT InterOss": 9,
+      "Костные материалы > VERI-OSS": 3,
+      "Костные материалы > BioOst": 8,
+      "Костные материалы > STRAUMANN XenoFlex": 5,
+      "Мембраны > TITAN GIDE": 2,
+      "Мембраны > TITAN M": 1,
+      "Мембраны > STRAUMANN Botiss Jason": 3,
+      "Мембраны > SIGMAGRAFT InterCollagen": 3,
+      "Мембраны > BioPLATE Contur": 3,
+      "Мембраны > BioPLATE Barrier": 3,
+      "Мембраны > MYDERM": 6,
+      "Мембраны > PTFE с титановым каркасом": 3,
+      "Пины и GBR > Пины и винты GBR": 13,
+      "Прочее > STRAUMANN XenoGraft": 1,
+      "Инструменты > Инструменты для костной пластики": 4,
+      "Расходники > Ирригационные системы": 1,
+      "Расходники > Шовный материал": 4,
+      "Расходники > Цементы и адгезивы": 3,
+      "Инструменты > Трепаны и триммеры": 4,
+      "Инструменты > Иглодержатели": 6,
+      "Инструменты > Ножницы": 3,
+      "Инструменты > PRF": 1,
+      "Прочее > NOBEL / Инструменты": 2,
+      "Инструменты > Кюреты": 2,
+      "Инструменты > Периотомы": 2,
+      "Инструменты > Элеваторы": 1
+    }
+  }
+}

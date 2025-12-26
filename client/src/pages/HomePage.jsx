@@ -42,6 +42,19 @@ function HomePage() {
 
   return (
     <div className="home-page">
+      {/* Hero Banner Section */}
+      <section className="hero-banner">
+        <img
+          src="/images/background-banner.png"
+          alt="DUTYSTOM Banner"
+          className="hero-banner-image"
+        />
+        <div className="hero-banner-text">
+          <p>Стоматологическое оборудование и материалы</p>
+          <span className="hero-phone">+7 930-950-88-87</span>
+        </div>
+      </section>
+
       <ProductGrid products={popularProducts} title="Популярные товары" />
 
       {implants.length > 0 && (

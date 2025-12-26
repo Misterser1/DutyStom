@@ -18,7 +18,7 @@ function ProductPage() {
   const [quantity, setQuantity] = useState(1)
 
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('ru-RU').format(price) + ' ₽'
+    return '$' + new Intl.NumberFormat('en-US').format(price)
   }
 
   useEffect(() => {

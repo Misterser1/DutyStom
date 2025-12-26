@@ -8,6 +8,7 @@ import productsRouter from './routes/products.js'
 import categoriesRouter from './routes/categories.js'
 import ordersRouter from './routes/orders.js'
 import generateRouter from './routes/generate.js'
+import importRouter from './routes/import.js'
 import { initDatabase } from './database/init.js'
 
 dotenv.config()
@@ -16,7 +17,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 const app = express()
-const PORT = process.env.PORT || 5000
+const PORT = 5001
 
 // Middleware
 app.use(cors())
@@ -30,6 +31,7 @@ app.use('/api/products', productsRouter)
 app.use('/api/categories', categoriesRouter)
 app.use('/api/orders', ordersRouter)
 app.use('/api/generate', generateRouter)
+app.use('/api/import', importRouter)
 
 // Health check
 app.get('/api/health', (req, res) => {

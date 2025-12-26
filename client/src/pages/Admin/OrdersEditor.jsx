@@ -147,7 +147,7 @@ function OrdersEditor() {
               </div>
               <span className="order-phone">{order.phone}</span>
               <span className="order-date">{formatDate(order.createdAt)}</span>
-              <span className="order-total">{order.total.toLocaleString('ru-RU')} ₽</span>
+              <span className="order-total">${order.total.toLocaleString('en-US')}</span>
               <span className={`order-status status-${order.status}`}>
                 {getStatusLabel(order.status)}
               </span>
@@ -195,14 +195,14 @@ function OrdersEditor() {
                     <div key={idx} className="order-item">
                       <span className="order-item-name">{item.name}</span>
                       <span className="order-item-qty">× {item.qty}</span>
-                      <span className="order-item-price">{(item.price * item.qty).toLocaleString('ru-RU')} ₽</span>
+                      <span className="order-item-price">${(item.price * item.qty).toLocaleString('en-US')}</span>
                     </div>
                   ))}
                 </div>
                 <div className="order-info-row" style={{ marginTop: '15px', paddingTop: '15px', borderTop: '2px solid #e0e0e0' }}>
                   <span className="order-info-label" style={{ fontWeight: 600 }}>Итого:</span>
                   <span className="order-info-value" style={{ color: '#e63946', fontSize: '1.2rem' }}>
-                    {selectedOrder.total.toLocaleString('ru-RU')} ₽
+                    ${selectedOrder.total.toLocaleString('en-US')}
                   </span>
                 </div>
               </div>

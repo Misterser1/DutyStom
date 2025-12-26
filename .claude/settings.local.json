@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy \"c:\\WebSites Project\\DUTYSTOM\\Logo.png\" \"c:\\WebSites Project\\DUTYSTOM\\client\\public\\images\\logo-dutystom.png\")",
+      "Bash(pip install:*)",
+      "Bash(pip --version:*)",
+      "Bash(npm install:*)",
+      "Bash(node -e:*)",
+      "Bash(pip show:*)",
+      "Bash(where:*)"
+    ]
+  }
+}

@@ -203,15 +203,17 @@
 .cart-empty {
   text-align: center;
   padding: 60px 20px;
-  background: var(--color-card-bg);
-  border-radius: var(--border-radius);
+  background: rgba(61, 155, 155, 0.08);
+  border-radius: 12px;
+  border: 2px dashed var(--color-primary);
 }
 
 .cart-empty-icon {
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  color: var(--color-card-border);
+  color: var(--color-primary);
+  opacity: 0.5;
 }
 
 .cart-empty-icon svg {
@@ -220,13 +222,16 @@
 }
 
 .cart-empty h2 {
-  color: var(--color-text-dark);
+  color: var(--color-primary-dark);
   margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .cart-empty p {
-  color: var(--color-text-muted);
+  color: var(--color-text-dark);
   margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 .btn-continue {

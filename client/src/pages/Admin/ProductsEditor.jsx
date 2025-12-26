@@ -280,7 +280,7 @@ function ProductsEditor() {
               <span className="col-name">{product.name}</span>
               <span className="col-brand">{product.brand}</span>
               <span className="col-category">{product.category}</span>
-              <span className="col-price">{formatPrice(product.price)} ₽</span>
+              <span className="col-price">${formatPrice(product.price)}</span>
               <span className="col-actions">
                 <button onClick={() => handleEdit(product)} className="edit-btn" title="Редактировать">
                   <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">

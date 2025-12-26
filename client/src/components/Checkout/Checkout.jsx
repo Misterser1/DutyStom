@@ -16,7 +16,7 @@ function Checkout() {
   const [submitted, setSubmitted] = useState(false)
 
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('ru-RU').format(price) + ' ₽'
+    return '$' + new Intl.NumberFormat('en-US').format(price)
   }
 
   const validateForm = () => {

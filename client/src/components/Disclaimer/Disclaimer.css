@@ -12,20 +12,20 @@
 
 .disclaimer-title {
   color: #d4c4b0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .disclaimer-text {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.7rem;
-  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
 .disclaimer-contact {
   color: #d4c4b0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Адаптивность */
@@ -35,11 +35,11 @@
   }
 
   .disclaimer-title {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .disclaimer-text {
-    font-size: 0.65rem;
-    line-height: 1.4;
+    font-size: 0.78rem;
+    line-height: 1.5;
   }
 }

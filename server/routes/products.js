@@ -9,21 +9,37 @@ router.get('/', (req, res) => {
     const { category } = req.query
 
     if (category) {
+      // Фильтрация по slug (может быть родительская категория или подкатегория)
       const products = dbAll(`
-        SELECT p.*, c.name as category_name, c.slug as category_slug
+        SELECT
+          p.*,
+          c.name as category_name,
+          c.slug as category_slug,
+          parent.name as parent_category_name,
+          parent.slug as parent_category_slug
         FROM products p
         LEFT JOIN categories c ON p.category_id = c.id
-        WHERE c.slug = ?
-      `, [category])
-      return res.json(products)
+        LEFT JOIN categories parent ON c.parent_id = parent.id
+        WHERE c.slug = ? OR parent.slug = ?
+      `, [category, category])
+      const mappedProducts = products.map(p => ({ ...p, inStock: p.in_stock }))
+      return res.json(mappedProducts)
     }
 
+    // Все товары с информацией о категории и родителе
     const products = dbAll(`
-      SELECT p.*, c.name as category_name, c.slug as category_slug
+      SELECT
+        p.*,
+        c.name as category_name,
+        c.slug as category_slug,
+        parent.name as parent_category_name,
+        parent.slug as parent_category_slug
       FROM products p
       LEFT JOIN categories c ON p.category_id = c.id
+      LEFT JOIN categories parent ON c.parent_id = parent.id
     `)
-    res.json(products)
+    const mappedProducts = products.map(p => ({ ...p, inStock: p.in_stock }))
+    res.json(mappedProducts)
   } catch (error) {
     console.error('Error fetching products:', error)
     res.status(500).json({ error: 'Internal server error' })
@@ -36,9 +52,15 @@ router.get('/:id', (req, res) => {
     const { id } = req.params
 
     const product = dbGet(`
-      SELECT p.*, c.name as category_name, c.slug as category_slug
+      SELECT
+        p.*,
+        c.name as category_name,
+        c.slug as category_slug,
+        parent.name as parent_category_name,
+        parent.slug as parent_category_slug
       FROM products p
       LEFT JOIN categories c ON p.category_id = c.id
+      LEFT JOIN categories parent ON c.parent_id = parent.id
       WHERE p.id = ?
     `, [parseInt(id)])
 
@@ -46,7 +68,8 @@ router.get('/:id', (req, res) => {
       return res.status(404).json({ error: 'Product not found' })
     }
 
-    res.json(product)
+    const mappedProduct = { ...product, inStock: product.in_stock }
+    res.json(mappedProduct)
   } catch (error) {
     console.error('Error fetching product:', error)
     res.status(500).json({ error: 'Internal server error' })
