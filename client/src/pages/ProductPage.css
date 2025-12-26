@@ -66,6 +66,56 @@
   line-height: 1.6;
 }
 
+/* Характеристики товара - Вариант 4: Минималистичный с точками */
+.product-specs {
+  margin: 0.5rem 0;
+}
+
+.specs-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2d7a7a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3d9b9b;
+}
+
+.specs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.spec-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.spec-label {
+  font-size: 0.85rem;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.spec-dots {
+  flex: 1;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 4px;
+}
+
+.spec-value {
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  flex-shrink: 0;
+  max-width: 50%;
+  text-align: right;
+}
+
 .product-page-price {
   display: flex;
   align-items: center;

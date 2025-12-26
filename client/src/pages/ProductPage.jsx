@@ -3,12 +3,66 @@ import { useParams, Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import './ProductPage.css'
 
+// Названия характеристик на русском
+const SPEC_LABELS = {
+  type: 'Тип',
+  brand: 'Бренд',
+  country: 'Страна',
+  connection: 'Соединение',
+  surface: 'Поверхность',
+  platform: 'Платформа',
+  diameters: 'Диаметры',
+  lengths: 'Длины',
+  material: 'Материал',
+  boneType: 'Тип кости',
+  feature: 'Особенности',
+  heights: 'Высоты',
+  angles: 'Углы',
+  compatibility: 'Совместимость',
+  application: 'Применение',
+  technique: 'Техника',
+  granuleSize: 'Размер гранул',
+  resorption: 'Резорбция',
+  processing: 'Обработка',
+  structure: 'Структура',
+  origin: 'Происхождение',
+  manufacturer: 'Производитель',
+  porosity: 'Пористость',
+  forms: 'Формы',
+  composition: 'Состав',
+  removal: 'Удаление',
+  torque: 'Момент затяжки',
+  mechanism: 'Механизм',
+  rpm: 'Обороты',
+  quantity: 'Количество',
+  widths: 'Ширины',
+  numbers: 'Номера',
+  needleSize: 'Размер иглы',
+  components: 'Комплектация',
+  shapes: 'Формы',
+  output: 'Результат',
+  weight: 'Вес',
+  blade: 'Лезвие',
+  protocol: 'Протокол',
+  design: 'Дизайн'
+}
+
 // Демо-данные
 const demoProducts = [
   { id: 1, name: 'Blue Diamond Regular Thread', brand: 'MEGAGEN', category_id: 1, price: 13500, image_url: null, description: 'Имплантат Blue Diamond с обычной резьбой. Высококачественный титановый имплантат для надежной остеоинтеграции.' },
   { id: 2, name: 'Blue Diamond Deep Thread', brand: 'MEGAGEN', category_id: 1, price: 13500, image_url: null, description: 'Имплантат Blue Diamond с глубокой резьбой. Обеспечивает отличную первичную стабильность.' },
   { id: 3, name: 'AnyOne Regular Thread', brand: 'MEGAGEN', category_id: 1, price: 6600, image_url: null, description: 'Универсальный имплантат AnyOne с обычной резьбой. Оптимальное соотношение цены и качества.' },
 ]
+
+// Парсинг характеристик из JSON
+const parseSpecs = (specsString) => {
+  if (!specsString) return null
+  try {
+    return JSON.parse(specsString)
+  } catch {
+    return null
+  }
+}
 
 function ProductPage() {
   const { id } = useParams()
@@ -87,6 +141,28 @@ function ProductPage() {
           {product.description && (
             <p className="product-page-description">{product.description}</p>
           )}
+
+          {/* Характеристики товара */}
+          {product.specs && parseSpecs(product.specs) && (() => {
+            const specs = parseSpecs(product.specs)
+            // Фильтруем: убираем qty_* (оптовые цены) - показываем только характеристики
+            const filteredSpecs = Object.entries(specs).filter(([key]) => !key.startsWith('qty_'))
+            if (filteredSpecs.length === 0) return null
+            return (
+              <div className="product-specs">
+                <h3 className="specs-title">Технические характеристики</h3>
+                <div className="specs-grid">
+                  {filteredSpecs.map(([key, value]) => (
+                    <div key={key} className="spec-row">
+                      <span className="spec-label">{SPEC_LABELS[key] || key}</span>
+                      <span className="spec-dots"></span>
+                      <span className="spec-value">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          })()}
 
           <div className="product-page-price">
             <span className="price-label">РРЦ</span>

@@ -1,5 +1,23 @@
-/* Logo SVG Styles */
+/* Logo Text Styles */
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  white-space: nowrap;
+}
 
+.logo-text:hover {
+  transform: scale(1.05);
+}
+
+/* Logo SVG Styles */
 .logo-svg {
   display: block;
   transition: transform 0.3s ease;

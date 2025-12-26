@@ -1,362 +1,350 @@
-/* ProductCard - Вариант 4: Градиентные карточки */
+/* ProductCard - Стиль "Beige → Teal" (горизонтальная карточка) */
 
-.product-card-compact {
-  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(61, 155, 155, 0.25);
+.compact-card {
+  display: grid !important;
+  grid-template-columns: 125px 95px 1fr 220px !important;
+  background: linear-gradient(90deg, #f8f3eb 0%, #e8f5f5 100%) !important;
+  border: 1.5px solid #e0dcd5 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  transition: all 0.2s !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
 }
 
-/* Эффект блика при наведении */
-.product-card-compact::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-  transition: left 0.6s ease;
-  z-index: 1;
-  pointer-events: none;
+.compact-card:hover {
+  border-color: #3d9b9b;
+  box-shadow: 0 4px 15px rgba(61, 155, 155, 0.15);
 }
 
-.product-card-compact:hover::before {
-  left: 100%;
+/* Левая секция - код и бренд */
+.cc-left {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 0.6rem 0.75rem !important;
+  background: rgba(212, 196, 176, 0.15) !important;
+  border-right: 1px solid rgba(212, 196, 176, 0.3) !important;
 }
 
-.product-card-compact:hover {
-  transform: scale(1.02) translateY(-5px);
-  box-shadow:
-    0 15px 40px rgba(61, 155, 155, 0.4),
-    0 0 30px rgba(77, 179, 179, 0.3);
+.cc-code {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #8b7355;
+  background: rgba(212, 196, 176, 0.4);
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
-/* Верхний ряд */
-.card-row-top {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  position: relative;
-  z-index: 2;
+.cc-article {
+  font-size: 0.6rem;
+  color: #a09080;
+  margin-bottom: 4px;
 }
 
-.card-image-link {
-  flex-shrink: 0;
-  width: 45px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.card-image-link:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.card-image-link img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  filter: brightness(1.1);
-}
-
-.card-image-placeholder {
-  width: 45px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.card-image-placeholder svg {
-  width: 22px;
-  height: 22px;
-}
-
-.card-brand {
+.cc-brand {
   font-size: 0.85rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  min-width: 50px;
+  color: #6b5a45;
 }
 
-.card-article {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #d4c4b0;
-  min-width: 80px;
+.cc-country {
+  font-size: 0.65rem;
+  color: #8b7355;
 }
 
-.card-name-link {
-  flex: 1;
+/* Изображение */
+.cc-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.5);
+  padding: 0.5rem;
+  border-right: 1px solid rgba(61, 155, 155, 0.1);
+  min-height: 80px;
   text-decoration: none;
+}
+
+.cc-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 75px;
+  object-fit: contain;
+}
+
+.cc-image-placeholder {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+.cc-image-placeholder svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Информация */
+.cc-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.6rem 1rem;
   min-width: 0;
 }
 
-.card-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: white;
-  display: block;
+.cc-name-link {
+  text-decoration: none;
+}
+
+.cc-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.2s;
 }
 
-.card-name-link:hover .card-name {
-  color: #d4c4b0;
+.cc-name-link:hover .cc-name {
+  color: #3d9b9b;
 }
 
-.card-stock {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
-  font-weight: 600;
+.cc-desc {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 2px 0;
   white-space: nowrap;
-  padding: 5px 10px;
-  border-radius: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.stock-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
+.cc-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
 }
 
-.card-stock.in-stock {
-  color: #4ade80;
-  background: rgba(74, 222, 128, 0.15);
+.cc-spec {
+  font-size: 0.75rem;
+  color: #444;
+  white-space: nowrap;
 }
 
-.card-stock.in-stock .stock-dot {
-  background: #4ade80;
-  box-shadow: 0 0 6px rgba(74, 222, 128, 0.5);
+.cc-spec-key {
+  color: #888;
+  text-transform: capitalize;
 }
 
-.card-stock.out-stock {
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.15);
+/* Правая секция */
+.cc-right {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 0.5rem !important;
+  padding: 0.6rem 0.75rem !important;
+  background: rgba(61, 155, 155, 0.08) !important;
+  border-left: 1px solid rgba(61, 155, 155, 0.15) !important;
 }
 
-.card-stock.out-stock .stock-dot {
-  background: #fbbf24;
-}
-
-/* Нижний ряд */
-.card-row-bottom {
+.cc-right-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px;
-  background: rgba(0, 0, 0, 0.15);
-  position: relative;
-  z-index: 2;
+  gap: 0.5rem;
 }
 
-.card-price {
+.cc-actions {
   display: flex;
-  align-items: baseline;
-  gap: 6px;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.card-price .old-price {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: line-through;
-}
-
-.card-price .current-price {
+.cc-price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #d4c4b0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #2d7a7a;
+  white-space: nowrap;
 }
 
-.card-price .price-hint {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-}
-
-.card-actions {
+.cc-stock {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
+
+.cc-stock .stock-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.cc-stock.in { color: #22c55e; }
+.cc-stock.in .stock-dot { background: #22c55e; }
+.cc-stock.out { color: #f59e0b; }
+.cc-stock.out .stock-dot { background: #f59e0b; }
 
 /* Количество */
-.card-quantity {
+.cc-qty {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #d4c4b0;
-  border-radius: 6px;
+  background: white;
+  border: 1px solid #3d9b9b;
+  border-radius: 4px;
   overflow: hidden;
 }
 
-.qty-btn {
+.cc-qty button {
   width: 28px;
   height: 28px;
-  background: #d4c4b0;
+  background: #3d9b9b;
   border: none;
-  font-size: 1rem;
   font-weight: 700;
-  color: #2d7a7a;
+  font-size: 1rem;
+  color: white;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background 0.2s;
 }
 
-.qty-btn:hover:not(:disabled) {
-  background: #c9b99a;
+.cc-qty button:hover:not(:disabled) {
+  background: #2d7a7a;
 }
 
-.qty-btn:disabled {
-  color: rgba(45, 122, 122, 0.3);
-  background: #e8e2d8;
+.cc-qty button:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
-.qty-input {
-  width: 36px;
+.cc-qty span {
+  min-width: 28px;
   text-align: center;
-  font-size: 0.85rem;
-  font-weight: 700;
-  background: white;
-  border: none;
-  border-left: 1px solid #d4c4b0;
-  border-right: 1px solid #d4c4b0;
-  height: 28px;
-  padding: 0;
-  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.8rem;
   color: #2d7a7a;
-  -moz-appearance: textfield;
-}
-
-.qty-input::-webkit-outer-spin-button,
-.qty-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.qty-input:focus {
-  outline: none;
-  background: #f5f2ed;
+  border-left: 1px solid #3d9b9b;
+  border-right: 1px solid #3d9b9b;
 }
 
 /* Кнопка в корзину */
-.card-add-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 8px 16px;
-  background: #d4c4b0;
-  color: #2d7a7a;
+.cc-cart-btn {
+  flex: 1;
+  padding: 7px 15px;
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+  color: white;
   border: none;
   border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.82rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s;
   white-space: nowrap;
 }
 
-.card-add-btn:hover {
-  background: #c9b99a;
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(201, 185, 154, 0.4);
-}
-
-.card-add-btn svg {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
+.cc-cart-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgba(61, 155, 155, 0.3);
 }
 
 /* Ссылка на детали */
-.detail-link {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+.cc-detail-link {
+  color: #3d9b9b;
   text-decoration: none;
+  font-size: 0.72rem;
+  text-align: center;
   white-space: nowrap;
-  transition: color 0.2s;
 }
 
-.detail-link:hover {
-  color: #d4c4b0;
+.cc-detail-link:hover {
   text-decoration: underline;
 }
 
 /* ===== Адаптивность ===== */
 
-@media (max-width: 900px) {
-  .card-row-top {
-    flex-wrap: wrap;
-    gap: 10px;
+@media (max-width: 1100px) {
+  .compact-card {
+    grid-template-columns: 1fr;
   }
 
-  .card-name-link {
-    width: 100%;
-    order: 10;
+  .compact-card .cc-left {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(212, 196, 176, 0.3);
+    padding: 0.75rem;
   }
 
-  .card-name {
+  .compact-card .cc-image {
+    border-right: none;
+    max-height: 150px;
+    padding: 1rem;
+  }
+
+  .compact-card .cc-image img {
+    max-height: 120px;
+  }
+
+  .compact-card .cc-info {
+    padding: 0.75rem 1rem;
+  }
+
+  .compact-card .cc-name {
     white-space: normal;
+  }
+
+  .compact-card .cc-desc {
+    white-space: normal;
+  }
+
+  .compact-card .cc-right {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-left: none;
+    border-top: 1px solid rgba(61, 155, 155, 0.15);
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .cc-right-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .cc-actions {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .cc-detail-link {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
   }
 }
 
 @media (max-width: 600px) {
-  .product-card-compact {
-    border-radius: 12px;
+  .compact-card .cc-left {
+    flex-wrap: wrap;
   }
 
-  .card-row-top {
-    padding: 12px 14px;
-  }
-
-  .card-row-bottom {
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 14px;
-    align-items: flex-start;
-  }
-
-  .card-actions {
+  .cc-actions {
     width: 100%;
     justify-content: space-between;
   }
 
-  .card-brand {
-    font-size: 0.95rem;
-    min-width: auto;
-  }
-
-  .card-article {
-    font-size: 0.9rem;
-    min-width: auto;
-  }
-
-  .card-add-btn {
-    padding: 10px 16px;
-    font-size: 0.95rem;
+  .cc-cart-btn {
+    flex: 1;
   }
 }

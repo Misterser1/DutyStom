@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import ProductGrid from '../components/ProductGrid/ProductGrid'
-import { products as allProducts, getPopularProducts } from '../data/products'
+import { products as allProducts } from '../data/products'
 import './HomePage.css'
 
 function HomePage() {
@@ -35,28 +35,12 @@ function HomePage() {
   }
 
   // Группируем товары по категориям для главной
-  const popularProducts = getPopularProducts(8)
   const implants = products.filter(p => p.category_id === 1).slice(0, 6)
   const boneProducts = products.filter(p => p.category_id === 3).slice(0, 4)
   const membranes = products.filter(p => p.category_id === 4).slice(0, 4)
 
   return (
     <div className="home-page">
-      {/* Hero Banner Section */}
-      <section className="hero-banner">
-        <img
-          src="/images/background-banner.png"
-          alt="DUTYSTOM Banner"
-          className="hero-banner-image"
-        />
-        <div className="hero-banner-text">
-          <p>Стоматологическое оборудование и материалы</p>
-          <span className="hero-phone">+7 930-950-88-87</span>
-        </div>
-      </section>
-
-      <ProductGrid products={popularProducts} title="Популярные товары" />
-
       {implants.length > 0 && (
         <ProductGrid products={implants} title="Имплантаты" />
       )}

@@ -91,4 +91,52 @@ router.patch('/:id/image', (req, res) => {
   }
 })
 
+// Обновить характеристики товара
+router.patch('/:id/specs', (req, res) => {
+  try {
+    const { id } = req.params
+    const { description, specs } = req.body
+
+    if (description !== undefined && specs !== undefined) {
+      dbRun('UPDATE products SET description = ?, specs = ? WHERE id = ?', [description, specs, parseInt(id)])
+    } else if (specs !== undefined) {
+      dbRun('UPDATE products SET specs = ? WHERE id = ?', [specs, parseInt(id)])
+    } else if (description !== undefined) {
+      dbRun('UPDATE products SET description = ? WHERE id = ?', [description, parseInt(id)])
+    }
+
+    res.json({ success: true })
+  } catch (error) {
+    console.error('Error updating product specs:', error)
+    res.status(500).json({ error: 'Internal server error' })
+  }
+})
+
+// Массовое обновление характеристик
+router.post('/bulk-update-specs', (req, res) => {
+  try {
+    const { products } = req.body // Array of { id, description, specs }
+
+    let updated = 0
+    for (const product of products) {
+      if (product.id && (product.description || product.specs)) {
+        if (product.description && product.specs) {
+          dbRun('UPDATE products SET description = ?, specs = ? WHERE id = ?',
+            [product.description, product.specs, product.id])
+        } else if (product.specs) {
+          dbRun('UPDATE products SET specs = ? WHERE id = ?', [product.specs, product.id])
+        } else if (product.description) {
+          dbRun('UPDATE products SET description = ? WHERE id = ?', [product.description, product.id])
+        }
+        updated++
+      }
+    }
+
+    res.json({ success: true, updated })
+  } catch (error) {
+    console.error('Error bulk updating specs:', error)
+    res.status(500).json({ error: 'Internal server error' })
+  }
+})
+
 export default router

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useSearchParams } from 'react-router-dom'
 import ProductGrid from '../components/ProductGrid/ProductGrid'
 import './CategoryPage.css'
 
@@ -8,6 +8,7 @@ const USD_RATE = 100 // 100 рублей = 1 доллар
 
 function CategoryPage() {
   const { slug } = useParams()
+  const [searchParams, setSearchParams] = useSearchParams()
   const [allProducts, setAllProducts] = useState([])
   const [category, setCategory] = useState(null)
   const [subcategories, setSubcategories] = useState([])
@@ -27,10 +28,22 @@ function CategoryPage() {
   // Мобильный фильтр
   const [showFilters, setShowFilters] = useState(false)
 
+  // Читаем бренд из URL при загрузке
+  useEffect(() => {
+    const brandFromUrl = searchParams.get('brand')
+    if (brandFromUrl) {
+      setSelectedBrands([brandFromUrl])
+    }
+  }, [searchParams])
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true)
-      setSelectedBrands([])
+      // Сохраняем бренд из URL если есть
+      const brandFromUrl = searchParams.get('brand')
+      if (!brandFromUrl) {
+        setSelectedBrands([])
+      }
       setPriceRange({ min: '', max: '' })
       setCurrentPage(1)
 
@@ -206,13 +219,6 @@ function CategoryPage() {
         )}
       </header>
 
-      {/* Информация о валюте */}
-      <div className="currency-notice">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-        </svg>
-        <span>Все цены указаны в долларах США. Расчёт производится в рублях по внутреннему курсу компании.</span>
-      </div>
 
       <div className="category-content">
         {/* Боковая панель фильтров (десктоп) / Выдвижная панель (мобиль) */}

@@ -33,6 +33,10 @@ import HeaderButtonsDemo from './pages/HeaderButtonsDemo'
 import CategoryIconsDemo from './pages/CategoryIconsDemo'
 import CategoryDropdownDemo from './pages/CategoryDropdownDemo'
 import BackgroundDemo from './pages/BackgroundDemo'
+import SpecsStyleDemo from './pages/SpecsStyleDemo'
+import CardStyleDemo2 from './pages/CardStyleDemo2'
+import CardCompactDemo from './pages/CardCompactDemo'
+import CardGradientDemo from './pages/CardGradientDemo'
 import AdminPage from './pages/Admin/AdminPage'
 import ChatWidget from './components/ChatWidget/ChatWidget'
 import Logo from './components/Logo/Logo'
@@ -94,6 +98,10 @@ function App() {
           <Route path="/category-icons-demo" element={<CategoryIconsDemo />} />
           <Route path="/category-dropdown-demo" element={<CategoryDropdownDemo />} />
           <Route path="/background-demo" element={<BackgroundDemo />} />
+          <Route path="/specs-demo" element={<SpecsStyleDemo />} />
+          <Route path="/card-demo2" element={<CardStyleDemo2 />} />
+          <Route path="/card-compact" element={<CardCompactDemo />} />
+          <Route path="/card-gradient-demo" element={<CardGradientDemo />} />
         </Routes>
       </main>
       <footer className="footer">

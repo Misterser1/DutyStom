@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUTYSTOM - SVG Иконки категорий</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f5f2ed;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header h1 { color: white; font-size: 1.5rem; }
+
+    .category-bar {
+      background: #f5f2ed;
+      padding: 15px 0;
+      border-top: 2px solid #3d9b9b;
+      border-bottom: 2px solid #3d9b9b;
+    }
+    .category-bar-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+    .category-item {
+      width: 138px;
+      height: 101px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 8px;
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(61, 155, 155, 0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .category-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(61, 155, 155, 0.4);
+    }
+    .category-item.active {
+      background: linear-gradient(135deg, #e63946 0%, #c5303c 100%);
+    }
+    .category-icon {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+      color: white;
+    }
+    .category-icon img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+    .category-name {
+      font-size: 11px;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      line-height: 1.2;
+    }
+
+    .page-content {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      color: #3d9b9b;
+      margin-bottom: 30px;
+    }
+    .icons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .icon-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .icon-card h3 {
+      color: #3d9b9b;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+    .icon-previews {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .preview-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .preview-box.teal {
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+    }
+    .preview-box.red {
+      background: linear-gradient(135deg, #e63946 0%, #c5303c 100%);
+    }
+    .preview-box.dark {
+      background: #1a1a2e;
+    }
+    .preview-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .info {
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .icons-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>SVG Иконки категорий</h1>
+  </div>
+
+  <div class="category-bar">
+    <div class="category-bar-content">
+      <div class="category-item active">
+        <span class="category-icon"><img src="implants.svg" alt=""></span>
+        <span class="category-name">Имплантаты</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="other.svg" alt=""></span>
+        <span class="category-name">Прочее</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="prosthetics.svg" alt=""></span>
+        <span class="category-name">Протетика</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="tools.svg" alt=""></span>
+        <span class="category-name">Инструменты</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="kits.svg" alt=""></span>
+        <span class="category-name">Хирургические наборы</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="bone.svg" alt=""></span>
+        <span class="category-name">Костные материалы</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="membrane.svg" alt=""></span>
+        <span class="category-name">Мембраны</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="pins-gbr.svg" alt=""></span>
+        <span class="category-name">Пины и GBR</span>
+      </div>
+      <div class="category-item">
+        <span class="category-icon"><img src="supplies.svg" alt=""></span>
+        <span class="category-name">Расходники</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <h2 class="section-title">Все 9 SVG иконок (на разных фонах)</h2>
+
+    <div class="icons-grid">
+      <div class="icon-card">
+        <h3>Имплантаты</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="implants.svg"></div>
+          <div class="preview-box red"><img src="implants.svg"></div>
+          <div class="preview-box dark"><img src="implants.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Прочее</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="other.svg"></div>
+          <div class="preview-box red"><img src="other.svg"></div>
+          <div class="preview-box dark"><img src="other.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Протетика</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="prosthetics.svg"></div>
+          <div class="preview-box red"><img src="prosthetics.svg"></div>
+          <div class="preview-box dark"><img src="prosthetics.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Инструменты</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="tools.svg"></div>
+          <div class="preview-box red"><img src="tools.svg"></div>
+          <div class="preview-box dark"><img src="tools.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Хирургические наборы</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="kits.svg"></div>
+          <div class="preview-box red"><img src="kits.svg"></div>
+          <div class="preview-box dark"><img src="kits.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Костные материалы</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="bone.svg"></div>
+          <div class="preview-box red"><img src="bone.svg"></div>
+          <div class="preview-box dark"><img src="bone.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Мембраны</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="membrane.svg"></div>
+          <div class="preview-box red"><img src="membrane.svg"></div>
+          <div class="preview-box dark"><img src="membrane.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Пины и GBR</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="pins-gbr.svg"></div>
+          <div class="preview-box red"><img src="pins-gbr.svg"></div>
+          <div class="preview-box dark"><img src="pins-gbr.svg"></div>
+        </div>
+      </div>
+      <div class="icon-card">
+        <h3>Расходники</h3>
+        <div class="icon-previews">
+          <div class="preview-box teal"><img src="supplies.svg"></div>
+          <div class="preview-box red"><img src="supplies.svg"></div>
+          <div class="preview-box dark"><img src="supplies.svg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>SVG иконки с fill="currentColor" - работают на любом фоне</p>
+      <p>Если подходят - скажи "ок" и применю к сайту</p>
+    </div>
+  </div>
+</body>
+</html>

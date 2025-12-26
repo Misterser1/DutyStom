@@ -37,8 +37,9 @@
 
   /* Размеры */
   --header-height: 80px;
-  --category-bar-height: 60px;
-  --max-width: 1600px;
+  --category-bar-height: 100px;
+  --max-width: 1400px;
+  --container-padding: 40px;
   --border-radius: 8px;
 }
 
@@ -51,7 +52,7 @@
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
-  background: var(--color-beige-dark);
+  background: #f5f2ed;
   min-height: 100vh;
   color: var(--color-text-dark);
   line-height: 1.6;
@@ -106,7 +107,14 @@ img {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--container-padding);
+}
+
+/* Общий контейнер для всех секций */
+.site-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
 }
 
 /* Скроллбар */

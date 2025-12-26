@@ -2,12 +2,13 @@
 
 .disclaimer {
   background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
-  padding: 15px 20px;
+  padding: 15px var(--container-padding, 40px);
 }
 
 .disclaimer-content {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 var(--container-padding, 40px);
 }
 
 .disclaimer-title {

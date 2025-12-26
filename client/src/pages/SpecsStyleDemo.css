@@ -1,0 +1,482 @@
+/* Демо страница */
+.specs-demo-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.specs-demo-page h1 {
+  text-align: center;
+  color: #2d7a7a;
+  margin-bottom: 2rem;
+}
+
+.style-selector {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.style-selector button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #d4c4b0;
+  background: white;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.style-selector button:hover {
+  border-color: #3d9b9b;
+  color: #3d9b9b;
+}
+
+.style-selector button.active {
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+  border-color: #2d7a7a;
+  color: white;
+}
+
+.demo-container {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ВАРИАНТ 1: Карточки с иконками ===== */
+.specs-style-1 .specs-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d7a7a;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e8f5f5;
+}
+
+.specs-style-1 .specs-header svg {
+  color: #3d9b9b;
+}
+
+.specs-style-1 .prices-header {
+  margin-top: 1.5rem;
+}
+
+.specs-style-1 .specs-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.specs-style-1 .spec-card {
+  background: linear-gradient(135deg, #f8fffe 0%, #e8f5f5 100%);
+  border: 1px solid #d4eded;
+  border-radius: 10px;
+  padding: 0.875rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.specs-style-1 .spec-card-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.specs-style-1 .spec-card-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.specs-style-1 .price-tiers {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.specs-style-1 .price-tier {
+  background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.specs-style-1 .tier-qty {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.specs-style-1 .tier-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #d4c4b0;
+}
+
+/* ===== ВАРИАНТ 2: Компактная таблица ===== */
+.specs-style-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.specs-style-2 h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d7a7a;
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.specs-style-2 .specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-style-2 .specs-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.specs-style-2 .specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.specs-style-2 .table-label {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  color: #666;
+  width: 40%;
+}
+
+.specs-style-2 .table-value {
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: right;
+}
+
+.specs-style-2 .prices-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.specs-style-2 .price-column {
+  flex: 1;
+  background: #faf9f7;
+  border: 1.5px solid #d4c4b0;
+  border-radius: 8px;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+}
+
+.specs-style-2 .col-qty {
+  display: block;
+  font-size: 0.7rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.specs-style-2 .col-price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d7a7a;
+}
+
+/* ===== ВАРИАНТ 3: Теги/чипы ===== */
+.specs-style-3 h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.75rem 0;
+}
+
+.specs-style-3 .prices-section {
+  margin-top: 1.5rem;
+}
+
+.specs-style-3 .specs-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.specs-style-3 .spec-chip {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 0.375rem;
+}
+
+.specs-style-3 .chip-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.specs-style-3 .chip-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.specs-style-3 .discount-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.specs-style-3 .discount-chip {
+  background: linear-gradient(135deg, #e8f5f5 0%, #d4eded 100%);
+  border: 1.5px solid #b8dede;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 90px;
+}
+
+.specs-style-3 .discount-chip.tier-0 {
+  background: linear-gradient(135deg, #faf9f7 0%, #f0ede8 100%);
+  border-color: #d4c4b0;
+}
+
+.specs-style-3 .discount-qty {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.specs-style-3 .discount-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d7a7a;
+}
+
+.specs-style-3 .discount-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ef4444;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+/* ===== ВАРИАНТ 4: Минималистичный ===== */
+.specs-style-4 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+}
+
+.specs-style-4 .minimal-header {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2d7a7a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3d9b9b;
+}
+
+.specs-style-4 .minimal-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.specs-style-4 .minimal-label {
+  font-size: 0.85rem;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.specs-style-4 .minimal-dots {
+  flex: 1;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 4px;
+}
+
+.specs-style-4 .minimal-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  flex-shrink: 0;
+  max-width: 50%;
+  text-align: right;
+}
+
+.specs-style-4 .price-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.specs-style-4 .scale-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.specs-style-4 .scale-bar {
+  width: calc(100% - var(--tier) * 15%);
+  height: 8px;
+  background: linear-gradient(90deg, #3d9b9b, #2d7a7a);
+  border-radius: 4px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  opacity: calc(1 - var(--tier) * 0.15);
+}
+
+.specs-style-4 .scale-qty {
+  font-size: 0.8rem;
+  color: #666;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.specs-style-4 .scale-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d7a7a;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* ===== ВАРИАНТ 5: Двухколоночный ===== */
+.specs-style-5 .two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.specs-style-5 .column-specs,
+.specs-style-5 .column-prices {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.specs-style-5 .column-specs {
+  background: #faf9f7;
+  border: 1.5px solid #d4c4b0;
+}
+
+.specs-style-5 .column-prices {
+  background: linear-gradient(135deg, #e8f5f5 0%, #d4eded 100%);
+  border: 1.5px solid #b8dede;
+}
+
+.specs-style-5 .column-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.specs-style-5 .column-specs .column-title {
+  background: #f0ede8;
+  color: #5a4a3a;
+}
+
+.specs-style-5 .column-prices .column-title {
+  background: #d4eded;
+  color: #2d7a7a;
+}
+
+.specs-style-5 .title-icon {
+  font-size: 1.1rem;
+}
+
+.specs-style-5 .column-content {
+  padding: 0.75rem 1rem;
+}
+
+.specs-style-5 .accent-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.specs-style-5 .accent-row:last-child {
+  border-bottom: none;
+}
+
+.specs-style-5 .accent-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.specs-style-5 .accent-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  max-width: 55%;
+  text-align: right;
+}
+
+.specs-style-5 .price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  margin: 0.25rem 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.specs-style-5 .price-row.tier-0 {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.specs-style-5 .price-label {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.specs-style-5 .price-amount {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d7a7a;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .specs-style-2,
+  .specs-style-4,
+  .specs-style-5 .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .specs-style-2 .prices-row {
+    flex-wrap: wrap;
+  }
+
+  .specs-style-2 .price-column {
+    flex: 1 1 calc(33% - 0.33rem);
+    min-width: 60px;
+  }
+}
