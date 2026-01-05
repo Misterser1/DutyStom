@@ -16,11 +16,13 @@ export const products = [
   { id: 9, code: '00009', name: 'SIMPLELINE II', brand: 'DENTIUM', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Серия': 'Simpleline' } },
 
   // MEGAGEN
-  { id: 10, code: '00010', name: 'BLUEDIAMOND REGULAR THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 5000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Резьба': 'Regular' } },
-  { id: 11, code: '00011', name: 'BLUEDIAMOND DEEP THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 5000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Резьба': 'Deep' } },
-  { id: 12, code: '00012', name: 'ANYONE INTERNAL REGULAR THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Internal', 'Резьба': 'Regular' } },
-  { id: 13, code: '00013', name: 'ANYONE INTERNAL DEEP THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Internal', 'Резьба': 'Deep' } },
-  { id: 14, code: '00014', name: 'ANYONE SPECIAL SHORT', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Short' } },
+  { id: 10, code: '00010', name: 'BLUEDIAMOND REGULAR THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 5000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-bluediamond-regular.png', specs: { 'Размер': 'ALL SIZE', 'Резьба': 'Regular' } },
+  { id: 11, code: '00011', name: 'BLUEDIAMOND DEEP THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 5000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-bluediamond-deep.png', specs: { 'Размер': 'ALL SIZE', 'Резьба': 'Deep' } },
+  { id: 12, code: '00012', name: 'ANYONE INTERNAL REGULAR THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-anyone-regular.png', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Internal', 'Резьба': 'Regular' } },
+  { id: 13, code: '00013', name: 'ANYONE INTERNAL DEEP THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-anyone-deep.png', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Internal', 'Резьба': 'Deep' } },
+  { id: 14, code: '00014', name: 'ANYONE SPECIAL SHORT', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-anyone-short.png', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Short' } },
+  { id: 101, code: '00101', name: 'ANYONE ONESTAGE REGULAR THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-anyone-onestage-regular.png', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Onestage', 'Резьба': 'Regular' } },
+  { id: 102, code: '00102', name: 'ANYONE ONESTAGE DEEP THREAD', brand: 'MEGAGEN', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', image: '/images/products/megagen-anyone-onestage-deep.png', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Onestage', 'Резьба': 'Deep' } },
 
   // INNO
   { id: 15, code: '00015', name: 'INNO SUBMERGED', brand: 'INNO', country: 'Ю.Корея', price: 3000, category_id: 1, category: 'Имплантаты', specs: { 'Размер': 'ALL SIZE', 'Тип': 'Submerged' } },

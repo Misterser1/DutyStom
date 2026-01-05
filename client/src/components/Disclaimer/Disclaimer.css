@@ -1,8 +1,8 @@
-/* Disclaimer - Юридический текст (Вариант 2: Градиентная полоса) */
+/* Disclaimer - Юридический текст (компактный вариант над футером) */
 
 .disclaimer {
   background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
-  padding: 15px var(--container-padding, 40px);
+  padding: 10px var(--container-padding, 40px);
 }
 
 .disclaimer-content {
@@ -13,34 +13,38 @@
 
 .disclaimer-title {
   color: #d4c4b0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .disclaimer-text {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.85rem;
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
 
 .disclaimer-contact {
   color: #d4c4b0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
   .disclaimer {
-    padding: 12px 15px;
+    padding: 8px 15px;
+  }
+
+  .disclaimer-content {
+    padding: 0;
   }
 
   .disclaimer-title {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .disclaimer-text {
-    font-size: 0.78rem;
-    line-height: 1.5;
+    font-size: 0.65rem;
+    line-height: 1.4;
   }
 }

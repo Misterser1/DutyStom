@@ -342,7 +342,7 @@
   text-align: center;
 }
 
-.products-grid {
+.color-demo .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -611,7 +611,7 @@
 
 /* Responsive */
 @media (max-width: 992px) {
-  .products-grid {
+  .color-demo .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -638,7 +638,7 @@
     min-width: calc(50% - 10px);
   }
 
-  .products-grid {
+  .color-demo .products-grid {
     grid-template-columns: 1fr;
   }
 }

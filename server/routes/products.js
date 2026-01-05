@@ -3,10 +3,32 @@ import { dbAll, dbGet, dbRun } from '../database/init.js'
 
 const router = Router()
 
-// Получить все товары (с фильтрацией по категории)
+// Получить все товары (с фильтрацией по категории и поиском)
 router.get('/', (req, res) => {
   try {
-    const { category } = req.query
+    const { category, search } = req.query
+
+    // Поиск по названию и бренду
+    if (search && search.trim()) {
+      const searchTerm = `%${search.trim()}%`
+      const products = dbAll(`
+        SELECT
+          p.*,
+          c.name as category_name,
+          c.slug as category_slug,
+          parent.name as parent_category_name,
+          parent.slug as parent_category_slug
+        FROM products p
+        LEFT JOIN categories c ON p.category_id = c.id
+        LEFT JOIN categories parent ON c.parent_id = parent.id
+        WHERE p.name LIKE ? OR p.brand LIKE ? OR p.description LIKE ?
+        ORDER BY
+          CASE WHEN p.name LIKE ? THEN 1 ELSE 2 END,
+          p.brand, p.name
+      `, [searchTerm, searchTerm, searchTerm, `${search.trim()}%`])
+      const mappedProducts = products.map(p => ({ ...p, inStock: p.in_stock }))
+      return res.json(mappedProducts)
+    }
 
     if (category) {
       // Фильтрация по slug (может быть родительская категория или подкатегория)

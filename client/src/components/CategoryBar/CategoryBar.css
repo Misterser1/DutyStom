@@ -232,39 +232,44 @@
 }
 
 @media (max-width: 480px) {
+  .category-bar {
+    padding: 8px 0;
+  }
+
   .category-bar-content {
-    padding: 0 12px;
-    gap: 6px;
+    padding: 0 10px;
+    gap: 8px;
   }
 
   .category-item {
-    width: 78px;
-    height: 60px;
-    padding: 5px 4px;
+    width: 85px;
+    height: 65px;
+    padding: 8px 6px;
+    min-height: 44px;
   }
 
   .category-item-wrapper {
-    width: 78px;
+    width: 85px;
     flex-shrink: 0;
   }
 
   .category-icon {
-    width: 22px;
-    height: 22px;
-    margin-bottom: 3px;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 4px;
   }
 
   .category-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
   }
 
   .icon-placeholder {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .category-name {
-    font-size: 0.62rem;
+    font-size: 0.68rem;
   }
 }
 
@@ -653,5 +658,317 @@
 
   .brands-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== FULLWIDTH МЕГА-МЕНЮ ДЛЯ ИМПЛАНТОВ ==================== */
+
+.mega-dropdown.fullwidth {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100vw;
+  max-width: 100vw;
+  transform: none;
+  border-radius: 0 0 16px 16px;
+  padding: 20px 40px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fffe 100%);
+  box-shadow: 0 15px 50px rgba(45, 122, 122, 0.25),
+              0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: slideDownFullwidth 0.3s ease-out;
+}
+
+.mega-dropdown.fullwidth::before,
+.mega-dropdown.fullwidth::after {
+  display: none;
+}
+
+@keyframes slideDownFullwidth {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ряд чипов брендов */
+.implants-brands-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Обёртка бренда (для hover-подменю) */
+.implant-brand-wrapper {
+  position: relative;
+}
+
+/* Чип бренда */
+.implant-brand-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #f5f2ed 0%, #ebe7e0 100%);
+  border: 2px solid #d4c4b0;
+  border-radius: 25px;
+  color: #1f5f5f;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.implant-brand-chip:hover {
+  background: linear-gradient(135deg, #2d7a7a 0%, #1f5f5f 100%);
+  color: white;
+  border-color: #2d7a7a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(45, 122, 122, 0.35);
+}
+
+.implant-brand-chip .chip-count {
+  background: #2d7a7a;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.implant-brand-chip:hover .chip-count {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Hover подменю */
+.implant-hover-submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  min-width: 420px;
+  max-width: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(45, 122, 122, 0.2),
+              0 3px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(45, 122, 122, 0.12);
+  padding: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-10px);
+  transition: all 0.25s ease;
+  z-index: 1001;
+}
+
+/* Стрелка подменю */
+.implant-hover-submenu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+/* Показ при hover */
+.implant-brand-wrapper:hover .implant-hover-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Держим подменю открытым при наведении на него */
+.implant-brand-wrapper:hover .implant-brand-chip {
+  background: linear-gradient(135deg, #2d7a7a 0%, #1f5f5f 100%);
+  color: white;
+  border-color: #2d7a7a;
+}
+
+.implant-brand-wrapper:hover .implant-brand-chip .chip-count {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Контейнер колонок в подменю */
+.submenu-columns {
+  display: flex;
+  gap: 8px;
+}
+
+.submenu-columns.two-columns {
+  min-width: 340px;
+}
+
+.submenu-columns .submenu-products {
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Список товаров в подменю */
+.submenu-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu-product-item {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  color: #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-bottom: 2px;
+  background: #f5f2ed;
+  line-height: 1.35;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Компактные стили только для двух колонок */
+.submenu-columns.two-columns .submenu-product-item {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1px;
+  line-height: 1.25;
+}
+
+.submenu-product-item:last-child {
+  margin-bottom: 0;
+}
+
+.submenu-product-item:hover {
+  background: #2d7a7a;
+  color: white;
+  transform: translateX(4px);
+}
+
+/* Кнопка "Все товары" в подменю */
+.submenu-all-btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 7px 10px;
+  background: linear-gradient(135deg, #2d7a7a 0%, #1f5f5f 100%);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* Компактная кнопка для двух колонок */
+.submenu-columns.two-columns + .submenu-all-btn {
+  margin-top: 4px;
+  padding: 5px 8px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+.submenu-all-btn:hover {
+  background: linear-gradient(135deg, #3d9090 0%, #2d7a7a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 122, 122, 0.4);
+}
+
+.submenu-all-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.submenu-all-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* Responsive для fullwidth меню */
+@media (max-width: 1200px) {
+  .mega-dropdown.fullwidth {
+    padding: 15px 25px;
+  }
+
+  .implants-brands-row {
+    gap: 10px;
+  }
+
+  .implant-brand-chip {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mega-dropdown.fullwidth {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    border-radius: 16px 16px 0 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 15px;
+  }
+
+  .implants-brands-row {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .implant-brand-chip {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .implant-brand-chip .chip-count {
+    padding: 2px 8px;
+    font-size: 0.7rem;
+  }
+
+  /* На мобильных подменю снизу */
+  .implant-hover-submenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    transform: none;
+    margin-top: 0;
+    border-radius: 16px 16px 0 0;
+    min-width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+
+  .implant-hover-submenu::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .implant-brand-chip {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    gap: 6px;
+  }
+
+  .mega-dropdown.fullwidth {
+    padding: 12px;
   }
 }

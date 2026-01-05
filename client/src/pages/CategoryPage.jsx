@@ -219,7 +219,6 @@ function CategoryPage() {
         )}
       </header>
 
-
       <div className="category-content">
         {/* Боковая панель фильтров (десктоп) / Выдвижная панель (мобиль) */}
         <aside className={`filters-sidebar ${showFilters ? 'show' : ''}`}>

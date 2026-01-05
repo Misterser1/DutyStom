@@ -9,6 +9,7 @@ import categoriesRouter from './routes/categories.js'
 import ordersRouter from './routes/orders.js'
 import generateRouter from './routes/generate.js'
 import importRouter from './routes/import.js'
+import settingsRouter from './routes/settings.js'
 import { initDatabase } from './database/init.js'
 
 dotenv.config()
@@ -32,6 +33,7 @@ app.use('/api/categories', categoriesRouter)
 app.use('/api/orders', ordersRouter)
 app.use('/api/generate', generateRouter)
 app.use('/api/import', importRouter)
+app.use('/api/settings', settingsRouter)
 
 // Health check
 app.get('/api/health', (req, res) => {

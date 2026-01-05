@@ -29,6 +29,7 @@ function ProductCard({ product, showUSD = false }) {
 
   // Данные товара
   const inStock = product.in_stock !== undefined ? product.in_stock === 1 : true
+  const isImplant = product.category_slug === 'implantaty' || product.parent_category_slug === 'implantaty'
 
   // Парсинг спецификаций
   const parseSpecs = (specsStr) => {
@@ -50,16 +51,16 @@ function ProductCard({ product, showUSD = false }) {
     <div className="compact-card">
       {/* Левая секция - код и бренд */}
       <div className="cc-left">
-        <div className="cc-code">КОД: {product.code || product.id}</div>
-        <div className="cc-article">Арт.: {product.article || '—'}</div>
+        {!isImplant && <div className="cc-code">КОД: {product.code || product.id}</div>}
+        {!isImplant && <div className="cc-article">Арт.: {product.article || '—'}</div>}
         <div className="cc-brand">{product.brand || '—'}</div>
         <div className="cc-country">{product.country || '—'}</div>
       </div>
 
       {/* Изображение */}
       <Link to={`/product/${product.id}`} className="cc-image">
-        {product.image_url ? (
-          <img src={product.image_url} alt={product.name} loading="lazy" />
+        {(product.image_url || product.image) ? (
+          <img src={product.image_url || product.image} alt={product.name} loading="lazy" />
         ) : (
           <div className="cc-image-placeholder">
             <svg viewBox="0 0 64 64" fill="currentColor">

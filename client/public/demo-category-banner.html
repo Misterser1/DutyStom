@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Варианты информационного баннера для категории</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .variant {
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .variant-title {
+      background: #3d9b9b;
+      color: white;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .variant-content {
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    /* ========== ВАРИАНТ 1: Градиентный с иконками ========== */
+    .banner-v1 {
+      background: linear-gradient(135deg, #e8f5f5 0%, #d4ebe8 50%, #c5e0dc 100%);
+      border-radius: 12px;
+      padding: 25px 30px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner-v1::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(61,155,155,0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .banner-v1-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 8px 25px rgba(61,155,155,0.3);
+    }
+
+    .banner-v1-icon svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+    }
+
+    .banner-v1-content {
+      flex: 1;
+      z-index: 1;
+    }
+
+    .banner-v1-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a5f5f;
+      margin-bottom: 8px;
+    }
+
+    .banner-v1-text {
+      color: #2d7a7a;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .banner-v1-features {
+      display: flex;
+      gap: 20px;
+      margin-top: 12px;
+    }
+
+    .banner-v1-feature {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #3d9b9b;
+      font-weight: 500;
+    }
+
+    .banner-v1-feature svg {
+      width: 16px;
+      height: 16px;
+      fill: #3d9b9b;
+    }
+
+    /* ========== ВАРИАНТ 2: Карточки с преимуществами ========== */
+    .banner-v2 {
+      background: white;
+      border: 2px solid #e8f5f5;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .banner-v2-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .banner-v2-title {
+      font-size: 1.2rem;
+      color: #1a5f5f;
+      font-weight: 700;
+    }
+
+    .banner-v2-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .banner-v2-card {
+      background: linear-gradient(135deg, #f8fcfc 0%, #e8f5f5 100%);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .banner-v2-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(61,155,155,0.15);
+    }
+
+    .banner-v2-card-icon {
+      width: 45px;
+      height: 45px;
+      background: #3d9b9b;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+    }
+
+    .banner-v2-card-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: white;
+    }
+
+    .banner-v2-card-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2d7a7a;
+      margin-bottom: 4px;
+    }
+
+    .banner-v2-card-text {
+      font-size: 0.75rem;
+      color: #666;
+    }
+
+    /* ========== ВАРИАНТ 3: Слайдер с точками ========== */
+    .banner-v3 {
+      background: linear-gradient(90deg, #3d9b9b 0%, #2d8a8a 100%);
+      border-radius: 12px;
+      padding: 25px 30px;
+      color: white;
+      position: relative;
+    }
+
+    .banner-v3-slide {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .banner-v3-number {
+      width: 60px;
+      height: 60px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .banner-v3-content {
+      flex: 1;
+    }
+
+    .banner-v3-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .banner-v3-text {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      line-height: 1.4;
+    }
+
+    .banner-v3-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .banner-v3-dot {
+      width: 10px;
+      height: 10px;
+      background: rgba(255,255,255,0.4);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .banner-v3-dot.active {
+      background: white;
+      width: 25px;
+      border-radius: 5px;
+    }
+
+    /* ========== ВАРИАНТ 4: Минималистичный с акцентом ========== */
+    .banner-v4 {
+      background: #fafafa;
+      border-left: 5px solid #3d9b9b;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .banner-v4-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .banner-v4-icon {
+      width: 50px;
+      height: 50px;
+      background: #e8f5f5;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-v4-icon svg {
+      width: 26px;
+      height: 26px;
+      fill: #3d9b9b;
+    }
+
+    .banner-v4-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .banner-v4-text {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .banner-v4-stats {
+      display: flex;
+      gap: 30px;
+    }
+
+    .banner-v4-stat {
+      text-align: center;
+    }
+
+    .banner-v4-stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #3d9b9b;
+    }
+
+    .banner-v4-stat-label {
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    /* ========== ВАРИАНТ 5: Beige-Teal стиль сайта ========== */
+    .banner-v5 {
+      background: linear-gradient(135deg, #f5f0e8 0%, #ebe4d8 100%);
+      border: 2px solid #d4c4b0;
+      border-radius: 12px;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner-v5::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+      border-radius: 50%;
+      opacity: 0.1;
+    }
+
+    .banner-v5-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .banner-v5-badge {
+      background: linear-gradient(135deg, #3d9b9b 0%, #2d7a7a 100%);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .banner-v5-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #5a4a3a;
+    }
+
+    .banner-v5-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .banner-v5-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid #d4c4b0;
+    }
+
+    .banner-v5-feature svg {
+      width: 18px;
+      height: 18px;
+      fill: #3d9b9b;
+    }
+
+    .banner-v5-feature span {
+      font-size: 0.85rem;
+      color: #5a4a3a;
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .banner-v1 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .banner-v1-features {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .banner-v2-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .banner-v4 {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .banner-v4-left {
+        flex-direction: column;
+      }
+
+      .banner-v5-features {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Информационный баннер для страницы категории</h1>
+  <p style="text-align: center; color: #666; margin-bottom: 30px;">Выберите понравившийся вариант (будет показываться над списком товаров)</p>
+
+  <!-- Вариант 1 -->
+  <div class="variant">
+    <div class="variant-title">Вариант 1: Градиентный с иконкой</div>
+    <div class="variant-content">
+      <div class="banner-v1">
+        <div class="banner-v1-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        </div>
+        <div class="banner-v1-content">
+          <div class="banner-v1-title">Костные материалы премиум-класса</div>
+          <div class="banner-v1-text">Широкий выбор ксенографтов и синтетических материалов от ведущих мировых производителей для любых клинических случаев</div>
+          <div class="banner-v1-features">
+            <div class="banner-v1-feature">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Оригинальная продукция
+            </div>
+            <div class="banner-v1-feature">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Сертификаты качества
+            </div>
+            <div class="banner-v1-feature">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Быстрая доставка
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Вариант 2 -->
+  <div class="variant">
+    <div class="variant-title">Вариант 2: Карточки с преимуществами</div>
+    <div class="variant-content">
+      <div class="banner-v2">
+        <div class="banner-v2-header">
+          <div class="banner-v2-title">Почему выбирают наши костные материалы</div>
+        </div>
+        <div class="banner-v2-cards">
+          <div class="banner-v2-card">
+            <div class="banner-v2-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            </div>
+            <div class="banner-v2-card-title">Оригинал</div>
+            <div class="banner-v2-card-text">100% подлинность</div>
+          </div>
+          <div class="banner-v2-card">
+            <div class="banner-v2-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <div class="banner-v2-card-title">Срок годности</div>
+            <div class="banner-v2-card-text">Свежие партии</div>
+          </div>
+          <div class="banner-v2-card">
+            <div class="banner-v2-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="banner-v2-card-title">Консультация</div>
+            <div class="banner-v2-card-text">Помощь в выборе</div>
+          </div>
+          <div class="banner-v2-card">
+            <div class="banner-v2-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M18 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-9l1.96 2.5H17V9.5h2.5zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+            </div>
+            <div class="banner-v2-card-title">Доставка</div>
+            <div class="banner-v2-card-text">По всей России</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Вариант 3 -->
+  <div class="variant">
+    <div class="variant-title">Вариант 3: Слайдер с автопрокруткой</div>
+    <div class="variant-content">
+      <div class="banner-v3">
+        <div class="banner-v3-slide">
+          <div class="banner-v3-number">01</div>
+          <div class="banner-v3-content">
+            <div class="banner-v3-title">Ксенографты ведущих производителей</div>
+            <div class="banner-v3-text">STRAUMANN Botiss, NIBEC OCS-B, SIGMAGRAFT - материалы с доказанной эффективностью для костной регенерации</div>
+          </div>
+        </div>
+        <div class="banner-v3-dots">
+          <div class="banner-v3-dot active"></div>
+          <div class="banner-v3-dot"></div>
+          <div class="banner-v3-dot"></div>
+          <div class="banner-v3-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Вариант 4 -->
+  <div class="variant">
+    <div class="variant-title">Вариант 4: Минималистичный со статистикой</div>
+    <div class="variant-content">
+      <div class="banner-v4">
+        <div class="banner-v4-left">
+          <div class="banner-v4-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div>
+            <div class="banner-v4-title">Костные материалы с гарантией качества</div>
+            <div class="banner-v4-text">Все материалы имеют сертификаты и хранятся в правильных условиях</div>
+          </div>
+        </div>
+        <div class="banner-v4-stats">
+          <div class="banner-v4-stat">
+            <div class="banner-v4-stat-value">15+</div>
+            <div class="banner-v4-stat-label">брендов</div>
+          </div>
+          <div class="banner-v4-stat">
+            <div class="banner-v4-stat-value">50+</div>
+            <div class="banner-v4-stat-label">позиций</div>
+          </div>
+          <div class="banner-v4-stat">
+            <div class="banner-v4-stat-value">24ч</div>
+            <div class="banner-v4-stat-label">доставка</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Вариант 5 -->
+  <div class="variant">
+    <div class="variant-title">Вариант 5: В стиле сайта (Beige-Teal)</div>
+    <div class="variant-content">
+      <div class="banner-v5">
+        <div class="banner-v5-header">
+          <div class="banner-v5-badge">Костные материалы</div>
+          <div class="banner-v5-title">Всё для успешной костной пластики</div>
+        </div>
+        <div class="banner-v5-features">
+          <div class="banner-v5-feature">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Ксенографты</span>
+          </div>
+          <div class="banner-v5-feature">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Синтетические материалы</span>
+          </div>
+          <div class="banner-v5-feature">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Коллагеновые блоки</span>
+          </div>
+          <div class="banner-v5-feature">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Гранулы разных фракций</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; padding: 30px; color: #666;">
+    <p>Напишите номер варианта который вам нравится (1-5)</p>
+    <p style="font-size: 0.9rem; margin-top: 10px;">Баннер будет автоматически менять слайды каждые 5 секунд</p>
+  </div>
+
+</body>
+</html>

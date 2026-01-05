@@ -185,6 +185,44 @@ export async function initDatabase() {
     )
   `)
 
+  // Таблица обучения
+  db.run(`
+    CREATE TABLE IF NOT EXISTS education (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      description TEXT,
+      link TEXT,
+      image_url TEXT,
+      sort_order INTEGER DEFAULT 0,
+      is_active INTEGER DEFAULT 1,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `)
+
+  // Таблица социальных сетей
+  db.run(`
+    CREATE TABLE IF NOT EXISTS social_links (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      icon TEXT NOT NULL,
+      url TEXT NOT NULL,
+      sort_order INTEGER DEFAULT 0,
+      is_active INTEGER DEFAULT 1,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `)
+
+  // Таблица контактов
+  db.run(`
+    CREATE TABLE IF NOT EXISTS contacts (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      key TEXT UNIQUE NOT NULL,
+      value TEXT NOT NULL,
+      label TEXT,
+      updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `)
+
   // Инициализируем настройки
   const settingsCount = dbGet('SELECT COUNT(*) as count FROM settings')
   if (!settingsCount || settingsCount.count === 0) {
@@ -192,6 +230,36 @@ export async function initDatabase() {
     db.run("INSERT OR IGNORE INTO settings (key, value) VALUES ('company_name', 'DUTYSTOM')")
     db.run("INSERT OR IGNORE INTO settings (key, value) VALUES ('company_phone', '+7 930-950-88-87')")
     console.log('Settings initialized')
+  }
+
+  // Инициализируем контакты
+  const contactsCount = dbGet('SELECT COUNT(*) as count FROM contacts')
+  if (!contactsCount || contactsCount.count === 0) {
+    db.run("INSERT INTO contacts (key, value, label) VALUES ('phone', '+7 930-950-88-87', 'Телефон')")
+    db.run("INSERT INTO contacts (key, value, label) VALUES ('email', 'info@dutystom.ru', 'Email')")
+    db.run("INSERT INTO contacts (key, value, label) VALUES ('address', 'г. Москва', 'Адрес')")
+    db.run("INSERT INTO contacts (key, value, label) VALUES ('work_hours', 'Пн-Пт 9:00 - 18:00', 'Часы работы')")
+    console.log('Contacts initialized')
+  }
+
+  // Инициализируем социальные сети
+  const socialCount = dbGet('SELECT COUNT(*) as count FROM social_links')
+  if (!socialCount || socialCount.count === 0) {
+    db.run("INSERT INTO social_links (name, icon, url, sort_order) VALUES ('Telegram', 'telegram', 'https://t.me/dutystom', 1)")
+    db.run("INSERT INTO social_links (name, icon, url, sort_order) VALUES ('WhatsApp', 'whatsapp', 'https://wa.me/79309508887', 2)")
+    db.run("INSERT INTO social_links (name, icon, url, sort_order) VALUES ('VK', 'vk', 'https://vk.com/dutystom', 3)")
+    console.log('Social links initialized')
+  }
+
+  // Инициализируем тестовые материалы обучения
+  const educationCount = dbGet('SELECT COUNT(*) as count FROM education')
+  if (!educationCount || educationCount.count === 0) {
+    db.run("INSERT INTO education (title, description, link, sort_order) VALUES ('Основы имплантологии', 'Базовый курс по дентальной имплантации для начинающих специалистов', 'https://example.com/course1', 1)")
+    db.run("INSERT INTO education (title, description, link, sort_order) VALUES ('Работа с костными материалами', 'Практический курс по применению костных графтов и мембран', 'https://example.com/course2', 2)")
+    db.run("INSERT INTO education (title, description, link, sort_order) VALUES ('Хирургические протоколы MEGAGEN', 'Официальный курс от производителя MEGAGEN', 'https://example.com/course3', 3)")
+    db.run("INSERT INTO education (title, description, link, sort_order) VALUES ('Вебинар: Современные техники аугментации', 'Онлайн вебинар с ведущими специалистами', 'https://example.com/webinar1', 4)")
+    db.run("INSERT INTO education (title, description, link, sort_order) VALUES ('Сертификационный курс DIO', 'Получите сертификат специалиста DIO', 'https://example.com/course4', 5)")
+    console.log('Education materials initialized')
   }
 
   // Проверяем есть ли категории

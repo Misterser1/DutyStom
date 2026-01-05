@@ -121,8 +121,8 @@ function ProductPage() {
     <div className="product-page">
       <div className="product-page-content">
         <div className="product-page-image">
-          {product.image_url ? (
-            <img src={product.image_url} alt={product.name} />
+          {(product.image_url || product.image) ? (
+            <img src={product.image_url || product.image} alt={product.name} />
           ) : (
             <div className="product-page-placeholder">
               <svg viewBox="0 0 64 64" fill="currentColor">
@@ -165,7 +165,6 @@ function ProductPage() {
           })()}
 
           <div className="product-page-price">
-            <span className="price-label">РРЦ</span>
             <span className="price-value">{formatPrice(product.price)}</span>
           </div>
 

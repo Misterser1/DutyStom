@@ -3,10 +3,12 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header/Header'
 import CategoryBar from './components/CategoryBar/CategoryBar'
 import InfoBar from './components/InfoBar/InfoBar'
+import CategoryBanner from './components/CategoryBanner/CategoryBanner'
 import Disclaimer from './components/Disclaimer/Disclaimer'
 import HomePage from './pages/HomePage'
 import CategoryPage from './pages/CategoryPage'
 import ProductPage from './pages/ProductPage'
+import SearchPage from './pages/SearchPage'
 import CartPage from './pages/CartPage'
 import CheckoutPage from './pages/CheckoutPage'
 import LogoDemo from './pages/LogoDemo'
@@ -45,6 +47,7 @@ import './styles/App.css'
 function App() {
   const location = useLocation()
   const isAdminPage = location.pathname === '/admin'
+  const isHomePage = location.pathname === '/'
   const [copiedItem, setCopiedItem] = useState(null)
 
   const copyToClipboard = (e, text, itemName) => {
@@ -66,12 +69,13 @@ function App() {
       <Header />
       <CategoryBar />
       <InfoBar />
-      <Disclaimer />
+      {isHomePage && <CategoryBanner category="default" />}
       <main className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/logo-demo" element={<LogoDemo />} />
@@ -104,6 +108,7 @@ function App() {
           <Route path="/card-gradient-demo" element={<CardGradientDemo />} />
         </Routes>
       </main>
+      <Disclaimer />
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">

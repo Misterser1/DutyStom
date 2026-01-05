@@ -1,37 +1,87 @@
 import { useState, useEffect } from 'react'
-import { useAdmin } from '../../context/AdminContext'
 
 function ContactsEditor() {
-  const { contacts, updateContacts, resetContacts } = useAdmin()
-  const [formData, setFormData] = useState(contacts)
+  const [contacts, setContacts] = useState({
+    phone: '',
+    email: '',
+    address: '',
+    workHours: ''
+  })
+  const [loading, setLoading] = useState(true)
   const [saved, setSaved] = useState(false)
 
   useEffect(() => {
-    setFormData(contacts)
-  }, [contacts])
+    fetchContacts()
+  }, [])
+
+  const fetchContacts = async () => {
+    try {
+      const res = await fetch('/api/settings/contacts')
+      const data = await res.json()
+      setContacts({
+        phone: data.phone || '',
+        email: data.email || '',
+        address: data.address || '',
+        workHours: data.workHours || ''
+      })
+    } catch (error) {
+      console.error('Error fetching contacts:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const handleChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }))
+    setContacts(prev => ({ ...prev, [field]: value }))
     setSaved(false)
   }
 
-  const handleSave = () => {
-    updateContacts(formData)
-    setSaved(true)
-    setTimeout(() => setSaved(false), 3000)
+  const handleSave = async () => {
+    try {
+      await fetch('/api/settings/contacts', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(contacts)
+      })
+      setSaved(true)
+      setTimeout(() => setSaved(false), 3000)
+    } catch (error) {
+      console.error('Error saving contacts:', error)
+    }
   }
 
-  const handleReset = () => {
+  const handleReset = async () => {
     if (window.confirm('Сбросить контакты к начальным значениям?')) {
-      resetContacts()
+      const defaults = {
+        phone: '+7 930-950-88-87',
+        email: 'info@dutystom.ru',
+        address: 'г. Москва, ул. Примерная, д. 1',
+        workHours: 'Пн-Пт 9:00 - 18:00'
+      }
+      try {
+        await fetch('/api/settings/contacts', {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(defaults)
+        })
+        setContacts(defaults)
+        setSaved(true)
+        setTimeout(() => setSaved(false), 3000)
+      } catch (error) {
+        console.error('Error resetting contacts:', error)
+      }
     }
+  }
+
+  if (loading) {
+    return <div className="loading">Загрузка...</div>
   }
 
   return (
     <div className="contacts-editor">
       <div className="editor-header">
         <h2>Редактирование контактов</h2>
-        <p>Измените контактную информацию, которая отображается на сайте</p>
+        <p>Измените контактную информацию, которая отображается на всём сайте (хедер, футер и т.д.)</p>
       </div>
 
       <div className="editor-form">
@@ -42,81 +92,52 @@ function ContactsEditor() {
             <label>Телефон</label>
             <input
               type="text"
-              value={formData.phone}
+              value={contacts.phone}
               onChange={(e) => handleChange('phone', e.target.value)}
               placeholder="+7 XXX-XXX-XX-XX"
             />
+            <small>Отображается в хедере и футере</small>
           </div>
 
           <div className="form-group">
             <label>Email</label>
             <input
               type="email"
-              value={formData.email}
+              value={contacts.email}
               onChange={(e) => handleChange('email', e.target.value)}
               placeholder="email@example.com"
             />
+            <small>Отображается в хедере и футере</small>
           </div>
 
           <div className="form-group">
             <label>Адрес</label>
             <input
               type="text"
-              value={formData.address}
+              value={contacts.address}
               onChange={(e) => handleChange('address', e.target.value)}
               placeholder="г. Город, ул. Улица, д. X"
             />
+            <small>Отображается в футере</small>
           </div>
 
           <div className="form-group">
             <label>Время работы</label>
             <input
               type="text"
-              value={formData.workHours}
+              value={contacts.workHours}
               onChange={(e) => handleChange('workHours', e.target.value)}
               placeholder="Пн-Пт 9:00 - 18:00"
             />
+            <small>Отображается в футере</small>
           </div>
         </div>
 
-        <div className="form-section">
-          <h3>Социальные сети</h3>
-
-          <div className="form-group">
-            <label>
-              <span className="social-icon">📱</span> Telegram
-            </label>
-            <input
-              type="url"
-              value={formData.telegram}
-              onChange={(e) => handleChange('telegram', e.target.value)}
-              placeholder="https://t.me/username"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>
-              <span className="social-icon">💬</span> WhatsApp
-            </label>
-            <input
-              type="url"
-              value={formData.whatsapp}
-              onChange={(e) => handleChange('whatsapp', e.target.value)}
-              placeholder="https://wa.me/7XXXXXXXXXX"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>
-              <span className="social-icon">🔵</span> VK
-            </label>
-            <input
-              type="url"
-              value={formData.vk}
-              onChange={(e) => handleChange('vk', e.target.value)}
-              placeholder="https://vk.com/username"
-            />
-          </div>
+        <div className="info-box">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+          <p>Все изменения автоматически синхронизируются по всему сайту. После сохранения обновите страницу для просмотра изменений.</p>
         </div>
       </div>
 

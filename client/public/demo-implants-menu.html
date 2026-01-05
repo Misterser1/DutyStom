@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демо: Мега-меню имплантов - DUTYSTOM</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --teal: #2d7a7a;
+      --teal-dark: #1f5f5f;
+      --teal-light: #3d9090;
+      --beige: #f5f2ed;
+      --beige-dark: #ebe7e0;
+      --red: #e63946;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    /* Header имитация */
+    .header-mock {
+      background: white;
+      height: 85px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-mock h1 {
+      color: var(--teal);
+      font-size: 1.5rem;
+    }
+
+    /* CategoryBar имитация */
+    .category-bar-mock {
+      background: var(--beige);
+      padding: 12px 40px;
+      border-top: 2px solid var(--teal);
+      border-bottom: 2px solid var(--teal);
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .category-item-mock {
+      width: 120px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .category-item-mock.active {
+      background: linear-gradient(135deg, var(--red) 0%, #c5303c 100%);
+      box-shadow: 0 0 0 4px rgba(230, 57, 70, 0.25);
+    }
+
+    .category-item-mock:hover:not(.active) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(45, 122, 122, 0.4);
+    }
+
+    /* Варианты секций */
+    .variant-section {
+      margin: 30px 20px;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .variant-header {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .variant-number {
+      background: white;
+      color: var(--teal);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .variant-title {
+      font-size: 1.3rem;
+    }
+
+    .variant-desc {
+      opacity: 0.9;
+      font-size: 0.9rem;
+    }
+
+    /* ===================== ВАРИАНТ 1: Grid колонки ===================== */
+    .mega-menu-v1 {
+      padding: 25px;
+      background: linear-gradient(145deg, #ffffff 0%, #f8fffe 100%);
+    }
+
+    .brands-grid-v1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .brand-column-v1 {
+      background: var(--beige);
+      border-radius: 12px;
+      padding: 15px;
+      border: 1px solid var(--beige-dark);
+    }
+
+    .brand-header-v1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--teal);
+    }
+
+    .brand-name-v1 {
+      font-weight: 700;
+      color: var(--teal-dark);
+      font-size: 0.95rem;
+    }
+
+    .brand-count-v1 {
+      background: var(--teal);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .product-list-v1 {
+      list-style: none;
+    }
+
+    .product-item-v1 {
+      padding: 8px 10px;
+      font-size: 0.85rem;
+      color: #444;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 4px;
+    }
+
+    .product-item-v1:hover {
+      background: var(--teal);
+      color: white;
+      transform: translateX(5px);
+    }
+
+    /* ===================== ВАРИАНТ 2: Аккордеон ===================== */
+    .mega-menu-v2 {
+      padding: 25px;
+      background: linear-gradient(145deg, #ffffff 0%, #f8fffe 100%);
+    }
+
+    .brands-chips-v2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .brand-chip-v2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, var(--beige) 0%, var(--beige-dark) 100%);
+      border: 2px solid transparent;
+      border-radius: 25px;
+      color: var(--teal-dark);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .brand-chip-v2:hover {
+      border-color: var(--teal);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(45, 122, 122, 0.2);
+    }
+
+    .brand-chip-v2.active {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(45, 122, 122, 0.4);
+    }
+
+    .brand-chip-v2 .count {
+      background: var(--teal);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+    }
+
+    .brand-chip-v2.active .count {
+      background: rgba(255,255,255,0.3);
+    }
+
+    .accordion-content-v2 {
+      background: var(--beige);
+      border-radius: 12px;
+      padding: 20px;
+      display: none;
+      animation: slideDown 0.3s ease;
+    }
+
+    .accordion-content-v2.show {
+      display: block;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .accordion-header-v2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      color: var(--teal-dark);
+      font-weight: 700;
+    }
+
+    .accordion-header-v2 svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .products-grid-v2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .product-item-v2 {
+      padding: 12px 15px;
+      background: white;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #444;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid #e0e0e0;
+    }
+
+    .product-item-v2:hover {
+      background: var(--teal);
+      color: white;
+      border-color: var(--teal);
+      transform: translateX(5px);
+    }
+
+    /* ===================== ВАРИАНТ 3: Карточки ===================== */
+    .mega-menu-v3 {
+      padding: 25px;
+      background: linear-gradient(145deg, #ffffff 0%, #f8fffe 100%);
+    }
+
+    .brands-cards-v3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .brand-card-v3 {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .brand-card-v3:hover {
+      border-color: var(--teal);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(45, 122, 122, 0.2);
+    }
+
+    .card-header-v3 {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-brand-v3 {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .card-count-v3 {
+      background: rgba(255,255,255,0.2);
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+    }
+
+    .card-products-v3 {
+      padding: 15px;
+      list-style: none;
+    }
+
+    .card-product-v3 {
+      padding: 10px 12px;
+      font-size: 0.85rem;
+      color: #444;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 6px;
+      background: var(--beige);
+    }
+
+    .card-product-v3:hover {
+      background: var(--teal);
+      color: white;
+    }
+
+    .card-footer-v3 {
+      padding: 0 15px 15px;
+    }
+
+    .card-all-btn-v3 {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, var(--beige) 0%, var(--beige-dark) 100%);
+      border: 2px solid var(--teal);
+      border-radius: 8px;
+      color: var(--teal-dark);
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .card-all-btn-v3:hover {
+      background: var(--teal);
+      color: white;
+    }
+
+    /* Инструкция */
+    .instruction {
+      text-align: center;
+      margin: 40px 20px;
+      padding: 25px;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 15px;
+      color: white;
+    }
+
+    .instruction h2 {
+      margin-bottom: 10px;
+    }
+
+    .instruction p {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header имитация -->
+  <div class="header-mock">
+    <h1>DUTYSTOM - Демо мега-меню</h1>
+  </div>
+
+  <!-- CategoryBar имитация -->
+  <div class="category-bar-mock">
+    <div class="category-item-mock active">
+      <span>🦷</span>
+      Имплантаты
+    </div>
+    <div class="category-item-mock">
+      <span>🔧</span>
+      Протетика
+    </div>
+    <div class="category-item-mock">
+      <span>⚒️</span>
+      Инструменты
+    </div>
+    <div class="category-item-mock">
+      <span>📦</span>
+      Наборы
+    </div>
+  </div>
+
+  <!-- ВАРИАНТ 1: Grid колонки -->
+  <div class="variant-section">
+    <div class="variant-header">
+      <div class="variant-number">1</div>
+      <div>
+        <div class="variant-title">Grid колонки</div>
+        <div class="variant-desc">Все бренды в равных колонках, товары списком под каждым</div>
+      </div>
+    </div>
+    <div class="mega-menu-v1">
+      <div class="brands-grid-v1">
+        <!-- MEGAGEN -->
+        <div class="brand-column-v1">
+          <div class="brand-header-v1">
+            <span class="brand-name-v1">MEGAGEN</span>
+            <span class="brand-count-v1">7</span>
+          </div>
+          <ul class="product-list-v1">
+            <li class="product-item-v1">AnyOne 3.5x10</li>
+            <li class="product-item-v1">AnyOne 4.0x11.5</li>
+            <li class="product-item-v1">AnyRidge 4.5x10</li>
+            <li class="product-item-v1">AnyRidge 5.0x8.5</li>
+            <li class="product-item-v1">Mini Implant</li>
+          </ul>
+        </div>
+        <!-- DIO -->
+        <div class="brand-column-v1">
+          <div class="brand-header-v1">
+            <span class="brand-name-v1">DIO</span>
+            <span class="brand-count-v1">6</span>
+          </div>
+          <ul class="product-list-v1">
+            <li class="product-item-v1">UF II HSA</li>
+            <li class="product-item-v1">UF III HSA</li>
+            <li class="product-item-v1">SHORT HSA</li>
+            <li class="product-item-v1">SM Implant</li>
+            <li class="product-item-v1">INTERNAL</li>
+          </ul>
+        </div>
+        <!-- OSSTEM TS-III -->
+        <div class="brand-column-v1">
+          <div class="brand-header-v1">
+            <span class="brand-name-v1">OSSTEM TS-III</span>
+            <span class="brand-count-v1">4</span>
+          </div>
+          <ul class="product-list-v1">
+            <li class="product-item-v1">TS III SA 4.0x10</li>
+            <li class="product-item-v1">TS III SA 4.5x11.5</li>
+            <li class="product-item-v1">TS III SA 5.0x8.5</li>
+            <li class="product-item-v1">TS III SA 3.5x13</li>
+          </ul>
+        </div>
+        <!-- STRAUMANN -->
+        <div class="brand-column-v1">
+          <div class="brand-header-v1">
+            <span class="brand-name-v1">STRAUMANN</span>
+            <span class="brand-count-v1">4</span>
+          </div>
+          <ul class="product-list-v1">
+            <li class="product-item-v1">BLT 4.1x10</li>
+            <li class="product-item-v1">BLT 4.8x12</li>
+            <li class="product-item-v1">TLX 4.0x10</li>
+            <li class="product-item-v1">BLX 3.75x10</li>
+          </ul>
+        </div>
+        <!-- INNO -->
+        <div class="brand-column-v1">
+          <div class="brand-header-v1">
+            <span class="brand-name-v1">INNO</span>
+            <span class="brand-count-v1">3</span>
+          </div>
+          <ul class="product-list-v1">
+            <li class="product-item-v1">INNO SLA 4.0</li>
+            <li class="product-item-v1">INNO SLA 4.5</li>
+            <li class="product-item-v1">INNO Mini</li>
+          </ul>
+        </div>
+        <!-- NEOBITECH -->
+        <div class="brand-column-v1">
+          <div class="brand-header-v1">
+            <span class="brand-name-v1">NEOBITECH</span>
+            <span class="brand-count-v1">3</span>
+          </div>
+          <ul class="product-list-v1">
+            <li class="product-item-v1">IS II Active</li>
+            <li class="product-item-v1">IS III Active</li>
+            <li class="product-item-v1">S-Mini</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ВАРИАНТ 2: Аккордеон -->
+  <div class="variant-section">
+    <div class="variant-header">
+      <div class="variant-number">2</div>
+      <div>
+        <div class="variant-title">Аккордеон (бренды-чипы + раскрытие)</div>
+        <div class="variant-desc">Бренды как кнопки, клик раскрывает товары</div>
+      </div>
+    </div>
+    <div class="mega-menu-v2">
+      <div class="brands-chips-v2">
+        <div class="brand-chip-v2 active" onclick="toggleAccordion(this, 'megagen')">
+          MEGAGEN <span class="count">7</span>
+        </div>
+        <div class="brand-chip-v2" onclick="toggleAccordion(this, 'dio')">
+          DIO <span class="count">6</span>
+        </div>
+        <div class="brand-chip-v2" onclick="toggleAccordion(this, 'osstem')">
+          OSSTEM TS-III <span class="count">4</span>
+        </div>
+        <div class="brand-chip-v2" onclick="toggleAccordion(this, 'straumann')">
+          STRAUMANN <span class="count">4</span>
+        </div>
+        <div class="brand-chip-v2" onclick="toggleAccordion(this, 'inno')">
+          INNO <span class="count">3</span>
+        </div>
+        <div class="brand-chip-v2" onclick="toggleAccordion(this, 'neobitech')">
+          NEOBITECH <span class="count">3</span>
+        </div>
+        <div class="brand-chip-v2" onclick="toggleAccordion(this, 'dentis')">
+          DENTIS <span class="count">3</span>
+        </div>
+      </div>
+
+      <!-- Контент для MEGAGEN -->
+      <div class="accordion-content-v2 show" id="acc-megagen">
+        <div class="accordion-header-v2">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+          MEGAGEN - 7 товаров
+        </div>
+        <div class="products-grid-v2">
+          <div class="product-item-v2">Имплант MEGAGEN AnyOne 3.5x10</div>
+          <div class="product-item-v2">Имплант MEGAGEN AnyOne 4.0x11.5</div>
+          <div class="product-item-v2">Имплант MEGAGEN AnyRidge 4.5x10</div>
+          <div class="product-item-v2">Имплант MEGAGEN AnyRidge 5.0x8.5</div>
+          <div class="product-item-v2">Имплант MEGAGEN Mini</div>
+          <div class="product-item-v2">Имплант MEGAGEN BlueDiamond</div>
+          <div class="product-item-v2">Имплант MEGAGEN AnyOne 4.5x13</div>
+        </div>
+      </div>
+
+      <!-- Контент для DIO -->
+      <div class="accordion-content-v2" id="acc-dio">
+        <div class="accordion-header-v2">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+          DIO - 6 товаров
+        </div>
+        <div class="products-grid-v2">
+          <div class="product-item-v2">DIO UF II HSA</div>
+          <div class="product-item-v2">DIO UF III HSA</div>
+          <div class="product-item-v2">DIO SHORT HSA</div>
+          <div class="product-item-v2">DIO SM Implant</div>
+          <div class="product-item-v2">DIO INTERNAL</div>
+          <div class="product-item-v2">DIO Extra Wide</div>
+        </div>
+      </div>
+
+      <!-- Скрытые аккордеоны -->
+      <div class="accordion-content-v2" id="acc-osstem"></div>
+      <div class="accordion-content-v2" id="acc-straumann"></div>
+      <div class="accordion-content-v2" id="acc-inno"></div>
+      <div class="accordion-content-v2" id="acc-neobitech"></div>
+      <div class="accordion-content-v2" id="acc-dentis"></div>
+    </div>
+  </div>
+
+  <!-- ВАРИАНТ 3: Карточки -->
+  <div class="variant-section">
+    <div class="variant-header">
+      <div class="variant-number">3</div>
+      <div>
+        <div class="variant-title">Карточки брендов с превью</div>
+        <div class="variant-desc">Карточки брендов с 3 товарами + кнопка "Все"</div>
+      </div>
+    </div>
+    <div class="mega-menu-v3">
+      <div class="brands-cards-v3">
+        <!-- MEGAGEN -->
+        <div class="brand-card-v3">
+          <div class="card-header-v3">
+            <span class="card-brand-v3">MEGAGEN</span>
+            <span class="card-count-v3">7 товаров</span>
+          </div>
+          <ul class="card-products-v3">
+            <li class="card-product-v3">AnyOne 3.5x10</li>
+            <li class="card-product-v3">AnyRidge 4.5x10</li>
+            <li class="card-product-v3">Mini Implant</li>
+          </ul>
+          <div class="card-footer-v3">
+            <button class="card-all-btn-v3">
+              Все товары MEGAGEN
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+          </div>
+        </div>
+        <!-- DIO -->
+        <div class="brand-card-v3">
+          <div class="card-header-v3">
+            <span class="card-brand-v3">DIO</span>
+            <span class="card-count-v3">6 товаров</span>
+          </div>
+          <ul class="card-products-v3">
+            <li class="card-product-v3">UF II HSA</li>
+            <li class="card-product-v3">UF III HSA</li>
+            <li class="card-product-v3">SHORT HSA</li>
+          </ul>
+          <div class="card-footer-v3">
+            <button class="card-all-btn-v3">
+              Все товары DIO
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+          </div>
+        </div>
+        <!-- OSSTEM -->
+        <div class="brand-card-v3">
+          <div class="card-header-v3">
+            <span class="card-brand-v3">OSSTEM TS-III</span>
+            <span class="card-count-v3">4 товара</span>
+          </div>
+          <ul class="card-products-v3">
+            <li class="card-product-v3">TS III SA 4.0x10</li>
+            <li class="card-product-v3">TS III SA 4.5x11.5</li>
+            <li class="card-product-v3">TS III SA 5.0x8.5</li>
+          </ul>
+          <div class="card-footer-v3">
+            <button class="card-all-btn-v3">
+              Все товары OSSTEM
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+          </div>
+        </div>
+        <!-- STRAUMANN -->
+        <div class="brand-card-v3">
+          <div class="card-header-v3">
+            <span class="card-brand-v3">STRAUMANN</span>
+            <span class="card-count-v3">4 товара</span>
+          </div>
+          <ul class="card-products-v3">
+            <li class="card-product-v3">BLT 4.1x10</li>
+            <li class="card-product-v3">BLT 4.8x12</li>
+            <li class="card-product-v3">TLX 4.0x10</li>
+          </ul>
+          <div class="card-footer-v3">
+            <button class="card-all-btn-v3">
+              Все товары STRAUMANN
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+          </div>
+        </div>
+        <!-- INNO -->
+        <div class="brand-card-v3">
+          <div class="card-header-v3">
+            <span class="card-brand-v3">INNO</span>
+            <span class="card-count-v3">3 товара</span>
+          </div>
+          <ul class="card-products-v3">
+            <li class="card-product-v3">INNO SLA 4.0</li>
+            <li class="card-product-v3">INNO SLA 4.5</li>
+            <li class="card-product-v3">INNO Mini</li>
+          </ul>
+          <div class="card-footer-v3">
+            <button class="card-all-btn-v3">
+              Все товары INNO
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+          </div>
+        </div>
+        <!-- NEOBITECH -->
+        <div class="brand-card-v3">
+          <div class="card-header-v3">
+            <span class="card-brand-v3">NEOBITECH</span>
+            <span class="card-count-v3">3 товара</span>
+          </div>
+          <ul class="card-products-v3">
+            <li class="card-product-v3">IS II Active</li>
+            <li class="card-product-v3">IS III Active</li>
+            <li class="card-product-v3">S-Mini</li>
+          </ul>
+          <div class="card-footer-v3">
+            <button class="card-all-btn-v3">
+              Все товары NEOBITECH
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Инструкция -->
+  <div class="instruction">
+    <h2>👆 Выберите понравившийся вариант</h2>
+    <p>Сообщите номер варианта (1, 2 или 3), и я внедрю его в основной сайт</p>
+  </div>
+
+  <script>
+    function toggleAccordion(chip, brand) {
+      // Убираем active со всех чипов
+      document.querySelectorAll('.brand-chip-v2').forEach(c => c.classList.remove('active'));
+      // Добавляем active на выбранный
+      chip.classList.add('active');
+
+      // Скрываем все аккордеоны
+      document.querySelectorAll('.accordion-content-v2').forEach(a => a.classList.remove('show'));
+      // Показываем нужный
+      const acc = document.getElementById('acc-' + brand);
+      if (acc) {
+        acc.classList.add('show');
+      }
+    }
+  </script>
+</body>
+</html>

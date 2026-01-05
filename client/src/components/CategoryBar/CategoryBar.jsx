@@ -21,6 +21,7 @@ function CategoryBar() {
   const navigate = useNavigate()
   const [categories, setCategories] = useState([])
   const [brandsMap, setBrandsMap] = useState({})
+  const [implantProducts, setImplantProducts] = useState({}) // Товары имплантов по брендам
   const [activeDropdown, setActiveDropdown] = useState(null)
   const [dropdownPosition, setDropdownPosition] = useState('center')
   const dropdownRef = useRef(null)
@@ -90,13 +91,27 @@ function CategoryBar() {
         })
         const brands = Object.entries(brandCounts)
           .map(([name, count]) => ({ name, count }))
-          .sort((a, b) => b.count - a.count)
-          .slice(0, 12)
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .slice(0, 20)
 
         setBrandsMap(prev => ({
           ...prev,
           [category.slug]: brands
         }))
+
+        // Для имплантов загружаем также товары по брендам
+        if (category.slug === 'implantaty') {
+          const productsByBrand = {}
+          products.forEach(p => {
+            if (p.brand) {
+              if (!productsByBrand[p.brand]) {
+                productsByBrand[p.brand] = []
+              }
+              productsByBrand[p.brand].push(p)
+            }
+          })
+          setImplantProducts(productsByBrand)
+        }
       }
     } catch (err) {
       console.error('Error fetching brands:', err)
@@ -164,8 +179,80 @@ function CategoryBar() {
                 <span className="category-name">{category.name}</span>
               </div>
 
-              {/* Компактное меню с брендами */}
-              {isDropdownOpen && (
+              {/* Мега-меню: fullwidth для имплантов с hover-подменю */}
+              {isDropdownOpen && category.slug === 'implantaty' ? (
+                <div className="mega-dropdown fullwidth implants-mega">
+                  {brands.length > 0 ? (
+                    <div className="implants-brands-row">
+                      {brands.map(brand => {
+                        const brandProducts = implantProducts[brand.name] || []
+                        return (
+                          <div key={brand.name} className="implant-brand-wrapper">
+                            <div
+                              className="implant-brand-chip"
+                              onClick={() => handleBrandClick(category.slug, brand.name)}
+                            >
+                              <span className="chip-name">{brand.name}</span>
+                              <span className="chip-count">{brand.count}</span>
+                            </div>
+                            {/* Подменю при hover */}
+                            <div className="implant-hover-submenu">
+                              <div className={`submenu-columns ${brandProducts.length > 7 ? 'two-columns' : ''}`}>
+                                <ul className="submenu-products">
+                                  {brandProducts.slice(0, 7).map(product => (
+                                    <li
+                                      key={product.id}
+                                      className="submenu-product-item"
+                                      onClick={(e) => {
+                                        e.stopPropagation()
+                                        setActiveDropdown(null)
+                                        navigate(`/category/${category.slug}?brand=${encodeURIComponent(brand.name)}`)
+                                      }}
+                                    >
+                                      {product.name.replace(/^(Имплант|Имплантат)\s*/i, '')}
+                                    </li>
+                                  ))}
+                                </ul>
+                                {brandProducts.length > 7 && (
+                                  <ul className="submenu-products">
+                                    {brandProducts.slice(7, 14).map(product => (
+                                      <li
+                                        key={product.id}
+                                        className="submenu-product-item"
+                                        onClick={(e) => {
+                                          e.stopPropagation()
+                                          setActiveDropdown(null)
+                                          navigate(`/category/${category.slug}?brand=${encodeURIComponent(brand.name)}`)
+                                        }}
+                                      >
+                                        {product.name.replace(/^(Имплант|Имплантат)\s*/i, '')}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                              <button
+                                className="submenu-all-btn"
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  handleBrandClick(category.slug, brand.name)
+                                }}
+                              >
+                                Все товары {brand.name}
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="dropdown-loading">Загрузка...</div>
+                  )}
+                </div>
+              ) : isDropdownOpen && (
                 <div className={`mega-dropdown compact position-${dropdownPosition}`}>
                   {brands.length > 0 ? (
                     <div className="brands-list">
