@@ -1,50 +1,155 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import { useLanguage } from '../contexts/LanguageContext'
 import './ProductPage.css'
 
-// Названия характеристик на русском
+// Переводы значений спецификаций (для английского языка)
+const SPEC_VALUE_TRANSLATIONS = {
+  // Страны
+  'Корея': 'South Korea',
+  'Южная Корея': 'South Korea',
+  'Германия': 'Germany',
+  'Швейцария': 'Switzerland',
+  'Израиль': 'Israel',
+  'США': 'USA',
+  'Россия': 'Russia',
+  'Япония': 'Japan',
+  'Италия': 'Italy',
+  'Франция': 'France',
+  'Китай': 'China',
+  // Соединения
+  'Внутренний конус': 'Internal Cone',
+  'Внутренний шестигранник': 'Internal Hex',
+  'Внешний шестигранник': 'External Hex',
+  'Конический': 'Conical',
+  'Конус': 'Cone',
+  'конус': 'cone',
+  'Шестигранник': 'Hexagon',
+  'Октагон': 'Octagon',
+  'Морзе': 'Morse',
+  // Поверхности
+  'ионы кальция': 'calcium ions',
+  'Ионы кальция': 'Calcium ions',
+  'пескоструйная': 'sandblasted',
+  'Пескоструйная': 'Sandblasted',
+  'кислотное травление': 'acid-etched',
+  'анодированная': 'anodized',
+  'гидрофильная': 'hydrophilic',
+  'наноструктурированная': 'nanostructured',
+  // Материалы
+  'Титан': 'Titanium',
+  'титан': 'titanium',
+  'Цирконий': 'Zirconium',
+  'Нержавеющая сталь': 'Stainless steel',
+  'Пластик': 'Plastic',
+  // Типы
+  'Стандартный': 'Standard',
+  'Угловой': 'Angled',
+  'Прямой': 'Straight',
+  'Временный': 'Temporary',
+  'Постоянный': 'Permanent',
+  'Формирователь десны': 'Healing abutment',
+  'Аналог': 'Analog',
+  'Трансфер': 'Transfer',
+  'Абатмент': 'Abutment',
+  // Единицы
+  'мм': 'mm',
+  'шт': 'pcs',
+  'мл': 'ml',
+  'г': 'g',
+  'кг': 'kg',
+  // Прочее
+  'Да': 'Yes',
+  'Нет': 'No'
+}
+
+// Названия характеристик на русском и английском
 const SPEC_LABELS = {
-  type: 'Тип',
-  brand: 'Бренд',
-  country: 'Страна',
-  connection: 'Соединение',
-  surface: 'Поверхность',
-  platform: 'Платформа',
-  diameters: 'Диаметры',
-  lengths: 'Длины',
-  material: 'Материал',
-  boneType: 'Тип кости',
-  feature: 'Особенности',
-  heights: 'Высоты',
-  angles: 'Углы',
-  compatibility: 'Совместимость',
-  application: 'Применение',
-  technique: 'Техника',
-  granuleSize: 'Размер гранул',
-  resorption: 'Резорбция',
-  processing: 'Обработка',
-  structure: 'Структура',
-  origin: 'Происхождение',
-  manufacturer: 'Производитель',
-  porosity: 'Пористость',
-  forms: 'Формы',
-  composition: 'Состав',
-  removal: 'Удаление',
-  torque: 'Момент затяжки',
-  mechanism: 'Механизм',
-  rpm: 'Обороты',
-  quantity: 'Количество',
-  widths: 'Ширины',
-  numbers: 'Номера',
-  needleSize: 'Размер иглы',
-  components: 'Комплектация',
-  shapes: 'Формы',
-  output: 'Результат',
-  weight: 'Вес',
-  blade: 'Лезвие',
-  protocol: 'Протокол',
-  design: 'Дизайн'
+  ru: {
+    type: 'Тип',
+    brand: 'Бренд',
+    country: 'Страна',
+    connection: 'Соединение',
+    surface: 'Поверхность',
+    platform: 'Платформа',
+    diameters: 'Диаметры',
+    lengths: 'Длины',
+    material: 'Материал',
+    boneType: 'Тип кости',
+    feature: 'Особенности',
+    heights: 'Высоты',
+    angles: 'Углы',
+    compatibility: 'Совместимость',
+    application: 'Применение',
+    technique: 'Техника',
+    granuleSize: 'Размер гранул',
+    resorption: 'Резорбция',
+    processing: 'Обработка',
+    structure: 'Структура',
+    origin: 'Происхождение',
+    manufacturer: 'Производитель',
+    porosity: 'Пористость',
+    forms: 'Формы',
+    composition: 'Состав',
+    removal: 'Удаление',
+    torque: 'Момент затяжки',
+    mechanism: 'Механизм',
+    rpm: 'Обороты',
+    quantity: 'Количество',
+    widths: 'Ширины',
+    numbers: 'Номера',
+    needleSize: 'Размер иглы',
+    components: 'Комплектация',
+    shapes: 'Формы',
+    output: 'Результат',
+    weight: 'Вес',
+    blade: 'Лезвие',
+    protocol: 'Протокол',
+    design: 'Дизайн'
+  },
+  en: {
+    type: 'Type',
+    brand: 'Brand',
+    country: 'Country',
+    connection: 'Connection',
+    surface: 'Surface',
+    platform: 'Platform',
+    diameters: 'Diameters',
+    lengths: 'Lengths',
+    material: 'Material',
+    boneType: 'Bone Type',
+    feature: 'Features',
+    heights: 'Heights',
+    angles: 'Angles',
+    compatibility: 'Compatibility',
+    application: 'Application',
+    technique: 'Technique',
+    granuleSize: 'Granule Size',
+    resorption: 'Resorption',
+    processing: 'Processing',
+    structure: 'Structure',
+    origin: 'Origin',
+    manufacturer: 'Manufacturer',
+    porosity: 'Porosity',
+    forms: 'Forms',
+    composition: 'Composition',
+    removal: 'Removal',
+    torque: 'Torque',
+    mechanism: 'Mechanism',
+    rpm: 'RPM',
+    quantity: 'Quantity',
+    widths: 'Widths',
+    numbers: 'Numbers',
+    needleSize: 'Needle Size',
+    components: 'Components',
+    shapes: 'Shapes',
+    output: 'Output',
+    weight: 'Weight',
+    blade: 'Blade',
+    protocol: 'Protocol',
+    design: 'Design'
+  }
 }
 
 // Демо-данные
@@ -67,12 +172,41 @@ const parseSpecs = (specsString) => {
 function ProductPage() {
   const { id } = useParams()
   const { addItem } = useCart()
+  const { language, t, getLocalized } = useLanguage()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
   const [quantity, setQuantity] = useState(1)
 
   const formatPrice = (price) => {
     return '$' + new Intl.NumberFormat('en-US').format(price)
+  }
+
+  // Получить название спецификации на текущем языке
+  const getSpecLabel = (key) => {
+    return SPEC_LABELS[language]?.[key] || SPEC_LABELS.ru[key] || key
+  }
+
+  // Перевод значения спецификации
+  const translateSpecValue = (value) => {
+    if (language === 'en' && typeof value === 'string') {
+      let translated = value
+      Object.entries(SPEC_VALUE_TRANSLATIONS).forEach(([ru, en]) => {
+        translated = translated.replace(new RegExp(ru, 'g'), en)
+      })
+      return translated
+    }
+    return value
+  }
+
+  // Функция проверки дублирования описания
+  const isDescriptionDuplicate = (desc, name) => {
+    if (!desc || !name) return true
+    const descLower = desc.toLowerCase().trim()
+    const nameLower = name.toLowerCase().trim()
+    return descLower === nameLower ||
+           descLower.startsWith(nameLower) ||
+           nameLower.startsWith(descLower) ||
+           (descLower.includes(nameLower) && desc.length < name.length + 25)
   }
 
   useEffect(() => {
@@ -111,8 +245,8 @@ function ProductPage() {
   if (!product) {
     return (
       <div className="product-not-found">
-        <h2>Товар не найден</h2>
-        <Link to="/" className="btn-back">Вернуться на главную</Link>
+        <h2>{language === 'en' ? 'Product not found' : 'Товар не найден'}</h2>
+        <Link to="/" className="btn-back">{language === 'en' ? 'Back to home' : 'Вернуться на главную'}</Link>
       </div>
     )
   }
@@ -133,36 +267,8 @@ function ProductPage() {
         </div>
 
         <div className="product-page-info">
-          {product.brand && (
-            <span className="product-page-brand">{product.brand}</span>
-          )}
-          <h1 className="product-page-title">{product.name}</h1>
-
-          {product.description && (
-            <p className="product-page-description">{product.description}</p>
-          )}
-
-          {/* Характеристики товара */}
-          {product.specs && parseSpecs(product.specs) && (() => {
-            const specs = parseSpecs(product.specs)
-            // Фильтруем: убираем qty_* (оптовые цены) - показываем только характеристики
-            const filteredSpecs = Object.entries(specs).filter(([key]) => !key.startsWith('qty_'))
-            if (filteredSpecs.length === 0) return null
-            return (
-              <div className="product-specs">
-                <h3 className="specs-title">Технические характеристики</h3>
-                <div className="specs-grid">
-                  {filteredSpecs.map(([key, value]) => (
-                    <div key={key} className="spec-row">
-                      <span className="spec-label">{SPEC_LABELS[key] || key}</span>
-                      <span className="spec-dots"></span>
-                      <span className="spec-value">{value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )
-          })()}
+          {/* Название */}
+          <h1 className="product-page-title">{product.name_en || product.name}</h1>
 
           <div className="product-page-price">
             <span className="price-value">{formatPrice(product.price)}</span>
@@ -179,13 +285,8 @@ function ProductPage() {
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.49 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
               </svg>
-              Добавить в корзину
+              {t('product.addToCart')}
             </button>
-          </div>
-
-          <div className="product-page-contact">
-            <p>Есть вопросы? Звоните:</p>
-            <a href="tel:+79309508887" className="phone">+7 930-950-88-87</a>
           </div>
         </div>
       </div>
