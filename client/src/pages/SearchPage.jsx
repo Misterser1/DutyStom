@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard/ProductCard'
+import { useLanguage } from '../contexts/LanguageContext'
 import './CategoryPage.css'
 
 function SearchPage() {
   const [searchParams] = useSearchParams()
   const query = searchParams.get('q') || ''
+  const { language, t } = useLanguage()
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -32,9 +34,9 @@ function SearchPage() {
     return (
       <div className="category-page">
         <div className="category-header">
-          <h1>Поиск: "{query}"</h1>
+          <h1>{t('search.results')}: "{query}"</h1>
         </div>
-        <div className="loading">Загрузка...</div>
+        <div className="loading">{t('common.loading')}</div>
       </div>
     )
   }
@@ -42,14 +44,14 @@ function SearchPage() {
   return (
     <div className="category-page">
       <div className="category-header">
-        <h1>Поиск: "{query}"</h1>
-        <p className="results-count">Найдено: {products.length} товаров</p>
+        <h1>{t('search.results')}: "{query}"</h1>
+        <p className="results-count">{language === 'en' ? 'Found' : 'Найдено'}: {products.length} {t('pagination.products')}</p>
       </div>
 
       {products.length === 0 ? (
         <div className="no-results">
-          <p>По вашему запросу ничего не найдено</p>
-          <p>Попробуйте изменить запрос или <Link to="/">вернуться на главную</Link></p>
+          <p>{t('search.noResults')}</p>
+          <p>{language === 'en' ? 'Try changing your query or' : 'Попробуйте изменить запрос или'} <Link to="/">{language === 'en' ? 'go to home' : 'вернуться на главную'}</Link></p>
         </div>
       ) : (
         <div className="products-grid">

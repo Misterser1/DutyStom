@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
+import { useLanguage } from '../../contexts/LanguageContext'
 import Logo from '../Logo/Logo'
 import EducationDropdown from '../EducationDropdown/EducationDropdown'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import './Header.css'
 
 function Header() {
   const { itemCount } = useCart()
+  const { language, t } = useLanguage()
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
   const [suggestions, setSuggestions] = useState([])
@@ -97,7 +100,7 @@ function Header() {
               <input
                 type="text"
                 className="search-input-main"
-                placeholder="Поиск товаров, имплантатов..."
+                placeholder={t('header.search')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
@@ -134,7 +137,7 @@ function Header() {
                     navigate(`/search?q=${encodeURIComponent(searchQuery)}`)
                   }}
                 >
-                  Показать все результаты
+                  {language === 'en' ? 'Show all results' : 'Показать все результаты'}
                 </button>
               </div>
             )}
@@ -142,19 +145,19 @@ function Header() {
 
           {/* Иконки */}
           <div className="header-actions">
-            <a href={`tel:${(contacts.phone || '+7 930-950-88-87').replace(/\s/g, '')}`} className="action-icon" title="Телефон">
+            <a href={`tel:${(contacts.phone || '+7 930-950-88-87').replace(/\s/g, '')}`} className="action-icon" title={language === 'en' ? 'Phone' : 'Телефон'}>
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
               </svg>
             </a>
 
-            <a href={`mailto:${contacts.email || 'info@dutystom.ru'}`} className="action-icon" title="Почта">
+            <a href={`mailto:${contacts.email || 'info@dutystom.ru'}`} className="action-icon" title={language === 'en' ? 'Email' : 'Почта'}>
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
             </a>
 
-            <a href="https://t.me/dutystom" target="_blank" rel="noopener noreferrer" className="action-icon" title="Соцсети">
+            <a href="https://t.me/dutystom" target="_blank" rel="noopener noreferrer" className="action-icon" title={language === 'en' ? 'Social' : 'Соцсети'}>
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
               </svg>
@@ -164,7 +167,7 @@ function Header() {
               <button
                 ref={educationBtnRef}
                 className={`action-icon ${showEducation ? 'active' : ''}`}
-                title="Обучение"
+                title={t('nav.education')}
                 onClick={() => setShowEducation(!showEducation)}
               >
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -178,7 +181,9 @@ function Header() {
               />
             </div>
 
-            <Link to="/cart" className="action-icon cart-action" title="Корзина">
+            <LanguageSwitcher className="compact" />
+
+            <Link to="/cart" className="action-icon cart-action" title={t('header.cart')}>
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.49 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
               </svg>
@@ -226,7 +231,7 @@ function Header() {
               <input
                 type="text"
                 className="mobile-search-input"
-                placeholder="Поиск товаров..."
+                placeholder={t('header.search')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 autoFocus
@@ -253,14 +258,17 @@ function Header() {
                   </svg>
                 </button>
               </div>
+              <div className="mobile-menu-lang">
+                <LanguageSwitcher />
+              </div>
               <nav className="mobile-menu-nav">
                 <Link to="/" className="mobile-menu-item" onClick={() => setShowMobileMenu(false)}>
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-                  Главная
+                  {language === 'en' ? 'Home' : 'Главная'}
                 </Link>
                 <Link to="/category/implantaty" className="mobile-menu-item" onClick={() => setShowMobileMenu(false)}>
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
-                  Каталог
+                  {t('nav.catalog')}
                 </Link>
                 <a href={`tel:${(contacts.phone || '+7 930-950-88-87').replace(/\s/g, '')}`} className="mobile-menu-item">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
@@ -268,7 +276,7 @@ function Header() {
                 </a>
                 <a href={`mailto:${contacts.email || 'info@dutystom.ru'}`} className="mobile-menu-item">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                  Написать
+                  {language === 'en' ? 'Email Us' : 'Написать'}
                 </a>
                 <a href="https://t.me/dutystom" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>

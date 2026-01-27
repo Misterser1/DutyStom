@@ -1,12 +1,15 @@
 import ProductCard from '../ProductCard/ProductCard'
+import { useLanguage } from '../../contexts/LanguageContext'
 import './ProductGrid.css'
 
 function ProductGrid({ products, title, showUSD = false }) {
+  const { language, t } = useLanguage()
+
   if (!products || products.length === 0) {
     return (
       <div className="empty-state">
-        <h2>Товары не найдены</h2>
-        <p>В этой категории пока нет товаров</p>
+        <h2>{t('search.noResults')}</h2>
+        <p>{language === 'en' ? 'No products in this category yet' : 'В этой категории пока нет товаров'}</p>
       </div>
     )
   }

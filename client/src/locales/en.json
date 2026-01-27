@@ -1,0 +1,109 @@
+{
+  "header": {
+    "search": "Search products, implants...",
+    "cart": "Cart",
+    "menu": "Menu"
+  },
+  "nav": {
+    "catalog": "Catalog",
+    "implants": "Implants",
+    "components": "Components",
+    "bone": "Bone Materials",
+    "membrane": "Membranes",
+    "supplies": "Supplies",
+    "education": "Education",
+    "contacts": "Contacts",
+    "about": "About Us"
+  },
+  "categories": {
+    "implants": "Implants",
+    "components": "Components",
+    "bone": "Bone Materials",
+    "membrane": "Membranes",
+    "supplies": "Supplies"
+  },
+  "filters": {
+    "title": "Filters",
+    "brand": "Brand",
+    "price": "Price (USD)",
+    "from": "From",
+    "to": "To",
+    "inStock": "In stock only",
+    "reset": "Reset filters",
+    "resetAll": "Reset all"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "details": "Details",
+    "inStock": "In Stock",
+    "outOfStock": "On Order",
+    "brand": "Brand",
+    "country": "Country",
+    "connection": "Connection",
+    "surface": "Surface",
+    "diameters": "Diameters",
+    "material": "Material",
+    "price": "Price",
+    "quantity": "Quantity",
+    "description": "Description",
+    "specifications": "Specifications"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continue": "Continue Shopping",
+    "remove": "Remove",
+    "clear": "Clear Cart"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Delivery Address",
+    "comment": "Comment",
+    "submit": "Place Order",
+    "success": "Order placed successfully!"
+  },
+  "pagination": {
+    "showing": "Showing",
+    "of": "of",
+    "products": "products",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "sort": {
+    "title": "Sort by",
+    "default": "Default",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "nameAsc": "Name: A-Z",
+    "nameDesc": "Name: Z-A"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Enter product name...",
+    "noResults": "No results found",
+    "results": "Search Results"
+  },
+  "footer": {
+    "company": "DUTYSTOM",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

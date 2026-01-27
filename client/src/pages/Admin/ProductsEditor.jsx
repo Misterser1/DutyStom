@@ -13,6 +13,9 @@ const emptyProduct = {
   code: '',
   article: '',
   name: '',
+  name_en: '',
+  description: '',
+  description_en: '',
   brand: '',
   country: '',
   price: '',
@@ -185,12 +188,23 @@ function ProductsEditor() {
               </div>
 
               <div className="form-group full-width">
-                <label>Название товара *</label>
+                <label>Название товара (RU) *</label>
                 <input
                   type="text"
                   value={formData.name}
                   onChange={(e) => handleChange('name', e.target.value)}
                   required
+                  placeholder="Название на русском"
+                />
+              </div>
+
+              <div className="form-group full-width">
+                <label>Название товара (EN)</label>
+                <input
+                  type="text"
+                  value={formData.name_en || ''}
+                  onChange={(e) => handleChange('name_en', e.target.value)}
+                  placeholder="Product name in English"
                 />
               </div>
 
@@ -241,6 +255,26 @@ function ProductsEditor() {
                   value={formData.image_url || ''}
                   onChange={(e) => handleChange('image_url', e.target.value)}
                   placeholder="https://example.com/image.jpg"
+                />
+              </div>
+
+              <div className="form-group full-width">
+                <label>Описание (RU)</label>
+                <textarea
+                  value={formData.description || ''}
+                  onChange={(e) => handleChange('description', e.target.value)}
+                  placeholder="Описание товара на русском"
+                  rows={3}
+                />
+              </div>
+
+              <div className="form-group full-width">
+                <label>Описание (EN)</label>
+                <textarea
+                  value={formData.description_en || ''}
+                  onChange={(e) => handleChange('description_en', e.target.value)}
+                  placeholder="Product description in English"
+                  rows={3}
                 />
               </div>
             </div>

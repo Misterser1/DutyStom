@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { categoryIcons } from '../CategoryIcons/CategoryIcons'
+import { useLanguage } from '../../contexts/LanguageContext'
 import './CategoryBar.css'
 
 // Порядок отображения категорий
@@ -16,12 +17,26 @@ const CATEGORY_ORDER = [
   'prochee'
 ]
 
+// Переводы категорий на английский (по slug)
+const CATEGORY_TRANSLATIONS_EN = {
+  'implantaty': 'Implants',
+  'protetika': 'Prosthetics',
+  'instrumenty': 'Instruments',
+  'hirurgicheskie-nabory': 'Surgical Kits',
+  'kostnye-materialy': 'Bone Materials',
+  'membrany': 'Membranes',
+  'piny-i-gbr': 'Pins & GBR',
+  'rashodniki': 'Consumables',
+  'prochee': 'Other'
+}
+
 function CategoryBar() {
   const location = useLocation()
   const navigate = useNavigate()
+  const { language, t, getLocalized } = useLanguage()
   const [categories, setCategories] = useState([])
   const [brandsMap, setBrandsMap] = useState({})
-  const [implantProducts, setImplantProducts] = useState({}) // Товары имплантов по брендам
+  const [categoryProducts, setCategoryProducts] = useState({}) // Товары по брендам для мега-меню
   const [activeDropdown, setActiveDropdown] = useState(null)
   const [dropdownPosition, setDropdownPosition] = useState('center')
   const dropdownRef = useRef(null)
@@ -99,8 +114,8 @@ function CategoryBar() {
           [category.slug]: brands
         }))
 
-        // Для имплантов загружаем также товары по брендам
-        if (category.slug === 'implantaty') {
+        // Для имплантов и протетики загружаем также товары по брендам
+        if (category.slug === 'implantaty' || category.slug === 'protetika') {
           const productsByBrand = {}
           products.forEach(p => {
             if (p.brand) {
@@ -110,7 +125,10 @@ function CategoryBar() {
               productsByBrand[p.brand].push(p)
             }
           })
-          setImplantProducts(productsByBrand)
+          setCategoryProducts(prev => ({
+            ...prev,
+            [category.slug]: productsByBrand
+          }))
         }
       }
     } catch (err) {
@@ -176,16 +194,16 @@ function CategoryBar() {
                     {IconComponent ? <IconComponent /> : '📦'}
                   </span>
                 </span>
-                <span className="category-name">{category.name}</span>
+                <span className="category-name">{language === 'en' ? (CATEGORY_TRANSLATIONS_EN[category.slug] || category.name) : category.name}</span>
               </div>
 
-              {/* Мега-меню: fullwidth для имплантов с hover-подменю */}
-              {isDropdownOpen && category.slug === 'implantaty' ? (
+              {/* Мега-меню: fullwidth для имплантов и протетики с hover-подменю */}
+              {isDropdownOpen && (category.slug === 'implantaty' || category.slug === 'protetika') ? (
                 <div className="mega-dropdown fullwidth implants-mega">
                   {brands.length > 0 ? (
                     <div className="implants-brands-row">
                       {brands.map(brand => {
-                        const brandProducts = implantProducts[brand.name] || []
+                        const brandProducts = (categoryProducts[category.slug] || {})[brand.name] || []
                         return (
                           <div key={brand.name} className="implant-brand-wrapper">
                             <div
@@ -209,7 +227,8 @@ function CategoryBar() {
                                         navigate(`/category/${category.slug}?brand=${encodeURIComponent(brand.name)}`)
                                       }}
                                     >
-                                      {product.name.replace(/^(Имплант|Имплантат)\s*/i, '')}
+                                      {/* Название товара */}
+                                      {(product.name_en || product.name).replace(/^(Implant|Имплант|Имплантат)\s*/i, '')}
                                     </li>
                                   ))}
                                 </ul>
@@ -225,7 +244,8 @@ function CategoryBar() {
                                           navigate(`/category/${category.slug}?brand=${encodeURIComponent(brand.name)}`)
                                         }}
                                       >
-                                        {product.name.replace(/^(Имплант|Имплантат)\s*/i, '')}
+                                        {/* Название всегда на английском */}
+                                        {(product.name_en || product.name).replace(/^(Implant|Имплант|Имплантат)\s*/i, '')}
                                       </li>
                                     ))}
                                   </ul>
@@ -238,7 +258,7 @@ function CategoryBar() {
                                   handleBrandClick(category.slug, brand.name)
                                 }}
                               >
-                                Все товары {brand.name}
+                                {language === 'en' ? 'All products' : 'Все товары'} {brand.name}
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                                   <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
                                 </svg>
@@ -249,7 +269,7 @@ function CategoryBar() {
                       })}
                     </div>
                   ) : (
-                    <div className="dropdown-loading">Загрузка...</div>
+                    <div className="dropdown-loading">{t('common.loading')}</div>
                   )}
                 </div>
               ) : isDropdownOpen && (
@@ -268,7 +288,7 @@ function CategoryBar() {
                       ))}
                     </div>
                   ) : (
-                    <div className="dropdown-loading">Загрузка...</div>
+                    <div className="dropdown-loading">{t('common.loading')}</div>
                   )}
                 </div>
               )}

@@ -712,6 +712,13 @@
     fill: #666;
   }
 
+  .mobile-menu-lang {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+  }
+
   .mobile-menu-nav {
     flex: 1;
     padding: 10px 0;

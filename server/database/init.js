@@ -132,6 +132,15 @@ export async function initDatabase() {
       db.run('ALTER TABLE products ADD COLUMN updated_at DATETIME')
       console.log('Added column: updated_at')
     }
+    // Мультиязычность - английские версии полей
+    if (!columns.includes('name_en')) {
+      db.run('ALTER TABLE products ADD COLUMN name_en TEXT')
+      console.log('Added column: name_en')
+    }
+    if (!columns.includes('description_en')) {
+      db.run('ALTER TABLE products ADD COLUMN description_en TEXT')
+      console.log('Added column: description_en')
+    }
   } catch (error) {
     console.error('Migration error:', error)
   }
@@ -181,9 +190,23 @@ export async function initDatabase() {
     CREATE TABLE IF NOT EXISTS settings (
       key TEXT PRIMARY KEY,
       value TEXT NOT NULL,
+      value_en TEXT,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `)
+
+  // Миграция: добавляем value_en в settings если его нет
+  try {
+    const settingsTableInfo = db.exec("PRAGMA table_info(settings)")
+    const settingsColumns = settingsTableInfo[0]?.values.map(row => row[1]) || []
+
+    if (!settingsColumns.includes('value_en')) {
+      db.run('ALTER TABLE settings ADD COLUMN value_en TEXT')
+      console.log('Added column: value_en to settings')
+    }
+  } catch (error) {
+    console.error('Settings migration error:', error)
+  }
 
   // Таблица обучения
   db.run(`

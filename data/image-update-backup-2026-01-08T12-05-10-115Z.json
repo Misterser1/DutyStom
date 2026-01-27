@@ -1,0 +1,212 @@
+[
+  {
+    "productId": 376,
+    "productName": "ANTHOGYR Axiom PX",
+    "productNameEn": null,
+    "productBrand": "ANTHOGYR",
+    "currentImage": "/images/products/ANTHOGYR Axiom PX.png",
+    "newImage": "/images/products/anthogyr_axiom_px.jpg",
+    "confidence": 90,
+    "pattern": "/axiom\\s*px/i"
+  },
+  {
+    "productId": 377,
+    "productName": "ANTHOGYR Axiom REG",
+    "productNameEn": null,
+    "productBrand": "ANTHOGYR",
+    "currentImage": "/images/products/ANTHOGYR Axiom REG.png",
+    "newImage": "/images/products/anthogyr_axiom_reg.jpg",
+    "confidence": 90,
+    "pattern": "/axiom\\s*reg/i"
+  },
+  {
+    "productId": 375,
+    "productName": "ANTHOGYR Axiom X3",
+    "productNameEn": null,
+    "productBrand": "ANTHOGYR",
+    "currentImage": "/images/products/ANTHOGYR Axiom X3.png",
+    "newImage": "/images/products/anthogyr_axiom_x3.jpg",
+    "confidence": 90,
+    "pattern": "/axiom\\s*x3/i"
+  },
+  {
+    "productId": 378,
+    "productName": "ASTRATECH TX",
+    "productNameEn": null,
+    "productBrand": "ASTRATECH",
+    "currentImage": "/images/products/ASTRATECH TX.png",
+    "newImage": "/images/products/astratech_osseospeed_tx.jpg",
+    "confidence": 90,
+    "pattern": "/tx(?!\\s*profile)/i"
+  },
+  {
+    "productId": 379,
+    "productName": "ASTRATECH TX PROFILE",
+    "productNameEn": null,
+    "productBrand": "ASTRATECH",
+    "currentImage": "/images/products/ASTRATECH TX PROFILE.png",
+    "newImage": "/images/products/astratech_osseospeed_tx_profile.jpg",
+    "confidence": 90,
+    "pattern": "/tx\\s*profile/i"
+  },
+  {
+    "productId": 363,
+    "productName": "DENTIS ONEQ-SL",
+    "productNameEn": null,
+    "productBrand": "DENTIS",
+    "currentImage": "/images/products/dentis-oneq-sl.png",
+    "newImage": "/images/products/dentis_oneq_sl.jpg",
+    "confidence": 90,
+    "pattern": "/oneq.*sl/i"
+  },
+  {
+    "productId": 362,
+    "productName": "DENTIS SQ SHORT 3 sizes",
+    "productNameEn": null,
+    "productBrand": "DENTIS",
+    "currentImage": "/images/products/dentis-sq-short.png",
+    "newImage": "/images/products/dentis_sq_short.jpg",
+    "confidence": 90,
+    "pattern": "/sq.*short/i"
+  },
+  {
+    "productId": 344,
+    "productName": "DENTIUM SUPERLINE II FXS ****",
+    "productNameEn": null,
+    "productBrand": "DENTIUM",
+    "currentImage": "/images/products/dentium-superline-ii-fxs.png",
+    "newImage": "/images/products/dentium_superline_2_fxs.jpg",
+    "confidence": 90,
+    "pattern": "/superline.*fxs/i"
+  },
+  {
+    "productId": 345,
+    "productName": "SIMPLELINE II",
+    "productNameEn": null,
+    "productBrand": "DENTIUM",
+    "currentImage": "/images/products/simpleline-ii.png",
+    "newImage": "/images/products/dentium_simpleline_2.jpg",
+    "confidence": 90,
+    "pattern": "/simpleline/i"
+  },
+  {
+    "productId": 349,
+    "productName": "MEGAGEN ANYONE INTERNAL DEEP THREAD",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-anyone-deep.png",
+    "newImage": "/images/products/megagen_anyone_internal_deep_thread.jpg",
+    "confidence": 90,
+    "pattern": "/anyone.*internal.*deep/i"
+  },
+  {
+    "productId": 348,
+    "productName": "MEGAGEN ANYONE INTERNAL REGULAR THREAD",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-anyone-regular.png",
+    "newImage": "/images/products/megagen_anyone_internal_regular_thread.jpg",
+    "confidence": 90,
+    "pattern": "/anyone.*internal.*regular/i"
+  },
+  {
+    "productId": 352,
+    "productName": "MEGAGEN ANYONE ONESTAGE DEEP THREAD",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-anyone-onestage-deep.png",
+    "newImage": "/images/products/megagen_anyone_onestage_deep_thread.jpg",
+    "confidence": 90,
+    "pattern": "/anyone.*onestage.*deep/i"
+  },
+  {
+    "productId": 351,
+    "productName": "MEGAGEN ANYONE ONESTAGE REGULAR THREAD",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-anyone-onestage-regular.png",
+    "newImage": "/images/products/megagen_anyone_onestage_regular_thread.jpg",
+    "confidence": 90,
+    "pattern": "/anyone.*onestage.*regular/i"
+  },
+  {
+    "productId": 350,
+    "productName": "MEGAGEN ANYONE SPECIAL SHORT",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-anyone-short.png",
+    "newImage": "/images/products/megagen_anyone_special_short.jpg",
+    "confidence": 90,
+    "pattern": "/anyone.*special.*short/i"
+  },
+  {
+    "productId": 347,
+    "productName": "MEGAGEN BLUEDIAMOND DEEP THREAD",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-bluediamond-deep.png",
+    "newImage": "/images/products/megagen_bluediamond_deep_thread.jpg",
+    "confidence": 90,
+    "pattern": "/bluediamond.*deep/i"
+  },
+  {
+    "productId": 346,
+    "productName": "MEGAGEN BLUEDIAMOND REGULAR THREAD",
+    "productNameEn": null,
+    "productBrand": "MEGAGEN",
+    "currentImage": "/images/products/megagen-bluediamond-regular.png",
+    "newImage": "/images/products/megagen_bluediamond_regular_thread.jpg",
+    "confidence": 90,
+    "pattern": "/bluediamond.*regular/i"
+  },
+  {
+    "productId": 382,
+    "productName": "SICtapered",
+    "productNameEn": null,
+    "productBrand": "SIC",
+    "currentImage": "/images/products/sic-tapered.png",
+    "newImage": "/images/products/sic_tapered.jpg",
+    "confidence": 90,
+    "pattern": "/tapered/i"
+  },
+  {
+    "productId": 371,
+    "productName": "STRAUMANN BL Bone Level",
+    "productNameEn": null,
+    "productBrand": "STRAUMANN",
+    "currentImage": "/images/products/straumann-bl.png",
+    "newImage": "/images/products/straumann_bone_level.jpg",
+    "confidence": 90,
+    "pattern": "/bone.*level/i"
+  },
+  {
+    "productId": 36,
+    "productName": "STRAUMANN BL Bone Level TITAN SLA",
+    "productNameEn": "STRAUMANN BL Bone Level TITAN SLA",
+    "productBrand": "STRAUMANN",
+    "currentImage": "/images/products/product-36.png",
+    "newImage": "/images/products/straumann_bone_level.jpg",
+    "confidence": 90,
+    "pattern": "/bone.*level/i"
+  },
+  {
+    "productId": 372,
+    "productName": "STRAUMANN BLT Bone Level Tapered",
+    "productNameEn": null,
+    "productBrand": "STRAUMANN",
+    "currentImage": "/images/products/straumann-blt.png",
+    "newImage": "/images/products/straumann_bone_level_tapered.jpg",
+    "confidence": 90,
+    "pattern": "/bone.*level.*tapered/i"
+  },
+  {
+    "productId": 39,
+    "productName": "STRAUMANN TL Tissue Level TITAN SLA",
+    "productNameEn": "STRAUMANN TL Tissue Level TITAN SLA",
+    "productBrand": "STRAUMANN",
+    "currentImage": "/images/products/product-39.png",
+    "newImage": "/images/products/straumann_tissue_level_standart.jpg",
+    "confidence": 90,
+    "pattern": "/tissue.*level/i"
+  }
+]

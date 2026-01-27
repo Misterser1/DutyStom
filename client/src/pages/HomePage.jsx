@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import ProductGrid from '../components/ProductGrid/ProductGrid'
+import { useLanguage } from '../contexts/LanguageContext'
 import { products as allProducts } from '../data/products'
 import './HomePage.css'
 
 function HomePage() {
+  const { language, t } = useLanguage()
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -31,7 +33,7 @@ function HomePage() {
   }, [])
 
   if (loading) {
-    return <div className="loading"></div>
+    return <div className="loading">{t('common.loading')}</div>
   }
 
   // Группируем товары по категориям для главной
@@ -42,15 +44,15 @@ function HomePage() {
   return (
     <div className="home-page">
       {implants.length > 0 && (
-        <ProductGrid products={implants} title="Имплантаты" />
+        <ProductGrid products={implants} title={language === 'en' ? 'Implants' : 'Имплантаты'} />
       )}
 
       {boneProducts.length > 0 && (
-        <ProductGrid products={boneProducts} title="Костные материалы" />
+        <ProductGrid products={boneProducts} title={language === 'en' ? 'Bone Materials' : 'Костные материалы'} />
       )}
 
       {membranes.length > 0 && (
-        <ProductGrid products={membranes} title="Мембраны" />
+        <ProductGrid products={membranes} title={language === 'en' ? 'Membranes' : 'Мембраны'} />
       )}
     </div>
   )

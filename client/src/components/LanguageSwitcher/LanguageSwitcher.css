@@ -1,0 +1,54 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1.5px solid #3d9b9b;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.language-switcher:hover {
+  background: rgba(61, 155, 155, 0.1);
+}
+
+.lang-option {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.lang-option.active {
+  color: #3d9b9b;
+}
+
+.lang-divider {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin: 0 2px;
+}
+
+/* Компактная версия для хедера */
+.language-switcher.compact {
+  padding: 4px 10px;
+  border-radius: 16px;
+}
+
+.language-switcher.compact .lang-option {
+  font-size: 0.8rem;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .language-switcher {
+    padding: 5px 10px;
+  }
+
+  .lang-option {
+    font-size: 0.8rem;
+  }
+}

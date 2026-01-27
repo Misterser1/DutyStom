@@ -1,0 +1,272 @@
+[
+  {
+    "id": 338,
+    "name": "DIO UF II",
+    "oldImage": "/images/products/dio-uf-ii-hsa.png"
+  },
+  {
+    "id": 339,
+    "name": "DIO SHORT",
+    "oldImage": "/images/products/dio-short-hsa.png"
+  },
+  {
+    "id": 340,
+    "name": "DIO UF III",
+    "oldImage": "/images/products/dio-ufi.png"
+  },
+  {
+    "id": 341,
+    "name": "DIO INTERNAL",
+    "oldImage": "/images/products/dio-internal.png"
+  },
+  {
+    "id": 342,
+    "name": "DIO PROTEM MINI POST TYPE",
+    "oldImage": "/images/products/dio-protem-pos.png"
+  },
+  {
+    "id": 343,
+    "name": "DIO PROTEM MINI BALL TYPE",
+    "oldImage": "/images/products/dio-protem-ball.png"
+  },
+  {
+    "id": 344,
+    "name": "DENTIUM SUPERLINE II FXS ****",
+    "oldImage": "/images/products/dentium_superline_2_fxs.jpg"
+  },
+  {
+    "id": 345,
+    "name": "SIMPLELINE II",
+    "oldImage": "/images/products/dentium_simpleline_2.jpg"
+  },
+  {
+    "id": 346,
+    "name": "MEGAGEN BLUEDIAMOND REGULAR THREAD",
+    "oldImage": "/images/products/megagen_bluediamond_regular_thread.jpg"
+  },
+  {
+    "id": 347,
+    "name": "MEGAGEN BLUEDIAMOND DEEP THREAD",
+    "oldImage": "/images/products/megagen_bluediamond_deep_thread.jpg"
+  },
+  {
+    "id": 348,
+    "name": "MEGAGEN ANYONE INTERNAL REGULAR THREAD",
+    "oldImage": "/images/products/megagen_anyone_internal_regular_thread.jpg"
+  },
+  {
+    "id": 349,
+    "name": "MEGAGEN ANYONE INTERNAL DEEP THREAD",
+    "oldImage": "/images/products/megagen_anyone_internal_deep_thread.jpg"
+  },
+  {
+    "id": 350,
+    "name": "MEGAGEN ANYONE SPECIAL SHORT",
+    "oldImage": "/images/products/megagen_anyone_special_short.jpg"
+  },
+  {
+    "id": 351,
+    "name": "MEGAGEN ANYONE ONESTAGE REGULAR THREAD",
+    "oldImage": "/images/products/megagen_anyone_onestage_regular_thread.jpg"
+  },
+  {
+    "id": 352,
+    "name": "MEGAGEN ANYONE ONESTAGE DEEP THREAD",
+    "oldImage": "/images/products/megagen_anyone_onestage_deep_thread.jpg"
+  },
+  {
+    "id": 353,
+    "name": "INNO SUBMERGED",
+    "oldImage": "/images/products/inno-submerged.png"
+  },
+  {
+    "id": 354,
+    "name": "INNO SUBMERGED SHORT",
+    "oldImage": "/images/products/inno-submerged-short.png"
+  },
+  {
+    "id": 355,
+    "name": "INNO SUBMERGED NARROW",
+    "oldImage": "/images/products/inno-submerged-narrow.png"
+  },
+  {
+    "id": 356,
+    "name": "SNUCONE AF+I",
+    "oldImage": "/images/products/snucone-af-i.png"
+  },
+  {
+    "id": 357,
+    "name": "SNUCONE AF+II",
+    "oldImage": "/images/products/snucone-af-ii.png"
+  },
+  {
+    "id": 358,
+    "name": "NEOBITECH IS-II",
+    "oldImage": "/images/products/neobitech-is2.png"
+  },
+  {
+    "id": 359,
+    "name": "NEOBITECH IS-II SHORT 4 sizes",
+    "oldImage": "/images/products/neobitech-is2-short.png"
+  },
+  {
+    "id": 360,
+    "name": "NEOBITECH IS-III",
+    "oldImage": "/images/products/neobitech-is3.png"
+  },
+  {
+    "id": 361,
+    "name": "DENTIS SQ",
+    "oldImage": "/images/products/dentis-sq.png"
+  },
+  {
+    "id": 362,
+    "name": "DENTIS SQ SHORT 3 sizes",
+    "oldImage": "/images/products/dentis_sq_short.jpg"
+  },
+  {
+    "id": 363,
+    "name": "DENTIS ONEQ-SL",
+    "oldImage": "/images/products/dentis_oneq_sl.jpg"
+  },
+  {
+    "id": 364,
+    "name": "OSSTEM TS-III BA (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 365,
+    "name": "OSSTEM TS-III SOI (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 366,
+    "name": "OSSTEM TS-III CA (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 367,
+    "name": "OSSTEM TS-III SA (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 368,
+    "name": "OSSTEM TS-IV BA (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 369,
+    "name": "OSSTEM TS-IV CA (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 370,
+    "name": "OSSTEM TS-IV SA (с адаптером)",
+    "oldImage": "/images/products/ostem-s-adapterom.png"
+  },
+  {
+    "id": 371,
+    "name": "STRAUMANN BL Bone Level",
+    "oldImage": "/images/products/straumann_bone_level.jpg"
+  },
+  {
+    "id": 372,
+    "name": "STRAUMANN BLT Bone Level Tapered",
+    "oldImage": "/images/products/straumann_bone_level_tapered.jpg"
+  },
+  {
+    "id": 373,
+    "name": "STRAUMANN Standard",
+    "oldImage": "/images/products/straumann-standard.png"
+  },
+  {
+    "id": 374,
+    "name": "STRAUMANN Standard Plus",
+    "oldImage": "/images/products/straumann-standard-plus.png"
+  },
+  {
+    "id": 375,
+    "name": "ANTHOGYR Axiom X3",
+    "oldImage": "/images/products/anthogyr_axiom_x3.jpg"
+  },
+  {
+    "id": 376,
+    "name": "ANTHOGYR Axiom PX",
+    "oldImage": "/images/products/anthogyr_axiom_px.jpg"
+  },
+  {
+    "id": 377,
+    "name": "ANTHOGYR Axiom REG",
+    "oldImage": "/images/products/anthogyr_axiom_reg.jpg"
+  },
+  {
+    "id": 378,
+    "name": "ASTRATECH TX",
+    "oldImage": "/images/products/astratech_osseospeed_tx.jpg"
+  },
+  {
+    "id": 379,
+    "name": "ASTRATECH TX PROFILE",
+    "oldImage": "/images/products/astratech_osseospeed_tx_profile.jpg"
+  },
+  {
+    "id": 380,
+    "name": "SICace",
+    "oldImage": "/images/products/sic-ace.png"
+  },
+  {
+    "id": 381,
+    "name": "SICmax",
+    "oldImage": "/images/products/sic-max.png"
+  },
+  {
+    "id": 382,
+    "name": "SICtapered",
+    "oldImage": "/images/products/sic_tapered.jpg"
+  },
+  {
+    "id": 383,
+    "name": "OSSTEM TS-III BA (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 384,
+    "name": "OSSTEM TS-III SOI (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 385,
+    "name": "OSSTEM TS-III CA (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 386,
+    "name": "OSSTEM TS-III SA (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 387,
+    "name": "OSSTEM TS-IV BA (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 388,
+    "name": "OSSTEM TS-IV CA (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 389,
+    "name": "OSSTEM TS-IV SA (без адаптера)",
+    "oldImage": "/images/products/ostem-bez-adaptera.png"
+  },
+  {
+    "id": 390,
+    "name": "INNO SUBMERGED WITH DRIVER",
+    "oldImage": "/images/products/inno-submerged-driver.png"
+  },
+  {
+    "id": 391,
+    "name": "INNO SUBMERGED NARROW WITH DRIVER",
+    "oldImage": "/images/products/inno-submerged-narrow-driver.png"
+  }
+]

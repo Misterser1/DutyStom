@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
+import { useLanguage } from '../../contexts/LanguageContext'
 import './Checkout.css'
 
 function Checkout() {
   const navigate = useNavigate()
   const { items, total, clearCart } = useCart()
+  const { language, t, getLocalized } = useLanguage()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
@@ -23,18 +25,18 @@ function Checkout() {
     const newErrors = {}
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Введите имя'
+      newErrors.name = language === 'en' ? 'Enter your name' : 'Введите имя'
     }
 
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Введите телефон'
+      newErrors.phone = language === 'en' ? 'Enter phone number' : 'Введите телефон'
     } else if (!/^[\d\s\+\-\(\)]{10,}$/.test(formData.phone)) {
-      newErrors.phone = 'Неверный формат телефона'
+      newErrors.phone = language === 'en' ? 'Invalid phone format' : 'Неверный формат телефона'
     }
 
     // Email необязательный, но если заполнен - проверяем формат
     if (formData.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Неверный формат email'
+      newErrors.email = language === 'en' ? 'Invalid email format' : 'Неверный формат email'
     }
 
     setErrors(newErrors)
@@ -107,10 +109,10 @@ function Checkout() {
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
           </svg>
         </div>
-        <h2>Заявка отправлена!</h2>
-        <p>Спасибо за заказ! Мы свяжемся с вами в ближайшее время.</p>
+        <h2>{t('checkout.success')}</h2>
+        <p>{language === 'en' ? 'Thank you for your order! We will contact you shortly.' : 'Спасибо за заказ! Мы свяжемся с вами в ближайшее время.'}</p>
         <button onClick={() => navigate('/')} className="btn-home">
-          Вернуться на главную
+          {language === 'en' ? 'Back to Home' : 'Вернуться на главную'}
         </button>
       </div>
     )
@@ -119,13 +121,13 @@ function Checkout() {
   return (
     <div className="checkout">
       <div className="checkout-form-wrapper">
-        <h2>Оформление заказа</h2>
-        <p className="checkout-subtitle">Заполните контактные данные</p>
+        <h2>{t('checkout.title')}</h2>
+        <p className="checkout-subtitle">{language === 'en' ? 'Fill in your contact details' : 'Заполните контактные данные'}</p>
 
         <form onSubmit={handleSubmit} className="checkout-form">
           <div className={`form-group ${errors.name ? 'error' : ''}`}>
             <label htmlFor="name">
-              Имя <span className="required">*</span>
+              {t('checkout.name')} <span className="required">*</span>
             </label>
             <input
               type="text"
@@ -133,14 +135,14 @@ function Checkout() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Ваше имя"
+              placeholder={language === 'en' ? 'Your name' : 'Ваше имя'}
             />
             {errors.name && <span className="error-text">{errors.name}</span>}
           </div>
 
           <div className={`form-group ${errors.phone ? 'error' : ''}`}>
             <label htmlFor="phone">
-              Телефон <span className="required">*</span>
+              {t('checkout.phone')} <span className="required">*</span>
             </label>
             <input
               type="tel"
@@ -155,7 +157,7 @@ function Checkout() {
 
           <div className={`form-group ${errors.email ? 'error' : ''}`}>
             <label htmlFor="email">
-              Email <span className="optional">(по желанию)</span>
+              {t('checkout.email')} <span className="optional">({language === 'en' ? 'optional' : 'по желанию'})</span>
             </label>
             <input
               type="email"
@@ -172,14 +174,14 @@ function Checkout() {
             {isSubmitting ? (
               <>
                 <span className="spinner"></span>
-                Отправка...
+                {language === 'en' ? 'Sending...' : 'Отправка...'}
               </>
             ) : (
               <>
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                   <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
                 </svg>
-                Отправить заявку
+                {t('checkout.submit')}
               </>
             )}
           </button>
@@ -187,12 +189,13 @@ function Checkout() {
       </div>
 
       <div className="checkout-summary">
-        <h3>Ваш заказ</h3>
+        <h3>{language === 'en' ? 'Your Order' : 'Ваш заказ'}</h3>
         <div className="summary-items">
           {items.map(item => (
             <div key={item.id} className="summary-item">
               <span className="summary-item-name">
-                {item.name} <span className="qty">x {item.quantity}</span>
+                {/* Название всегда на английском */}
+                {item.name_en || item.name} <span className="qty">x {item.quantity}</span>
               </span>
               <span className="summary-item-price">
                 {formatPrice(item.price * item.quantity)}
@@ -201,7 +204,7 @@ function Checkout() {
           ))}
         </div>
         <div className="summary-total">
-          <span>Итого:</span>
+          <span>{t('cart.total')}:</span>
           <strong>{formatPrice(total)}</strong>
         </div>
       </div>
