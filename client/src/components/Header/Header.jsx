@@ -39,7 +39,7 @@ function Header() {
 
   // Поиск подсказок с debounce
   useEffect(() => {
-    if (!searchQuery.trim() || searchQuery.length < 2) {
+    if (!searchQuery.trim()) {
       setSuggestions([])
       setShowSuggestions(false)
       return
@@ -135,6 +135,7 @@ function Header() {
                   onClick={() => {
                     setShowSuggestions(false)
                     navigate(`/search?q=${encodeURIComponent(searchQuery)}`)
+                    setSearchQuery('')
                   }}
                 >
                   {language === 'en' ? 'Show all results' : 'Показать все результаты'}
@@ -242,6 +243,45 @@ function Header() {
                 </svg>
               </button>
             </form>
+
+            {/* Мобильные подсказки */}
+            {suggestions.length > 0 && (
+              <div className="mobile-search-suggestions">
+                {suggestions.map(product => (
+                  <div
+                    key={product.id}
+                    className="mobile-suggestion-item"
+                    onClick={() => {
+                      setShowMobileSearch(false)
+                      goToProduct(product)
+                    }}
+                  >
+                    <img
+                      src={product.image_url || '/images/placeholder.png'}
+                      alt={product.name}
+                      className="mobile-suggestion-img"
+                      onError={(e) => e.target.src = '/images/placeholder.png'}
+                    />
+                    <div className="mobile-suggestion-info">
+                      <span className="mobile-suggestion-name">{product.name.split('\n')[0]}</span>
+                      <span className="mobile-suggestion-brand">{product.brand}</span>
+                    </div>
+                    <span className="mobile-suggestion-price">{product.price_usd || Math.round(product.price / 80)} $</span>
+                  </div>
+                ))}
+                <button
+                  type="button"
+                  className="mobile-show-all-results"
+                  onClick={() => {
+                    setShowMobileSearch(false)
+                    navigate(`/search?q=${encodeURIComponent(searchQuery)}`)
+                    setSearchQuery('')
+                  }}
+                >
+                  {language === 'en' ? 'Show all results' : 'Показать все результаты'}
+                </button>
+              </div>
+            )}
           </div>
         )}
 

@@ -25,9 +25,29 @@ export function getDb() {
 
 // Хелперы для совместимости с синхронным API
 export function dbRun(sql, params = []) {
-  db.run(sql, params)
-  saveDb()
-  return { lastInsertRowid: db.exec('SELECT last_insert_rowid()')[0]?.values[0]?.[0] }
+  try {
+    // Используем prepared statement для параметризованных запросов
+    const stmt = db.prepare(sql)
+    if (params && params.length > 0) {
+      stmt.bind(params)
+    }
+    stmt.step()
+    stmt.free()
+
+    // Получаем lastInsertRowid ПЕРЕД сохранением (export может сбросить состояние)
+    const result = db.exec('SELECT last_insert_rowid()')
+    const lastInsertRowid = result[0]?.values[0]?.[0]
+
+    // Теперь сохраняем
+    saveDb()
+
+    return { lastInsertRowid: lastInsertRowid || 0 }
+  } catch (error) {
+    console.error('dbRun error:', error.message)
+    console.error('SQL:', sql)
+    console.error('Params:', params)
+    throw error
+  }
 }
 
 export function dbGet(sql, params = []) {
@@ -141,6 +161,10 @@ export async function initDatabase() {
       db.run('ALTER TABLE products ADD COLUMN description_en TEXT')
       console.log('Added column: description_en')
     }
+    if (!columns.includes('material')) {
+      db.run('ALTER TABLE products ADD COLUMN material TEXT')
+      console.log('Added column: material')
+    }
   } catch (error) {
     console.error('Migration error:', error)
   }
@@ -243,6 +267,40 @@ export async function initDatabase() {
       value TEXT NOT NULL,
       label TEXT,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `)
+
+  // Таблица чатов для Telegram виджета
+  db.run(`
+    CREATE TABLE IF NOT EXISTS chats (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      session_id TEXT UNIQUE NOT NULL,
+      client_name TEXT,
+      telegram_chat_id INTEGER,
+      status TEXT DEFAULT 'active',
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `)
+
+  // Таблица сообщений чата
+  db.run(`
+    CREATE TABLE IF NOT EXISTS chat_messages (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      chat_id INTEGER NOT NULL,
+      sender TEXT NOT NULL,
+      message TEXT NOT NULL,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (chat_id) REFERENCES chats(id)
+    )
+  `)
+
+  // Настройки Telegram бота
+  db.run(`
+    CREATE TABLE IF NOT EXISTS telegram_settings (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      key TEXT UNIQUE NOT NULL,
+      value TEXT NOT NULL
     )
   `)
 

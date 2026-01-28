@@ -40,26 +40,40 @@ function ChatWidget() {
     }
   }, [isOpen])
 
+  // Ref для отслеживания последнего ID сообщения
+  const lastMessageIdRef = useRef(0)
+
   // Long polling для получения новых сообщений
   useEffect(() => {
     if (!isNameSet) return
 
     const pollMessages = async () => {
       try {
-        const lastTimestamp = messages.length > 0
-          ? messages[messages.length - 1].timestamp
-          : 0
-
         const response = await fetch(
-          `/api/chat/messages/${sessionId.current}?since=${lastTimestamp}`
+          `http://localhost:5001/api/chat/messages/${sessionId.current}/new?after=${lastMessageIdRef.current}`
         )
 
         if (response.ok) {
-          const newMessages = await response.json()
-          if (newMessages.length > 0) {
-            setMessages(prev => [...prev, ...newMessages])
-            if (!isOpen) {
-              setHasNewMessage(true)
+          const data = await response.json()
+          if (data.success && data.messages.length > 0) {
+            // Фильтруем только сообщения от админа (от клиента уже добавлены локально)
+            const adminMessages = data.messages.filter(m => m.sender === 'admin')
+            if (adminMessages.length > 0) {
+              const formattedMessages = adminMessages.map(m => ({
+                id: m.id,
+                from: 'manager',
+                text: m.message,
+                timestamp: new Date(m.created_at).getTime()
+              }))
+              setMessages(prev => [...prev, ...formattedMessages])
+              if (!isOpen) {
+                setHasNewMessage(true)
+              }
+            }
+            // Обновляем lastMessageId
+            const maxId = Math.max(...data.messages.map(m => m.id))
+            if (maxId > lastMessageIdRef.current) {
+              lastMessageIdRef.current = maxId
             }
           }
         }
@@ -70,7 +84,7 @@ function ChatWidget() {
 
     const interval = setInterval(pollMessages, 3000)
     return () => clearInterval(interval)
-  }, [isNameSet, messages, isOpen])
+  }, [isNameSet, isOpen])
 
   // Отправка сообщения
   const sendMessage = async (e) => {
@@ -90,15 +104,22 @@ function ChatWidget() {
     setMessages(prev => [...prev, newMessage])
 
     try {
-      await fetch('/api/chat/send', {
+      const response = await fetch('http://localhost:5001/api/chat/message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           sessionId: sessionId.current,
           message,
-          clientInfo: { name: userName }
+          clientName: userName
         })
       })
+      const data = await response.json()
+      if (data.success) {
+        // Обновляем lastMessageId если сервер вернул id
+        if (data.messageId && data.messageId > lastMessageIdRef.current) {
+          lastMessageIdRef.current = data.messageId
+        }
+      }
     } catch (error) {
       console.error('Send error:', error)
     } finally {
@@ -107,9 +128,20 @@ function ChatWidget() {
   }
 
   // Начать чат (ввод имени)
-  const startChat = (e) => {
+  const startChat = async (e) => {
     e.preventDefault()
     if (userName.trim()) {
+      // Регистрируем/обновляем сессию на сервере
+      try {
+        await fetch(`http://localhost:5001/api/chat/session/${sessionId.current}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ clientName: userName.trim() })
+        })
+      } catch (error) {
+        console.log('Session update error:', error)
+      }
+
       setIsNameSet(true)
       // Приветственное сообщение
       const welcomeText = language === 'en'
