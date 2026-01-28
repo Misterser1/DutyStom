@@ -10,10 +10,11 @@ build/
 .env.local
 .env.*.local
 
-# Database
+# Database (кроме основной БД проекта)
 *.sqlite
 *.sqlite3
-*.db
+# *.db - разрешаем dutystom.db
+!server/database/dutystom.db
 
 # Keep images
 # client/public/images/ - нужны для проекта
